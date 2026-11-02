@@ -1,0 +1,559 @@
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2023_Solution.pdf · página 1 =====
+FINANCE I 
+                  Facultad de Economía y Negocios 
+                   Universidad de Chile 
+ 
+ 
+ 
+Prof.: Alejandro Bernales 
+ 
+ 
+ 
+ 
+ 
+Solemne 
+ 
+Time Allowed: 1.5 Hours 
+ 
+ 
+Instructions: 
+ 
+The solemne has 3 questions, each of them has the same weight. 
+ 
+PLEASE WRITE YOUR ID NUMBER (RUT OR PASSPORT) IN ALL THE PAGES. 
+ 
+PLEASE ONLY USE THE SPACE IN EACH QUESTION TO ANSWER ALL 
+SECTIONS (USE ONLY ONE SIDE OF THE PAGE - ONE LANGUAGE) 
+ 
+The space provided is sufficient to give a concise and pertinent answer to each question 
+and/or sub-point of a question. 
+ 
+Extra answer booklets will not be provided – please use the spaces provided only. Answers 
+written outside the spaces or on other booklets will not be marked. 
+ 
+ 
+ 
+Electronic calculators may be used provided that they cannot store text 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2023_Solution.pdf · página 2 =====
+FINANZAS I 
+                  Facultad de Economía y Negocios 
+                   Universidad de Chile 
+ 
+ 
+ 
+ 
+Prof.: Alejandro Bernales 
+ 
+ 
+ 
+ 
+ 
+Solemne 
+ 
+Time Allowed: 1.5 Hours 
+ 
+ 
+Instrucciones: 
+ 
+La Solemne tiene tres preguntas, cada una de ellas tiene la misma ponderación. 
+ 
+POR FAVOR ESCRIBA SU RUT (O # PASAPORTE) EN TODAS LAS HOJAS. 
+ 
+POR FAVOR UTILICE EL ESPACIO PROVISTO EN CADA PREGUNTA PARA 
+RESPONDER CADA SECCIÓN (USAR UN SOLO LADO DE LA HOJA - UN SOLO 
+LENGUAJE). 
+ 
+El espacio entregado es suficiente para entregar una respuesta concisa y pertinente a 
+cada pregunta y/o sub-pregunta. 
+ 
+No se entregarán hojas adicionales para responder por favor utilice solamente el espacio 
+entregado. Respuestas escritas fuera de este espacio o en otras hojas no serán revisadas. 
+ 
+ 
+Calculadoras electrónicas pueden ser utilizadas salvo las que puedan almacenar texto 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2023_Solution.pdf · página 3 =====
+Question I. Assume a financial market in which returns are described by a two-factor model (2-
+factor APT). Additionally, assume that you have a well-diversified portfolio and perfect 
+information. The relevant information for this scenario is presented in the following table: 
+ 
+ 
+ 
+1a) Please, provide the second equation (as explained in class) that describes the equilibrium 
+expected returns in the APT. 
+ 
+Hint. The second APT equation is: 
+ 
+ 
+Answer: 
+ 
+We make a system of equations with the data: 
+ 
+                                       
+                                       
+                                        
+ 
+Finally, the values are: 
+         
+        
+         
+ 
+Therefore, the equation is: 
+ 
+                              
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Stocks 
+E(ri ) 
+   
+   
+LAN 
+13.5% 
+0.7 
+0.6 
+KO 
+14.7% 
+0.9 
+0.5 
+AA 
+9.9% 
+0.4 
+0.3 
+
+
+
+,
+1
+( )
+k
+i
+f
+i j
+j
+j
+E r
+r
+β λ
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2023_Solution.pdf · página 4 =====
+Pregunta I. Supongamos un mercado financiero en el que los retornos son descritos por medio 
+de un modelo de dos factores (APT de 2 factores). Además, considere que tiene una cartera bien 
+diversificada e información perfecta. La información relevante para esta pregunta se encuentra 
+en la siguiente tabla: 
+ 
+ 
+ 
+ 
+ 
+ 
+1a) Encuentre la segunda ecuación (como fue explicado en clase) que describe los retornos 
+esperados de equilibrio en el APT. 
+ 
+Hint. La segunda ecuación del APT es: 
+ 
+ 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Stocks 
+E(ri ) 
+   
+   
+LAN 
+13.5% 
+0.7 
+0.6 
+KO 
+14.7% 
+0.9 
+0.5 
+AA 
+9.9% 
+0.4 
+0.3 
+
+
+
+,
+1
+( )
+k
+i
+f
+i j
+j
+j
+E r
+r
+β λ
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2023_Solution.pdf · página 5 =====
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1b)   Suppose that the stock PG has the following features:  
+Expected return: 15%,                 .  
+Does the stock PG have abnormal returns under this APT model? 
+ 
+Answer 
+ 
+The APT equation is:  
+                              
+ 
+ 
+ 
+We replace the values of    and   , and we got: 
+                                
+                
+ 
+ 
+The PG stock return is abnormal under this APT model with an alpha value of -2.5%. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2023_Solution.pdf · página 6 =====
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1b)    Suponga que el stock de PG tiene las siguientes características: 
+Retorno esperado: 15%,                 . 
+¿El stock de PG tiene retornos que son anormales bajo este modelo APT? 
+ 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2023_Solution.pdf · página 7 =====
+Question II:  
+2a) In the course, we were discussing three ways in which some investors can have more 
+information than others. First, in an illegal way, some investors can obtain internal information 
+from companies (through friends or relatives working within those companies). Second, some 
+investors may have exceptionally powerful computers and highly skilled teams, including 
+members with PhDs in Finance, Economics, Mathematics, Programming, amongst others. In this 
+second scenario, these sophisticated teams can extract more knowledge from publicly available 
+information. What is the third way in which certain agents can possess more information than 
+others? Please provide an example. 
+Answer: 
+ 
+The third way in which some agents can possess more information than others is related to the 
+learning process and the attention of agents. Naturally, learning new information (after market 
+events that affect investments) takes time. In addition, investors sometimes are not fully focused 
+on monitoring their investments because they have other tasks to attend to. Consequently, due 
+to the time required for the learning process and the inattention of investors, some quicker 
+investors can gain access to new information more rapidly and use it to their advantage against 
+slower-learning and inattentive investors. 
+ 
+For example, an investor with investments who is going for lunch may miss new information 
+regarding such investments, and quick investors can exploit the inattentive investor's 
+investment positions. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2b) In class, we discussed the concept "walk up the book", in relation to some illegal practices of 
+some managers and accountants, where they modify some numbers of the accounting book of 
+firms. Please, provide an example of such illegal practices in companies. 
+Answer 
+This sentence is not true, since the concept of "walking up the book" is not related to the 
+accounting book of firms (and it is not illegal). This concept is related to trading, when a large 
+order is sent to be traded instantaneously in the market (e.g., a large market order in limit order 
+markets), where this large order is traded at different prices. This occurs because there are not 
+enough limit orders waiting at a single price to execute such a large order. Thus, this large order 
+is "walking" at different prices in the limit order book. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2023_Solution.pdf · página 8 =====
+Pregunta II: 
+2a) En el curso, estuvimos discutiendo tres formas en las que algunos inversionistas pueden 
+tener más información que otros. Primero, de manera ilegal, algunos inversionistas pueden 
+obtener información interna de las empresas (a través de amigos o familiares que trabajan en 
+esas empresas). Segundo, algunos inversionistas pueden contar con computadoras 
+excepcionalmente potentes y equipos altamente capacitados, incluyendo miembros con 
+doctorados en Finanzas, Economía, Matemáticas, Programación, entre otros. En este segundo 
+escenario, estos equipos sofisticados pueden extraer más conocimiento de la información 
+disponible públicamente. ¿Cuál es la tercera forma en que ciertos agentes pueden poseer más 
+información que otros? Por favor, proporciona un ejemplo. 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2b) En clase, discutimos el concepto de "caminar sobre el libro" (i.e. "walk up the book"), en 
+relación con algunas prácticas ilegales de ciertos gerentes y contadores, donde modifican ciertos 
+números del libro contable de las empresas. Por favor, proporcione un ejemplo de tales prácticas 
+ilegales en las empresas. 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2023_Solution.pdf · página 9 =====
+Question III. Consider two bonds. The first bond (Bond I) has a face value of $100 and pays 
+annual coupons of 8% (of face value) over 10 years, and currently it has a price at $90. The 
+second bond (Bond II) also has a face value of $100, but pays annual coupons of 4% (of face 
+value) over 10 years, and currently it has a price at $80. What is the 10-year zero-coupon rate? 
+Express the 10-year zero-coupon rate in continuous time (annual base). 
+Answer: 
+ 
+Bond I 
+                                         
+ 
+ 
+Bond II 
+                                         
+ 
+ 
+Then, today (at    ) I can buy 2 bonds with coupons of 4% (i.e. to buy 2 Bonds II), and 
+simultaneously sell 1 bond with coupons of 8% (i.e. sell 1 Bond I).  
+ 
+Then, I have a cash flow today (at t=0) of: 
+            
+ 
+Consequently, after 10 years at t=10, I will have a a chash flow (in present value) of: 
+ 
+                                      
+ 
+This is because the coupons between t=0 and t=10 are eliminated due to the coupons' structure 
+ 
+This means that I am investing $70 at the zero coupon rate, to obtain a future cash flow of 
+            after 10 years. 
+ 
+Thus,  
+ 
+ 
+               
+ 
+Then, 
+ 
+     
+         
+           
+Finally, 
+ 
+           
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2023_Solution.pdf · página 10 =====
+Pregunta III. Considere dos bonos. El primer bono (Bono I) tiene valor cara $100 y paga 
+cupones anuales del 8% anual (del valor cara) a 10 años, el cual se vende actualmente en $90. El 
+segundo bono (Bono II) también tiene un valor cara de $100, pero paga cupones anuales del 4% 
+anual (del valor cara) a 10 años, y se vende actualmente en $80. ¿Cuál es la tasa cero cupón a 10 
+años? Exprese la tasa cero cupón a 10 años, en tasa continua con base anual. 
+Respuesta: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,48 @@
+===== Ayudantias/Enunciado_A9.pdf · página 1 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Econom´ıa y Negocios
+Finanzas I
+Ayudant´ıa 9
+Profesor: Alejandro Bernales
+Ayudantes: Luisa Rodr´ıguez, Elizabeth N´u˜nez, Ayelen Sandoval, Tom´as Rojas, Joaqu´ın Arenas, Juan
+Correa Hevia, Lucas Montiel y Carolina Morales
+Comentes
+1) Al valorar una opci´on mediante un ´arbol binomial, la probabilidad “real” de que el precio del activo
+subyacente suba o baje es un dato indispensable: sin ella no es posible obtener el precio de la opci´on.
+2) Un aumento en la volatilidad del activo subyacente incrementa el valor de una opci´on call, pero reduce
+el valor de una opci´on put escrita sobre el mismo activo.
+3) Para valorar una opci´on americana debe usarse el modelo de Black-Scholes, mientras que para una
+opci´on europea es necesario recurrir a los ´arboles binomiales.
+4) El precio de una opci´on call europea sobre una acci´on que no paga dividendos podr´ıa, en alg´un escenario
+de mercado, ser mayor que el precio de la acci´on subyacente.
+5) Si en el mercado se verifica la relaci´on de paridad put-call, c + Ke−rT = p + S0, entonces existe una
+oportunidad de arbitraje.
+Matem´atico I
+Considere una acci´on cuyo precio hoy es S0 = $50. Usted analiza una opci´on sobre esta acci´on con precio de
+ejercicio K = $50 y vencimiento T = 6 meses. La tasa libre de riesgo es r = 6 % anual y la volatilidad de la
+acci´on es σ = 20 % anual. Para valorar la opci´on use un ´arbol binomial de dos pasos, con cada paso de 3
+meses.
+Ayuda: u = eσ
+√
+∆t,
+d = e−σ
+√
+∆t,
+p = er∆t −d
+u −d
+a) Construya el ´arbol binomial y determine el precio de la opci´on put europea.
+b) A partir del resultado anterior, obtenga el precio de la opci´on call europea usando la paridad put-call.
+c) Suponga que en el mercado la call se transa a $4. ¿Existe una oportunidad de arbitraje? Si existe,
+dise˜ne la estrategia e indique la tabla de flujos.
+Matem´atico II
+Considere la siguiente informaci´on de mercado; el precio actual de la acci´on es S0 = $60, el precio de ejercicio
+es K = $58, el tiempo hasta la madurez es T = 9 meses, la tasa libre de riesgo es r = 5 % anual y la volatilidad
+es σ = 25 % anual.
+Ayuda: N(0,44) = 0,6700; N(0,22) = 0,5871; N(0,32) = 0,6255; N(0,11) = 0,5438
+a) Calcule el precio de hoy de una opci´on call europea seg´un el modelo de Black-Scholes.
+b) Obtenga el precio de la opci´on put europea mediante la paridad put-call.
+c) La empresa anuncia que pagar´a un dividendo de $1,5 dentro de 4 meses. Recalcule el precio de la call
+europea incorporando el dividendo.
+P´agina 1 de 1

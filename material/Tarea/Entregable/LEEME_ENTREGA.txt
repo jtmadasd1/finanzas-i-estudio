@@ -1,0 +1,7 @@
+ENTREGA TAREA FINANZAS I (ENFIN415)
+
+Subir estos 2 archivos:
+  1. Informe_Tarea_ENFIN415.pdf   (version final con los nombres)
+  2. Archivos_de_calculo.zip      (codigo Python, datos, tablas Excel y figuras)
+
+La carpeta Archivos_de_calculo es el mismo contenido del ZIP, sin comprimir.

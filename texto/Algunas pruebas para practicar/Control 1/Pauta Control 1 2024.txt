@@ -1,0 +1,375 @@
+===== Algunas pruebas para practicar/Control 1/Pauta Control 1 2024.pdf · página 1 =====
+FINANCE I 
+                  Facultad de Economía y Negocios 
+                   Universidad de Chile 
+ 
+ 
+ 
+Prof.: Alejandro Bernales 
+ 
+ 
+ 
+ 
+ 
+Control 
+ 
+Time Allowed: 30 mins 
+ 
+ 
+Instructions: 
+ 
+PLEASE WRITE YOUR ID NUMBER (RUT OR PASSPORT) IN ALL THE PAGES. 
+ 
+PLEASE ONLY USE THE SPACE IN EACH QUESTION TO ANSWER ALL 
+SECTIONS (USE ONLY ONE SIDE OF THE PAGE - ONE LANGUAGE) 
+ 
+The space provided is sufficient to give a concise and pertinent answer to each question 
+and/or sub-point of a question. 
+ 
+Extra answer booklets will not be provided – please use the spaces provided only. Answers 
+written outside the spaces or on other booklets will not be marked. 
+ 
+ 
+ 
+Electronic calculators may be used provided that they cannot store text 
+ 
+
+===== Algunas pruebas para practicar/Control 1/Pauta Control 1 2024.pdf · página 2 =====
+FINANCE I 
+                  Facultad de Economía y Negocios 
+                   Universidad de Chile 
+ 
+ 
+ 
+ 
+Prof.: Alejandro Bernales 
+ 
+ 
+ 
+ 
+ 
+Control 
+ 
+Time Allowed: 30 mins 
+ 
+ 
+Instrucciones: 
+ 
+POR FAVOR ESCRIBA SU RUT (O # PASAPORTE) EN TODAS LAS HOJAS. 
+ 
+POR FAVOR UTILICE EL ESPACIO PROVISTO EN CADA PREGUNTA PARA 
+RESPONDER CADA SECCIÓN (USAR UN SOLO LADO DE LA HOJA - UN SOLO 
+LENGUAJE). 
+ 
+El espacio entregado es suficiente para entregar una respuesta concisa y pertinente a 
+cada pregunta y/o sub-pregunta. 
+ 
+No se entregarán hojas adicionales para responder por favor utilice solamente el espacio 
+entregado. Respuestas escritas fuera de este espacio o en otras hojas no serán revisadas. 
+ 
+ 
+Calculadoras electrónicas pueden ser utilizadas salvo las que puedan almacenar texto 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Control 1/Pauta Control 1 2024.pdf · página 3 =====
+Question: [Total 60pts] 
+You know that two stocks, Alcoa and General Motors, have been delivering the following 
+expected returns (i.e., average returns, measured over a long period of time). 
+ 
+ 
+ 
+ 
+ 
+ 
+Alcoa  
+ 
+32% 
+ 
+ 
+ 
+ 
+ 
+General Motors 
+52% 
+It is known that Alcoa has a beta of 0.8, and General Motors has a beta of 1.8. 
+a) Please, find the value of the Market Risk Premium, E(Rm) - Rf, that makes the CAPM model 
+consistent with these historical return estimates and the betas of the two stocks. [20pts] 
+Answer 
+We know from the CAPM: 
+[
+]
+{ [
+]
+}
+[
+]
+{ [
+]
+}
+0.32
+0.8{ [
+]
+}
+0.52
+1.8{ [
+]
+}
+f
+f
+Alcoa
+Alcoa
+M
+f
+f
+GM
+GM
+M
+f
+f
+M
+f
+f
+M
+E R
+r
+E R
+r
+E R
+r
+E R
+r
+r
+E R
+r
+r
+E R
+r
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+This is a system of two linear equations in two unknowns, then: 
+0.16
+[
+]
+0.36
+f
+M
+r
+E R
+
+
+
+
+
+ 
+Thus: 
+E(Rm)-Rf = 20% 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Control 1/Pauta Control 1 2024.pdf · página 4 =====
+Pregunta: [Total 60pts] 
+Ud. sabe que dos acciones, Alcoa y General Motors, han estado entregando los siguientes 
+retornos esperados (i.e., retornos promedios, medidos sobre un período largo de tiempo) 
+ 
+ 
+ 
+ 
+ 
+Alcoa  
+ 
+32% 
+ 
+ 
+ 
+ 
+ 
+General Motors 
+52% 
+Se sabe que Alcoa tiene un beta de 0.8 y General Motors tiene un beta de 1.8 
+a) Encuentre el valor de la prima por riesgo del Mercado, E(Rm)-Rf, que hace que el modelo 
+CAPM sea consistente con estas estimaciones históricas de retornos y los betas de las dos 
+acciones. [20pts] 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Control 1/Pauta Control 1 2024.pdf · página 5 =====
+b) Based on your previous answer in this question, how much should an agent invest in the risky 
+Market portfolio and in a risk-free bank deposit? The agent has mean-variance preferences that 
+are described by equation (1): 
+U(E[Rp], 2p) = E[Rp] - 2p                  (1)          
+where p is a portfolio composed of a risk-free asset and a risky asset. 
+Assume that: 2M = (16%)2 = 0.0256. [30pts] 
+Hint: Remember that an investor whose mean-variance preferences are: 
+ U(E[Rp], 2p) = E[Rp] – (c/2)2p 
+That investor will invest a proportion of their wealth, α, in the risky asset, R, equal to: α= (risk 
+premium)/(c*2R) 
+Answer 
+ 
+In our case, it is clear that c=2, so: α = (E[RM] - rf)/[22M],  
+ 
+Given the results from the previous part and the fact that: M = 0.16, then: 
+ 
+ α = (0.20)/(2*0.0256) = 3.91,  
+ 
+which represents 391% of the investor's wealth. This means that the investor needs to borrow 
+from the bank up to 291% of their initial investment capital. 
+ 
+ 
+ 
+ 
+ 
+c) What is the return and variance of portfolio p? [10pts] 
+Respuesta 
+ Retorno=3.91*0.36 +(-2.91)*0.16= 0.94 
+Var= 3.91^2*0.0256=0.39 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Control 1/Pauta Control 1 2024.pdf · página 6 =====
+b) Basándose en su respuesta de la parte 1i), ¿Cuánto debería invertir en el portafolio de activos 
+riesgosos de Mercado y en un depósito bancario libre de riesgo, un inversionista cuyas 
+preferencias de media-varianza están descritas por la ecuación (1)? 
+U(E[Rp], 2p) = E[Rp] - 2p                  (1)          
+donde p es un portafolio compuesto de un activo libro de riesgo y un activo riesgoso. 
+Asuma que 2M = (16%)2 = 0.0256. [30pts] 
+Hint: Recuerde que un inversionista cuyas preferencias de media-varianza son: 
+U(E[Rp], 2p) = E[Rp] – (c/2)2p 
+Ese inversionista invertirá una proporción de su riqueza, α,  en el activo riesgoso,R, igual a: 
+α= (prima por riesgo)/(c*2R) 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+c) Cual es el retorno y varianza del portafolio p? [10pts,] 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

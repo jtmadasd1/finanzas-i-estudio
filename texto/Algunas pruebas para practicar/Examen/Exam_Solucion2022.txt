@@ -1,0 +1,419 @@
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2022.pdf · página 1 =====
+FINANCE I 
+                  Facultad de Economía y Negocios 
+                   Universidad de Chile 
+ 
+ 
+ 
+Prof.: Alejandro Bernales 
+ 
+ 
+ 
+ 
+ 
+Exam 
+ 
+Time Allowed: 1.5 Hours 
+ 
+ 
+Instructions: 
+ 
+The Exam has 3 questions, each of them have the same weight. 
+ 
+PLEASE WRITE YOUR ID NUMBER OR PASSPORT IN ALL THE PAGES. 
+ 
+PLEASE ONLY USE THE SPACE IN EACH QUESTION TO ANSWER ALL 
+SECTIONS (USE ONLY ONE SIDE OF THE PAGE - ONE LANGUAGE) 
+ 
+The space provided is sufficient to give a concise and pertinent answer to each question 
+and/or sub-point of a question. 
+ 
+Extra answer booklets will not be provided – please use the spaces provided only. Answers 
+written outside the spaces or on other booklets will not be marked. 
+ 
+ 
+ 
+Electronic calculators may be used provided that they cannot store text 
+ 
+
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2022.pdf · página 2 =====
+FINANCE I 
+                  Facultad de Economía y Negocios 
+                   Universidad de Chile 
+ 
+ 
+ 
+ 
+Prof.: Alejandro Bernales 
+ 
+ 
+ 
+ 
+ 
+Examen 
+ 
+Time Allowed: 1.5 Hours 
+ 
+ 
+Instrucciones: 
+ 
+El Examen tiene 3 preguntas, cada una de ellas tienen la misma ponderación. 
+ 
+POR FAVOR ESCRIBA SU RUT O PASAPORTE EN TODAS LAS HOJAS. 
+ 
+POR FAVOR UTILICE EL ESPACIO PROVISTO EN CADA PREGUNTA PARA 
+RESPONDER CADA SECCIÓN (USAR UN SOLO LADO DE LA HOJA - UN SOLO 
+LENGUAJE). 
+ 
+El espacio entregado es suficiente para entregar una respuesta concisa y pertinente a 
+cada pregunta y/o sub-pregunta. 
+ 
+No se entregarán hojas adicionales para responder por favor utilice solamente el espacio 
+entregado. Respuestas escritas fuera de este espacio o en otras hojas no serán revisadas. 
+ 
+ 
+ 
+Calculadoras electrónicas pueden ser utilizadas salvo las que puedan almacenar texto 
+ 
+
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2022.pdf · página 3 =====
+Question I. A stock price is currently $30. During each 2-month period it will increase by 8% or 
+reduce by 10% (for the next 4 months). The risk-free interest rate is 5%. Use a two-step tree to 
+calculate the value of a derivative that pays off in 4 months: 
+ 
+                        , 
+ 
+where ST is the stock price in 4 months (i.e. an European-Style derivative). If the derivative is 
+American-style, should it be exercised early? 
+Answer 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2022.pdf · página 4 =====
+Pregunta I. Una acción actualmente vale $30, la cual cada 2 meses subirá un 8% o decrecerá un 
+10% (lo que ocurrirá por los próximos 4 meses). La tasa libre de riesgo es de un 5% anual. 
+Usando un árbol binomial de dos pasos, calcule el valor (al día de hoy) de un derivado que paga 
+("payoff") a la madurez en 4 meses: 
+                        , 
+ 
+donde ST es el valor de la acción en 4 meses más (i.e. un derivado del estilo "Europeo"). ¿Si el 
+derivado fuera del tipo de ejercicio "Americano", debiese ser ejercido anticipadamente? 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2022.pdf · página 5 =====
+Question II.  
+2a) Option prices are calculated using a risk neutral valuation, by assuming that all agents in the 
+economy have a null risk aversion. For that reason, it is possible to directly discount options' 
+payoffs at the risk-free rate. Please, explain potential problems of assuming a risk neutral 
+valuation in which all agents do not have risk aversion.  
+Answer 
+ 
+This sentence is wrong. The risk neutral valuation does not assume that all agents in the 
+economy have a null risk aversion. In fact, agents can have different levels of risk aversion. 
+ 
+The risk neutral valuation is a technique, in which the risk is eliminated by using a portfolio. 
+Thus, the concept 'risk neutral valuation' is related to eliminate risk rather than assuming a null 
+level of risk aversion in the economy. This risk neutral portfolio has the option contract and a 
+quantity of stock shares. After that, the payoffs are discounted to the present at the risk free rate 
+since this portfolio does not have risk. Then, it is possible to obtain the price of the option by 
+decomposing the portfolio in its different components. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2b) Why should students in Chile learn 'options' despite there are no developed option markets 
+in Chile? Provide one reason. 
+Answer 
+ 
+-All insurances are options, and there are a plenty of insurance companies in Chile (e.g., Isapres 
+and insurance companies related to car insurances, travel insurances, etc.). Thus, students in 
+Chile in this area will face with option modelling and option pricing. 
+ 
+or 
+ 
+-Options can be replicated (in a synthetic way) by using a bond and stock; thus it is not 
+necessary to have an option market to use them. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2022.pdf · página 6 =====
+Pregunta II. 
+2a) Los precios de las opciones se calculan utilizando una valoración neutral al riesgo en la cual 
+se asume que todos los agentes de la economía tienen una aversión nula al riesgo. Por esa razón, 
+es posible descontar las ganancias de las opciones directamente a la tasa libre de riesgo. Por 
+favor, explique los posibles problemas de asumir una valoración neutral al riesgo en la que todos 
+los agentes no tienen ninguna aversión al riesgo. 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2b) ¿Por qué los estudiantes en Chile deberían aprender 'opciones' a pesar de que no hay 
+mercados de opciones desarrollados en Chile? Entregue una razón.  
+Responder 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2022.pdf · página 7 =====
+Question III. 
+3a) The price of a stock is $40. The price of a 1-year European put option on the stock with a  
+strike price of $30 is quoted at $7 and the price of a 1-year European call option on the  stock 
+with a strike price of $50 is quoted at $5. Suppose that an investor buys 100 shares,  shorts 1 call 
+option contract, and buys 1 put option contract. Draw a diagram illustrating how the investor's 
+profit or loss varies with the stock price over the next year.  
+ 
+Hint: remember that when you buy (or sell) option contracts, they always involve #100 
+underlying assets (i.e. in this case #100 shares). Thus, in the example above, the value of 1 call 
+option contract with price   is in reality       (because, it involves 100 underlying assets).   
+Answer:  
+ 
+ 
+The figure above shows the way in which the investor's profit varies with the stock price in the 
+first case. For stock prices less than $30 there is a loss of $1200 (i.e. 500(selling call contract)-
+700(buying put contract)-10*100(losses from the stock)). As the stock price increases from $30 
+to $50 the profit increases from -1200 to $800. Above $50 the profit is $800.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2022.pdf · página 8 =====
+Pregunta III. 
+3a) El precio de una acción es de $40. El precio de una opción Put Europea sobre la acción 
+descrita, con madurez a 1 año y un precio Strike de $30, es de $7; mientras que el precio de una 
+opción Call Europea sobre la misma acción, con madurez a 1 año y un precio Strike de $50, es de 
+$5. Suponga que un inversionista compra 100 acciones, vende 1 contrato Call, y compra 1 
+contrato Put. Dibuje un diagrama indicando cómo las ganancias o pérdidas del inversionista 
+varían con el precio de la acción durante el siguiente año.  
+ 
+Hint: recuerde que cuando compra (o vende) contratos de opciones, siempre involucran #100 
+activos subyacentes (i.e. #100 acciones en este caso). Así, en el ejemplo anterior, el valor de 1 
+contrato de opción de compra con precio   es en realidad       (porque involucra 100 activos 
+subyacentes). 
+Respuesta: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2022.pdf · página 9 =====
+3b) How does your answer change if instead the investor buys 100 shares, shorts 2 call option 
+contracts, and buys 2 put option contracts? 
+Answer 
+ 
+ 
+ 
+In the second case pattern has a zigzag shape, because calls and puts involve each other 200 
+underlying assets, while the investor only has 100 shares. Thus, for example, when the price is 
+below 30, the line going below (from the put) and the line going up (from the stock) are not 
+eliminated. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2022.pdf · página 10 =====
+3b) ¿Cómo cambia su respuesta si el inversionista, en vez de comprar el portafolio anterior, 
+compra 100 acciones, vende 2 contratos Call, y compra 2 contratos Put? 
+Respuesta 
+ 
+ 
+ 

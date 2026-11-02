@@ -1,0 +1,97 @@
+===== Algunas pruebas para practicar/Control 2/Pauta Control 2 2024.pdf · página 1 =====
+Question I:  
+Assume that you are a senior financial analyst at an investment bank. One day, you receive a task 
+from a customer. She wants to know the price of a six-month call option on the stock of Soquimik 
+(Soquimik doesn't pay dividends). The option has a strike price of $180 and is European style. 
+Soquimik's current share price is $182, the risk-free interest rate is 6% per year, and the 
+customer knows that the stock's volatility is 50%. 
+a) What is the price of this call option? 
+Answer: 
+IMPORTANTE: no es necesario que los alumnos interpolen usando la tabla normal para 
+llegar a valores más exactos. Es suficiente si los alumnos usan los valores más cercanos 
+reportados en la tabla de la normal. 
+ 
+   
+     
+          
+ 
+   
+   
+        
+ 
+                    
+ 
+                            
+ 
+So, the value of the Put options is: 
+                              
+ 
+ 
+b) Suppose the stock will pay a dividend of $20 in 5 months. What is the new value of the call 
+option? 
+Answer: 
+We need to adjust the price of the stock (minus the present value of the dividends) 
+  
+                             
+          
+Now we must re-calculate the new d1 and d2, with the adjuted stock price 
+ 
+   
+     
+ 
+          
+ 
+   
+   
+         
+ 
+                   
+ 
+                            
+ 
+So, the value of the call options is: 
+     
+                          
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Control 2/Pauta Control 2 2024.pdf · página 2 =====
+Pregunta I: 
+Supón que eres un analista financiero senior en un banco de inversión. Un día, recibes una tarea 
+de una clienta. Ella quiere saber el precio de una opción call a seis meses sobre las acciones de 
+Soquimik (Soquimik no paga dividendos). La opción tiene un precio de ejercicio de $180 y es de 
+estilo europeo. El precio actual de la acción de Soquimik es $182, la tasa de interés libre de 
+riesgo es del 6% anual, y la clienta sabe que la volatilidad de la acción es del 50%. 
+a) ¿Cuál es el precio de esta opción call? 
+Respuesta: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+b) Supón que la acción pagará un dividendo de $20 en 5 meses. ¿Cuál es el nuevo valor de la 
+opción call? 
+Respuesta 
+ 
+ 

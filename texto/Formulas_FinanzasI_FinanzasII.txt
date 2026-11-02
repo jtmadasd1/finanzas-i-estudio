@@ -1,0 +1,823 @@
+===== Formulas_FinanzasI_FinanzasII.pdf · página 1 =====
+FINANZAS I 
+Valoración de proyectos 
+• 
+Valor Actual Neto 
+𝑉𝐴𝑁= −𝐼𝑜+ ∑
+𝐹𝑖
+(1 + 𝑟)𝑖
+𝑛
+𝑖=1
+ 
+• 
+Periodo de recuperación o payback 
+Cantidad de tiempo lineal en el que el 
+proyecto iguala al valor de la inversión. 
+• 
+TIR  0 = −𝐼𝑜+ ∑
+𝐹𝑖
+(1+𝑟)𝑖
+𝑛
+𝑖=1
+ 
+• 
+Índice de rentabilidad 𝐼. 𝑅. =
+∑
+𝐹𝑖
+(1+𝑟)𝑖
+𝑛
+𝑖=1
+|𝐼𝑜|
+ 
+ 
+Teoría de portafolio  
+Retorno de un portafolio  
+𝐸(𝑟𝑝) = 𝑤𝑎∗𝐸(𝑟1) + (𝑤𝑏) ∗𝐸(𝑟2) 
+ 
+Volatilidad del portafolio  
+𝜎𝑝2 = 𝑤𝑎2 ∗𝜎𝑎2 + 𝑤𝑏2 ∗𝜎𝑏
+2 + 2 ∗𝑤𝑎∗(𝑤𝑏) ∗
+𝜎𝑎∗𝜎𝑏∗𝜌𝑎,𝑏      
+Sacar raíz √𝜎𝑝2 = 𝜎𝑝   
+ 
+Portafolio mínima varianza  
+𝛼𝑚𝑣= 𝑤𝑎=
+(𝜎𝑏
+2−𝜎𝑎∗𝜎𝑏∗𝜌𝑎,𝑏)
+(𝜎𝑎2+𝜎𝑏
+2−2∗𝜎𝑎∗𝜎𝑏∗𝜌𝑎,𝑏)  
+𝑤𝑏= 1 −𝑤𝑎 
+ 
+Portafolio optimo riesgoso  
+𝑤𝑎= 
+(𝑟𝑎−𝑟𝑓)𝜎𝑏
+2 −(𝑟𝑏−𝑟𝑓)𝜎𝑎𝜎𝑏𝜌𝑎,𝑏
+(𝑟𝑎−𝑟𝑓)𝜎𝑏
+2 + (𝑟𝑏−𝑟𝑓)𝜎𝑎2 −(𝑟𝑏+ 𝑟𝑎−2𝑟𝑓)𝜎𝑎𝜎𝑏𝜌𝑎,𝑏
+ 
+𝑤𝑏= 1 −𝑤𝑎 
+ 
+Correlación  
+𝜌𝑎,𝑏= 𝑐𝑜𝑣(𝑎, 𝑏)
+𝜎𝑎𝜎𝑏
+ 
+Covarianza 
+𝑐𝑜𝑣(𝑎, 𝑏) = 𝜎𝑎𝜎𝑏𝜌𝑎,𝑏 
+ 
+Covarianza con el Mercado 
+𝑐𝑜𝑣(𝑎, 𝑚) = 𝑤𝑎∗𝐶𝑜𝑣(𝑎, 𝑎) + 𝑤𝑏
+∗𝐶𝑜𝑣(𝑎, 𝑏)𝜌𝑎,𝑏 
+ 
+ 
+Utilidad/Aversión al riesgo 
+1. Portafolio Optimo 
+2. 𝑦∗=
+E(𝑟𝑝)−𝑟𝑓
+𝐴∗𝜎𝑝2 
+3. 𝑟𝑓= 1 −𝑦∗ 
+ 
+Probabilidades (Juego) 
+𝜎𝑎2 = 𝑝𝑟∗(𝑒𝑠𝑐𝑒𝑛𝑎𝑟𝑖𝑜−𝑎𝑐𝑡𝑖𝑣𝑜)2 + ⋯+ 
+𝐶𝑜𝑣(𝑎, 𝑏) = 𝑝𝑟(𝑒𝑠𝑐𝑒𝑛𝑎𝑟𝑖𝑜
+−𝑎𝑐𝑡𝑖𝑣𝑜 𝑎)(𝑒𝑠𝑐𝑒𝑛𝑎𝑟𝑖𝑜
+−𝑎𝑐𝑡𝑖𝑣𝑜𝑏) 
+Evaluación del desempeño 
+1. Benchmark 
+2. Ratio de Sharpe   
+𝑅𝑆= 𝐸(𝑟𝑝) −𝑟𝑓
+𝜎𝑝
+ 
+3. Medida de Treynor: retorno del portafolio 
+según el riesgo sistemático 
+𝑅𝑇= 𝐸(𝑟𝑝) −𝑟𝑓
+𝛽𝑝
+ 
+4. Alfa de Jensen 
+𝛼= 𝐸(𝑟𝑝) −(𝑟𝑓+ 𝛽𝑝(𝐸(𝑟𝑚) −𝑟𝑓)) 
+𝛼= 𝑟𝑖−𝐸(𝑟̃𝑖) 
+𝑟𝑖= retorno observado (enunciado) 
+𝐸(𝑟̃𝑖) = retorno esperado calculado por Capm 
+ 
+Análisis 𝜶 
+𝛼> 0  VENTA LARGA/COMPRO/SUBVALORADO 
+𝛼< 0  VENTA CORTA/VENDO/SOBREVALORADO 
+ 
+Modelo CAPM 
+𝐸(𝑟𝑝) = 𝑟𝑓+ 𝛽𝑝(𝐸(𝑟𝑚) −𝑟𝑓)  
+ 
+Beta de Mercado 
+𝛽𝑖=
+𝑐𝑜𝑣(𝑟𝑖,𝑟𝑚)
+𝜎𝑚
+2
+    𝛽𝑖=
+𝛼∗𝑐𝑜𝑣(𝑟1,𝑟1)+𝛼2𝑐𝑜𝑣(𝑟1,𝑟2
+𝜎𝑚
+2
+) 
+ 𝛽𝑖= 𝛼1 ∗𝜎1
+2 + 𝛼2𝜎1𝜎2 ∗𝜌1,2
+𝜎𝑚2
+         𝛽𝑚= 1 
+Ajuste de Bloomberg    𝛽𝑖
+𝐵=
+1
+3 +
+2
+3 ∗𝛽𝑖  
+PRM     𝐸(𝑟𝑚) −𝑟𝑓= 𝐴∗𝜎𝑚2 
+LMC   𝐸(𝑟𝑖) = 𝑟𝑓+ 𝜎𝐼∗𝑅𝐴𝑇𝐼𝑂 𝑆𝐻𝐴𝑅𝑃𝐸 
+Modelo Índice (CAPM práctica) 
+Riesgo sistemático ≠ Riesgo no sistémico 
+ 
+Ecuación de regresión 
+𝐸(𝑟𝑖) = 𝑟𝑓+ 𝛽𝑖∗𝐸(𝑟𝑚) + 𝜖𝑖 
+ 
+Ecuación de riesgos 
+𝜎𝑖
+2 = 𝛽𝑖
+2 ∗𝜎𝑚2 + 𝜎𝜖2      
+ 𝛽𝑖
+2 ∗𝜎𝑚2 = 𝑠𝑖𝑠𝑡𝑒𝑚𝑎𝑡𝑖𝑐𝑜= 𝑛𝑜 𝑑𝑖𝑣𝑒𝑟𝑠𝑖𝑓𝑖𝑐𝑎𝑏𝑙𝑒  
+𝜎𝜖2 = 𝑛𝑜 𝑠𝑖𝑠𝑡𝑒𝑚𝑎𝑡𝑖𝑐𝑜= 𝑑𝑖𝑣𝑒𝑟𝑠𝑖𝑓𝑖𝑐𝑎𝑏𝑙𝑒   
+ 
+Covarianza 
+𝑐𝑜𝑣(𝑎, 𝑏) = 𝛽𝑎𝛽𝑏𝜎𝑚2 
+𝑅2 = que tanto explica la variable independiente 
+a la dependiente 
+𝑅2 = 𝛽𝑖2 ∗𝜎𝑚2
+𝜎𝑖
+2
+ 
+𝜎𝑚= √
+(𝑒𝑟𝑟𝑜𝑟)2
+𝐵2 ∗( 1
+𝑅2 −1)
+ 
+Riesgo no sistemático  (1 −𝑝𝑎,𝑚) ∗𝜎𝑎  
+Riesgo sistemático  𝑝𝑎,𝑚∗𝜎𝑎  
+ 
+
+===== Formulas_FinanzasI_FinanzasII.pdf · página 2 =====
+Modelo APT  
+𝐸(𝑟𝑖) = 𝜆0 + 𝜆1 ∗𝛽1 + 𝜆2 ∗𝛽2 +∙∙∙+𝜆𝑛∗𝛽𝑛
++ 𝜖𝑖 
+Fama & French 
+𝐸(𝑟𝑖) −𝑟𝑓= 𝛼+ 𝛽𝑚(𝐸(𝑟𝑚) −𝑟𝑓) + 𝛽𝑠(𝑆𝑀𝐵)
++ 𝛽ℎ(𝐻𝑀𝐿) + 𝜖𝑖 
+BMKT: relaciona el retorno i con el PRM a través 
+del BMKT  
+BSMB: retorno del portafolio de empresas chicas 
+sobre el retorno de un portafolio de empresas 
+grandes. 
+BHML: retorno de un portafolio de activos de 
+alto book to market value sobre el retorno de 
+portafolios de activos con bajo book to market 
+PRY1R: retorno del activo i el último año.  
+Hipótesis de mercado eficiente  
+Precios de un activo se ve reflejado x toda la 
+información de mercado.  
+Débil: Histórica 
+SemiFuerte: histórica + Público 
+Fuerte: Histórica + Pública + Privada 
+• 
+Estafas rompen semifuerte  
+• 
+Existe asimetría de información  
+ 
+Forward y Futuros  
+Precio del contrato     𝐹= 𝑆0 ∗𝑒𝑟𝑓∗𝑡 
+𝑇=
+𝑑𝑢𝑟𝑎𝑐𝑖ó𝑛
+𝑟𝑓
+ misma sintonía 
+Tipo de cambio    𝐹𝑡= 𝑆0 ∗𝑒(𝑟𝑓−𝑟𝑓∗)∗𝑡  
+ 𝑟𝑓∗ internacional 
+𝑟𝑓  nacional 
+ 
+Casos 
+𝐹𝑚> 𝐹𝑡  venta corta. Pido prestado en el país 
+con menor tasa, convierto la otra moneda y 
+deposito.  
+𝐹𝑚< 𝐹𝑡  quiero comprar en el futuro. Pido 
+prestado en moneda con menor tasa, invierto en 
+la otra moneda, la cambio a spot e invierto.  
+Acción  𝐹= 𝑆0 ∗𝑒𝑟𝑓∗𝑡  
+Commodities   𝐹= (𝑆0 + 𝑐) ∗𝑒𝑟𝑓∗𝑡  
+Costos   𝑐= ∑
+𝑐𝑖∗𝑒−𝑟𝑓∗𝑡
+𝑛
+𝑖=1
+  
+Instrumentos que pagan flujos 
+𝐹= (𝑆0 −𝑑) ∗𝑒𝑟𝑓∗𝑡  
+Dividendos 𝑑= ∑
+𝑑𝑖∗𝑒−𝑟𝑓∗𝑡
+𝑛
+𝑖=1
+  
+Valor Contrato 
+𝑉= (𝐹1 −𝐹0) ∗𝑒−𝑟𝑓∗𝑡   
+ 
+ 
+ 
+ 
+ 
+Opciones 
+ 
+Compro Call 
+- 
+Se ejecuta cuando 𝑆𝑡> 𝐾  
+- 
+Beneficios 𝜋= 𝑆𝑡−𝑘−𝑐   
+Vendo Call 
+- 
+Beneficios 𝜋= −𝑠𝑡+ 𝑘+ 𝑐 
+Compro Put 
+- 
+Se ejecuta cuando 𝑆𝑡< 𝐾  
+- 
+Beneficios  𝜋= 𝑘−𝑆𝑡−𝑝 
+Vendo Put 
+- 
+Beneficios 𝜋= 𝑆𝑡−𝑘+ 𝑝 
+ 
+Estrategias 
+- 
+Cono straddle (mucha volatibilidad) 
+o Solo Corto o largo.  
+- 
+Mariposa (mucha volatilidad) 
+o Perdidas acotadas 
+
+===== Formulas_FinanzasI_FinanzasII.pdf · página 3 =====
+Paridad Put Call 
+𝑆0 + 𝑝= 𝑐+ 𝐾∗𝑒−𝑟𝑡∗𝑡   
+ 
+(+𝑑∗𝑒−𝑟𝑓∗𝑡) solo si hay dividendo se pone esa 
+última parte. 
+ 
+ 
+Casos   
+𝑆0 + 𝑝> 𝑐+ 𝐾∗𝑒−𝑟𝑡∗𝑡(+𝑑∗𝑒−𝑟𝑓∗𝑡) 
+Put Cara: venta corta acción, emito put (vendo), 
+compro call, invierto.  
+𝑆0 + 𝑝< 𝑐+ 𝐾∗𝑒−𝑟𝑡∗𝑡(+𝑑∗𝑒−𝑟𝑓∗𝑡) 
+Call cara: compra acción, emito call (vendo), 
+compro put, préstamo.  
+• 
+Vendo caro, compro barato.  
+Estrategias de opciones bajo un contexto 
+particular 
+Si se espera que suba:  
+- 
+Comprar 
+activo, 
+forward 
+de 
+compra, 
+comprar call, vender put.  
+Si se espera que baje:  
+- 
+Vender el activo, venta corta (si no lo 
+tenemos, pedir prestado hoy y devolver a 
+futuro más barato), forward de venta, 
+comprar put, vender call.  
+ 
+Valoración opciones 
+Black Scholes  
+𝑐= 𝑆0 ∗𝑛(𝑑1) −𝐾∗𝑒−𝑟𝑓∗𝑡∗𝑛(𝑑2) 
+𝑝= 𝐾∗𝑒−𝑟𝑓∗𝑡∗𝑛(−𝑑2) −𝑆0 ∗𝑛(−𝑑1) 
+𝑑1 =
+𝐿𝑛(𝑆0
+𝐾) + (𝑟𝑓+ 𝜎2
+2 )𝑡
+𝜎√𝑡
+ 
+𝑑2 = 𝑑1 −𝜎√𝑡 
+ 
+ 
+Árbol Binomial 
+Factor de subida: 𝑢= 𝑒𝜎⋅√𝑡 
+Factor de bajada: 𝑑= 1 𝑢
+⁄ 
+𝑝=
+𝑒𝑟𝑓⋅𝑡−𝑑
+𝑢−𝑑    
+Instrumentos de renta fija 
+Bono Cupón Cero 
+𝑃=
+𝑉𝑁
+(1 + 𝑌𝑇𝑀)𝑡 
+ 
+Bono Alemán 
+𝑃= 𝑡𝑐∗𝑁
+𝑦𝑡𝑚=
+𝑐
+𝑦𝑡𝑚 
+ 
+Bono Bullet 
+𝑃=
+𝑐
+𝑦𝑡𝑚∗[1 −
+1
+(1 + 𝑦𝑡𝑚)𝑡] +
+𝑁
+(1 + 𝑦𝑡𝑚)𝑡 
+𝑉𝑎𝑙𝑜𝑟 𝑑𝑒 𝑚𝑒𝑟𝑐𝑎𝑑𝑜= 
+𝑃𝑟𝑒𝑐𝑖𝑜
+𝑉𝑎𝑙𝑜𝑟 𝑛𝑜𝑚𝑖𝑛𝑎𝑙 
+ 
+Bono Francés 
+𝑁= 𝐶
+𝑡𝑐∗[1 −
+1
+(1 + 𝑡𝑐)𝑡] 
+𝑃=
+𝐶
+𝑦𝑡𝑚∗[1 −
+1
+(1 + 𝑦𝑡𝑚)𝑡] 
+ 
+𝑉𝑎𝑙𝑜𝑟 𝑑𝑒 𝑚𝑑𝑜= 
+𝑉𝑎𝑙𝑜𝑟 𝐵𝑜𝑛𝑜
+𝑉𝑎𝑙𝑜𝑟 𝑃𝑎𝑟 (𝑐𝑜𝑛 𝑡𝑎𝑠𝑎 𝑐𝑢𝑝ó𝑛 𝑦 𝑙𝑎 𝑐𝑢𝑜𝑡𝑎) 
+Más de bonos 
+𝑇𝐼𝑅= 𝑌𝑇𝑀= 𝑇. 𝐷𝐶𝑇𝑂 
+𝑇𝑐= 𝑌𝑇𝑀= 𝐴 𝑙𝑎 𝑝𝑎𝑟 
+T 
+C 
+VP 
+cupón 
+VP 
+Cupón   
+* T 
+𝑐= ∑𝑓𝑙𝑢𝑗𝑜∗𝑡∗(𝑡+ 1)
+(1 + 𝑌𝑇𝑀)𝑡+2
+ 
+ 
+Duración = 
+𝐷
+1+𝑦𝑡𝑚 
+Regla duración modificada: −𝐷∗∗∆𝑦𝑡𝑚 
+Regla duración por convexidad:  
+𝐶=
+∑
+𝐹𝑖∗𝑡𝑖∗(𝑡𝑖+ 1)
+(1 + 𝑦𝑡𝑚)𝑖+2
+𝑇
+𝑖=1
+𝑃
+ 
+Otra fórmula de convexidad:  
+∆𝑃
+𝑃~
+𝐷
+1 + 𝑦𝑡𝑚∗∆𝑦𝑡𝑚+ 1
+2 ∗𝐶∗(∆𝑦𝑡𝑚)2 
+ 
+Estructura de tasas 
+𝑜𝑟1 = 𝑜𝐹1 
+(1 + 𝑟0,2)
+2 = (1 + 𝑟0,1)(1 + 𝑓1,2) 
+(1 + 𝑟0,3)
+3 = (1 + 𝑟0,2 )2(1 + 𝑓2,3) 
+(1 + 𝑟0,4)
+4 = (1 + 𝑟0,3)
+3(1 + 𝑓3,4) 
+ 
+Curvas de rendimiento 
+Muestra relación rendimiento (yield) y madurez 
+de un bono. Ayuda para inferir sobre las tasas de 
+i de c/p. 
+ 
+ 
+
+===== Formulas_FinanzasI_FinanzasII.pdf · página 4 =====
+FINANZAS II 
+ESTRUCTURA Y COSTO DE CAPITAL 
+M&M 58 (sin impuestos) 
+𝐵∙𝑘𝑏= 𝑘𝑑∙𝐷 
+𝐹𝑙𝑢𝑗𝑜 𝐴𝑐𝑐𝑖𝑜𝑛𝑖𝑠𝑡𝑎 (𝐹𝐶𝐴) = 𝐸(𝑅𝑂𝑁) − 𝑘𝑑∙𝐷 
+𝑃𝑎𝑡= 𝐹𝐶𝐴
+𝑘𝑝
+ 
+𝑉
+𝑐
+𝑑= 𝑃+ 𝐵 
+𝑃𝑎𝑡= 𝑛° 𝑎𝑐𝑐𝑖𝑜𝑛𝑒𝑠 ∙𝑝𝑟𝑒𝑐𝑖𝑜 𝑎𝑐𝑐𝑖ó𝑛 
+𝑉
+𝑠
+𝑑= 𝑉
+𝑐
+𝑑=
+𝐸(𝑟𝑜𝑛)
+𝜌
+    →𝜌= 𝑘0 
+𝑘𝑝= 𝜌+ (𝜌−𝑘𝑏) ∗𝐵
+𝑃 
+𝑘𝑜= 𝑘𝑝∗𝑃
+𝑉+ 𝑘𝑏∗𝐵
+𝑉 
+∆± Estructura de Capital 
+Recompra de Acciones → Emite Deuda → ∆+𝐵 
+→ (𝑛−𝑚) ∙𝑝𝑎𝑐𝑐𝑖ó𝑛= 𝑝𝑎𝑡𝑟𝑖𝑚𝑜𝑛𝑖𝑜 
+Emisión de Acciones → Recompra Deuda ∆−𝐵 
+→(𝑛+ 𝑚) ∙𝑝𝑎𝑐𝑐𝑖ó𝑛= 𝑝𝑎𝑡𝑟𝑖𝑚𝑜𝑛𝑖𝑜 
+ 
+𝑉
+𝑐
+𝑑= 𝑉
+𝑠
+𝑑= 𝑃+ 𝐵 
+𝑃𝑎𝑡= (𝑛° ∙𝑝𝑎𝑐𝑐𝑖ó𝑛) ± (𝑚 ∙𝑝𝑎𝑐𝑐𝑖ó𝑛) 
+𝑚 ∙𝑝𝑎𝑐𝑐𝑖ó𝑛= 𝑚𝑜𝑛𝑡𝑜 𝑑𝑎𝑑𝑜 (∆±) 
+Total de acciones = 𝑛 ± 𝑚 
+Sacar 𝑘𝑝 con 𝜌 anterior (*𝜌 𝑛𝑢𝑛𝑐𝑎 𝑐𝑎𝑚𝑏𝑖𝑎) 
+𝑘𝑜= 𝜌 *solo en M&M 58 (sin impuestos) 
+ 
+𝑊𝑜= 𝑃𝑎𝑡 ± ∆𝐵= 𝑊𝑜𝑖𝑛𝑡± 𝑊𝑜𝑒𝑥𝑡 
+ 
+ 
+M&M 63 (con impuestos) 
+𝑉
+𝑠
+𝑑< 𝑉
+𝑐
+𝑑→𝜌> 𝑘0 
+𝑉
+𝑐
+𝑑= 𝑉
+𝑠
+𝑑+ 𝐵∗𝑡𝑐= 𝐵+ 𝑃 
+𝑉
+𝑠
+𝑑= 𝐸(𝑟𝑜𝑛) ∗(1 −𝑡𝑐)
+𝜌
+ 
+𝑉
+𝑐
+𝑑= 𝐸(𝑟𝑜𝑛) ∗(1 −𝑡𝑐)
+𝑘0
+ 
+𝐵∙𝑘𝑏= 𝑘𝑑∙𝐷 
+𝐹𝐶𝐴 = (𝐸(𝑅𝑂𝑁) − 𝑘𝑑∙𝐷) ∙(𝑡−𝑡𝑐) 
+𝑃𝑎𝑡= 𝐹𝐶𝐴
+𝑘𝑝
+ 
+𝑃𝑎𝑡= 𝑛° 𝑎𝑐𝑐𝑖𝑜𝑛𝑒𝑠 ∙𝑝𝑟𝑒𝑐𝑖𝑜 𝑎𝑐𝑐𝑖ó𝑛 
+𝑘𝑝= 𝜌+ (𝜌−𝑘𝑏) ∗𝐵
+𝑃∗(1 −𝑡𝑐) 
+𝑘𝑜= 𝑘𝑝∗𝑃
+𝑉+ 𝑘𝑏∗𝐵
+𝑉∗(1 −𝑡𝑐) 
+𝑘𝑜= 𝜌∗(1 −𝑡𝑐∗𝐵
+𝑉) 
+ 
+∆± Estructura de Capital 
+Recompra de Acciones → Emite Deuda → ∆+𝐵 
+→ (𝑛−𝑚) ∙𝑝𝑎𝑐𝑐𝑖ó𝑛= 𝑝𝑎𝑡𝑟𝑖𝑚𝑜𝑛𝑖𝑜 
+Emisión de Acciones → Recompra Deuda ∆−𝐵 
+→(𝑛+ 𝑚) ∙𝑝𝑎𝑐𝑐𝑖ó𝑛= 𝑝𝑎𝑡𝑟𝑖𝑚𝑜𝑛𝑖𝑜 
+ 
+𝑉
+𝑐
+𝑑𝑎𝑛𝑡𝑒𝑟𝑖𝑜𝑟= 𝑉
+𝑠
+𝑑+ 𝐵𝑎𝑛𝑡𝑒𝑟𝑖𝑜𝑟∗𝑡𝑐 →calcular 𝑉
+𝑠
+𝑑 
+ 
+𝑉
+𝑐
+𝑑𝑎𝑐𝑡𝑢𝑎𝑙= 𝑉
+𝑠
+𝑑𝑐𝑎𝑙𝑐𝑢𝑙𝑎𝑑𝑜+ 𝐵𝑎𝑐𝑡𝑢𝑎𝑙∗𝑡𝑐   
+ 
+𝑉
+𝑐
+𝑑= 𝑃+ (𝐵± ∆𝐵) → despejamos P 
+𝑃𝑎𝑡= (𝑛° ∙𝑝𝑎𝑐𝑐𝑖ó𝑛) ± (𝑚 ∙𝑝𝑎𝑐𝑐𝑖ó𝑛) 
+Sacar 𝑘𝑝 con 𝜌 (no cambia) y 𝑘0 
+𝑊𝑜= 𝑃𝑎𝑡 ± ∆𝐵= 𝑊𝑜𝑖𝑛𝑡± 𝑊𝑜𝑒𝑥𝑡 
+Consideraciones M&M 
+ 
+𝑘𝑏=
+𝐺𝑎𝑠𝑡𝑜 𝐹𝑖𝑛𝑎𝑛𝑐𝑖𝑒𝑟𝑜 (𝐺𝐹)
+𝐷𝑒𝑢𝑑𝑎 𝐹𝑖𝑛𝑎𝑛𝑐𝑖𝑒𝑟𝑎 𝑛𝑒𝑡𝑎 (𝐵) 
+𝐴ℎ𝑜𝑟𝑟𝑜 𝑇𝑟𝑖𝑏𝑢𝑡𝑎𝑟𝑖𝑜= 𝑘𝑑∙𝐷 ∙𝑡𝑐 
+𝑉𝑎𝑙𝑜𝑟 𝑑𝑒 𝑀𝑒𝑟𝑐𝑎𝑑𝑜= 𝑃𝑟𝑒𝑐𝑖𝑜 𝐵𝑜𝑛𝑜 (𝑉. 𝑃𝑡𝑒)
+𝑉𝑎𝑙𝑜𝑟 𝑃𝑎𝑟 
+ 
+𝑘𝑏= 𝑇𝐼𝑅= 𝑟𝑓+ 𝑠𝑝𝑟𝑒𝑎𝑑 
+HAMADA 69 (Deuda libre de riesgo 𝑘𝑏= 𝑟𝑓 ) 
+𝑘𝑝= 𝑟𝑓+ 𝛽𝑝
+𝐶/𝐷∗𝑃𝑅𝑀 
+𝜌= 𝑟𝑓+ 𝛽𝑃
+𝑆/𝐷∗𝑃𝑅𝑀 
+𝛽𝑃
+𝐶/𝐷= 𝛽𝑃
+𝑆/𝐷[1 + (1 −𝑡𝑐) ∗𝐵
+𝑃] 
+𝑘𝑜= 𝑘𝑝∗𝑃
+𝑉+ 𝑘𝑏∗𝐵
+𝑉∗(1 −𝑡𝑐) 
+RUBINSTEIN 73 (Deuda riesgosa 𝛽𝑏) 
+𝑘𝑏= 𝑟𝑓+ ∗𝛽𝑏∗𝑃𝑅𝑀 
+𝑘𝑝= 𝑟𝑓+ 𝛽𝑝
+𝐶/𝐷∗𝑃𝑅𝑀 
+𝜌= 𝑟𝑓+ 𝛽𝑃
+𝑆/𝐷∗𝑃𝑅𝑀 
+𝑘𝑜= 𝑘𝑝∗𝑃
+𝑉+ 𝑘𝑏∗𝐵
+𝑉∗(1 −𝑡𝑐) 
+𝑘𝑜= 𝜌∗(1 −𝑡𝑐∗𝐵
+𝑉) 
+𝛽𝑃
+𝐶/𝐷= 𝛽𝑃
+𝑆/𝐷[1 + (1 −𝑡𝑐) ∗𝐵
+𝑃] −𝛽𝑏(1 −𝑡𝑐) 𝐵
+𝑃 
+ 
+𝛽𝑃
+𝑆
+𝐷= 𝑟𝑖𝑒𝑠𝑔𝑜 𝑜𝑝𝑒𝑟𝑎𝑐𝑖𝑜𝑛𝑎𝑙 𝑑𝑒𝑙 𝑛𝑒𝑔𝑜𝑐𝑖𝑜 
+𝛽𝑃
+𝐶/𝐷= 𝑟. 𝑠𝑖𝑠𝑡𝑒𝑚𝑎𝑡𝑖𝑐𝑜+ 𝑟. 𝑑𝑒𝑢𝑑𝑎+ 𝑟. 𝑞𝑢𝑖𝑒𝑏𝑟𝑎 
+𝜌= 𝑐𝑜𝑠𝑡𝑜 𝑜𝑝𝑒𝑟𝑎𝑐𝑖𝑜𝑛𝑎𝑙= 𝑟. 𝑠𝑖𝑠𝑡𝑒𝑚á𝑡𝑖𝑐𝑜 𝑠𝑒𝑐𝑡𝑜𝑟 
+
+===== Formulas_FinanzasI_FinanzasII.pdf · página 5 =====
+𝜌 = costo de capital propio de una empresa 
+(sólo tiene riesgo operacional) 
+ 
+𝑘𝑝 = costo patrimonial 
+𝑘𝑏 = costo de la deuda 
+𝑘0 = costo de capital 
+𝑘𝑑  = tasa cupón de la deuda 
+rf = tasa libre de riesgo 
+𝛽𝑝
+𝑆/𝐷= beta patrimonial sin deuda (r. sistemático) 
+𝛽𝑝
+𝐶/𝐷 = beta patrimonial con deuda (apalancado) 
+𝛽𝑑= beta de la deuda 
+𝛽𝑎 = beta de los activos 
+D = valor nominal de la deuda 
+B = valor de mercado de la deuda  
+𝐵= 𝑘𝑑∙𝐷
+𝑘𝑏
+⁄
+ (si es deuda perpetua) 
+P = valor de mercado del patrimonio  
+𝑃𝑎𝑡= 𝑛° 𝑎𝑎𝑐𝑖𝑜𝑛𝑒𝑠 ∙𝑝𝑟𝑒𝑐𝑖𝑜 𝑎𝑐𝑐𝑖ó𝑛 
+𝑃𝑎𝑡= 𝐹𝐶𝐴
+𝑘𝑝
+= 𝐸(𝑅𝑂𝑁) − 𝑘𝑑∙𝐷 ∙(1 −𝑡𝑐)
+𝑘𝑝
+ 
+𝑉𝑆/𝐷 = valor de mercado de una empresa sin 
+deuda 
+𝑉𝐶/𝐷= valor de mercado de una empresa con 
+deuda = P + B 
+𝑡𝑐 = tasa de impuesto a las corporaciones
+Supuestos M&M 
+1. 
+La empresa tiene que transar en bolsa 
+2. 
+La empresa vive infinitamente 
+3. 
+La empresa no puede crecer 
+4. 
+La empresa no quiebra 
+5. 
+La estructura de capital se tiene que 
+mantener constante en el tiempo 
+Para ejercicios Hamada & Rubinstein 
+• 
+Empresa transa en la bolsa  
+1. Obtener 𝛽𝑝
+𝑆/𝐷 con estructura 𝑋̅ histórica. 
+2. Obtener 𝛽𝑝
+𝐶/𝐷con estructura objetivo. 
+3. Calcular 𝑘𝑝 y 𝑘0 con estructura objetivo. 
+• 
+Empresa no líquida o privada 
+1. Buscar empresa de referencia  
+2. Desapalancamos y obtenemos 𝛽𝑝
+𝑆/𝐷 con 
+datos de la empresa de referencia. 
+3. Apalancamos y obtenemos 𝛽𝑝
+𝐶/𝐷 con 
+datos de la empresa que queremos 
+valorar, usamos su estructura objetivo. 
+4. Calcular 𝑘𝑝 y 𝑘0 con estructura objetivo. 
+• 
+Filiales: calcular c/u como corresponde y 
+ponderar. 
+• 
+Consideraciones: 
+empresa 
+significativa, 
+mismo rubro y presencia bursátil. 
+ 
+Pillerias: 
+- 
+Premio por Liquidez: se suma al 𝑘𝑝, premio 
+adicional al accionista por no transar en la 
+bolsa (+ riesgo para él). 
+- 
+Tasa Libre de Riesgo: Tiene que calzar con el 
+horizonte de tiempo. Si el proyecto tiene 
+flujos al ∞ usar TIR de mayor duración, si es 
+a 5 años la de 5. 
+- 
+Impuestos: 
+para 
+desapalancar 
+usar 
+impuestos de acuerdo a los años (en 𝑋̅) que 
+se consideraron para los β y cuando 
+apalancamos usar los de LP. 
+- 
+Deuda: D: deuda nominal B: deuda valor 
+mercado deuda. Si es perpetuo 𝐵=
+𝑘𝑑∗𝐷
+𝑘𝑏 si 
+no, sumar: pasivo financiero corriente, 
+pasivo financiero no corriente, deuda con 
+bancos, deuda con bonos y papeles 
+comerciales (deuda CP financiera), nos dan 
+el valor par “promedio” de la deuda y ese se 
+ocupa para transformar a valor de mercado. 
+- 
+Riesgo país o spread (EMBI): es la diferencia 
+entre la tasa libre de riesgo nacional y la 
+extranjera y se le suma a rf internacional. 
+- 
+Ecuación Fisher: flujos nominales o en peso 
+se descuentan con tasas nominales (i) y 
+flujos reales o en UF se descuentan a tasas 
+reales (r).  
+(1 + 𝑖) = (1 + 𝑟)(1 + 𝜋) 
+ 
+CTON 
+significancia
+test-t
+p-value
+90%
+>1,64
+<0,1
+*
+95%
+>1,96
+<0,05
+**
+99%
+>2,33
+<0,01
+***
+Otros activos financieros corrientes 
++ 
+Deudores comerciales y otras cuentas por cobrar corrientes 
++ 
+Inventarios 
++ 
+Cuentas por cobrar a entidades relacionadas corrientes 
++ 
+Activos Biológicos 
++ 
+Cuentas comerciales y otras cuentas corrientes por pagar 
+- 
+Cuentas por pagar a entidades relacionadas corrientes 
+- 
+
+===== Formulas_FinanzasI_FinanzasII.pdf · página 6 =====
+Valorización Empresa 
+1. FLUJO DE CAJA LIBRE (EEFF IFRS) 
++ Ingresos de actividades ordinarias 
+-  Costo de ventas 
+= Ganancia bruta 
+- Costos de distribución 
+- Gasto de administración 
++ Otros ingresos, por función 
+-  Otros gastos, por función 
++ Otras ganancias (pérdidas) 
++ Ingresos financieros 
+-  Costos financieros 
++ Participación en las ganancias (pérdidas) de 
+asociadas y negocios conjuntos que se contabilicen 
+utilizando el método de la participación 
++/- Diferencias de cambio 
++/- Resultados por unidades de reajuste 
+= Ganancia (o pérdida) Antes de Impuestos 
+-  Gasto por impuestos a las ganancias 
+= Ganancia (pérdida)  
+ 
+AJUSTES 
++ Depreciación de Activo Fijo 
++ Amortización de Activos Intangibles 
+- Otros ingresos, por función (después de Impuestos) 
++ Otros gastos, por función (después de Impuestos) 
+- Otras ganancias (pérdidas) (después de Impuestos) 
+- Ingresos financieros (después de Impuestos) 
++ Costos financieros (después de Impuestos) 
+- Participación en las ganancias (pérdidas) de 
+asociadas y negocios conjuntos que se contabilicen 
+utilizando el método de la participación (después de 
+Impuestos) 
+-/+ Diferencias de cambio 
+-/+ Resultados por unidades de reajuste 
+= FLUJO DE CAJA BRUTO 
+- Inversión en Reposición 
+- Inversión en capital físico 
+- Aumentos (disminuciones) de capital de trabajo 
+= FLUJO DE CAJA LIBRE 
++ Valor Terminal (solo penúltimo año) 
+= FLUJO DE CAJA LIBRE + VT 
+PASO 1: Calcular tasa costo de capital (𝐾0) 
+PASO 2: Proyectar EERR → con ajustes de ∆± de 
+Ingresos por Ventas (recordar poner un año más 
+de los crecimientos) 
+PASO 3: Ajustes  
+Inversión en Reposición: % que me dicen de la 
+depreciación que se repone. En perpetuidad 
+poner el 100%. 
+Inversión en Activo Fijo: compra activo fijo, 
+CAPEX. % de ingresos dado. 
+Inversión en CT:  
+- 
+Si me dan los días 
+𝐼𝑛𝑣 𝐶𝑃=
+𝑑í𝑎𝑠
+𝑑í𝑎𝑠 𝑏𝑎𝑠𝑒(𝑣𝑒𝑛𝑡𝑎𝑠𝑡+1 −𝑣𝑒𝑛𝑡𝑎𝑠𝑡) 
+ 
+- 
+Si no me dan los días 
+𝐼𝑛𝑣 𝐶𝑃= 𝑅𝐶𝑇𝑂𝑁(𝑣𝑒𝑛𝑡𝑎𝑠𝑡+1 −𝑣𝑒𝑛𝑡𝑎𝑠𝑡)  
+*𝑅𝐶𝑇𝑂𝑁= 𝐶𝑇𝑂𝑁/𝑣𝑒𝑛𝑡𝑎𝑠 
+*Saco promedio RCTON para proyectar inversión 
+en capital de trabajo 
+ 
+PASO 4: Valorar Patrimonio Económico  
+Valor Activos Operacionales (VP FCL+VT a Ko) 
+Valor Activos Prescindibles (Plusvalía, PI) 
+Exceso Déficit CT 
+Valor Total Activos 
+Deuda Financiera (PC fin + PNC fin) 
+Patrimonio Económico 
+ 
+Exceso/ Déficit CT 
+𝐶𝑇𝑂𝑁= 𝐴𝐶𝑂−𝑃𝐶𝑂 
+Si me dan los días:  𝐶𝑇𝑂𝑁−(
+𝑑í𝑎𝑠
+365 ∗𝑣𝑒𝑛𝑡𝑎𝑠𝑡+1) 
+𝑑𝑖𝑎𝑠
+𝑏𝑎𝑠𝑒(𝑖𝑛𝑔𝑟𝑒𝑠𝑜𝑠𝑡+1 −𝑖𝑛𝑔𝑟𝑒𝑠𝑜𝑠𝑡) 
+Si no me dan los días 
+ =
+(
+𝑃𝑟𝑜𝑚𝑒𝑑𝑖𝑜 𝑑𝑖𝑎𝑠
+𝑣𝑒𝑛𝑡𝑎 𝑑𝑒 𝑐𝑎𝑝𝑖𝑡𝑎𝑙
+𝑑𝑒 𝑡𝑟𝑎𝑏𝑎𝑗𝑜 𝑜𝑝𝑒𝑟𝑎𝑐𝑖𝑜𝑛𝑎𝑙
+)
+𝑏𝑎𝑠𝑒
+∗𝑖𝑛𝑔𝑟𝑒𝑠𝑜𝑠𝑡+1 −𝐶𝑇𝑂𝑁 
+*Saco promedio RCTON y para proyectar 
+inversión en capital de trabajo 
+PASO 5: Valor acción 𝑝𝑎𝑡
+𝑛°𝑎𝑐𝑐𝑖𝑜𝑛𝑒𝑠
+⁄
+ 
+Ver si convertir de UF a peso o de US$ a peso. 
+2. VPNA (∆ estructura) 
+1. Valor actual flujos futuros 
+2. VP ahorro tributario 
+3. −𝐼0. 
+𝑉𝑃𝑁𝐴= ∑𝐸(𝑅𝑂𝑁)(1 −𝑡𝑐)
+(1 + 𝜌)𝑡
++ ∑𝐷∗𝐾𝑑∗𝑡𝑐)
+(1 + 𝐾𝑏)𝑡
+ 
+𝐺𝑎𝑠𝑡𝑜 𝐹𝑖𝑛𝑎𝑛𝑐𝑖𝑒𝑟𝑜= 𝐷∗𝐾𝑑 
+Cuando se valora la empresa no se toma en 
+cuenta −𝐼0. 
+Bono Francés de deuda 
+𝑉𝑃𝑁𝐴= 𝑉𝑃𝑁 𝑝𝑢𝑟𝑜+ 𝑉𝑃𝑁 𝑓𝑖𝑛𝑎𝑛𝑐𝑖𝑎𝑚𝑖𝑒𝑛𝑡𝑜 
+𝑉𝑃𝑁𝑓𝑖𝑛= 𝐵−∑𝐷∗𝐾𝑑∗𝑡𝑐)
+(1 + 𝐾𝑏)𝑡
++ ∑𝐴𝑚𝑜𝑟𝑡
+(1 + 𝐾𝑏)𝑡 
+3. FCA (Flujo Caja Accionista) 
+1. Calcular FC patrimoniales 
+2. Calcular 𝐾𝑝 
+3. Descontar flujos a 𝐾𝑝 
+𝑃𝑎𝑡𝑟𝑖𝑚𝑜𝑛𝑖𝑜= (𝐸(𝑅𝑂𝑁) − 𝑘𝑑∙𝐷) ∙(𝑡−𝑡𝑐)
+𝐾𝑝
+ 
+ 
+ 
+ 
+
+===== Formulas_FinanzasI_FinanzasII.pdf · página 7 =====
+ 
+ 
+ 

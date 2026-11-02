@@ -1,0 +1,700 @@
+===== Ayudantias/Ayudantía_10_Pauta.pdf · página 1 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Ayudantía 10
+Profesor: Alejandro Bernales
+Ayudantes: Luisa Rodríguez, Elizabeth Núñez, Ayelen Sandoval, Tomás Rojas, Joaquín Arenas, Juan
+Correa Hevia, Lucas Montiel y Carolina Morales
+Comentes
+1) El Valor en Riesgo al 99 % de confianza a 10 días es, simplemente, diez veces el VaR diario al
+99 %. Comente y defina el término subrayado.
+Respuesta
+FALSO.
+Definición. El Valor en Riesgo (VaR) es la máxima pérdida esperada de una posición o
+portafolio, a un nivel de confianza c dado y sobre un horizonte de tiempo determinado, bajo
+condiciones normales de mercado. Formalmente, si L es la pérdida en el horizonte, el VaR
+es el cuantil 1 −c de la distribución de pérdidas:
+Pr (L > VaRc) = 1 −c.
+Que un portafolio tenga un VaR diario de US$1 millón al 99 % significa que existe una chance
+en 100 de observar una pérdida diaria superior a US$1 millón.
+Por qué es falso. Bajo retornos iid normales de media cero, el VaR paramétrico es
+VaR = P0 αc σ
+√
+t,
+de modo que escala con la raíz del horizonte y no con el horizonte:
+VaR(10 días) =
+√
+10 VaR(1 día) ≈3,16 VaR(1 día).
+La intuición es que la varianza de un retorno acumulado de t días es la suma de t varianzas
+diarias, σ2
+t = tσ2
+1, luego la desviación estándar crece con
+√
+t. Multiplicar por 10 sobreestima
+el riesgo en un factor cercano a 3.
+Supuestos de la regla de la raíz. Se requiere independencia serial de los retornos, ya
+que con autocorrelación positiva σ2
+t > tσ2
+1 y la regla subestima el riesgo, y estabilidad de la
+distribución, en particular volatilidad constante. Cuando la volatilidad varía en el tiempo
+corresponde modelarla con medias móviles, GARCH(1,1) o la aproximación RiskMetrics,
+que pondera con mayor peso la información reciente mediante un factor de decaimiento λ.
+Página 1 de 14
+
+===== Ayudantias/Ayudantía_10_Pauta.pdf · página 2 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Economía y Negocios
+−α99 %σ
+µ
+1 % peores casos
+Retorno del portafolio
+Densidad
+2) Dos portafolios que exhiben la misma volatilidad tienen necesariamente el mismo VaR.
+Respuesta
+FALSO. La volatilidad es solo uno de los insumos del VaR. Incorporando la media, el VaR
+paramétrico es
+VaR = P0
+(︂
+αc σ
+√
+t −µt
+)︂
+,
+de modo que dos portafolios con idéntico σ pueden diferir en su VaR por cuatro razones:
+Tamaño de la posición P0: el VaR se expresa en unidades monetarias y es proporcional
+al valor invertido, mientras que σ es una medida porcentual.
+Retorno esperado µ: un mayor drift desplaza la distribución a la derecha y reduce la
+pérdida en el cuantil relevante.
+Horizonte t y nivel de confianza c: el VaR no está definido sin ambos.
+Forma de la distribución: el VaR es un cuantil, no una medida de dispersión. Con
+colas gruesas o asimetría negativa, el cuantil al 99 % se aleja mucho más de la media que
+los 2,33σ del caso normal.
+El caso límite es ilustrativo: un portafolio con opciones vendidas puede tener volatilidad
+moderada y, sin embargo, pérdidas extremas en la cola izquierda.
+3) Al realizar el backtesting de un modelo de VaR al 95 % sobre T = 510 días se observan 40
+excepciones. Según las reglas de Basilea, el modelo es conservador.
+Respuesta
+FALSO, es exactamente lo contrario.
+Una “excepción” es un día en que la pérdida efectiva superó el VaR estimado. Si el modelo
+está bien especificado, el número de excepciones N sigue una binomial con probabilidad
+p = 1 −c por día, de modo que
+E[N] = T(1 −c) = 510 × 0,05 = 25,5.
+Página 2 de 14
+
+===== Ayudantias/Ayudantía_10_Pauta.pdf · página 3 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Economía y Negocios
+Con T = 510 y c = 95 %, la zona de no rechazo es 16 ≤N ≤36:
+N > 36: el modelo subestima la probabilidad de pérdida, el VaR reportado es demasiado
+bajo y debe recalibrarse.
+N < 16: hay muy pocas excepciones, el VaR reportado es demasiado alto y el modelo es
+conservador.
+Con N = 40 > 36 el modelo subestima el riesgo. El error del comente es confundir “muchas
+excepciones” con “modelo exigente”: muchas excepciones significan que el VaR era sistemá-
+ticamente insuficiente para cubrir las pérdidas observadas.
+4) Dado que la diversificación reduce el riesgo, el VaR de un portafolio es siempre estrictamente
+menor que la suma de los VaR individuales de los activos que lo componen.
+Respuesta
+FALSO. La afirmación es correcta como tendencia, pero falla en el “siempre estrictamente”.
+Para dos activos con posiciones VA y VB, retornos normales de media cero y correlación ρ:
+VaRp = αc
+√
+t
+√︂
+V 2
+Aσ2
+A + V 2
+Bσ2
+B + 2ρVAVBσAσB,
+VaRA + VaRB = αc
+√
+t (VAσA + VBσB) = αc
+√
+t
+√︂
+V 2
+Aσ2
+A + V 2
+Bσ2
+B + 2VAVBσAσB.
+Las dos expresiones son idénticas salvo por el ρ del término cruzado. Por lo tanto, con
+posiciones largas,
+ρ < 1 =⇒VaRp < VaRA + VaRB,
+ρ = 1 =⇒VaRp = VaRA + VaRB.
+La suma de los VaR individuales es el caso extremo de correlación perfecta y opera como cota
+superior, no como desigualdad estricta. La diferencia VaRA + VaRB −VaRp es el beneficio
+de diversificación.
+Nota. Fuera del mundo normal el resultado puede incluso invertirse, porque el VaR no
+es subaditivo en general. Con colas gruesas o pagos muy asimétricos (opciones) es posible
+encontrar VaRp > VaRA+VaRB, una de las críticas estándar al VaR como medida de riesgo.
+5) Un alza en la tasa de interés libre de riesgo reduce el valor de una opción call y aumenta el de
+una opción put, en ambos casos sobre una acción que no paga dividendos.
+Respuesta
+FALSO, los signos están invertidos. Manteniendo todo lo demás constante,
+∂c
+∂r > 0,
+∂p
+∂r < 0.
+Página 3 de 14
+
+===== Ayudantias/Ayudantía_10_Pauta.pdf · página 4 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Economía y Negocios
+Intuición. Quien posee una call tiene el derecho a pagar K en T, y lo que pesa en la
+valoración es el valor presente de ese desembolso, Ke−rT , que disminuye cuando r sube. El
+derecho a comprar el activo pagando, en valor presente, menos dinero vale más hoy. Esto se
+ve en la cota inferior de la call europea sin dividendos,
+c ≥m´ax
+(︁
+S0 −Ke−rT , 0
+)︁
+,
+cuya cota crece con r. Para la put el argumento es simétrico: su tenedor recibirá K en T y el
+valor presente de ese ingreso cae cuando r sube, de donde p ≥m´ax(Ke−rT −S0, 0) decrece
+en r.
+Verificación con paridad put-call. De c+Ke−rT = p+S0 se obtiene c−p = S0−Ke−rT ,
+expresión creciente en r. Como S0 no depende de r, si la call sube la put debe bajar.
+Aumenta la variable
+c (call europea)
+p (put europea)
+Precio del subyacente S0
++
+−
+Precio de ejercicio K
+−
++
+Plazo al vencimiento T
++
++
+Volatilidad σ
++
++
+Tasa libre de riesgo r
++
+−
+Dividendos D
+−
++
+6) Sobre una acción que no paga dividendos nunca es óptimo ejercer anticipadamente una opción
+americana, de modo que C = c y P = p.
+Respuesta
+La primera parte es VERDADERA para la call y FALSA para la put.
+Call americana sin dividendos: no se ejerce anticipadamente, luego C = c. Tres
+razones:
+No se sacrifican ingresos: al no haber dividendos, mantener la opción en lugar de la
+acción no implica renunciar a flujos.
+Valor del dinero en el tiempo: ejercer hoy obliga a pagar K hoy en vez de en T,
+perdiendo los intereses sobre K.
+Valor de seguro: mantener la call protege ante caídas del precio por debajo de K,
+cobertura que se pierde al convertirse en tenedor de la acción.
+Formalmente, para r > 0 se cumple c ≥S0−Ke−rT > S0−K, es decir, el valor de mercado de
+la call siempre supera su valor intrínseco, de modo que vender la opción domina a ejercerla.
+Put americana: sí puede ser óptimo ejercer antes, luego P ≥p con desigualdad
+típicamente estricta. El ejercicio anticipado entrega K −S0 hoy, monto que puede in-
+vertirse a la tasa r, mientras que el pago futuro máximo está acotado por K, cuyo valor
+Página 4 de 14
+
+===== Ayudantias/Ayudantía_10_Pauta.pdf · página 5 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Economía y Negocios
+presente es Ke−rT < K. Con S0 = 60, K = 100, r = 10 % y T = 0,25, ejercer hoy entrega
+$40, cifra que no se alcanza esperando. Conviene ejercer.
+Consecuencia sobre la paridad. La paridad put-call con igualdad es un resultado de
+opciones europeas. Para americanas sin dividendos solo se obtienen cotas:
+S0 −K < C −P < S0 −Ke−rT .
+Matemático I: VaR paramétrico y backtesting
+Usted administra un fondo cuyo patrimonio asciende hoy a P0 = $500 millones. El retorno anual
+del fondo se distribuye normal, con retorno esperado µ = 10 % anual y volatilidad σ = 20 % anual.
+Suponga retornos iid y un año de 250 días hábiles.
+Ayuda: VaR = P0 αc σ
+√
+t; α95 % = 1,645; α99 % = 2,33.
+1) Calcule el VaR diario del fondo a los niveles de confianza de 95 % y 99 %, suponiendo media
+cero.
+Respuesta
+Primero se lleva la volatilidad anual al horizonte diario. Como la varianza es aditiva en el
+tiempo bajo iid,
+σdiaria = σanual
+√
+250 =
+0,20
+15,8114 = 0,012649
+(1,2649 %).
+Aplicando la fórmula con t = 1 día:
+VaR95 % = 500 × 1,645 × 0,012649 = $10,40 millones,
+VaR99 % = 500 × 2,33 × 0,012649 = $14,74 millones.
+Interpretación: bajo condiciones normales de mercado, en 1 de cada 100 días se esperaría
+una pérdida superior a $14,74 millones. Note que la razón entre ambos VaR es exactamente
+2,33/1,645 = 1,42, independiente del portafolio: exigir más confianza es moverse más hacia
+la cola izquierda.
+2) Calcule el VaR a 10 días al 99 % de confianza. Explique qué supuestos permiten pasar del
+horizonte diario al de 10 días.
+Respuesta
+VaR99 %(10d) = P0 α σ
+√︃
+t
+250 = 500×2,33×0,20×
+√︃
+10
+250 = 500×2,33×0,20×0,20 = $46,60 millones.
+Página 5 de 14
+
+===== Ayudantias/Ayudantía_10_Pauta.pdf · página 6 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Economía y Negocios
+Equivalentemente,
+√
+10 × 14,74 = $46,60 millones, lo que verifica la regla de la raíz del
+tiempo.
+Supuestos. Para que el escalamiento por
+√
+t sea válido se requiere que los retornos sean
+independientes en el tiempo y que su distribución sea estable, en particular con volatilidad
+constante. La normalidad es la que permite usar α99 % = 2,33 como cuantil. Con autocorre-
+lación positiva o clusters de volatilidad, la varianza a 10 días sería mayor que diez veces la
+diaria y este VaR subestimaría el riesgo.
+3) Recalcule los VaR anteriores al 99 % incorporando el retorno esperado del fondo. Comente la
+magnitud del ajuste.
+Respuesta
+Si el valor del portafolio al cierre del horizonte es P1 = P0(1 + R) con R ∼N(µt, σ2t), el
+peor valor al nivel c es P0
+(︁
+1 + µt −αcσ
+√
+t
+)︁
+y, midiendo la pérdida respecto del valor actual,
+VaR = P0
+(︂
+αc σ
+√
+t −µt
+)︂
+.
+Horizonte diario (t = 1/250):
+VaR99 % = 500
+(︃
+2,33 × 0,012649 −0,10
+250
+)︃
+= 500 (0,029472 −0,0004) = $14,54 millones.
+Horizonte de 10 días (t = 10/250 = 0,04):
+VaR99 % = 500 (2,33 × 0,20 × 0,20 −0,10 × 0,04) = 500 (0,0932 −0,004) = $44,60 millones.
+Comentario. El ajuste es pequeño en horizontes cortos y crece con el plazo, porque la media
+escala con t y la desviación estándar con
+√
+t. A un día el drift reduce el VaR en 1,4 %, a diez
+días en 4,3 %. De ahí la práctica de ignorar la media en VaR diarios, donde el riesgo domina
+al retorno, e incorporarla en horizontes largos.
+4) Si el modelo es correcto, ¿cuántas excepciones esperaría observar en un año de operación con el
+VaR diario al 99 %? Si observa 9, ¿qué concluiría?
+Respuesta
+El número de excepciones es N ∼Binomial(T = 250, p = 0,01), luego
+E[N] = 250 × 0,01 = 2,5,
+σN =
+√︁
+Tp(1 −p) =
+√︁
+250 × 0,01 × 0,99 = 1,573.
+Observar 9 excepciones equivale a
+z = 9 −2,5
+1,573 = 4,13
+Página 6 de 14
+
+===== Ayudantias/Ayudantía_10_Pauta.pdf · página 7 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Economía y Negocios
+desviaciones estándar sobre lo esperado, evidencia fuerte de que el modelo subestima el
+riesgo. Las causas típicas son colas más gruesas que la normal, volatilidad variable no
+modelada, o cambio estructural en el portafolio. La respuesta práctica es recalibrar, por
+ejemplo pasando a GARCH(1,1) o RiskMetrics, o estimar el cuantil por simulación histórica.
+5) ¿Por qué en la práctica los bancos tienden a sobrestimar su VaR?
+Respuesta
+Tres argumentos, que conviene distinguir:
+Incentivo regulatorio asimétrico: bajo Basilea, el capital requerido es un múltiplo
+del VaR reportado, y ese multiplicador aumenta cuando el backtesting arroja demasiadas
+excepciones. El costo de quedarse corto supera al de quedarse largo, de modo que la
+elección óptima del banco se sesga al alza.
+Costo reputacional y de supervisión: un modelo con excepciones frecuentes activa
+el escrutinio del supervisor y de las clasificadoras de riesgo.
+Prudencia frente a riesgo de modelo: los supuestos de normalidad y volatilidad
+constante fallan precisamente en períodos de estrés, cuando más importa el VaR.
+El costo de esta conducta es el capital inmovilizado en exceso, que reduce la rentabilidad del
+patrimonio.
+Matemático II: VaR de un portafolio con dos activos
+Un inversionista mantiene $300 millones en el activo A y $200 millones en el activo B. Las vola-
+tilidades anuales son σA = 25 % y σB = 15 %, y la correlación entre los retornos es ρA,B = 0,3.
+Suponga medias cero, un horizonte de 21 días hábiles (un mes), 250 días hábiles al año y un nivel
+de confianza de 99 %.
+Ayuda: σ2
+p = w2
+Aσ2
+A + w2
+Bσ2
+B + 2wAwBρA,BσAσB; covA,B = ρA,BσAσB.
+1) Determine las ponderaciones del portafolio y su volatilidad anual. Exprese el cálculo también en
+notación matricial.
+Respuesta
+El valor total del portafolio es P0 = 300 + 200 = $500 millones, de donde
+wA = 300
+500 = 0,60,
+wB = 200
+500 = 0,40.
+σ2
+p = (0,60)2(0,25)2 + (0,40)2(0,15)2 + 2(0,60)(0,40)(0,30)(0,25)(0,15)
+σ2
+p = 0,0225+0,0036+0,0054 = 0,0315
+=⇒
+σp =
+√︁
+0,0315 = 0,177482
+(17,7482 % anual).
+Página 7 de 14
+
+===== Ayudantias/Ayudantía_10_Pauta.pdf · página 8 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Economía y Negocios
+Notación matricial. Con w = (0,60 0,40) y
+Σ =
+(︃
+σ2
+A
+covA,B
+covA,B
+σ2
+B
+)︃
+=
+(︃0,0625
+0,01125
+0,01125
+0,0225
+)︃
+,
+donde covA,B = 0,30 × 0,25 × 0,15 = 0,01125, se tiene σ2
+p = w Σ wT = 0,0315.
+Observe que σp = 17,75 % es menor que el promedio ponderado de las volatilidades indivi-
+duales, 0,60 × 25 % + 0,40 × 15 % = 21 %. Esa brecha es la diversificación.
+2) Calcule el VaR del portafolio al 99 % para el horizonte de un mes.
+Respuesta
+El factor de horizonte es
+√
+t =
+√︃
+21
+250 =
+√︁
+0,084 = 0,289828,
+de donde la volatilidad mensual del portafolio es 0,177482×0,289828 = 0,051439 (5,1439 %).
+Entonces
+VaRp = P0 α99 % σp
+√
+t = 500 × 2,33 × 0,051439 = $59,93 millones,
+equivalente a un 11,99 % del patrimonio.
+3) Calcule el VaR individual de cada posición y cuantifique el beneficio de diversificación.
+Respuesta
+VaRA = VA α σA
+√
+t = 300 × 2,33 × 0,25 × 0,289828 = $50,65 millones,
+VaRB = VB α σB
+√
+t = 200 × 2,33 × 0,15 × 0,289828 = $20,26 millones.
+La suma, llamada VaR no diversificado, es VaRA + VaRB = $70,91 millones, de modo que
+el beneficio de diversificación asciende a
+70,91 −59,93 = $10,98 millones
+(15,5 % del VaR no diversificado).
+4) Repita el cálculo del VaR del portafolio para ρ = 1 y ρ = 0. Interprete.
+Respuesta
+Caso ρ = 1:
+σ2
+p = (0,60 × 0,25 + 0,40 × 0,15)2 = (0,21)2 =⇒σp = 21 %,
+Página 8 de 14
+
+===== Ayudantias/Ayudantía_10_Pauta.pdf · página 9 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Economía y Negocios
+VaRp = 500 × 2,33 × 0,21 × 0,289828 = $70,91 millones.
+Con correlación perfecta el VaR del portafolio coincide exactamente con la suma de los VaR
+individuales: no hay diversificación, los activos son el mismo riesgo con distinta etiqueta.
+Esto confirma el comente 4.
+Caso ρ = 0:
+σ2
+p = 0,0225 + 0,0036 = 0,0261 =⇒σp = 16,1555 %,
+VaRp = 500 × 2,33 × 0,161555 × 0,289828 = $54,55 millones.
+Síntesis. El VaR del portafolio es creciente en ρ:
+ρ = 0 →$54,55
+<
+ρ = 0,30 →$59,93
+<
+ρ = 1 →$70,91.
+La suma de los VaR individuales opera como cota superior y se alcanza solo con ρ = 1.
+Matemático III: opciones americanas, paridad y arbitraje
+Considere una acción que no paga dividendos cuyo precio hoy es S0 = $40. La tasa libre de riesgo es
+r = 6 % anual y la volatilidad del precio de la acción es σ = 30 % anual. Se desea valorar opciones
+con precio de ejercicio K = $42 y vencimiento en T = 6 meses, usando un árbol binomial de dos
+pasos, con cada paso de 3 meses.
+Ayuda: u = eσ
+√
+∆t, d = e−σ
+√
+∆t, p = er∆t −d
+u −d .
+1) Construya el árbol de precios del activo subyacente y obtenga la probabilidad neutral al riesgo.
+Respuesta
+Con ∆t = 0,25 y σ = 0,30:
+u = e0,30√0,25 = e0,15 = 1,1618,
+d = e−0,15 = 0,8607,
+p = er∆t −d
+u −d
+= e0,06·0,25 −0,8607
+1,1618 −0,8607 = 1,0151 −0,8607
+0,3011
+= 0,5128,
+1 −p = 0,4872.
+Precios del activo en el árbol:
+Su = 40(1,1618) = 46,47,
+Sd = 40(0,8607) = 34,43,
+Suu = 40e0,30 = 53,99,
+Sud = 40e0 = 40,00,
+Sdd = 40e−0,30 = 29,63.
+Note que Sud = S0 exactamente, porque ud = 1 por construcción, lo que hace que el árbol
+sea recombinante.
+Página 9 de 14
+
+===== Ayudantias/Ayudantía_10_Pauta.pdf · página 10 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Economía y Negocios
+S0 = 40,00
+Su = 46,47
+Sd = 34,43
+Suu = 53,99
+Sud = 40,00
+Sdd = 29,63
+p
+1 −p
+t = 0
+t = 3 meses
+t = 6 meses
+Interpretación de p. No es la probabilidad física de un alza, sino la que hace que el
+retorno esperado del subyacente iguale la tasa libre de riesgo: S0er∆t = pS0u + (1 −p)S0d.
+Los retornos esperados del mundo real son irrelevantes para la valoración.
+2) Calcule el valor de la opción put europea.
+Respuesta
+Payoffs al vencimiento, fT = m´ax(K −ST , 0):
+fuu = m´ax(42−53,99, 0) = 0,
+fud = m´ax(42−40, 0) = 2,00,
+fdd = m´ax(42−29,63, 0) = 12,37.
+Retrocediendo en el árbol, con e−r∆t = e−0,015 = 0,9851:
+Nodo up: fu = 0,9851 (0,5128 · 0 + 0,4872 · 2,00) = 0,96,
+Nodo down: fd = 0,9851 (0,5128 · 2,00 + 0,4872 · 12,37) = 6,95,
+p0 = 0,9851 (0,5128 · 0,96 + 0,4872 · 6,95) = $3,82.
+Verificación por la fórmula directa de dos pasos:
+p0 = e−rT [︁
+p2fuu + 2p(1 −p)fud + (1 −p)2fdd
+]︁
+= 0,9704 [0 + 2(0,2498)(2,00) + (0,2374)(12,37)] = $3,82.
+3) Calcule el valor de la opción put americana con los mismos parámetros.
+Página 10 de 14
+
+===== Ayudantias/Ayudantía_10_Pauta.pdf · página 11 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Economía y Negocios
+Respuesta
+La diferencia es que en cada nodo intermedio se compara el valor de continuación con el
+valor intrínseco de ejercer, y se toma el máximo.
+Nodo u (Su = 46,47): intrínseco = m´ax(42−46,47, 0) = 0, continuación = 0,96. No conviene
+ejercer, Pu = 0,96.
+Nodo d (Sd = 34,43): intrínseco = 42 −34,43 = 7,57, continuación = 6,95. Como 7,57 >
+6,95, conviene ejercer anticipadamente: Pd = 7,57.
+Nodo inicial:
+continuación = 0,9851 (0,5128 · 0,96 + 0,4872 · 7,57) = 4,12,
+intrínseco = m´ax(42−40, 0) = 2,00,
+P0 = m´ax(4,12; 2,00) = $4,12.
+Comentario. Se verifica P0 = 4,12 > p0 = 3,82. La diferencia de $0,30 es el valor de la
+opción de ejercicio anticipado, consistente con el comente 6: en la put el ejercicio anticipado
+puede ser óptimo porque permite recibir K antes y capitalizarlo a la tasa r, mientras que el
+pago futuro está acotado por K.
+4) Obtenga el precio de la call europea con el mismo strike y vencimiento. Verifique su respuesta
+valorando la call directamente en el árbol.
+Respuesta
+Vía paridad put-call (europeas, sin dividendos):
+c = p0 + S0 −Ke−rT .
+Con Ke−rT = 42e−0,06·0,5 = 42(0,9704) = 40,76:
+c = 3,82 + 40 −40,76 = $3,06.
+Verificación por el árbol. Payoffs m´ax(ST −K, 0): cuu = 11,99, cud = 0, cdd = 0.
+cu = 0,9851 (0,5128 · 11,99) = 6,06,
+cd = 0,
+c0 = 0,9851 (0,5128 · 6,06) = $3,06.
+Ambos métodos coinciden: el árbol binomial es un modelo libre de arbitraje y la paridad
+put-call es una condición de no arbitraje.
+Advertencia frecuente. Usar la paridad con el precio de la put americana ($4,12) daría
+c = $3,36, lo que es incorrecto. La paridad con igualdad solo vale para opciones europeas.
+5) Suponga que en el mercado la call europea se transa a $4,20. ¿Existe oportunidad de arbitraje?
+Si existe, diseñe la estrategia e indique la tabla de flujos.
+Página 11 de 14
+
+===== Ayudantias/Ayudantía_10_Pauta.pdf · página 12 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Economía y Negocios
+Respuesta
+Sí. El valor justo de la call es $3,06 y en el mercado se transa a $4,20. Verificamos la paridad:
+cmkt + Ke−rT
+⏞
+⏟⏟
+⏞
+lado izquierdo
+= 4,20 + 40,76 = 44,96
+vs.
+p0 + S0
+⏞⏟⏟⏞
+lado derecho
+= 3,82 + 40 = 43,82.
+Como 44,96 > 43,82, el lado izquierdo (la call) está caro. La estrategia es vender lo caro
+y comprar lo barato: vender la call, comprar la put, comprar la acción y pedir
+prestado el monto necesario para que el flujo inicial sea cero.
+Flujo inicial de opciones y acción: +4,20 −3,82 −40 = −39,62, por lo que se pide prestado
+$39,62, que en T debe devolverse por 39,62 e0,06·0,5 = $40,83.
+Posición
+t = 0
+ST < 42
+ST ≥42
+Vender call
++4,20
+0
+−(ST −42)
+Comprar put
+−3,82
+42 −ST
+0
+Comprar acción
+−40,00
+ST
+ST
+Pedir prestado
++39,62
+−40,83
+−40,83
+Total
+0
+1,17
+1,17
+En ambos escenarios se termina vendiendo la acción a $42, vía la put si el precio cae o
+porque nos ejercen la call si sube, y se paga la deuda de $40,83, dejando una ganancia
+libre de riesgo de ≈$1,17 sin desembolso inicial. Equivalentemente, llevada a valor presente,
+1,17 × 0,9704 = $1,14 = 4,20 −3,06, que es exactamente la sobrevaloración de la call.
+6) Calcule el ∆de la put europea en t = 0 e interprete su signo y magnitud.
+Respuesta
+∆put = fu −fd
+Su −Sd
+=
+0,96 −6,95
+46,47 −34,43 = −5,99
+12,04 = −0,497.
+Interpretación. Ante un alza de $1 en el precio de la acción, el valor de la put cae aproxima-
+damente $0,50. El signo negativo refleja que la put es una posición bajista en el subyacente.
+En magnitud, |∆| ≈0,50 es razonable para una opción cercana al dinero. Para cubrir una
+posición larga en una put se requiere comprar 0,497 acciones por opción, y la cobertura debe
+reajustarse en cada nodo porque ∆varía con S y con el tiempo.
+Matemático IV (propuesto): estrategias con opciones
+Un inversionista compra la acción del Matemático III a S0 = $40 y simultáneamente vende la call
+europea con K = $42 a su precio teórico de $3,06. Esta estrategia se conoce como call cubierta y
+está autorizada para las AFP en Chile desde 2019.
+Página 12 de 14
+
+===== Ayudantias/Ayudantía_10_Pauta.pdf · página 13 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Economía y Negocios
+1) Obtenga el vector de pagos de la estrategia al vencimiento, el punto de equilibrio y las ganancias
+máxima y mínima. Grafique.
+Respuesta
+La utilidad al vencimiento es
+Π(ST ) = (ST −40)
+⏞
+⏟⏟
+⏞
+acción
++ 3,06 −m´ax(ST −42, 0)
+⏞
+⏟⏟
+⏞
+call vendida
+=
+⎧
+⎨
+⎩
+ST −36,94
+si ST ≤42,
+5,06
+si ST > 42.
+Punto de equilibrio: ST = 40 −3,06 = $36,94. La prima recibida reduce el costo
+efectivo de la acción.
+Ganancia máxima: $5,06, para todo ST ≥42, equivalente a (42 −40) + 3,06. La
+estrategia topa el potencial al alza.
+Pérdida máxima: −$36,94, en el caso límite ST = 0. Sigue siendo una posición expuesta
+a la caída del subyacente, solo amortiguada por la prima.
+30
+36,94
+42
+45,06
+54
+−10
+−5
+0
+5
+10
+Precio de la acción al vencimiento, ST
+Utilidad
+Larga en la acción
+Venta de call (K = 42)
+Call cubierta
+2) Explique el sentido de la estrategia, comparando con cada una de las posiciones básicas que la
+componen.
+Respuesta
+Frente a la posición larga pura en la acción: la call cubierta mejora el resultado para
+todo ST < $45,06 y lo empeora por sobre ese valor. Se cambia potencial al alza, que es
+incierto, por un ingreso cierto hoy. Además amortigua las caídas del precio en el monto de
+la prima, bajando el punto de equilibrio de $40 a $36,94.
+Frente a la venta desnuda de la call: la venta de call permite recaudar la prima, pero deja
+al vendedor expuesto a una pérdida ilimitada si el subyacente sube con fuerza. Al mantener
+la acción en cartera, esa pérdida queda cubierta, porque se entrega justamente el activo que
+Página 13 de 14
+
+===== Ayudantias/Ayudantía_10_Pauta.pdf · página 14 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Economía y Negocios
+habrá que vender si la call se ejerce.
+En sustancia, es una apuesta a que el precio se mantendrá relativamente estable o subirá
+poco, y una forma de generar ingreso adicional sobre una cartera que de todos modos se iba
+a mantener.
+Nota: para valoración por Black-Scholes, incluido el ajuste por dividendos, revisar el Matemático II de la
+Ayudantía 9.
+Página 14 de 14

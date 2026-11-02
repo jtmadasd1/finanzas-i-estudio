@@ -1,0 +1,354 @@
+===== Ayudantias/A5_Pauta.pdf · página 1 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Primavera 2026
+Ayudantía 5
+Profesor: Alejandro Bernales
+Ayudantes: Ayelen Sandoval, Tomás Rojas, Joaquín Arenas, Juan Correa Hevia, Luisa
+Rodríguez, Lucas Montiel1, Elizabeth Núñez y Carolina Morales.
+Cápsula con la resolución: ver video
+Comentes
+a) Un bono cero cupón no paga cupones. Por lo tanto, quien lo compra y lo mantiene
+hasta el vencimiento no obtiene rentabilidad alguna.
+Respuesta:
+Falso. La rentabilidad no desaparece: cambia de forma. El interés se cobra por
+adelantado, vía descuento en el precio de compra.
+Como B = F e−rT T con rT > 0 y T > 0, se tiene e−rT T < 1 y por lo tanto B < F: se
+paga hoy menos de lo que se recibirá al vencimiento, y esa diferencia es el interés.
+b) Un depósito que ofrece 9,00 % anual con composición anual es mejor que uno que ofrece
+8,85 % anual con composición continua, ya que 9,00 % > 8,85 %.
+Respuesta:
+Falso. Se están comparando dos tasas expresadas en convenciones distintas. Antes
+de comparar hay que llevarlas a la misma convención:
+rc = ln(1,09) = 0,086178
+(8,6178 %) < 8,8500 %.
+El segundo depósito es mejor. Al capitalizar más seguido, los intereses empiezan
+antes a generar intereses, de modo que una tasa nominal menor con composición
+más frecuente puede rendir más.
+1lmontiel@fen.uchile.cl
+Página 1 de 8
+
+===== Ayudantias/A5_Pauta.pdf · página 2 =====
+Finanzas I
+Ayudantía 5
+Universidad de Chile
+Facultad de Economía y Negocios
+c) Una curva de tasas cero con pendiente positiva, obtenida de precios transados de bonos
+de gobierno, implica necesariamente que el mercado espera un aumento de las tasas
+cortas futuras.
+Respuesta:
+Incierto. Bajo la teoría de expectativas, sí: la tasa larga es un promedio de las
+tasas cortas esperadas, de modo que una curva creciente refleja expectativas de
+alza.
+Sin embargo, existen otras explicaciones que conviven con esa. Bajo la teoría de la
+liquidez, los activos de largo plazo son menos líquidos y exigen un premio adicional,
+por lo que la curva puede tener pendiente positiva aun sin expectativas de alza. Del
+mismo modo, las tasas obtenidas de precios transados no coinciden necesariamente
+con el valor fundamental de la tasa de interés, ya que existen fricciones de mercado.
+Conclusión: la pendiente positiva es consistente con expectativas de alza, pero no
+la implica de manera necesaria.
+d) En general, las tasas cero de corto plazo de una empresa son menores que las de largo
+plazo. Sin embargo, no siempre es así. Entregue un ejemplo de una situación en la que
+las tasas cero de corto plazo de una empresa sean mayores que las de largo plazo.
+1
+2
+3
+4
+5
+4
+5
+6
+7
+Plazo al vencimiento (años)
+Tasa cero ( %)
+Curva normal
+Curva invertida
+Respuesta:
+Ocurre cuando la empresa enfrenta un shock de liquidez de corto plazo, siendo
+solvente en el largo plazo.
+Ejemplo: un incendio destruye una planta de la empresa. Gran parte de su liquidez
+debe destinarse de inmediato a la reconstrucción, justo cuando enfrenta vencimien-
+tos de deuda cercanos. Esto eleva fuertemente su riesgo de incumplimiento a corto
+plazo.
+Página 2 de 8
+
+===== Ayudantias/A5_Pauta.pdf · página 3 =====
+Finanzas I
+Ayudantía 5
+Universidad de Chile
+Facultad de Economía y Negocios
+En el largo plazo, en cambio, la empresa sigue siendo solvente: conserva activos
+(terrenos, maquinaria), espera indemnizaciones del seguro y puede recuperar su
+operación o acceder a nuevas líneas de crédito. El riesgo de largo plazo es entonces
+menor que el de corto plazo.
+El resultado es una curva cero corporativa invertida: tasas de corto plazo
+mayores que las de largo plazo, como la curva punteada del gráfico.
+e) La tasa cupón de un bono corresponde a la rentabilidad que obtiene quien lo compra.
+Respuesta:
+Falso. La tasa cupón es una regla contractual que determina el monto de los
+cupones a partir del valor cara. Está fijada en la emisión y no cambia. La rentabili-
+dad, en cambio, depende del precio pagado, que lo determina el mercado y varía
+todos los días.
+Ambas coinciden solo cuando el precio es igual al valor cara. Si el bono se compra
+a un precio menor que su valor cara, la rentabilidad es mayor que la tasa cupón,
+porque además de los cupones se captura la diferencia entre el precio y el valor cara
+que se recibe al vencimiento. Si se compra a un precio mayor, ocurre lo contrario.
+f) Un compañero me dijo que invertir en un bono (instrumento de renta fija) es igual que
+invertir en acciones (activos de renta variable).
+Respuesta:
+Falso. No es lo mismo:
+• Un bono entrega flujos fijos y conocidos de antemano (los cupones y el valor
+cara). Su riesgo está principalmente asociado al riesgo de crédito, ya que
+es un instrumento de deuda: el emisor podría no pagar.
+• Una acción entrega flujos variables, determinados por las utilidades de la
+empresa, y no existe obligación contractual de pagarlos. Su riesgo está prin-
+cipalmente asociado a la volatilidad del mercado.
+Además, en caso de quiebra los tenedores de bonos tienen prioridad de pago por
+sobre los accionistas, que son los últimos en la fila.
+Página 3 de 8
+
+===== Ayudantias/A5_Pauta.pdf · página 4 =====
+Finanzas I
+Ayudantía 5
+Universidad de Chile
+Facultad de Economía y Negocios
+Matemático I: Tasas de interés y convenciones
+En una economía, las tasas cero cupón, en sus versiones discreta y continua, son:
+r1
+r2
+r3
+r4
+Tasa discreta
+4,50 %
+?
+5,20 %
+?
+Tasa continua
+?
+4,80 %
+?
+5,35 %
+Las tasas están en base anual. Se pide:
+a) Complete la tabla, encontrando las cuatro tasas faltantes.
+Respuesta:
+De dónde sale la conversión. Dos tasas son equivalentes si acumulan la misma
+riqueza en el mismo plazo. Igualando la fórmula de interés compuesto con la de
+interés compuesto continuo, para un año y composición anual (f = 1):
+(1 + rd) = e rc.
+Aplicando logaritmo a ambos lados se obtienen las dos direcciones:
+rc = ln(1 + rd)
+y
+rd = e rc −1.
+Plazo 1 (dato: discreta): rc = ln(1,045) = 4,4017 %.
+Plazo 2 (dato: continua): rd = e0,048 −1 = 4,9171 %.
+Plazo 3 (dato: discreta): rc = ln(1,052) = 5,0693 %.
+Plazo 4 (dato: continua): rd = e0,0535 −1 = 5,4957 %.
+r1
+r2
+r3
+r4
+Tasa discreta
+4,50 %
+4,9171 %
+5,20 %
+5,4957 %
+Tasa continua
+4,4017 %
+4,80 %
+5,0693 %
+5,35 %
+Nótese que la tasa continua es siempre menor que la discreta del mismo plazo: al
+capitalizar más seguido se requiere una tasa nominal más baja para lograr la misma
+acumulación. La curva es creciente en ambas convenciones.
+b) Un banco le ofrece un depósito a 2 años con una tasa de 5,00 % anual y composición
+trimestral. ¿Le conviene frente a invertir a la tasa cero de 2 años?
+Página 4 de 8
+
+===== Ayudantias/A5_Pauta.pdf · página 5 =====
+Finanzas I
+Ayudantía 5
+Universidad de Chile
+Facultad de Economía y Negocios
+Respuesta:
+Las dos alternativas vienen en convenciones distintas, así que no se pueden compa-
+rar directamente. Llevamos la del banco a composición continua.
+Cuando la composición ocurre f veces por año, la equivalencia entre ambas fórmulas
+para un año es
+(︃
+1 + rf
+f
+)︃f
+= e rc
+=⇒
+rc = f ln
+(︃
+1 + rf
+f
+)︃
+.
+Con rf = 5,00 % y f = 4 (trimestral):
+rc = 4 ln
+(︃
+1 + 0,05
+4
+)︃
+= 4 ln(1,0125) = 4 × 0,0124225 = 0,049690
+(4,9690 %).
+Comparando ahora en la misma convención:
+4,9690 % > 4,8000 %
+=⇒
+sí conviene el banco.
+Obsérvese que la tasa nominal del banco (5,00 %) es mayor que la tasa cero discreta
+a 2 años (4,9171 %), y también lo es una vez convertida a continua. Pero el resultado
+no era evidente de antemano: la conclusión solo se puede sacar después de expresar
+ambas en la misma convención.
+c) ¿Cuánto más acumula, en pesos, un inversionista que deposita $1.000.000 por 2 años
+en el banco en lugar de invertir a la tasa cero? Verifique el resultado usando las dos
+convenciones.
+Respuesta:
+Depósito en el banco. Con composición trimestral hay 2 × 4 = 8 períodos de
+capitalización:
+Wbanco = 1.000.000
+(︃
+1 + 0,05
+4
+)︃8
+= 1.000.000 (1,0125)8 = $1.104.486.
+Con la tasa continua equivalente obtenida en b) se llega al mismo número, que es
+justamente lo que significa que sean equivalentes:
+1.000.000 e0,049690×2 = $1.104.486.
+Inversión a la tasa cero de 2 años.
+Wcero = 1.000.000 e0,048×2 = $1.100.759,
+Página 5 de 8
+
+===== Ayudantias/A5_Pauta.pdf · página 6 =====
+Finanzas I
+Ayudantía 5
+Universidad de Chile
+Facultad de Economía y Negocios
+y usando la versión discreta de esa misma tasa:
+1.000.000 (1,049171)2 = $1.100.759.
+Diferencia.
+1.104.486 −1.100.759 = $3.727.
+La lección práctica es que la convención no es un detalle de presentación: elegir mal
+por comparar tasas nominales de convenciones distintas tiene un costo concreto en
+pesos.
+Página 6 de 8
+
+===== Ayudantias/A5_Pauta.pdf · página 7 =====
+Finanzas I
+Ayudantía 5
+Universidad de Chile
+Facultad de Economía y Negocios
+Matemático II: Tasa cero y valoración de un bono
+En el mercado se transan los siguientes bonos cero cupón, todos con valor cara de $100:
+Madurez (años)
+1
+2
+3
+4
+Precio
+$95,70
+$90,85
+$85,89
+$80,73
+a) Encuentre la tasa cero cupón de cada plazo. Exprésela como tasa con capitalización
+continua, base anual.
+Respuesta:
+El precio de un bono cero cupón es B = F e−rT T. Como aquí conocemos el precio
+y buscamos la tasa, despejamos rT:
+B = 100 e−rT T =⇒
+B
+100 = e−rT T =⇒ln
+(︃B
+100
+)︃
+= −rT T =⇒rT = −1
+T ln
+(︃B
+100
+)︃
+.
+Aplicando la fórmula a cada plazo:
+r1 = −ln(0,9570) = 4,3952 %
+r2 = −1
+2 ln(0,9085) = 4,7980 %
+r3 = −1
+3 ln(0,8589) = 5,0701 %
+r4 = −1
+4 ln(0,8073) = 5,3515 %
+Madurez (años)
+1
+2
+3
+4
+Precio
+$95,70
+$90,85
+$85,89
+$80,73
+Tasa cero (cont.)
+4,3952 %
+4,7980 %
+5,0701 %
+5,3515 %
+La curva resultante es creciente. Es coherente con los precios: mientras más lejano el
+pago, más barato se transa hoy el bono, es decir, mayor es la tasa que lo descuenta.
+b) Usando esas tasas, calcule el precio de un bono con cupones anuales de 5 % del valor
+cara, valor cara de $100 y madurez de 4 años.
+Respuesta:
+Flujos. El cupón anual es C = 100 × 0,05 = $5, y en el año 4 se agrega el valor
+cara: C4 = 5 + 100 = $105.
+Precio. Cada flujo se descuenta con la tasa cero de su propio plazo:
+B = 5e−0,043952(1) + 5e−0,047980(2) + 5e−0,050701(3) + 105e−0,053515(4)
+Página 7 de 8
+
+===== Ayudantias/A5_Pauta.pdf · página 8 =====
+Finanzas I
+Ayudantía 5
+Universidad de Chile
+Facultad de Economía y Negocios
+t
+Flujo Ct
+e−rtt
+Valor presente
+1
+$5
+0,957000
+$4,79
+2
+$5
+0,908500
+$4,54
+3
+$5
+0,858900
+$4,29
+4
+$105
+0,807300
+$84,77
+Precio
+$98,39
+Atajo útil. Los factores de descuento resultaron ser exactamente el precio de cada
+bono cero cupón dividido por 100:
+e−rtt = Bt
+100.
+Y tiene que ser así, porque el bono cero cupón a t años es el instrumento que paga
+$100 en t. Por lo tanto, se puede llegar al precio sin calcular ninguna tasa:
+B = 5(0,9570) + 5(0,9085) + 5(0,8589) + 105(0,8073) = $98,39.
+c) Compare el precio obtenido en b) con el del bono cero cupón a 4 años. ¿A qué corres-
+ponde la diferencia entre ambos?
+Respuesta:
+El bono con cupones vale $98,39 y el bono cero cupón a 4 años vale $80,73. La
+diferencia es:
+98,39 −80,73 = $17,66.
+Ambos instrumentos pagan exactamente lo mismo en el año 4 (el valor cara de
+$100). Lo único que los distingue son los cuatro cupones de $5 que paga el primero.
+Por lo tanto, la diferencia debe ser el valor presente de esos cupones:
+5 (0,9570 + 0,9085 + 0,8589 + 0,8073) = 5 × 3,5317 = $17,66.
+Coincide. Esto ilustra que un bono con cupones puede verse como un bono cero
+cupón al que se le suman los cupones intermedios, cada uno descontado a su propia
+tasa cero.
+Página 8 de 8

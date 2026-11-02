@@ -1,0 +1,197 @@
+{
+  "corr": {
+    "corr_promedio": 0.2345214104402349,
+    "corr_min": -0.11368748749125561,
+    "corr_max": 0.8713416896633908,
+    "corr_mismo_sector": 0.4547474842836005,
+    "corr_distinto_sector": 0.21494575943193575,
+    "pct_corr_negativas": 0.0326530612244898,
+    "par_corr_max": [
+      "COP",
+      "EOG"
+    ],
+    "par_corr_min": [
+      "JNJ",
+      "NVDA"
+    ],
+    "sigma_1N": 0.13868504189208278,
+    "sigma_1N_sin_cov": 0.041906352109831596,
+    "mu_1N": 0.1295176636875579,
+    "share_var_cov_1N": 0.9086937573616123,
+    "T_dias": 1255,
+    "inicio": "2021-08-02",
+    "fin": "2026-07-31"
+  },
+  "gmv_libre": {
+    "mu": 0.13263290774635803,
+    "sigma": 0.10806619287810511,
+    "n_activos": 48,
+    "exposicion_bruta": 1.7596551746254907,
+    "suma_cortos": -0.3798275873127454,
+    "w_max": 0.14766844062019513,
+    "w_min": -0.07608821244449207,
+    "peso_energy_ind": 0.26541860705429227
+  },
+  "gmv_ingenua": {
+    "mu": 0.11210337851936585,
+    "sigma_percibida": 0.035097267111183245,
+    "sigma_real": 0.12370580328184913,
+    "w_max": 0.044485474178058,
+    "w_min": 0.0034762706107234875
+  },
+  "ingenua_puntos": [
+    {
+      "mu_objetivo": 0.13263290774635808,
+      "sigma_frontera_completa": 0.10806619287810511,
+      "sigma_ingenua_percibida": 0.036260251108215534,
+      "sigma_ingenua_real": 0.12563314229284642,
+      "exposicion_bruta_ingenua": 0.9999999999999998,
+      "exposicion_bruta_completa": 1.759655174625491
+    },
+    {
+      "mu_objetivo": 0.2,
+      "sigma_frontera_completa": 0.11166533879138832,
+      "sigma_ingenua_percibida": 0.052469663570052304,
+      "sigma_ingenua_real": 0.14153929774231627,
+      "exposicion_bruta_ingenua": 1.1710990358328206,
+      "exposicion_bruta_completa": 2.170246812049859
+    },
+    {
+      "mu_objetivo": 0.3,
+      "sigma_frontera_completa": 0.12868415546705197,
+      "sigma_ingenua_percibida": 0.0904630135647766,
+      "sigma_ingenua_real": 0.1841090515760128,
+      "exposicion_bruta_ingenua": 1.897315153581533,
+      "exposicion_bruta_completa": 3.0325244579648545
+    },
+    {
+      "mu_objetivo": 0.5,
+      "sigma_frontera_completa": 0.18760624790650518,
+      "sigma_ingenua_percibida": 0.1756667449804277,
+      "sigma_ingenua_real": 0.29783238637707427,
+      "exposicion_bruta_ingenua": 3.5469935085829336,
+      "exposicion_bruta_completa": 5.399708830975955
+    }
+  ],
+  "fronteras": {
+    "limite": {
+      "rango": [
+        -0.22718187039446544,
+        0.4511345824792556
+      ],
+      "gmv": {
+        "mu": 0.13241790763611258,
+        "sigma": 0.10829015353367594,
+        "n_activos": 46,
+        "exposicion_bruta": 1.7192762157594608,
+        "suma_cortos": -0.3596381078797305,
+        "w_max": 0.09999994787557673,
+        "w_min": -0.07733180223854388,
+        "peso_energy_ind": 0.2684113124008604
+      },
+      "n_acciones_min": 47,
+      "n_acciones_max": 50,
+      "acciones_usadas_eficiente": null
+    },
+    "sin_vc": {
+      "rango": [
+        -0.06688438164956333,
+        0.46889069437035186
+      ],
+      "gmv": {
+        "mu": 0.1164293828529458,
+        "sigma": 0.11182045155605458,
+        "n_activos": 25,
+        "exposicion_bruta": 0.9999999999999999,
+        "suma_cortos": 0.0,
+        "w_max": 0.15390010826432038,
+        "w_min": 6.4584634028717845e-09,
+        "peso_energy_ind": 0.21052686591008782
+      },
+      "n_acciones_min": 2,
+      "n_acciones_max": 25,
+      "acciones_usadas_eficiente": [
+        "ABBV",
+        "AVGO",
+        "BRK-B",
+        "CAT",
+        "CSCO",
+        "CVX",
+        "DUK",
+        "GOOGL",
+        "GS",
+        "JNJ",
+        "JPM",
+        "KO",
+        "LLY",
+        "LMT",
+        "MCD",
+        "MRK",
+        "MSFT",
+        "NEM",
+        "NVDA",
+        "ORCL",
+        "PFE",
+        "PG",
+        "RTX",
+        "SO",
+        "UNH",
+        "VZ",
+        "WM",
+        "WMT",
+        "XOM"
+      ]
+    },
+    "sin_vc_sector": {
+      "rango": [
+        -0.007831507537596469,
+        0.3983943517888526
+      ],
+      "gmv": {
+        "mu": 0.11945382102239038,
+        "sigma": 0.11381273527470574,
+        "n_activos": 23,
+        "exposicion_bruta": 1.0,
+        "suma_cortos": 0.0,
+        "w_max": 0.14265766057765406,
+        "w_min": 4.465828301211289e-09,
+        "peso_energy_ind": 0.40000000961522164
+      },
+      "n_acciones_min": 3,
+      "n_acciones_max": 24,
+      "acciones_usadas_eficiente": [
+        "ABBV",
+        "AVGO",
+        "CAT",
+        "CVX",
+        "DUK",
+        "GOOGL",
+        "JNJ",
+        "KO",
+        "LLY",
+        "LMT",
+        "MCD",
+        "MRK",
+        "MSFT",
+        "NEM",
+        "NVDA",
+        "ORCL",
+        "PFE",
+        "PG",
+        "RTX",
+        "SO",
+        "UNH",
+        "UNP",
+        "VZ",
+        "WM",
+        "WMT",
+        "XOM"
+      ]
+    }
+  },
+  "chequeo_analitico_vs_qp": 2.7755575615628914e-16,
+  "A": 85.62888648568841,
+  "B": 11.35720820167968,
+  "C": 7.2449106634380405,
+  "D": 491.38745466218927
+}

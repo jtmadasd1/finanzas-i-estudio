@@ -1,0 +1,181 @@
+===== Programa/ENFIN415_2026.pdf · página 1 =====
+ 
+1 
+ 
+ 
+ 
+ 
+ESCUELA DE ECONOMÍA Y ADMINISTRACIÓN 
+ 
+ 
+PROGRAMA DE CURSO 
+ 
+I.- IDENTIFICACIÓN DEL CURSO 
+1.1.- Nombre y 
+código del Curso 
+FINANZAS I - ENFIN415 
+1.2.- Nombre del 
+curso en inglés 
+FINANCE I 
+1.3.- Carrera 
+INGENIERÍA COMERCIAL, Ciclo Disciplinario 
+1.4.- Tipo de curso 
+OBLIGATORIO 
+1.5- Descripción e 
+Intención formativa 
+del Curso 
+Este curso se centra en las decisiones de inversión en contextos de 
+incertidumbre, y las características del equilibrio en el mercado de 
+capitales, especialmente la relación entre riesgo y retorno. Se estudia la 
+teoría y selección de portafolios, el modelo CAPM y la teoría de precios 
+por arbitraje (APT). Portfolios de renta fija, riesgo de tasas de interés e 
+inmunización. Parte central del programa incluye el análisis de 
+instrumentos financieros derivados, tales como: opciones financieras, 
+contratos forward y futuros, contratos swaps de tasas de interés, y su 
+utilización práctica.  
+1.6.- Créditos SCT 
+6 
+Horas de Trabajo 
+Presencial del curso: 
+4,5 (semanales) 
+Horas de Trabajo No 
+Presencial del curso: 
+4,5 (semanales) 
+1.7.- Profesor 
+Alejandro Bernales 
+1.8.- Ayudantes 
+ 
+1.9.- Prerrequisitos 
+Introducción a las Finanzas/Análisis de Datos 
+1.10.- Horario 
+Sección 4: Lunes y Miércoles 09.30 a 10.50 (P-307)  
+ 
+Ayudantía: Lunes 18.30 a 19:50 (Sala: P-307) 
+ 
+Sección 5: Lunes y Miércoles 11.00 a 12.20 (P-309) 
+Ayudantía: Lunes 18.30 a 19:50 (Sala: P-307) 
+ 
+II.- COMPETENCIAS, RESULTADOS DE APRENDIZAJE Y CONTENIDOS 
+2.1.- Competencias 
+que favorecen el 
+desarrollo del perfil 
+FEN pregrado. 
+Competencias Específicas, Ciclo Básico 
+2.1     Utilizar criterios pertinentes para la toma de decisiones en 
+finanzas, bajo un contexto de incertidumbre y constante cambio 
+Competencias Genéricas 
+2.2 Aplicar criterios de discernimiento ético para enfrentar dilemas 
+propios de la economía y/o los negocios 
+ 
+2.3 Aplicar criterios de rigurosidad profesional  y disciplinario durante 
+el proceso formativo 
+2.2.- Resultados de 
+Aprendizajes 
+a. Reconoce las implicancias y criterios considerados en la teoría 
+de portafolios y en los indicadores de desempeños. 
+b. Distingue las funciones y relevancia de los mercados de 
+capitales, considerando su relación con los instrumentos 
+
+===== Programa/ENFIN415_2026.pdf · página 2 =====
+ 
+2 
+financieros. 
+c. Analiza los instrumentos financieros de renta fija y derivados, 
+considerando los criterios para su utilización sobre la práctica.  
+2.3.- Contenidos 
+1. Introducción y Teoría de Portafolios 
+a. Criterio de Utilidad esperada y aversión al riesgo. 
+b. Teoría de Portafolios Media-Varianza.  
+2. Mercado de Capitales 
+a. CAPM 
+b. Modelo Índice 
+c. APT y Modelos Multifactoriales 
+d. Hipótesis Mercados Eficientes 
+e. Evaluación de desempeño de Portafolios. 
+3. Instrumentos de Renta Fija 
+a. Tasas de Interés 
+b. Duración, Convexidad  
+c. Estructura de tasas 
+d. Swaps de tasa 
+4. Instrumentos Derivados  
+a. Precios forward y arbitraje 
+b. Futuros financieros 
+c. Vectores de pagos, estrategias especulativas. 
+d. Teorema de las cotas, paridad put-call 
+e. Valoración de Opciones (BS y Arboles Binomiales) 
+5. Administración de Riesgo  
+a. Value at Risk 
+ 
+ 
+III.- METODOLOGÍA, EVALUACIÓN Y NORMATIVA BÁSICA 
+3.1.- Metodología 
+Clases expositivas en que el profesor cubrirá los distintos temas con 
+participación de los alumnos. Las clases serán complementadas con 
+sesiones de ayudantía. 
+3.2.- Evaluación 
+ 
+Solemne                                                         30% 
+ 
+Examen                                                          30% 
+ 
+ 
+Controles                                                        20% 
+    
+ 
+Otros (trabajos prácticos y control de ellos)  20%  
+3.3.- Normativa 
+Básica 
+ 
+Si un estudiante es sorprendido copiando recibirá una nota de 
+1.0 en la evaluación respectiva. Además, el caso será 
+informado a las autoridades de la escuela para que se apliquen 
+otras sanciones en caso de que corresponda.  
+ 
+La solicitud de recorrección de las evaluaciones (Solemne y 
+Examen) deben ser entregada por escrito en un plazo máximo 
+de 7 días corridos una vez entregadas a los alumnos.  
+ 
+Aquellos estudiantes que no puedan asistir a una Solemne o 
+Examen, y han justificado su inasistencia ante la Escuela de 
+Pregrado, tienen el derecho a una evaluación recuperativa al 
+final del semestre el  primer día hábil después de terminado el 
+período oficial de exámenes por parte de la Escuela. Esta 
+evaluación abarcará todo el material del curso. Además, la nota 
+de esta evaluación recuperativa no puede ponderar más del 
+50% de la nota final del curso.  
+
+===== Programa/ENFIN415_2026.pdf · página 3 =====
+ 
+3 
+ 
+La nota de tareas y controles se considera en el promedio 
+final solo si el promedio entre Solemne y Examen es 
+superior o igual a 3,95. En caso contrario, se reprueba con 
+el promedio ponderado de la Solemne y Examen. 
+ 
+La asistencia a clases es opcional, sin embargo, es altamente 
+recomendable asistir.  
+ 
+Es necesario traer calculadora para uso personal en las 
+evaluaciones y el uso de teléfonos celulares queda prohibido en 
+las mismas. 
+ 
+ 
+IV.- BIBLIOGRAFÍA 
+Bibliografía Recomendada:  
+ 
+“Investments”, Bodie, Z., A. Kane & A. Marcus, McGraw-Hill, 11th edition, 2017. (BKM) 
+ 
+Copeland, T., F. Weston & K.Shastri, “Financial Theory and Corporate Finance”, Addison 
+Wesley, Pearson, 4th edition, 2013. (CWK) 
+ 
+Hull, J. “Introducción a los Mercados de Opciones y Futuros”, Pearson, 8a. edición, 2014. 
+ 
+Value at Risk: The New Benchmark for Managing  by  Philippe Jorion (Author) 
+ 
+ 
+CURRÍCULUM DEL PROFESOR 
+ 
+ 
+Alejandro Bernales: www.alejandrobernales.com 
+ 

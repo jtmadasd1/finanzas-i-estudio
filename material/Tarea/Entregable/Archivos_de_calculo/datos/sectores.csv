@@ -1,0 +1,51 @@
+Ticker,Sector
+XOM,Energy
+CVX,Energy
+COP,Energy
+EOG,Energy
+SLB,Energy
+CAT,Industrials
+UNP,Industrials
+LMT,Industrials
+DE,Industrials
+WM,Industrials
+RTX,Industrials
+JPM,Financials
+BAC,Financials
+GS,Financials
+BRK-B,Financials
+V,Financials
+AXP,Financials
+JNJ,Health Care
+UNH,Health Care
+PFE,Health Care
+MRK,Health Care
+ABBV,Health Care
+LLY,Health Care
+AAPL,Information Technology
+MSFT,Information Technology
+NVDA,Information Technology
+AVGO,Information Technology
+ORCL,Information Technology
+CSCO,Information Technology
+NEE,Utilities
+DUK,Utilities
+SO,Utilities
+AEP,Utilities
+SRE,Utilities
+GOOGL,Communication Services
+META,Communication Services
+NFLX,Communication Services
+VZ,Communication Services
+AMZN,Consumer Discretionary
+HD,Consumer Discretionary
+MCD,Consumer Discretionary
+TSLA,Consumer Discretionary
+PG,Consumer Staples
+KO,Consumer Staples
+PEP,Consumer Staples
+WMT,Consumer Staples
+LIN,Materials
+NEM,Materials
+PLD,Real Estate
+AMT,Real Estate

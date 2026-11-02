@@ -1,0 +1,2964 @@
+===== Sesiones (material del curso)/Sesion 1.pdf · página 1 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+F I N A N Z A S I — E N F I N 4 1 5
+Sesión I
+Alejandro Bernales
+Universidad de Chile
+Importante
+•
+Las clases no se reflejan por completo en estas diapositivas.
+•
+Son solo una guía para el profesor; no las estudies como 
+única fuente.
+•
+El material importante se presenta en la sala mediante 
+ejemplos y discusiones.
+Libros guía
+•
+Bodie, Z., A. Kane & A. Marcus, Investments, McGraw-Hill, 11.ª ed., 
+2017.
+•
+Copeland, T., F. Weston & K. Shastri, Financial Theory and Corporate 
+Finance, Addison-Wesley / Pearson, 4.ª ed., 2013.
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 2 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+F I N A N Z A S I — E N F I N 4 1 5
+Sesión I
+Alejandro Bernales
+Universidad de Chile
+C O N T E N I D O S D E L C U R S O
+01
+Teoría de portafolio
+02
+Modelos de valoración de activos
+03
+Instrumentos de renta fija
+04
+Eficiencia del mercado y mercados de 
+capitales
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 3 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Intuiciones detrás de la aversión al riesgo.
+•
+Revisar las matemáticas financieras del rendimiento de las acciones.
+•
+Gestión de portafolios y modelos de media-varianza.
+3
+Objetivos:
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 4 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Qué es la aversión al riesgo?
+•
+Es el comportamiento de los seres humanos (observado también en los animales) en
+relación con el riesgo (es decir, incertidumbre).
+– A las personas no les gusta el riesgo.
+•
+Un individuo averso al riesgo evita una situación con un pago desconocido, en lugar de
+otra situación con un pago más predecible, pero posiblemente un pago esperado menor.
+4
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 5 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Qué es la aversión al riesgo?
+Un ejemplo sencillo:
+•
+Supongamos que Margarita tiene que decidir sobre sus preferencias entre dos escenarios:
+I.
+Margarita recibe $100: pago garantizado.
+II.
+Se lanza una moneda para decidir si se recibe $200 o nada: sin pago garantizado.
+•
+La ganancia esperada para ambos escenarios es $100.
+•
+Se dice que Margarita es:
+–
+Aversa al riesgo: si acepta un pago determinado (equivalente cierto) inferior a $100 (por
+ejemplo, $80), en lugar de correr el riesgo y posiblemente no recibir nada.
+• Este descuento de $20 ($100 −$80) se conoce como PRIMA POR RIESGO, y puede
+interpretarse de dos maneras:
+– Prefiere recibir menos dinero a cambio de tener una situación sin riesgo (caso de
+arriba).
+– Exige una compensación monetaria adicional para aceptar un escenario riesgoso.
+–
+Neutral al riesgo: si es indiferente entre la apuesta y el pago garantizado de $100.
+–
+Amante del riesgo: si acepta la apuesta incluso cuando el pago garantizado es mayor a $100
+(por ejemplo, $120)
+5
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 6 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Qué es la aversión al riesgo?
+•
+Por tanto, los individuos pueden tener diferentes actitudes frente al riesgo:
+– Un individuo puede ser: averso al riesgo, neutral al riesgo o amante del riesgo.
+– Sin embargo, en general, las personas son aversas al riesgo.
+•
+Por ejemplo, un inversionista muy averso al riesgo:
+–
+Debería decidir colocar su dinero en una cuenta bancaria con una tasa de interés
+baja pero garantizada, en lugar de invertir en una acción, que puede ofrecer altos
+retornos esperados, pero también implica una posibilidad de perder valor.
+6
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 7 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Qué es una acción?
+•
+Un tipo de título valor que representa la propiedad en una corporación, por lo que
+también representa un reclamo sobre parte de los activos y ganancias de la
+corporación.
+•
+En otras palabras, un accionista es propietario de una empresa.
+•
+La propiedad se determina por la cantidad de acciones que una persona posee en
+relación con el número de acciones en circulación.
+–
+Por ejemplo, si una empresa tiene 1.000 acciones en circulación y una persona posee 100
+acciones, esa persona poseería y tendría derecho al 10 % de los activos de la empresa.
+•
+Por lo tanto, el precio de la acción está asociado al desempeño de la empresa (es decir,
+al valor fundamental de la empresa).
+7
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 8 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Precio de las acciones y su valor fundamental
+•
+El precio ( Pt ) de una acción se puede observar en los precios transados en diferentes bolsas de 
+valores.
+•
+El valor fundamental de la acción ( Vt ) está relacionado con el desempeño de la empresa:
+–
+La secuencia {Di } se refiere a los dividendos pagados por la acción.
+–
+La expectativa implica que hay incertidumbre tanto en las secuencias de dividendos como en 
+las tasas de descuento futuras, {Di } y {qi }
+–
+qi = rf + RiskPremiumi , es decir, la corrección de la prima por riesgo se aplica a la tasa de 
+rendimiento requerida de la acción.
+•
+Cuando q es constante en el tiempo y D crece a una tasa constante g, obtenemos el modelo de 
+Gordon :
+8
+Varios problemas sin resolver:
+•¿Cómo podemos calcular q?
+•¿Cuál es la prima por riesgo?
+Aquí
+en
+esta
+sección
+intentaremos responder a estas
+dos preguntas.
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 9 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Es el precio transado igual al valor fundamental?
+•
+En teoría: SÍ.
+– Sin embargo, la estructura de los mercados financieros puede inducir cierta 
+fricción que haga que el precio de transacción, 𝑃𝑡, se desvíe del valor fundamental 
+del activo, 𝑉𝑡.
+– Pero, en esta sesión asumiremos que 𝑷𝒕= 𝑽𝒕
+9
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 10 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Rendimiento de las acciones
+•
+Sea 𝑃𝑡el precio de una acción:
+–
+Dos definiciones de tasas de retorno:
+• Tasa de retorno aritmética:
+• Tasa de retorno compuesta continua:
+– Se obtienen resultados similares, especialmente cuando los cambios de precio son 
+pequeños.
+– Sin embargo, se prefiere utilizar la tasa de retorno compuesta continua.
+10
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 11 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+11
+¿Nos preocupan más los precios o los retornos?
+•
+Por supuesto, nos preocupan más los retornos, ya que reflejan las ganancias y pérdidas 
+de una inversión.
+– Los precios de las acciones son útiles para calcular los retornos accionarios.
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 12 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+En general, no estamos invirtiendo en un solo activo.
+–
+Es demasiado riesgoso.
+•
+Grandes pérdidas cuando las cosas salen mal.
+•
+Grandes beneficios cuando las cosas salen bien.
+•
+Tal vez, podría ser mejor invertir en varios activos (portafolio).
+–
+Puedes diversificar tu inversión utilizando múltiples activos.
+–
+Si uno de ellos va mal, otro podría tener buen desempeño.
+12
+Nuevo concepto: Volatilidad de los retornos
+¿Te gusta la volatilidad?
+Reduces la volatilidad 
+¿Nos preocupan más los retornos de una sola acción o 
+los retornos de un portafolio de acciones?
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 13 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Para simplificar “nuestra vida”, introducimos los siguientes supuestos:
+1. El menú de activos se compone de N activos riesgosos y un activo libre de riesgo
+(por ejemplo, bonos del Tesoro a 3 meses o una cuenta bancaria)
+2. Los agentes pueden pedir prestado y prestar al tipo de interés constante libre de
+riesgo rf , sin ninguna restricción.
+3. Todos los inversionistas valoran los retornos (esperados) de los activos,
+representados por μi para el activo i, y rechazan el riesgo, medido por la varianza
+σ2
+i ( i =1,…, N ).
+4. Todos los agentes tienen creencias homogéneas respecto de μi, σ2
+i, y las
+covarianzas σij para todos los i, j.
+5. No hay costos de transacción, ni impuestos, y las ventas cortas están permitidas
+sin límites.
+•
+Venta corta ⇔tomar prestado y vender un activo.
+13
+Diversificación de portafolio
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 14 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Diversificación de portafolio (ejemplo extremo)
+•
+Supongamos que se tienen dos acciones con retornos esperados idénticos de μ1 = μ2 y 
+varianzas idénticas σ2
+1 = σ2
+2 .
+•
+Las dos acciones son bastante especiales: sus rendimientos se describen mediante dos 
+variables aleatorias.
+– Cada vez que la acción 1 tiene un rendimiento aleatorio de x%, la acción 2 tiene un 
+rendimiento opuesto de –x%
+– En estadística, decimos que las acciones 1 y 2 tienen una correlación negativa 
+perfecta, ρ12 = -1
+•
+Además, supongamos que se invierte α % en la acción 1 y (1- α) % en la acción 2, y su 
+elección se limita a las dos acciones. T implica que:
+E[α R1+(1- α )R2]    = α μ1+(1- α )μ2 = μ1 = μ2
+Var[α R1+(1- α )R2] = α 2σ2
+1+ (1- α )2σ2
+2 - 2 α(1- α )σ2
+1
+= α 2σ2
+1+ σ2
+1 + α 2σ2
+1 - 2 α σ2
+1+ -2 α σ2
+1 + 2 α2σ2
+1
+= 4 α2σ2
+1+ σ2
+1 - 4 α σ2
+1
+– En este caso, el portafolio resultante no tiene ningún riesgo (varianza) si α = ½, es 
+decir, una inversión 50-50 en las dos acciones.
+– ¡LA DIVERSIFICACIÓN DA UNA GRAN RECOMPENSA!
+14
+E[ δ X+ β Y] = δ E[X] + β E[Y]
+Var [ δ X+ β Y] = δ 2 Var[X]+ β 2 Var[Y]+2 δ β Cov [X,Y]
+ρ [X,Y] = Cov [X,Y]/( σ X ∙ σ Y ) ⇨Cov [X,Y]= ρ X,Y ∙ σ X ∙ σ Y
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 15 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Diversificación de portafolio (El principio del seguro)
+•
+Como sabes, el riesgo de una portafolio que incluye N activos viene dado por:
+–
+Supongamos ahora que los rendimientos de los diferentes activos simplemente no están 
+correlacionados, σ ij = 0 para i , j . Entonces:
+–
+Si todos los activos tienen un riesgo idéntico σ 2 y se mantienen en proporciones idénticamente 
+iguales, w i = 1/N:
+–
+Esto demuestra que cuando N ⭢∞ σ2
+p ⭢0, es decir, el riesgo desaparece por completo.
+–
+Esto no siempre es cierto: en nuestro ejemplo, asumimos que σ ij = 0 todos los i , j (todos los 
+riesgos no son correlacionados)
+•
+En general, debido a que los riesgos tienden a estar correlacionados positivamente,
+como N ⭢∞ el riesgo total de un portafolio simplemente se reduce a cierto
+nivel llamado no diversificable o riesgo de mercado.
+•
+Por el contrario, todo el riesgo restante que se puede eliminar
+se llama riesgo idiosincrásico (diversificable) .
+15
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 16 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Si el inversionista valora los retornos y rechaza el riesgo, entonces el portafolio A es 
+preferido al portafolio B si:
+E[RA]  ≥  E[RB] y Var[RA]  ≤  Var[RB] (1)
+–
+Tenga en cuenta que cuando:
+• Ya sea E[RA] ≤ E[RB] y Var[RA] ≤ Var[RB],    o    E[RA] ≥ E[RB] y Var[RA] ≥ Var[RB],             
+entonces no se puede decir nada.
+•
+Definición:                                                                                                                        
+Cuando para un portafolio p, NO es posible encontrar otro portafolio tal que se cumpla la 
+condición (1), entonces se dice que el portafolio p es eficiente en media-varianza.
+16
+Diversificación de portafolio
+(Eficiencia media-varianza)
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 17 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Construyendo la frontera eficiente
+•
+¿Qué pasa si hay N activos riesgosos disponibles?
+–
+Si uno comienza a variar los pesos {𝑤𝑖}𝑖=1
+𝑁
+invertidos en los diferentes valores y calcula la media 
+y la varianza de los rendimientos del portafolio,
+–
+Un problema de minimización de riesgos para un portafolio dado implica obtener:
+–
+La imagen resultante se conoce como                                                                                         
+frontera riesgo-retorno, o                                                                                                       
+frontera de oportunidades de inversión.
+17
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 18 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Construyendo la frontera eficiente
+•
+Importante: al construir la frontera ABC se admiten ventas en corto wi < 0.
+–
+Vender en corto significa vender un valor que no se posee.
+–
+Esto es posible después de tomar prestado el activo desde intermediarios especializados.
+–
+Convénzase de que cuando w i < 0, usted gana dinero cuando el precio del valor i disminuye.
+•
+Sólo el segmento BLA de 
+la frontera MV es 
+eficiente, y se denomina 
+frontera eficiente MV.
+18
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 19 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+La línea de transformación
+•
+Ahora permitimos que el inversor tome prestado o preste libremente a rf:
+•
+es el porcentaje total invertido en el activo libre de riesgo.
+• Este valor puede ser negativo, lo que implica que el inversor está pidiendo prestado a la 
+tasa libre de riesgo para invertir más del 100% en activos riesgosos.
+•
+Definición: La línea de transformación Ilustra la relación lineal entre el riesgo y el 
+rendimiento esperado con préstamos sin restricciones.
+–
+Considere invertir x en activos riesgosos (con un rendimiento esperado μB
+y volatilidad σ B ), y (1 −𝑥) en el activo sin riesgo.
+–
+Por lo tanto: 
+–
+donde μB y σB son los rendimientos esperados y la volatilidad del portafolio de riesgo elegido 
+con ponderaciones definidas por x (llamado benchmark).
+–
+Esto implica que x = σP /σB. Sustituyendo esta expresión en la ecuación para E[RP], tenemos: 
+»
+Es decir, existe una relación creciente entre el 
+rendimiento y el riesgo.
+»
+SRB , se conoce como índice de Sharpe (es decir, la 
+pendiente de la línea de transformación)
+19
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 20 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+La línea de transformación
+–
+La relación es monótona creciente porque se puede demostrar que no hay demanda de activos 
+riesgosos a menos que: μB > rf ⬄SRB > 0
+–
+Cuando x = 0, el portafolio resultante 
+no tiene riesgo y E[RP] = rf
+•
+Por lo tanto, mientras que la frontera eficiente media-varianza de activos riesgosos es un 
+conjunto curvo, la línea de transformación entre cualquier portafolio de activos riesgosos 
+y el activo libre de riesgo será lineal.
+•
+Sin embargo: la línea de transformación se construye para pesos fijos invertidos en los
+activos riesgosos existentes, definiendo x como:
+20
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 21 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+La frontera eficiente está dada por:
+•
+La línea de transformación podría tener cualquier pendiente dependiendo del ratio de Sharpe del port
+afolio seleccionado:
+•
+¿Cuánto puede aumentar el ratio de Sharpe?
+–
+Mientras la línea de transformación alcance la frontera eficiente.
+•
+¿Por qué es bueno un mayor ratio de Sharpe (pendiente)?
+–
+Si inviertes en un activo riesgoso, ¿quieres ser altamente
+compen
+sado o con un bajo aumento en la volatilidad del retorno?
+•
+Este proceso de aumentar la pendiente de la línea de transformación compatible con la frontera eficie
+nte ayuda a ubicar un portafolio “especial” localizado en el portafolio M.
+–
+Esto se llama el PORTAFOLIO DE TANGENCIA.
+•
+¿Qué significa rotar la línea de transformación (mover hacia arriba)?
+–
+Cambiar los pesos del portafolio en el portafolio de referencia B.
+21
+línea de transformación y la frontera eficiente
+Relación:
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 22 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+La línea de transformación “más inclinada” posible también se llama la línea del mercado 
+de capitales (LMC).
+•
+¿Cómo selecciona un inversor el portafolio óptimo en la que quiere invertir?
+–
+¿En la frontera eficiente o en la LMC?
+–
+La respuesta correcta es la LMC porque un inversor 
+prefiere el retorno esperado dado el riesgo, y no le 
+gusta el riesgo dado el retorno esperado (y puede                                                                            
+invertir en un activo sin riesgo).
+•
+El portafolio óptimo corresponde a la curva de                                                              
+indiferencia más alta posible.
+–
+Por ejemplo, el punto A para un inversor muy averso                                                                          
+al riesgo  (en IA).
+–
+Punto K para un inversor menos averso al riesgo (en IB ).
+–
+El punto M implica una inversión moderada en el portafolio de tangencia; el punto K implica 
+que un inversor pide prestado para invertir más del 100% en el portafolio M.
+–
+Sin embargo, como la elección ocurre en la LMC – la composición del portafolio riesgoso (de 
+referencia) es idéntica en todos los puntos, A, M o K.
+–
+En todos los puntos, las proporciones para crear los activos riesgosos existentes (M) son 
+idénticas.
+22
+línea de transformación y la frontera eficiente
+Relación:
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 23 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Optimización de media-varianza: un activo riesgoso
+•
+¿Curvas de indiferencia?
+–
+Los estudiantes dicen: ¿Nos puede dar alguna intuición?
+•
+¿Cuánto deberías invertir en acciones y cuánto en el activo libre de riesgo?
+–
+Por supuesto, la respuesta depende de tus preferencias, es decir, de tu función de utilidad.
+•
+La forma más simple en que puede plantearse el problema conduce a la optimización
+media-varianza.
+–
+Este es un punto crucial, al cual volveremos más adelante, porque la optimización M-V se
+utiliza en la industria.
+23
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 24 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Consideremos un problema muy simple en el que sólo hay dos activos:
+–
+Un activo riesgoso (acciones) con un rendimiento aleatorio R; y una fracción α de la riqueza
+inicial W0 está invertida en él.
+–
+Un activo libre de riesgo con un rendimiento r; y una fracción (1- α) de la riqueza inicial W0 se
+invierte en él.
+–
+Un activo sin riesgo es aquel en el que E[r] = r y Var[r] = 0
+–
+Por el contrario, un activo riesgoso tiene σ2
+R > 0
+•
+El portafolio óptimo se mantiene solo por un período.
+•
+Formalmente el problema es:
+–
+El coeficiente c es una medida de aversión al riesgo, véase más abajo para más detalles.
+–
+Obsérvese que la restricción presupuestaria implica que:
+24
+Optimización de media-varianza: un activo riesgoso
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 25 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+–
+Sustituyendo en el problema de optimización y tomando condiciones de primer orden, 
+tenemos:
+–
+¿Qué son estas “condiciones de primer orden”? Recuerda que, si estás resolviendo 
+maxx f(x), la condición necesaria para que x* sea un máximo es que f '(x*) = 0.
+–
+¿Cuál es la condición suficiente?
+•
+Que f ''(x*) < 0
+•
+¿Por qué se cumple esta condición en nuestro caso?
+•
+¿Es este un buen modelo?
+☺Muy simple, muy manejable.
+☺Se relaciona con medidas clave en finanzas, prima por riesgo y una medida de riesgo.
+Limitado a un solo activo…
+☹¿Cuál es la función de utilidad? ¿Cuál es el valor de c?
+25
+Optimización de media-varianza: un activo riesgoso
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 26 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Optimización de media-varianza: N activos de riesgo
+•
+Comencemos por eliminar la restricción a un solo activo.
+–
+En este caso hay n activos riesgosos con rendimientos aleatorios R = (R 1 R 2 … R n )', con un
+vector de medias E[R] y matriz de covarianza Ω.
+–
+Se elige un vector n x1 de pesos α.
+–
+Nuevamente, asumimos la existencia de un único activo sin riesgo.
+–
+El problema se maneja de manera similar,
+recordando que Var[b'X] = b'Ωb donde Ω es la matriz de covarianza del vector de variables
+aleatorias X.
+–
+Una matriz de covarianza recoge las varianzas en la diagonal principal y las covarianzas en el
+resto del espectro. Por ejemplo, una matriz de covarianza para [X1 X2] es:
+26
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 27 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+–
+Tomar las condiciones de primer orden (lo que implica reglas de álgebra matricial, no 
+entraremos en eso aquí) da:
+–
+Ω -1 es la inversa de la matriz de covarianza, es decir, aquella matriz tal que Ω-1Ω = ΩΩ -1 = I, 
+es decir, una matriz con unos en la diagonal principal y ceros en el resto.
+–
+Ω -1 es similar a tomar el “inverso” de un número, p. ej., 2 →½ o σ2 
+R →1/ σ2 
+R
+–
+La aparición de Ω -1 en la fórmula implica que no basta con dividir por la varianza de los 
+activos riesgosos:
+•
+También entran las covarianzas
+–
+¡Diversificación!
+27
+Optimización de media-varianza: N activos de riesgo
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 28 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Volvamos a la línea de transformación y la frontera eficiente.
+•
+Teorema de separación:
+–
+Un inversionista (i) primero localiza el portafolio de tangencia y luego (ii) elige la inversión
+óptima entre el activo libre de riesgo y el portafolio de tangencia en LMC.
+•
+Hay 3 pasos en la elección:
+(A) Usar conocimiento (real o creencias) sobre                                                                                
+expectativas, varianzas y covarianzas para calcular                                                                          
+el conjunto de acciones que definen la frontera                                                                              
+eficiente media-varianza.
+(B) Dado rf , se dibuja LMC y resulta M (tangencia).
+(C) Utiliza su “mapa” de curvas de indiferencia para                                                                     
+seleccionar la combinación óptima de activos sin                                                                             
+riesgo y M.
+•
+A y B NO dependen de las preferencias individuales, solo C lo hace.
+–
+Dado que M está en la LMC, E[RM] = rf + σM ∙ SRM
+•
+La pendiente de LMC: SRM ≡ [ μM - rf ]/ σM →se le llama precio del riesgo de mercado.
+•
+Dado que la curva de indiferencia más alta es aquella que es tangente a la LMC, se 
+concluye que en correspondencia con el portafolio óptimo:
+–
+Tasa marginal de sustitución entre la media y el riesgo = precio del riesgo de mercado.
+28
+Teorema de separación
+Paso B
+Paso C
+Paso A
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 29 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+F I N A N Z A S I — E N F I N 4 1 5
+Sesión I
+Alejandro Bernales
+Universidad de Chile
+C O N T E N I D O S D E L C U R S O
+01
+Teoría de portafolio
+02
+Modelos de valoración de activos
+03
+Instrumentos de renta fija
+04
+Eficiencia del mercado y mercados de 
+capitales
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 30 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+CAPM: modelo de valoración de activos de capital 
+•
+Hasta ahora hemos aprendido cómo crear la frontera eficiente, la línea del mercado de 
+capitales (LMC), y cómo seleccionar un portafolio “óptimo” dado un proceso de 
+optimización media-varianza (es decir, funciones de utilidad).
+•
+Sin embargo, también sería interesante contar con un modelo que permita evaluar el 
+retorno esperado de cualquier activo en la economía.
+–
+Por lo tanto, estudiaremos el modelo de valoración de activos de capital (CAPM), e 
+intentaremos derivar esta ecuación a partir de lo que hemos aprendido en este capítulo.
+30
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 31 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+CAPM: derivación
+•
+Ahora realizamos un experimento mental en el que nos “movemos” desde M (que 
+contiene todos los activos en proporciones fijas) y creamos un portafolio artificial p:
+–
+Portafolio p: se invierte una parte del dinero en el portafolio M y otra parte en cualquier 
+activo riesgoso i.
+–
+El portafolio p genera una “mini”- frontera MV AMB, sobre la cual:
+E[RP] = (1– xi )∙ μM + xi ∙ μi
+Var[RP] = (1 – xi )2 σ 2
+M + xi
+2 σ2
+i + 2(1 – xi ) xi σi,M
+–
+La curva AMB es tangente en M cuando xi = 0.
+–
+El portafolio p no cruza la frontera eficiente, ya que                                                                          
+esta última, por definición, es la frontera de mínima                                                                        
+varianza para cualquier nivel dado de retorno esperado.
+•
+En este caso, cuando las dos curvas se tocan, sus pendientes deben ser idénticas:
+•
+Note que:
+31
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 32 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+CAPM: derivación
+–
+Entonces (ya que σ2
+P = σ2
+M ) evaluando esta expresión en xi = 0:
+–
+Porque                                                                                                                       
+usando las expresiones anteriores, tenemos que 
+–
+Esto produce la siguiente expresión de equilibrio para la prima por riesgo de cualquier activo i:
+32
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 33 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Este es el resultado básico del Modelo de Valoración de Activos de Capital (CAPM), un 
+modelo de equilibrio para la prima por riesgo de mercado ( E[RM] – rf ) sobre cualquier 
+activo riesgoso i:
+•
+Esto significa que el retorno esperado es igual a la tasa libre de riesgo más una prima.
+•
+Además, el retorno esperado es proporcional (con coeficiente medido por su beta) a la 
+prima por riesgo del portafolio de mercado.
+•
+Solo la covarianza entre los retornos del activo y el portafolio de mercado afecta la prima
+por riesgo.
+–
+Ningún otro factor, por ejemplo:
+• el tamaño de la firma i,
+• el ratio dividendo-precio,
+• El ratio utilidades-precio
+pueden afectar la prima de riesgo.
+33
+CAPM: derivación
+Prima por riesgo de mercado
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 34 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+El riesgo sistemático de un portafolio se define como el riesgo que no puede ser
+eliminado mediante diversificación, es decir, no se reduce al agregar más activos al
+portafolio (también se conoce como riesgo no diversificable, riesgo de portafolio o riesgo
+de mercado).
+•
+Siempre existe algún nivel de riesgo incluso en un portafolio bien diversificado debido a 
+la covarianza de los retornos.
+34
+CAPM: riesgo sistemático vs. idiosincrásico
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 35 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+El CAPM implica que solo el riesgo sistemático es el que se valora en equilibrio.
+–
+Partamos nuevamente desde el riesgo de un portafolio que incluye N activos:
+–
+Supongamos ahora que los rendimientos de los diferentes activos tienen una covarianza
+constante (cov), varianzas idénticas (var) y se mantienen en proporciones idénticamente
+iguales, w i = 1/N. Entonces:
+–
+Cuando n →∞, σ2
+p →cov ≠ 0
+–
+Esta covarianza puede identificarse como la                                                                           
+covarianza promedio de los activos existentes                                                                                
+con el portafolio de mercado.
+•
+El punto clave del CAPM es:
+–
+No son σ2
+M  ni σ2
+i los que tienen "precio", sino:
+que depende de la covarianza entre Ri y RM
+–
+35
+CAPM: riesgo sistemático vs. idiosincrásico
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 36 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Cómo podemos utilizar el CAPM en la realidad?
+•
+Podemos utilizar el CAPM para evaluar si un activo está mal valorado (mispriced).
+•
+Sabemos por el CAPM que:
+•
+Si ejecutamos la siguiente regresión :
+• Esta regresión se llama modelo índice: contiene retornos realizados, en vez de esperados.
+• Por lo tanto, αi = 0 (si el CAPM se cumple perfectamente).
+– Esto se conoce como el Alpha de Jensen.
+• Si αi ≠0 el activo está mal valorado (¡PODRÍAS OBTENER GANANCIAS
+ANORMALES EN PROMEDIO!).
+• Claramente no es común ver activos con αi ≠0 (significativos).
+36
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 37 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Cómo podemos utilizar el CAPM en la realidad?
+•
+Puedes calcular diariamente el alfa de Jensen para decidir comprar o vender, ya que en
+promedio αi debería ser igual a cero. ¿Cómo?
+–
+Primero calculas el CAPM y por tanto el beta:
+–
+Luego calculas diariamente
+Nótese que utilizamos ri y rm en lugar de E(ri) y E(rm) en la segunda ecuación.
+–
+¡Lo cual es muy utilizado por los profesionales como regla comercial!
+37
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 38 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Cómo podemos utilizar el CAPM en la realidad?
+•
+También puedes usar el alfa de Jensen para clasificar el comportamiento promedio (en
+términos de rentabilidad) de portafolios, activos, fondos o del desempeño de los gestores
+de inversiones.
+•
+Sin embargo, también existen otras medidas para evaluar el rendimiento de la inversión:
+– Ratio de Sharpe:
+• Queremos portafolios con altos retornos y baja volatilidad (σ).
+• Sin embargo, a diferencia del alfa de Jensen, el ratio de Sharpe no considera el nivel de 
+retornos ni la volatilidad del mercado (que se caracteriza en Rm), y que es importante usar 
+como referencia.
+– Ratio de Treynor:
+• Queremos portafolios con altos retornos y bajo riesgo sistemático (β),                                    
+pero como: 
+entonces, 
+• En general, el ratio de Treynor es una comparación con el portafolio del mercado.
+38
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 39 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Es el CAPM un buen modelo?
+•
+El CAPM dice que los rendimientos de los activos dependen del «factor de prima por 
+riesgo del mercado (es decir, rm - rf ):
+•
+Sin embargo, es posible que otros factores económicos también afecten los retornos de los 
+activos (por ejemplo, inflación, crecimiento económico, entre otros).
+•
+Solución:
+– ¡¡¡¡¡Modelos de valoración de activos multifactoriales!!!!!
+• ¿Qué pasa si incluimos otros factores de prima por riesgo?
+39
++
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 40 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Modelos de valoración de activos multifactoriales
+•
+En esta clase aprenderemos sobre dos modelos multifactoriales:
+–
+Modelo de teoría de valoración por arbitraje (APT): Ross (1976).
+–
+Modelo de tres factores de Fama y French: Fama y French (1993).
+40
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 41 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+La APT implica que el retorno de un activo puede descomponerse en un retorno esperado 
+y en un componente inesperado, de “sorpresa” o de “noticia”.
+•
+Para cualquier acción individual, este componente de “noticia” puede subdividirse en:
+–
+“Noticias generales” que afectan a todas las acciones.
+–
+“Noticias específicas” que afectan solo a esta acción particular.
+•
+En el modelo APT, el retorno de un activo “i” se puede representar como:
+•
+Donde ui,t es el elemento inesperado, sorpresa o noticia. Podemos subdividir ui,t en:
+–
+mt : un riesgo que afecta a un gran número de acciones, en mayor o menor medida.
+–
+ei,t : un riesgo que afecta solo a la acción específica.
+•
+Para operacionalizar el modelo APT, necesitamos alguna idea de qué causa mt
+–
+Noticias sobre variables macroeconómicas.
+•
+Estas variables macro (factores F, indexados por j) pueden tener efectos distintos sobre 
+distintos activos, lo cual se refleja en los diferentes coeficientes ​bij o “betas”:
+donde el operador de expectativas E se aplica a la información en el momento t − 1 o
+anterior.
+41
+APT: Modelo de Teoría de Valoración por Arbitraje
+(Arbitrage asset pricing theory (APT) model)
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 42 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Por lo tanto, en la APT, el retorno de un activo “i” se puede representar como:
+•
+Para que ei,t sea idiosincrásico (específico de la empresa) debe cumplirse que:
+•
+Además, supongamos que la expectativa de idiosincrásica (específica de la empresa) es 
+igual a cero:
+42
+APT: Modelo de Teoría de Valoración por Arbitraje
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 43 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Cómo podemos derivar la APT?
+•
+Supongamos que invertimos todo el dinero en un portafolio de n-activos con peso xi  y con las 
+siguientes características:
+• Se trata de un portafolio beta cero:
+• Es una inversión con cero aporte de capital (se financia vía préstamos):
+•
+Supongamos que los rendimientos de un activo, ri , están relacionados linealmente con los j factores 
+del APT:
+•
+Por tanto, la rentabilidad del portafolio es la siguiente:
+dónde                   para un portafolio bien diversificado
+•
+El portafolio debería ( utilizando argumentos de que no existe arbitraje ) tener un rendimiento igual a 
+cero, ya que es un portafolio con inversión neta cero y no tiene riesgo (rp,t = E(rp)):
+•
+El portafolio sin riesgo no genera la tasa de interés sin riesgo rf . Esto se debe a que el activo sin 
+riesgo está incluido en el conjunto de activos disponibles. 
+43
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 44 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Cómo podemos derivar la APT?
+•
+En consecuencia, dado que:
+que se conocen como condiciones de ortogonalidad
+•
+Por lo tanto, a partir del álgebra lineal, se puede demostrar que el rendimiento esperado de cualquier 
+valor i puede escribirse como una combinación lineal de las ponderaciones de los factores b ij :
+•
+Vamos a verificar:
+44
+,
+1
+( )
+k
+i
+f
+i j
+j
+j
+E r
+r
+b λ
+=
+=
++
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 45 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Por lo tanto, podemos escribir el APT de la siguiente manera:
+dónde:
+–
+bi,j se denomina carga del factor,
+–
+Fj refleja el factor j (por ejemplo, riesgo de mercado, inflación, PIB, etc.),
+–
+λj son la prima por riesgo del factor asociada al factor j.
+•
+Versión alternativa con notación de choques:
+45
+,
+,
+,
+,
+,
+1
+,
+1
+( )
+(
+(
+))
+( )
+k
+i t
+i
+i j
+j t
+j t
+i t
+j
+k
+i
+f
+i j
+j
+j
+r
+E r
+b
+F
+E F
+e
+E r
+r
+b λ
+=
+=
+=
++
+−
++
+=
++
+
+
+,
+,
+,
+,
+,
+,
+,
+1
+,
+1
+( )
+(
+)
+( )
+k
+i t
+i
+i j
+j t
+i t
+j t
+j t
+j t
+j
+k
+i
+f
+i j
+j
+j
+r
+E r
+b f
+e
+f
+F
+E F
+E r
+r
+b λ
+=
+=
+=
++
++
+=
+−
+=
++
+
+
+APT: Modelo de Teoría de Valoración por Arbitraje
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 46 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Supongamos que tenemos el siguiente modelo APT:
+•
+A continuación, considere un portafolio denominado “portafolio 1” que tiene bi,1 = 1 y  
+bi,2 = 0, entonces:
+•
+También podemos crear un portafolio llamado 'portafolio 2' con bi,1=0 y bi,2=1, entonces:
+•
+Por lo tanto:
+•
+DE ESTE MODO:
+donde rpj,t es el rendimiento de un portafolio que “imita” el comportamiento del 
+factor.
+46
+,
+,1
+1,
+,2
+2,
+,
+,1
+1
+,2
+2
+( )
+( )
+i t
+i
+i
+t
+i
+t
+i t
+i
+f
+i
+i
+r
+E r
+b f
+b f
+e
+E r
+r
+b λ
+b λ
+=
++
++
++
+=
++
++
+1
+1
+1
+1
+(
+)
+(
+)
+p
+f
+p
+f
+E r
+r
+λ
+λ
+E r
+r
+=
++
+
+=
+−
+2
+2
+2
+2
+(
+)
+(
+)
+p
+f
+p
+f
+E r
+r
+λ
+λ
+E r
+r
+=
++
+
+=
+−
+APT: Modelo de Teoría de Valoración por Arbitraje
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 47 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Cómo podemos encontrar un portafolio que “imite” el comportamiento del factor?
+•
+Supongamos que tenemos el mismo modelo APT que en la diapositiva anterior:
+•
+Supongamos que hay 3 activos: un activo riesgoso A, un activo riesgoso B y un activo 
+libre de riesgo. ¿Cómo podemos encontrar un portafolio que “imite” el comportamiento 
+del primer factor?
+•
+En este ejemplo:
+•
+Es simplemente un sistema de ecuaciones lineales
+47
+,
+,1
+1,
+,2
+2,
+,
+,1
+1
+,2
+2
+( )
+( )
+i t
+i
+i
+t
+i
+t
+i t
+i
+f
+i
+i
+r
+E r
+b f
+b f
+e
+E r
+r
+b λ
+b λ
+=
++
++
++
+=
++
++
+1,
+1
+1,1
+1,
+1,2
+2,
+1,
+1
+1,1
+1
+1,2
+2
+(
+)
+(
+)
+p
+t
+p
+p
+t
+p
+t
+p
+t
+p
+f
+p
+p
+r
+E r
+b
+f
+b
+f
+e
+E r
+r
+b
+λ
+b
+λ
+=
++
++
++
+=
++
++
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 48 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Pregunta: ¿Cómo calculamos λj? O, equivalentemente, ¿cómo calculamos (E(rj) - rf)?
+–
+Podemos utilizar la herramienta estadística llamada: análisis factorial.
+• Problema: muy complejo.
+–
+También podemos utilizar un procedimiento de dos etapas que proporciona resultados (no 
+exactos) pero muy buenos.
+• Problema: No es exacto.
+• Beneficio: Es mucho más sencillo de implementar. De hecho, es lo que utilizan 
+profesionales y varios académicos.
+48
+,
+,
+,
+,
+,
+,
+,
+1
+,
+1
+( )
+(
+)
+( )
+k
+i t
+i
+i j
+j t
+i t
+j t
+j t
+j t
+j
+k
+i
+f
+i j
+j
+j
+r
+E r
+b f
+e
+f
+F
+E F
+E r
+r
+b λ
+=
+=
+=
++
++
+=
+−
+=
++
+
+
+Estimación del modelo APT
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 49 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+El procedimiento en dos etapas:
+–
+Recuerde, el modelo APT es:
+Primera etapa: ejecutar varias regresiones de series de tiempo (una para cada activo de la 
+economía) de rit en los k factores preseleccionados, F1t ,…, Fkt
+r it = a i + b i1 (F 1t - E(F 1t )) + b i2 (F 2t - E(F 2t )) +…… + ε it
+t=1,…,T
+–
+Realizar una regresión de series de tiempo para cada activo: N veces para todos los activos.
+–
+Obtener las estimaciones de bi1 ,…, bik , i=1,…,N (para cada activo). 
+–
+Obtendrá una matriz de N x k valores de bij.
+Segunda etapa : ejecutar una regresión transversal (cross-sectional) con los promedios 
+muestrales de los retornos, ri
+avg ,sobre las estimaciones de la primera etapa de bi1 ,…, 
+bik
+ri
+avg = λ0 + λ1bi1 + λ2bi2 +…… + λjbij +αi 
+–
+Es solo una regresión.
+–
+Esta regresión proporciona las estimaciones de  λ1 , λ2 ,…, λk (común a todos los activos).
+49
+,
+,
+,
+,
+,
+,
+,
+1
+,
+1
+( )
+(
+)
+( )
+k
+i t
+i
+i j
+j t
+i t
+j t
+j t
+j t
+j
+k
+i
+f
+i j
+j
+j
+r
+E r
+b f
+e
+f
+F
+E F
+E r
+r
+b λ
+=
+=
+=
++
++
+=
+−
+=
++
+
+
+Implementación del modelo APT
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 50 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Fama y French (1993) concluyen que los rendimientos mensuales de 25 portafolios con 
+acciones estadounidenses, ordenados por tamaño y valor de la empresa, se pueden 
+explicar mediante un modelo de tres factores donde los factores son:
+–
+El retorno del mercado, M.
+–
+El retorno de un portafolio relacionado al "tamaño“ (size) de las empresas, que incluye el 
+retorno del portafolio de empresas pequeñas menos los valores de las grandes (small minus big, 
+SMB portfolio).
+–
+El retorno de un portafolio relacionado al ratio book-to-market de las empresas, que incluye el 
+retorno del portafolio de empresas con alto menos bajo ratio book-to-market (high minus low, 
+HML, book-to-market portfolio).
+50
+Modelo de tres factores de Fama y French
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 51 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+¡En esta gráfica deberíamos tener una relación lineal!
+–
+Está claro que no es el caso.
+51
+Modelo de tres factores de Fama y French
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 52 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Esta es la misma gráfica de la diapositiva anterior. Sin embargo, aquí las líneas 
+conectan portafolios con acciones de empresas en diferentes categorías de tamaño 
+dentro de las categorías de book-to-market.
+52
+Modelo de tres factores de Fama y French
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 53 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Modelo de tres factores de Fama y French
+•
+Esta es la misma gráfica de la diapositiva anterior. Sin embargo, aquí las líneas 
+conectan portafolios con acciones de empresas en diferentes categorías en el ratio 
+book-to-market dentro de las categorías de tamaño.
+53
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 54 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Modelo de tres factores de Fama y French
+•
+El modelo de Fama y French es un modelo multifactorial “famoso”:
+•
+Los factores son:
+• RM,t - Rf : el retorno de mercado que excede la tasa libre de riesgo.
+• SMBt (Small minus big, pequeñas menos grandes): el retorno de las acciones de empresas 
+de pequeña capitalización (50% inferior) menos el retorno de las acciones de gran 
+capitalización (50% superior).
+• HMLt : (High minus low, alto menos bajo): el retorno de las acciones de empresas con alto 
+valor en el ratio book-to-market (30% superior) menos los de las acciones con bajo valor 
+contable/mercado (30% inferior).
+•
+¿Cómo construir estos tres factores?
+–
+Clasifique todas las empresas de forma independiente en dos grupos de tamaño (S y B) y tres 
+grupos de valor en el ratio book-to-market (L, M y H).
+–
+Formar seis portafolios ponderados por valor LS, MS, HS, LB, MB y HB como intersecciones 
+de los grupos de tamaño y relación precio/valor contable.
+• SMB está diseñado para ser neutral con respecto al valor contable/mercado:
+– SMB = (HS + MS + LS )/3 − (HB + MB + LB )/3
+• HML está construido para ser neutral con respecto al tamaño:
+– HML = ( HS + HB )/2 − ( LS + LB )/2
+54
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 55 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Si NO estás trabajando con datos de EE.UU.:
+–
+Usar el procedimiento de dos etapas descrito para el modelo APT.
+•
+Si está trabajando con datos de EE.UU.:
+–
+Usar el procedimiento de dos etapas descrito para el modelo APT.
+–
+O bien, puede ir a la página web de Kenneth French para obtener los factores para el mercado 
+estadounidense:
+http://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html
+55
+¿Cómo podemos estimar el modelo F&F?
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 56 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+F I N A N Z A S I — E N F I N 4 1 5
+Sesión I
+Alejandro Bernales
+Universidad de Chile
+C O N T E N I D O S D E L C U R S O
+01
+Teoría de portafolio
+02
+Modelos de valoración de activos
+03
+Instrumentos de renta fija
+04
+Eficiencia del mercado y mercados de 
+capitales
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 57 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Panorama de las matemáticas financieras asociadas a los instrumentos de renta fija.
+•
+Modelos de estructura de tasas de interés.
+•
+Comprender los conceptos básicos, la estructuración y la fijación de precios de bonos, 
+swaps, FRA y forwards.
+57
+Agenda:
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 58 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Sea r la tasa anual para ese período en el tiempo t y W la cantidad obtenida al
+invertir $100 durante T - t (años).
+Interés compuesto:
+Nota: r depende de t y T. ¿Por qué?
+•¿Por qué los bonos del gobierno griego tienen una tasa de largo plazo mayor
+en comparación con la tasa de corto plazo?
+•¿Por qué las tasas de interés cambian diariamente?
+t
+Las tasas de interés se aplican dentro de un marco temporal definido con una 
+composición dada:
+T
+Plazo o periodo: T - t
+58
+Tasas de interés
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 59 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Tasas de interés
+•
+Antes de continuar…
+– ¿Por qué alguien pagaría interés si tú le prestas dinero?
+– ¿Por qué un banco paga intereses si depositas dinero en una cuenta de ahorro?
+• Tal vez el banco pueda usar el dinero para un proyecto más rentable, que sin
+el dinero no podría realizarse. Ese banco debe competir con otros bancos (que
+también podrían tener proyectos rentables en sus carteras). Tú proporcionas
+liquidez a los bancos: los bancos deben competir.
+• Ese dinero es valioso para ti, ya que puede ser usado para comprar y consumir
+algo que te gusta. Sin embargo, si prestas el dinero, tendrás que esperar y
+deberías cobrar por ello: costos de espera.
+• Existe la posibilidad de que el banco no pague, por lo tanto, deberías cobrar
+por esa posibilidad: costos potenciales por falta de pago.
+• Muchas otras variables interactúan.
+– El problema es complejo y se comprenderá progresivamente a lo largo
+del curso.
+59
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 60 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Nota: r depende de t y T. ¿Por qué?
+• ¿Por qué los bonos del gobierno griego ofrecen una tasa de interés más alta a largo plazo
+que a corto plazo? … ¿Percepciones? ¿Expectativas?
+• ¿Por qué varían las tasas de interés a diario? … ¿Noticias? ¿Información nueva?
+Tasas de interés
+60
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 61 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Sin embargo, existen diferentes convenciones para el cálculo del período de término de 
+un préstamo (o un bono):
+–
+Convenciones de plazo:
+• ACT/360
+• ACT/ACT
+• 30/360
+• Días de negociación/252 
+• Etc.
+Las tasas de interés se aplican dentro de un plazo definido con una composición determinada.
+Sea r la tasa anual para un período y frecuencia determinados, entonces W es lo que se obtiene
+al invertir $1 en T- t (años) y frecuencia compuesta f
+Interés compuesto:
+Tasas de interés
+t
+T
+Plazo o término: T - t
+τ
+N. de periodos de composición:
+f = (T- t) / τ
+61
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 62 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Interés compuesto continuo
+Sea r la tasa anual para ese período en el tiempo t y W la cantidad obtenida al invertir
+$100 en T-t (años).
+Interés compuesto continuo:
+¿Por qué?
+t
+Las tasas de interés se aplican dentro de un plazo definido con una composición 
+determinada.
+T
+Plazo o término: T - t
+Tasas de interés
+62
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 63 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Tasas de interés
+•
+Tasa cero
+– Una para un vencimiento dado T es la cantidad de interés ganada por una inversión
+que entrega un único pago en T (es decir, no hay pagos intermedios hasta T).
+63
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 64 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Este gráfico muestra TASAS CERO para Grecia en diferentes fechas.
+64
+Tasas de interés
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 65 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Qué es un bono?
+•
+Los bonos son instrumentos financieros que reflejan una deuda, los cuales son emitidos
+por entidades privadas o instituciones gubernamentales, y que comúnmente se utilizan
+para financiar sus proyectos.
+•
+En otras palabras, es una obligación financiera que responde a una promesa de pago
+futuro. Es un contrato que refleja el monto, el período de tiempo permitido para que el
+deudor pague y la forma de pago (es decir, períodos de pago, tipo de pagos, etc.).
+•
+El deudor (o emisor) se compromete a reembolsar el capital con intereses, también
+llamados cupones (flujos de efectivo al final o en medio del período de deuda).
+–
+El cupón puede ser fijo o variable .
+65
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 66 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Cómo calcular el precio de un bono?
+•
+Para calcular el precio de un bono descontamos cada cupón por su respectiva tasa cero.
+•
+Por ejemplo, el precio de un bono con un principal (también llamado valor cara) de
+100 a pagar en dos años y cupones semestrales al 6% (base anual) es:
+66
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 67 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Qué es un bono cero cupón?
+•
+Es un bono que no paga cupones antes de su vencimiento (también llamado madurez),
+sino que paga todo el principal al vencimiento del bono.
+•
+Por ejemplo, el precio de un bono cupón cero con un capital de 100 en dos años es:
+67
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 68 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Cómo se negocian los bonos en los mercados reales?
+•
+El mercado de bonos tiene diferentes tipos de ellos:
+–
+Diferentes tipos de cupones.
+–
+Diferentes vencimientos.
+–
+Diferentes valores del préstamo (principal).
+•
+Los traders necesitarían tener una calculadora en la mano (constantemente) para
+comparar precios de bonos con el fin de decidir si es bueno comprar o vender un
+determinado bono.
+• ¿Demasiado complicado, verdad?
+•
+¿Podemos hacerle la vida más fácil al trader?
+– Dos conceptos importantes:
+• Yield (rendimiento).
+• Duración.
+68
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 69 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Qué es la yield de los bonos?
+•
+La yield (tasa de rendimiento) de los bonos es la tasa de descuento que hace que el
+valor actual de los cupones del bono sea igual al precio de mercado del bono.
+•
+Por ejemplo, supongamos que el precio de mercado del bono es de $98.39.
+•
+La yield del bono (supongamos la yield compuesta continua) se obtiene resolviendo la
+ecuación:
+para obtener y = 0.0676 o 6.76%
+•
+¿Cuál es la yield de un bono cupón cero?
+–
+La yield es exactamente la tasa cero (zero rate) para el vencimiento correspondiente:
+–
+y = 6.8%
+69
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 70 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Cuál es la duración de un bono?
+•
+La duración, D, de un bono es una medida de tiempo, que refleja el tiempo promedio
+que el propietario del bono debe esperar para recibir todos los pagos prometidos (es
+decir, todos los cupones y el capital).
+donde B es el precio del bono, mientras y es la yield del bono.
+70
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 71 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Duración de un bono
+71
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 72 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Duración de un bono
+•
+¿Cuál es la duración de un bono cupón cero?
+– Es el vencimiento del bono:
+• Para un bono cupón cero: duración = vencimiento (o madurez).
+• Por ejemplo, si utilizamos el cupón cero mostrado anteriormente:
+entonces:
+72
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 73 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Porque si un bono tiene cupones con cierta yield y con duración D, esto es similar (≈) a
+un bono cupón cero con:
+–
+Tasa cero = y.
+–
+Madurez = D.
+–
+Principal = suma de todos los cupones.
+•
+¡¡¡Así, con la yield y la duración podemos aproximar cualquier bono con cupón a
+un bono cupón cero (el bono más simple)!!!
+–
+Esto significa que los traders pueden pensar en términos de bonos cupón cero, lo cual es
+más manejable e intuitivo.
+73
+¿Por qué son útiles la yield y la duración para un trader?
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 74 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Porque si un bono tiene cupones con cierta yield y con duración D, esto es similar (≈) a
+un bono cupón cero con:
+–
+Tasa cero = y.
+–
+Madurez = D.
+–
+Principal = suma de todos los cupones.
+•
+¿Podemos probarlo?
+–
+Un bono cupón cero con valor nominal igual a uno vale:
+–
+En el caso de un bono con cupones:
+–
+¿Por qué es esto una “aproximación” y no una “igualdad”?
+• D depende de y, y en la integral (usada para resolver la ecuación diferencial anterior),
+sin embargo asumimos que D no está relacionado con y.
+74
+¿Por qué son útiles la yield y la duración para un trader?
+(
+)
+T
+r
+e
+B
+
+−
+
+= Principal
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 75 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Duración de un bono
+Si utilizamos la aproximación
+del precio de un bono con la
+duración y la yield:
+75
+Muy similar a 
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 76 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Hagamos una expansión de Taylor (con dos términos) para aproximar el cambio en el
+precio de un bono, debido a un pequeño cambio en la tasa de rendimiento (yield).
+•
+Podemos calcular las derivadas:
+•
+Definamos la convexidad, C, como:
+•
+Entonces:
+∆𝐵= −𝐵∙𝐷∙∆𝑦+ 1
+2 𝐵∙𝐶∙∆𝑦2
+76
+Duración también sirve para analizar cambios en el precio 
+debido a cambios en la yield
+Primera aproximación 
+(incluye solo duración, es lineal!!!!)
+Mejor aproximación  
+(incluye curvatura)
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 77 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Ejemplo:
+•
+Suponga que un bono tiene un plazo de 30 años con principal $1000, un cupón del 8%
+(anual) y se vende con un rendimiento (yield) del 8 %. Como la tasa del cupón
+coincide con el rendimiento al vencimiento, el bono se negocia a la par, es decir, a
+$1000. La duración del bono es de 11.26 años y su convexidad es de 212.4. Si el
+rendimiento del bono aumenta del 8 % al 10 %, el precio descenderá a 811,46 $, lo que
+representa un -18.85 %.
+•
+La aproximación simple con duración, establecida predeciría una caída en el precio de
+∆𝐵= −𝐵∙𝐷∙∆𝑦= −1000 ∙11.26 ∙0.02 = −225.2
+Equivalente a un -22.52%
+•
+Sin embargo la mejor aproximación que usa la convexidad predeciría:
+∆𝐵= −𝐵∙𝐷∙∆𝑦+ 1
+2 𝐵∙𝐶∙∆𝑦2
+= −1000 ∙11.26 ∙0.02 + 1
+2 1000 ∙212.4 ∙0.02 2 = −182.7
+Equivalente a -18.27% que es más cercano al valor correcto!
+77
+∆𝐵= −𝐵∙𝐷∙∆𝑦+ 1
+2 𝐵∙𝐶∙∆𝑦2
+Duración también sirve para analizar cambios en 
+el precio debido a cambios en la yield
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 78 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+¿Existe una relación entre los bonos y las tasas cero cupón?
+–
+En realidad, las tasas cero no son observables directamente.
+–
+Los agentes transan bonos, y con esos precios podemos estimar implícitamente las tasas de
+cupón cero.
+–
+Cuando se grafican tasas de interés para todos los vencimientos existentes, obtenemos la
+estructura temporal de tasas de interés.
+78
+Estructura temporal de tasas de interés (curva cero)
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 79 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Estructura temporal de tasas de interés (curva cero)
+•
+Pero, ¿cómo podemos calcular tasas cero cupón si TODOS los bonos que conocemos
+tienen cupones?
+–
+¡Método de bootstrapping!
+•
+Ejemplo. Supongamos que tenemos cinco bonos, algunos con cupones y otros sin
+ellos:
+–
+La tasa cero para el bono a tres meses es: r 0.25 = - 4 · ln(97.5/100) = 10.127%
+–
+Haciendo el mismo ejercicio para las tasas a seis meses y a un año: r0.5 = 10.469% y
+r1,0 = 10.536%
+–
+Para la tasa a 1.5 años:
+–
+Por lo tanto r 1,5 = 10.681%
+–
+El mismo procedimiento se puede aplicar a la tasa de dos años:
+–
+r2,0 = 10.808%
+79
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 80 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+¿Cuál es la importancia de la estructura temporal de tasas de interés?
+–
+Se utiliza como base para calcular otras tasas de descuento para proyectos más riesgosos.
+–
+Se utiliza para valorar instrumentos financieros más complejos (aprenderemos el “cómo” en
+las siguientes clases)
+–
+Es económicamente importante ya que refleja las expectativas de los agentes.
+80
+Estructura temporal de tasas de interés (curva cero)
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 81 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Hay varios modelos para caracterizar la estructura temporal de tasas de interés.
+–
+Interpolación simple: No tan buena ya que la estructura temporal de tasas de interés 
+generalmente no es una curva lineal.
+–
+Polinomios: Oscilan.
+–
+Curvas (Splines, Nelson-Siegel, Svensson).
+•
+Nos enfocaremos en dos de ellos debido a su popularidad en Bancos Centrales y entre
+Practicantes:
+–
+Nelson-Siegel (1987).
+–
+Svensson (1994).
+81
+Modelos de la estructura temporal de tasas de interés
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 82 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Nelson-Siegel (1987):
+82
+1
+1
+1
+1
+1
+0
+1
+2
+( )
+1
+1
+t
+t
+t
+α
+α
+α
+α
+α
+R t
+β
+β
+e
+β
+e
+e
+t
+t
+−
+−
+−
+
+
+
+
+
+
+
+
+=
++
+
+−
+
++
+
+−
+
+−
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Modelos de la estructura temporal de tasas de interés
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 83 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Svensson (1994):
+83
+1
+1
+1
+2
+2
+1
+1
+2
+0
+1
+2
+3
+( )
+1
+1
+1
+t
+t
+t
+t
+t
+α
+α
+α
+α
+α
+α
+α
+α
+R t
+β
+β
+e
+β
+e
+e
+β
+e
+e
+t
+t
+t
+−
+−
+−
+−
+−
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=
++
+
+−
+
++
+
+−
+
+−
++
+
+−
+
+−
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Modelos de la estructura temporal de tasas de interés
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 84 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Algunos instrumentos financieros están basados en tasas de interés.
+•
+Estudiaremos dos de ellos:
+– Acuerdos de tasas forward (FRA).
+– Swaps de tasas de interés.
+84
+Instrumentos derivados de tipos de interés
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 85 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+…¡Antes debemos entender un concepto fundamental en finanzas!
+– ¡¡¡No hay oportunidades de arbitraje en los mercados!!!
+•
+¿Qué es el arbitraje?
+–
+Es una estrategia financiera para ganar dinero que usa dos o más activos financieros que no
+están valorados “correctamente”.
+•
+¿Podemos ganar dinero mediante el arbitraje?
+–
+Si pudiéramos, todos seríamos ricos.
+–
+Por tanto, está claro que no existen oportunidades de arbitraje.
+•
+Ejemplo. Supongamos que Alejandro tiene una estrategia para ganar dinero:
+–
+Pide prestado $100 al banco por 3 años a una tasa cero r0,3 .
+–
+Presta inmediatamente esos $100 a Daniel por 1 año a tasa cero r0,1 .
+–
+Cuando Daniel paga en 1 año más, Alejandro presta los $100 más el interés generado a
+Margarita por 2 años a la tasa r1,3 (es decir, r1,3 es la tasa forward un año después para prestar
+dinero a un plazo de 2 años).
+• ¿Cuál es la tasa r1,3 que debe pagar Margarita?
+–
+El mercado no tiene oportunidades de arbitraje, por lo que Alejandro debería ganar cero
+,
+por lo tanto:
+85
+Instrumentos derivados de tipos de interés
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 86 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+¿Qué es un acuerdo de tasas forward (FRA)?
+–
+Un contrato en el que dos instituciones acuerdan HOY que se aplicará una determinada tasa
+a una cantidad de dinero, durante un tiempo determinado y a partir de una fecha específica.
+–
+Dado que las tasas de interés varían con el tiempo.
+–
+Una FRA consiste en fijar una tasa de interés hoy, que será usada en el futuro para pedir
+prestado o prestar dinero.
+86
+Instrumentos derivados de tipos de interés
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 87 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Instrumentos derivados de tipos de interés
+•
+¿Qué es un acuerdo de tasas forward (FRA)?
+•
+Ejemplo.
+–
+Supongamos que Alejandro quiere comprar una casa el próximo año (no ahora): necesitará el
+próximo año un préstamo por 30 años de $100 para comprarla.
+–
+Alejandro cree que la próxima crisis es inminente y que las tasas de interés podrían variar
+fuertemente. Por lo tanto, decide ir hoy al banco y pedir un FRA, que fija la tasa a 30 años
+hoy en k 1,31 .
+–
+Supongamos que la tasa cero para 31 años es r0,31, y la tasa forward para un préstamo con
+vencimiento a 30 años comenzando desde el próximo año es r1,31 .
+–
+¿Cuánto es el valor del contrato hoy?
+• Si asumimos que no hay oportunidades de arbitraje el valor es intuitivo.
+•
+El valor de una FRA es:
+dónde rt1,t2 es la tasa forward y kt1,t2 es la tasa para el FRA.
+87
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 88 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+¿Qué es un swap de tasas de interés?
+–
+Swap: es un acuerdo entre dos contrapartes para intercambiar flujos de efectivo en el futuro
+de acuerdo a una fórmula predeterminada en intervalos regulares.
+• Un swap de tasas de interés se define como un intercambio entre pagos (cupones) que
+están definidos por una tasa de interés fija y pagos definidos por una tasa de interés
+variable.
+• ¿Por qué es esto útil?
+– Gestión de riesgos por cambios en las tasas de interés.
+– Organizar los ingresos de las compañías (hacerlos más estables en el tiempo).
+88
+20-May-04
+20-Ago-04
+20-Nov-04
+20-Feb-05
+20-May-05
+20-Ago-05
+20-Nov-05
+20-Feb-06
+Instrumentos derivados de tipos de interés
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 89 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Instrumentos derivados de tipos de interés
+•
+¿Cómo podemos valorar los swaps de tasas de interés?
+–
+Fácil, usar precio de dos bonos: uno a tasa fija y otro a tasa flotante (variable).
+–
+Si recibo una tasa flotante y pago una tasa fija: Equivale a comprar un bono con tasa flotante
+y emitir un bono a tasa fija.
+–
+Si recibo una tasa fija y pago tasa flotante: Equivale a comprar un bono a tasa fija y emitir un
+bono a tasa flotante.
+•
+La pregunta es cómo fijar el precio de estos dos bonos.
+–
+Para los bonos con tipos de interés fijos: hay que descontar los flujos de caja futuros
+(cupones) para cada fecha utilizando las tasas de interés correspondientes a cada
+vencimiento.
+–
+Para los bonos con tasa flotante: hay que descontar únicamente el siguiente flujo de caja
+(cupón) más el capital al vencimiento respectivo (¿por qué?).
+89
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 90 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Bonos con tasas flotantes: ¿por qué deberíamos solo descontar el siguiente flujo de
+caja más el principal al vencimiento correspondiente?
+–
+Sólo para fines demostrativos, supongamos tasas compuestas en lugar de tasas continuas:
+–
+Hasta ahora sólo hemos estudiado los bonos de renta fija:
+• Se llaman bonos de renta fija porque el cupón c es fijo, no porque r sea fijo. De
+hecho, aprendimos que r varía con el tiempo.
+– Esa es la razón por la que los precios de los bonos cambian en el mercado (es
+decir, r cambia).
+• Bono de renta variable:
+• Es fácil mostrar que cada vez que se paga un cupón, el precio del bono flotante es igual
+a su principal ( Bfloat = Princ).
+• El problema surge cuando buscamos el valor de Bfloat cuando no se paga ningún cupón
+(por ejemplo, entre dos cupones). En este caso, el valor del Bfloat es: el próximo cupón a
+pagar (k*) + el Principal, descontado hasta la fecha del próximo cupón (t*).
+Un bono con tasas flotantes es ‘variable’
+porque sus cupones son variables!!! NO porque
+la tasa de descuento sea variable (ya que r por
+sí sola varía en el tiempo).
+90
+Princ
+=
+float
+B
+Princ
+=
+float
+B
+Princ
+=
+float
+B
+Instrumentos derivados de tipos de interés
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 91 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Instrumentos derivados de tipos de interés
+91
+En t1 se fija el próximo cupón a pagar en t 2
+Cupón: k*= Princ ·rTasa al tiempo del último cupón (t1)  para calcular el siguiente cupón
+Quiero valorar el Bflotante aquí,
+pero la tasa ya ha cambiado.
+Para el período t*, el nuevo
+tipo de cambio es r*.
+•En tiempo continuo
+El problema surge cuando buscamos el valor de Bfloat cuando no se paga ningún cupón (por
+ejemplo, entre dos cupones). En este caso, el valor del Bfloat es: el próximo cupón a pagar (k*) +
+el Principal, descontado hasta la fecha del próximo cupón (t*).
+Princ
+=
+float
+B
+Princ
+=
+float
+B
+Princ
+=
+float
+B
+t0
+t1
+t2
+t*
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 92 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Instrumentos derivados de tipos de interés
+92
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 93 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+F I N A N Z A S I — E N F I N 4 1 5
+Sesión I
+Alejandro Bernales
+Universidad de Chile
+C O N T E N I D O S D E L C U R S O
+01
+Teoría de portafolio
+02
+Modelos de valoración de activos
+03
+Instrumentos de renta fija
+04
+Eficiencia del mercado y mercados de 
+capitales
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 94 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Qué es la eficiencia del mercado?
+•
+Un mercado de capitales eficiente es aquel en el que los precios de los activos reflejan
+plenamente la información disponible.
+– Así, como la información se refleja en los precios de las acciones rápidamente, conocer
+información cuando ya ha sido publicada no tiene valor.
+– Los inversores deben esperar transar un precio justo. En un mercado eficiente, no pueden
+beneficiarse de otros inversores.
+94
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 95 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Tipos de eficiencia del mercado
+•
+Forma débil de eficiencia del mercado:
+– Los precios de los activos reflejan toda la información histórica de los precios y del volumen
+transado.
+– En la realidad, el mercado muestra que son eficientes en su forma débil.
+•
+Forma semi-fuerte de eficiencia de mercado:
+– Los precios de los activos reflejan toda la información pública histórica disponible
+(incluyendo no solo precios anteriores y volumen de transacciones, sino también desempeño
+financiero de las empresas, periódicos, información de analistas, etc.)
+– En la realidad, el mercado muestra que también son eficientes en su forma semi-fuerte.
+•
+Forma fuerte de eficiencia del mercado:
+– Los precios de los activos reflejan toda la información histórica que es pública y la
+información privada que tienen algunos inversores.
+– En la realidad, el mercado demuestra que no son eficientes en su forma fuerte.
+95
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 96 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Los mercados son al menos eficientes en su forma semi-fuerte
+•
+Por lo tanto, dado que el mercado es al menos eficiente en su forma semi-fuerte, si
+quieres ganar dinero en el mercado:
+– El uso de modelos que utilizan información histórica no debería proporcionar
+ganancias de manera consistente.
+•
+Solo individuos con información privada-adicional pueden obtener consistentemente
+ganancias en el mercado.
+– PERO, pocos individuos tienen información privada-adicional (es costosa):
+• Personas que trabajan en empresas: una forma ilegal de obtener información privada
+adicional.
+• ¡Puedes ir a la cárcel!
+• Puedes tener un súper-equipo (doctorados en Finanzas, Matemáticas, Ciencia de Datos)
+con: i) super modelos (incluyendo patrones, minería de texto, etc.); ii) super
+computadoras; y iii) acceso instantáneo al mercado.
+• Súper caro.
+96
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 97 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¡¡¡La pregunta más importante del curso!!!
+•
+Dado que unos pocos individuos (sólo con información privada adicional) pueden
+obtener constantemente ganancias al operar en el mercado.
+• ¿Por qué tenemos tantas transacciones en los
+mercados de todo el mundo?
+Respuesta
+•
+¡¡¡Los mercados no son perfectos!!!!!
+•
+Un ejemplo:
+•
+Los inversores pueden tener diferentes motivos para operar.
+– Por lo tanto, no todos operan para obtener ganancias únicamente a través de la
+actividad de trading.
+• Algunas transacciones pueden querer realizarse ahora para cubrir (hedgear) sus
+portafolios, obtener beneficios tributarios; mientras que otras pueden esperar para
+encontrar mejores oportunidades en el mercado.
+97
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 98 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Los mercados no son perfectos
+•
+En el mercado existen al menos dos grupos de traders:
+•
+Impaciente: prefiere comprar/vender inmediatamente.
+•
+Paciente: quisiera comprar/vender, pero no necesariamente de manera instantánea.
+•
+Por lo tanto, los pacientes pueden cobrar una comisión (un spread) a los impacientes:
+– Por ejemplo, pensemos en una casa de cambio de divisas:
+• El dueño paciente de la casa de cambio está esperando agentes que quieran comprar o
+vender dólares.
+• Él cobra un pago por eso: el spread (la diferencia entre el precio de venta y el
+precio de compra)!!!.
+• Los individuos impacientes que quieren comprar o vender dólares inmediatamente (por
+ejemplo, porque se van de vacaciones) están dispuestos a pagar por una transacción
+inmediata.
+•
+Por lo tanto: no un precio, ¡sino DOS precios existen en equilibrio!
+•
+Diferencia = spread: indicador del coste de inmediatez.
+98
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 99 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Los mercados no son perfectos
+•
+Mostramos en la diapositiva anterior que hay DOS precios:
+– El precio para comprar inmediatamente (que refleja una transacción ahora o en el futuro).
+– El precio para vender inmediatamente (que refleja una transacción ahora o en el futuro).
+•
+¿Existen solo dos precios en la economía?
+– ¿Qué pasa con el precio fundamental (por ejemplo, el valor verdadero del dólar o el valor
+verdadero de IBM como empresa)?
+• Este es el valor fundamental (o precio fundamental).
+•
+Descubrimiento de precios (Price discovery):
+– Velocidad y precisión con que los precios de transacción incorporan la información
+disponible y reflejan el valor fundamental.
+– Los mercados de valores pueden ser muy buenos y rápidos para agregar muchos fragmentos
+de información y usarlos para valorar activos:
+– Un viejo ejemplo
+• Explosión del transbordador espacial Challenger el 28 de enero de 1986 (hace casi 40
+años atrás, donde no había muchos computadores).
+• En 15 minutos el mercado “supo” cuál de los 4 fabricantes posibles era responsable del
+accidente ⇒detención de operaciones por ventas para sus acciones.
+• Los científicos tardaron 15 días en llegar a la misma conclusión.
+99
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 100 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+¿Tenemos otras imperfecciones en los mercados de capitales?
+•
+Como se mencionó anteriormente, los inversores pueden tener diferentes motivos para
+operar: no todos operan para obtener ganancias solo a través del trading en sí.
+•
+Como se mencionó anteriormente, existen múltiples precios de transacción (al menos
+dos: el de compra y el de venta de los agentes pacientes).
+– Los precios de transacción no son necesariamente iguales a los valores fundamentales de los
+activos.
+•
+No todos los inversores participan todo el tiempo: en cada momento, los precios son
+determinados por unos pocos participantes que absorben las transacciones.
+– En promedio: # de compradores = # de vendedores, pero este no es necesariamente el caso
+en todo momento.
+•
+demanda ≠oferta.
+100
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 101 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+•
+Existen costos de transacción:
+– Explícito (por ejemplo, comisiones, impuestos, costo de adquisición de información).
+– Implícito (por ejemplo, costos de espera, costos por transar inmediatamente, etc.).
+•
+Los precios son discretos en lugar de continuos, y la diferencia entre dos precios
+consecutivos se llama: tick size.
+•
+La información es compleja e imprecisa, por lo que los inversores suelen no estar de
+acuerdo en su interpretación.
+– Los precios no reflejan la “visión de consenso” de todos sobre los fundamentales (flujos de
+caja futuros, etc.).
+101
+¿Tenemos otras imperfecciones en los mercados de capitales?
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 102 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Conceptos básicos de los mercados de capitales reales
+•
+“Bid” = precio al que los traders pacientes quieren comprar, que es también el precio que
+traders impacientes pueden vender.
+•
+“Ask” = precio al que los traders pacientes quieren vender, que es también el precio que
+traders impacientes pueden comprar.
+•
+Los precios son discretos, existe una variación mínima de precio, es decir, “tick size”.
+•
+A un solo precio, un operador solo puede comprar/vender una cierta cantidad de acciones
+= “profundidad” (depth).
+102
+Sell Side (traders que 
+“desean” vender)
+Buy side (traders que 
+“desean” comprar)
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 103 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Conceptos básicos de los mercados de capitales reales
+Liquidez:
+•
+Mercado líquido: traders pueden comprar/vender una gran cantidad de acciones
+rápidamente y a bajo costo
+•
+Dimensiones de la liquidez:
+– Bid-Ask spread: Costo por transar rapidamente
+– Profundidad: número de acciones de agentes pacientes, esperando por ser
+compradas o vendidas
+– Inmediatez: qué tan rápido puede ocurrir una transacción de un tamaño dado a
+un precio dado.
+– Resiliencia: qué tan rápido los precios vuelven a su nivel inicial después de un
+gran desequilibrio de órdenes, causado por transacciones de gran tamaño.
+• ¡Estas dimensiones interactúan!
+103
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 104 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Tipología del mercado
+Los mercados se pueden clasificar según una serie de criterios (conjunto de reglas que 
+rigen el proceso de transacción):
+•
+Nivel de regulación:
+• Bolsas de comercio reguladas.
+• Mercados OTC (over-the-counter): operados por dealers, menor nivel de 
+regulación.
+104
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 105 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Tipología del mercado
+Los mercados se pueden clasificar según una serie de criterios (conjunto de reglas que 
+rigen el proceso de transacción):
+•
+Quienes son los traders pacientes:
+•
+Limit order market (es decir, mercado de órdenes límites):
+•
+Los traders comercian directamente entre sí y suministran toda la liquidez en el libro de
+órdenes límites (LOB).
+•
+Cualquiera puede ser un agente paciente donde esperan sus órdenes a ser transadas
+siguiendo una orden de prioridad (prioridad de tiempo y prioridad de precio).
+•
+Ejemplo: Xetra (Deutsche Börse), NSC (Euronext), SETS (LSE).
+•
+Dealer market (es decir, mercado de dealers):
+•
+Solo dealers (un tipo especial de agente) puede ser un agente paciente.
+•
+Los dealers participan en todas las operaciones y suministran toda la liquidez.
+•
+Los dealers esperan y ofrecen precios para comprar inmediatamente (ask) o vender
+inmediatamente (bid).
+•
+Ejemplo: Nasdaq.
+105
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 106 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Mercados de Órdenes Límite (LOM)
+•
+En general, los mercados se organizan como Limit order market (LOM).
+– El 85% de los mercados son LOM.
+106
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 107 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Limit order market (LOM)
+Tipos de órdenes, 2 categorías :
+•
+Orden límite (LO): orden de agentes dispuestos a esperar, que se agrega al 
+libro de órdenes límites (LOB) que recopila todas las órdenes límites 
+esperando por ser transadas
+•
+Una orden límite permanece en el LOB hasta: su ejecución, modificación o 
+cancelación.
+107
+Lado vendedores 
+pacientes
+(limit sell orders
+que están esperando 
+por ser ejecutadas )
+Lado compradores 
+pacientes 
+(limit buy orders
+que están esperando 
+por ser ejecutadas )
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 108 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Limit order market (LOM)
+Tipos de órdenes, 2 categorías :
+•
+Orden límite (LO):
+• Pro: al ejecutarse, ofrecen un mejor precio (premio por esperar)
+• Contras: riesgo de ejecución (incertidumbre de ejecución), costos de demora (la
+ejecución no es inmediata), costos de monitoreo
+108
+108
+Lado vendedores 
+pacientes
+(limit sell orders
+que están esperando 
+por ser ejecutadas )
+Lado compradores 
+pacientes 
+(limit buy orders
+que están esperando 
+por ser ejecutadas )
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 109 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Limit order market (LOM)
+Tipos de órdenes, 2 categorías :
+•
+Las órdenes con mejor precio se ejecutan primero, es decir, prioridad de 
+precio.
+•
+Las órdenes con precios iguales se ejecutan según la prioridad temporal 
+(FIFO) (first in first out)
+109
+109
+Lado vendedores 
+pacientes
+(limit sell orders
+que están esperando 
+por ser ejecutadas )
+Lado compradores 
+pacientes 
+(limit buy orders
+que están esperando 
+por ser ejecutadas )
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 110 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Limit order market (LOM)
+Tipos de órdenes, 2 categorías :
+•
+Orden de mercado (MO) : órdenes de agentes que quieren transar 
+inmediatamente 
+•
+Ejecución segura/inmediata, puede ejecutarse a diferentes precios
+• El costo de la inmediatez es el bid-ask spread
+110
+Lado 
+vendedores 
+pacientes
+Lado 
+compradores 
+pacientes
+Una orden de mercado 
+para comprar 170 acciones 
+debe ejecutarse a 10.2 
+euros (para 150 acciones) 
+y a 10.3 euros (para las 
+restantes 20 acciones).
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 111 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Limit order market (LOM)
+Tipos de órdenes, 2 categorías :
+•
+Orden de mercado (MO) :
+• Pro: rápido (exige inmediatez, consume liquidez)
+• Contra: puede obtener un precio peor (pagar por inmediatez y liquidez)
+111
+Lado 
+vendedores 
+pacientes
+Lado 
+compradores 
+pacientes
+Una orden de mercado 
+para comprar 170 acciones 
+debe ejecutarse a 10.2 
+euros (para 150 acciones) 
+y a 10.3 euros (para las 
+restantes 20 acciones).
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 112 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Limit order market (LOM)
+112
+112
+100
+Orden
+de
+mercado
+para
+comprar 200
+Orden
+de
+mercado
+para
+comprar 900
+Debido a las dos órdenes, el bid-ask spread se amplía de 74,48 − 
+74,42 = 0,06 a 76,00 − 74,42 = 1,58 .
+Las dos órdenes han “consumido” liquidez.
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 113 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Mercados de órdenes límites (LOM)
+Dilema del trader
+•
+¿Qué tipo de orden elegir? ¿Existe una estrategia dominante para colocar 
+órdenes?
+•
+La respuesta es: NO
+•
+Depende de las características del trader, de lo que el trader quiere con esta 
+transacción.
+113
+
+===== Sesiones (material del curso)/Sesion 1.pdf · página 114 =====
+Universidad de Chile
+Sesión I
+Alejandro Bernales           
+Ciclo de vida de una orden: negociación y post-
+negociación
+114
+Enrutamiento de órdenes a la bolsa de comercio 
+(generalmente a través de un corredor: broker)
+Ejecución de órdenes en un lugar de negociación (por 
+ejemplo, en una bolsa de comercio)
+Clearing
+La contraparte central (CCP) establece las obligaciones del comprador y 
+del vendedor, valida la operación, la prepara para su liquidación y 
+posiblemente opera la compensación.
+Settlement
+Los datos del comprador y del vendedor coincidieron, los valores 
+se transfirieron del vendedor al comprador y los fondos del 
+comprador al vendedor.

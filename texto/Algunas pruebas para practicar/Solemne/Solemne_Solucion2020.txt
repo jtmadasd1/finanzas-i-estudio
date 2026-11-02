@@ -1,0 +1,702 @@
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2020.pdf · página 1 =====
+FINANCE I 
+                  Facultad de Economía y Negocios 
+                   Universidad de Chile 
+ 
+ 
+ 
+Prof.: Alejandro Bernales 
+ 
+ 
+ 
+ 
+ 
+Solemne 
+ 
+Time Allowed: 1.5 Hours 
+ 
+ 
+Instructions: 
+ 
+The solemne has 3 questions, each of them have the same weight. 
+ 
+PLEASE WRITE YOUR NAME IN ALL THE PAGES. 
+ 
+PLEASE ONLY USE THE SPACE IN EACH QUESTION TO ANSWER ALL 
+SECTIONS (USE ONLY ONE SIDE OF THE PAGE - ONE LANGUAGE) 
+ 
+The space provided is sufficient to give a concise and pertinent answer to each question 
+and/or sub-point of a question. 
+ 
+Extra answer booklets will not be provided – please use the spaces provided only. Answers 
+written outside the spaces or on other booklets will not be marked. 
+ 
+ 
+ 
+Electronic calculators may be used provided that they cannot store text 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2020.pdf · página 2 =====
+FINANCE I 
+                  Facultad de Economía y Negocios 
+                   Universidad de Chile 
+ 
+ 
+ 
+ 
+Prof.: Alejandro Bernales 
+ 
+ 
+ 
+ 
+ 
+Solemne 
+ 
+Time Allowed: 1.5 Hours 
+ 
+ 
+Instrucciones: 
+ 
+El Control tiene tres preguntas, cada una de ellas tienen la misma ponderación. 
+ 
+POR FAVOR ESCRIBA SU NOMBRE EN TODAS LAS HOJAS. 
+ 
+POR FAVOR UTILICE EL ESPACIO PROVISTO EN CADA PREGUNTA PARA 
+RESPONDER CADA SECCIÓN (USAR UN SOLO LADO DE LA HOJA - UN SOLO 
+LENGUAJE). 
+ 
+El espacio entregado es suficiente para entregar una respuesta concisa y pertinente a 
+cada pregunta y/o sub-pregunta. 
+ 
+No se entregarán hojas adicionales para responder por favor utilice solamente el espacio 
+entregado. Respuestas escritas fuera de este espacio o en otras hojas no serán revisadas. 
+ 
+ 
+ 
+ 
+Calculadoras electrónicas pueden ser utilizadas salvo las que puedan almacenar texto 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2020.pdf · página 3 =====
+Question I:  
+Assume a financial market, in which returns are described by a two-factor model (2-factor APT). 
+In addition, consider that you have a well-diversified portfolio and perfect information. The 
+relevant information is in the following table: 
+ 
+ 
+ 
+1a) Find the second equation (as explained in class) that describes the equilibrium returns in the 
+APT. 
+ 
+Hint. The second APT equation is: 
+ 
+ 
+ 
+Answer: 
+ 
+We make a system of equations with the data: 
+ 
+                                       
+                                       
+                                        
+ 
+Finally, the values are: 
+         
+        
+         
+ 
+Therefore, the equation is: 
+ 
+                              
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Stocks 
+E(ri ) 
+   
+   
+LAN 
+13,5% 
+0,7 
+0,6 
+KO 
+14,7% 
+0,9 
+0,5 
+AA 
+9,9% 
+0,4 
+0,3 
+
+
+
+,
+1
+( )
+k
+i
+f
+i j
+j
+j
+E r
+r
+β λ
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2020.pdf · página 4 =====
+Pregunta I: 
+Supongamos un mercado financiero, en el que los retornos son descritos por medio de un 
+modelo de dos factores (APT de 2 factores). Además, considere que tiene una cartera bien 
+diversificada e información perfecta. La información relevante se encuentra en la siguiente tabla: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1a) Encuentre la segunda ecuación (como fue explicado en clase) que describe los retornos de 
+equilibrio en el APT. 
+ 
+Hint. La segunda ecuación del APT es: 
+ 
+ 
+ 
+ 
+Respuesta: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Stocks 
+E(ri ) 
+   
+   
+LAN 
+13,5% 
+0,7 
+0,6 
+KO 
+14,7% 
+0,9 
+0,5 
+AA 
+9,9% 
+0,4 
+0,3 
+
+
+
+,
+1
+( )
+k
+i
+f
+i j
+j
+j
+E r
+r
+β λ
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2020.pdf · página 5 =====
+1b) Suppose that the stock PG has the following features:  
+Expected return: 15%,                 .  
+Does the stock PG have abnormal returns under this APT model? 
+ 
+Answer: 
+ 
+The APT equation is:  
+                              
+ 
+ 
+ 
+We replace the values of    and   , and we got: 
+                                
+                
+ 
+ 
+The PG stock is abnormal under this APT model. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2020.pdf · página 6 =====
+1b) Suponga que el PG de stock tiene las siguientes características: 
+Retorno esperado: 15%,                 . 
+¿El stock de PG tiene retornos que son anormales bajo este modelo APT? 
+ 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2020.pdf · página 7 =====
+Question II:  
+2a) Camila has received an email from Margarita, with an investment opportunity where Camila 
+can get a huge expected return of 30000%.  Camila thought that was a lie, and she went to the 
+police station. In the police station, the police officer (who has some knowledge in finance) 
+explains to her that it was true. Why?  
+Answer:  
+ 
+It is true, because the investment opportunity from Margarita involves a huge level of leverage, 
+which increases risk. Actually, you can have an investment opportunity with an infinite expected 
+return, if there is an infinite level of risk (which can be reached with an infinite level of leverage). 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2b) In financial markets, we discussed in class that individuals can be classified as 'patient' and 
+'impatient'. Let's focus, in this question, only on 'patient' individuals. We learned that 'patient' 
+individuals (who are waiting for the arrival of 'impatient' guys to perform a transaction) can 
+have different levels of patience. Please, provide a concrete-real example, where two individuals 
+(for instance, agent A and agent B, both classified a 'patient' individuals) has different levels of 
+patience. 
+Answer: 
+ 
+Suppose agent A and agent B are selling avocados in the fruit market. Both agents are waiting for 
+impatient individual who want to buy avocados as soon as possible (because impatient 
+individuals do not want to wait for a potential future, but cheaper, delivery of avocados). 
+ 
+Agent A can have a lower level of patience of agent B to sell avocados, if Agent A received her/his 
+avocados earlier than agent B. Thus, the avocados of agent A are closer to be rotten than agent B. 
+Then, Agent A can have a lower level of patience of agent B to sell the avocados.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2020.pdf · página 8 =====
+Pregunta II: 
+2a) Camila ha recibido un correo electrónico de Margarita, con una oportunidad de inversión 
+donde Camila puede obtener un retorno esperado gigante del 30000%. Camila pensó que era 
+mentira, y fue a la estación de policía. En la estación de policía, el oficial de policía (que tiene 
+cierto conocimiento en finanzas) le explica que era cierto. ¿Por qué?  
+Respuesta: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2b) En los mercados financieros, discutimos en clase que los individuos pueden clasificarse 
+como 'pacientes' e 'impacientes'. Centrémonos, en esta pregunta, solo en individuos 'pacientes'. 
+Aprendimos que las personas 'pacientes' (que esperan la llegada de individuos 'impacientes' 
+para realizar una transacción) pueden tener diferentes niveles de paciencia. Por favor, 
+proporcione un ejemplo real y concreto, donde dos individuos (por ejemplo, el agente A y el 
+agente B, ambos clasificados como individuos "pacientes") tienen diferentes niveles de 
+paciencia. 
+Respuesta: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2020.pdf · página 9 =====
+Question III:  Suppose that there is a market for one asset, which is organized as a limit order 
+market with a bid-ask spread that is stable over time (the bid-ask spread does not change over 
+time). We consider a 'continuous-proportion' of the bid-ask spread ( ) which is also fixed, so 
+that the ask price (  ) and bid price (  ) at time   are given by: 
+               
+                
+where    is the fundamental value of the asset (with   > 0).  
+ 
+a) Suppose that an investor buys at time   one share of the asset through a market order. Then, 
+the investor sells the share of the asset after   periods with also a market order. This transaction 
+has a return ' ' (continuous compounded). Suppose that the gross return (continuous 
+compounded) of the fundamental value of the asset, ' ', for holding the asset one period is equal 
+to:   ln(       ). Please, express R as a function of   , s and  . 
+Hint: Remember from the class that the continuously compounded rate of return (per one 
+period), q, for holding an asset with price    for   periods is: 
+   
+          
+  
+  
+ 
+Answer 
+           
+  
+  
+ 
+                     
+           
+  
+ 
+            
+  
+                
+            
+ 
+ 
+then  
+ 
+         
+  
+    
+ 
+ 
+                  
+         
+ 
+   
+   
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2020.pdf · página 10 =====
+Pregunta III: Suponga que existe un mercado para un único activo, el cual está organizado como 
+un "Limit Order Market" con un bid-ask spread estable en el tiempo (es decir, el spread no 
+cambia a través del tiempo). Consideremos el bid-ask spread como "proporción-continua" 
+(denominada con la letra  ), de tal forma que el precio del ask (    y el precio del bid (  ) sean: 
+               
+                
+donde    es el valor fundamental del activo (con   > 0) .  
+ 
+a) Suponga que un inversionista compra en el periodo   una acción del activo a través de una 
+"market order". Luego de   periodos, el inversionista decide vender la acción también a través 
+de una "market order". Esta transacción tiene un retorno ' ' (compuesto continuo). Suponga que 
+el retorno bruto ("gross return", compuesto continuo) del valor fundamental, ' ', por mantener 
+el activo durante un período en la cartera es igual a:    ln(       ). Por favor, exprese   como 
+una función de   , s y  . 
+Hint: Recuerde de la clase que la tasa de rendimiento compuesta continuamente (por un 
+periodo),  , para cuando se tiene un activo con precio    por   períodos es: 
+   
+          
+  
+  
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2020.pdf · página 11 =====
+b) What is the intuition of the expression that you obtain above in question a)? Explain. 
+(Hint: remember that 's' reflects the liquidity costs -also called immediacy costs- when you are 
+trading through market orders). 
+Answer 
+ 
+The returns are affected by liquidity costs given by the market microstructure.  
+ 
+Thus, gross returns have two determinants: the classical asset returns from transactions (r), and 
+the effect of spread (immediacy costs) on return which is inversely related to investors’ holding 
+period  .  
+ 
+This liquidity cost is reflected in an additional 'premium' (i.e. a liquidity premium) that is paid by 
+investors.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+c) Suppose we have two investors,   and  , with two holding periods,    and   , respectively (in 
+a transaction as the explained in question a). Suppose that    <    . Who is more willing to trade 
+illiquid assets? 
+Answer 
+ 
+Since    is larger than   , then the investor B trade less frequently. Thus, investor B is less 
+affected by the "liquidity costs". Therefore, Investor B is more willing to trade illiquid assets. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2020.pdf · página 12 =====
+b) ¿Cuál es la intuición detrás de la expresión encontrada en la pregunta a)? Explique 
+(Hint: Recordar que ' ' refleja los costos de liquidez – también llamados costos por inmediatez – 
+cuando se transa a través de "market orders"). 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+c) Suponga que existen dos inversionistas,   y  , con periodos de mantener el activo en la cartea 
+   y   , respectivamente (en una transaccion como la explicada en la pregunta a). Suponga 
+además    <   . ¿Qué inversionista está más dispuesto a transar acciones de baja liquidez (i.e. 
+ilíquidas)? 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

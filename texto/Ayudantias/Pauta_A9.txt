@@ -1,0 +1,299 @@
+===== Ayudantias/Pauta_A9.pdf · página 1 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Econom´ıa y Negocios
+Finanzas I
+Ayudant´ıa 9
+Profesor: Alejandro Bernales
+Ayudantes: Luisa Rodr´ıguez, Elizabeth N´u˜nez, Ayelen Sandoval, Tom´as Rojas, Joaqu´ın Arenas, Juan
+Correa Hevia, Lucas Montiel y Carolina Morales
+Comentes
+1) Al valorar una opci´on mediante un ´arbol binomial, la probabilidad “real” de que el precio del activo
+subyacente suba o baje es un dato indispensable: sin ella no es posible obtener el precio de la opci´on.
+Respuesta
+FALSO. El precio de la opci´on se obtiene con la valoraci´on neutral al riesgo, que descuenta el
+pago esperado de la opci´on a la tasa libre de riesgo usando la probabilidad neutral al riesgo
+p = er∆t −d
+u −d .
+Esta p no es la probabilidad real del mercado; surge de un argumento de no arbitraje (construir
+un portafolio libre de riesgo con la acci´on y la opci´on). De hecho, un resultado central del modelo
+es que el retorno esperado real del activo subyacente —y por lo tanto las probabilidades reales de
+subida y bajada— es irrelevante para valorar la opci´on. Lo ´unico que importa son S0, u, d, r y el
+payoff.
+2) Un aumento en la volatilidad del activo subyacente incrementa el valor de una opci´on call, pero reduce
+el valor de una opci´on put escrita sobre el mismo activo.
+Respuesta
+FALSO. Un aumento de la volatilidad incrementa el valor de ambas, calls y puts. La volatilidad
+mide la dispersi´on de los posibles precios futuros del subyacente. Como el payoff de una opci´on es
+asim´etrico —la p´erdida del comprador est´a acotada a la prima pagada, mientras que la ganancia
+potencial no lo est´a—, una mayor dispersi´on aumenta la probabilidad de terminar in-the-money
+sin castigar proporcionalmente al tenedor cuando termina out-of-the-money (ya que simplemente
+no ejerce). En el modelo de Black-Scholes esto se ve en que tanto c como p son crecientes en σ (v´ıa
+d1 y d2). Por lo tanto, m´as volatilidad mayor prima, sea call o put.
+3) Para valorar una opci´on americana debe usarse el modelo de Black-Scholes, mientras que para una
+opci´on europea es necesario recurrir a los ´arboles binomiales.
+Respuesta
+FALSO. Es exactamente al rev´es. El modelo de Black-Scholes-Merton entrega una soluci´on de
+forma cerrada que supone impl´ıcitamente que la opci´on solo se ejerce al vencimiento, lo que coincide
+con la definici´on de una opci´on europea. En cambio, una opci´on americana puede ejercerse en
+P´agina 1 de 6
+
+===== Ayudantias/Pauta_A9.pdf · página 2 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Econom´ıa y Negocios
+cualquier momento hasta la madurez, por lo que su valoraci´on requiere comprobar en cada nodo
+si conviene ejercer anticipadamente. En cambio, los ´arboles binomiales permiten justamente esta
+evaluaci´on en cada etapa, por lo que son la herramienta adecuada para las opciones americanas.
+4) El precio de una opci´on call europea sobre una acci´on que no paga dividendos podr´ıa, en alg´un escenario
+de mercado, ser mayor que el precio de la acci´on subyacente.
+Respuesta
+FALSO. Una call nunca puede valer m´as que la acci´on sobre la que est´a escrita; esta da el derecho
+a comprar una acci´on, de modo que jam´as tiene sentido pagar por ese derecho m´as de lo que cuesta
+la acci´on misma. El l´ımite superior es, entonces,
+c ≤S0.
+Si se violara (por ejemplo c > S0), existir´ıa arbitraje: bastar´ıa vender la call y comprar la acci´on
+para asegurar una ganancia. Recordando adem´as el l´ımite inferior c ≥m´ax(S0 −Ke−rT , 0), el
+precio de la call europea queda acotado por
+m´ax
+(︁
+S0 −Ke−rT , 0
+)︁
+≤c ≤S0.
+5) Si en el mercado se verifica la relaci´on de paridad put-call, c + Ke−rT = p + S0, entonces existe una
+oportunidad de arbitraje.
+Respuesta
+FALSO. La paridad put-call es precisamente la condici´on de no arbitraje. Se obtiene comparando
+dos portafolios que entregan el mismo pago m´ax(ST , K) al vencimiento (Portafolio A: una call m´as
+Ke−rT en caja; Portafolio B: una put m´as la acci´on). Como ambos valen lo mismo en T, deben
+valer lo mismo hoy, y de ah´ı
+c + Ke−rT = p + S0.
+La oportunidad de arbitraje aparece cuando la igualdad no se cumple: si un lado est´a caro respecto
+del otro, se vende el caro y se compra el barato para capturar una ganancia libre de riesgo. Mientras
+la igualdad se sostiene, no hay arbitraje posible.
+Matem´atico I
+Considere una acci´on cuyo precio hoy es S0 = $50. Usted analiza una opci´on sobre esta acci´on con precio de
+ejercicio K = $50 y vencimiento T = 6 meses. La tasa libre de riesgo es r = 6 % anual y la volatilidad de la
+acci´on es σ = 20 % anual. Para valorar la opci´on use un ´arbol binomial de dos pasos, con cada paso de 3
+meses.
+Ayuda: u = eσ
+√
+∆t,
+d = e−σ
+√
+∆t,
+p = er∆t −d
+u −d
+a) Construya el ´arbol binomial y determine el precio de la opci´on put europea.
+P´agina 2 de 6
+
+===== Ayudantias/Pauta_A9.pdf · página 3 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Econom´ıa y Negocios
+Respuesta
+Con ∆t = 0,25 (3 meses) y σ = 0,20:
+u = e0,20√0,25 = e0,10 = 1,1052,
+d = e−0,10 = 0,9048
+Probabilidad neutral al riesgo:
+p = er∆t −d
+u −d
+= e0,06·0,25 −0,9048
+1,1052 −0,9048
+= 1,0151 −0,9048
+0,2003
+= 0,5505,
+1 −p = 0,4495
+Precios del activo en el ´arbol:
+Su = 50(1,1052) = 55,26,
+Sd = 50(0,9048) = 45,24
+Suu = 50 e0,20 = 61,07,
+Sud = 50 e0 = 50,00,
+Sdd = 50 e−0,20 = 40,94
+S0 = 50
+p = 1,78
+55,26
+0
+45,24
+4,01
+61,07
+0
+50,00
+0
+40,94
+9,06
+p
+1 −p
+Payoffs de la put (m´ax(K −ST , 0)) al vencimiento:
+fuu = m´ax(50 −61,07, 0) = 0,
+fud = m´ax(50 −50, 0) = 0,
+fdd = m´ax(50 −40,94, 0) = 9,06
+Retrocediendo en el ´arbol:
+Nodo up: e−0,06·0,25(︁
+0,5505 · 0 + 0,4495 · 0
+)︁
+= 0
+Nodo down: e−0,06·0,25(︁
+0,5505 · 0 + 0,4495 · 9,06
+)︁
+= 0,9851 · 4,073 = 4,01
+p0 = e−0,06·0,25(︁
+0,5505 · 0 + 0,4495 · 4,01
+)︁
+= 0,9851 · 1,803 = $1,78
+b) A partir del resultado anterior, obtenga el precio de la opci´on call europea usando la paridad put-call.
+P´agina 3 de 6
+
+===== Ayudantias/Pauta_A9.pdf · página 4 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Econom´ıa y Negocios
+Respuesta
+Por la paridad put-call (sin dividendos):
+c + Ke−rT = p + S0 =⇒c = p0 + S0 −Ke−rT
+Con Ke−rT = 50 e−0,06·0,5 = 50(0,9704) = 48,52:
+c = 1,78 + 50 −48,52 = $3,26
+c) Suponga que en el mercado la call se transa a $4. ¿Existe una oportunidad de arbitraje? Si existe,
+dise˜ne la estrategia e indique la tabla de flujos.
+Respuesta
+El valor justo de la call es $3,26, pero en el mercado se transa a $4. Verificamos la paridad:
+c + Ke−rT
+⏞
+⏟⏟
+⏞
+lado izquierdo
+= 4 + 48,52 = 52,52
+vs.
+p + S0
+⏞⏟⏟⏞
+lado derecho
+= 1,78 + 50 = 51,78.
+Como 52,52 > 51,78, el lado izquierdo (la call) est´a caro. La estrategia de arbitraje es vender lo
+caro y comprar lo barato: vender la call, comprar la put, comprar la acci´on y pedir prestado
+el monto necesario para que el flujo inicial sea cero.
+Flujo inicial de opciones y acci´on: +4 −1,78 −50 = −47,78, por lo que se pide prestado $47,78,
+que en T debe devolverse por 47,78 e0,06·0,5 = $49,23
+Posici´on
+t = 0
+ST < 50
+ST ≥50
+Vender call
++4
+0
+−(ST −50)
+Comprar put
+−1,78
+50 −ST
+0
+Comprar acci´on
+−50
+ST
+ST
+Pedir prestado
++47,78
+−49,23
+−49,23
+Total
+0
+0,77
+0,77
+En ambos escenarios se termina vendiendo la acci´on a $50 (v´ıa la put si el precio cae, o porque
+nos ejercen la call si sube) y se paga la deuda de $49,23, dejando una ganancia libre de riesgo de
+≈$0,77 sin desembolso inicial.
+Matem´atico II
+Considere la siguiente informaci´on de mercado; el precio actual de la acci´on es S0 = $60, el precio de ejercicio
+es K = $58, el tiempo hasta la madurez es T = 9 meses, la tasa libre de riesgo es r = 5 % anual y la volatilidad
+es σ = 25 % anual.
+Ayuda: N(0,44) = 0,6700; N(0,22) = 0,5871; N(0,32) = 0,6255; N(0,11) = 0,5438
+a) Calcule el precio de hoy de una opci´on call europea seg´un el modelo de Black-Scholes.
+P´agina 4 de 6
+
+===== Ayudantias/Pauta_A9.pdf · página 5 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Econom´ıa y Negocios
+Respuesta
+Datos: S0 = 60, K = 58, T = 9/12 = 0,75, r = 0,05, σ = 0,25
+Paso 1: c´alculo de d1 y d2 →
+d1 =
+ln(S0/K) +
+(︂
+r + σ2
+2
+)︂
+T
+σ
+√
+T
+,
+d2 = d1 −σ
+√
+T
+Con ln(60/58) = 0,0339,
+(︂
+0,05 + 0,252
+2
+)︂
+0,75 = (0,08125)(0,75) = 0,0609 y σ
+√
+T = 0,25√0,75 =
+0,2165:
+d1 = 0,0339 + 0,0609
+0,2165
+= 0,0948
+0,2165 = 0,438 ≈0,44,
+d2 = 0,438 −0,2165 = 0,222 ≈0,22
+Paso 2: normal est´andar acumulada →
+N(d1) = N(0,44) = 0,6700,
+N(d2) = N(0,22) = 0,5871
+Paso 3: precio de la call →
+Con Ke−rT = 58 e−0,05·0,75 = 58(0,9632) = 55,87:
+c = S0N(d1) −Ke−rT N(d2) = 60(0,6700) −55,87(0,5871),
+c = 40,20 −32,80 = $7,40
+b) Obtenga el precio de la opci´on put europea mediante la paridad put-call.
+Respuesta
+Por la paridad put-call:
+p = c + Ke−rT −S0 = 7,40 + 55,87 −60
+p = $3,27
+Como era de esperar, la put vale menos que la call: con S0 > K (la acci´on ya est´a por sobre el
+ejercicio), la call est´a m´as dentro del dinero que la put.
+c) La empresa anuncia que pagar´a un dividendo de $1,5 dentro de 4 meses. Recalcule el precio de la call
+europea incorporando el dividendo.
+Respuesta
+Cuando el subyacente paga un dividendo conocido durante la vida de la opci´on, Black-Scholes se
+aplica reemplazando el precio de la acci´on por su precio neto del valor presente de los dividendos:
+S∗
+0 = S0 −VP(dividendos)
+P´agina 5 de 6
+
+===== Ayudantias/Pauta_A9.pdf · página 6 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Econom´ıa y Negocios
+El dividendo de $1,5 se paga en 4 meses (t = 4/12):
+VP(div) = 1,5 e−0,05·(4/12) = 1,5(0,9835) = 1,48,
+S∗
+0 = 60 −1,48 = 58,52
+Recalculamos d1 y d2 con S∗
+0 (todo lo dem´as igual); n´otese que Ke−rT = 55,87 no cambia:
+d1 = ln(58,52/58) + 0,0609
+0,2165
+= 0,0090 + 0,0609
+0,2165
+= 0,323 ≈0,32
+d2 = 0,323 −0,2165 = 0,107 ≈0,11.
+N(d1) = N(0,32) = 0,6255,
+N(d2) = N(0,11) = 0,5438
+c = S∗
+0N(d1) −Ke−rT N(d2) = 58,52(0,6255) −55,87(0,5438)
+c = 36,61 −30,38 = $6,23
+El dividendo reduce el valor de la call (de $7,40 a $6,23); al repartir “caja”, se espera que el precio
+de la acci´on caiga en la fecha post dividendo, lo que disminuye el pago esperado de la opci´on de
+compra.
+P´agina 6 de 6

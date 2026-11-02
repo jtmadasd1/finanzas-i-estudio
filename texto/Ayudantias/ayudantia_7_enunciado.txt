@@ -1,0 +1,105 @@
+===== Ayudantias/ayudantia_7_enunciado.pdf · página 1 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Primavera 2026
+Finanzas I
+Ayudantía 6
+Profesor: Alejandro Bernales
+Ayudantes: Luisa Rodríguez, Elizabeth Núñez, Ayelen Sandoval,
+Tomás Rojas, Joaquín Arenas, Juan Correa Hevia,
+Lucas Montiel y Carolina Morales
+Primavera 2026
+Comentes
+1) En un bono cupón cero, la yield coincide con la tasa cero correspondiente a su vencimiento.
+Esta igualdad no necesariamente se cumple en un bono que paga cupones.
+2) Si las tasas cero no se observan directamente en el mercado y todos los bonos disponibles
+pagan cupones, no es posible construir la estructura temporal de tasas de interés.
+3) Para una contraparte que recibe tasa fija y paga tasa flotante, el swap tiene valor positivo
+cuando el bono de tasa flotante vale más que el bono de tasa fija.
+4) En un mercado eficiente en su forma débil, una estrategia basada exclusivamente en precios
+y volúmenes históricos no debería generar retornos anormales de manera sistemática. Sin
+embargo, esta forma de eficiencia no permite concluir lo mismo respecto de una estrategia
+basada en estados financieros públicos.
+5) La posibilidad de que inversionistas con información privada obtengan retornos anormales
+de manera sistemática contradice la eficiencia fuerte, pero no necesariamente contradice la
+eficiencia débil o semifuerte.
+Página 1 de 3
+
+===== Ayudantias/ayudantia_7_enunciado.pdf · página 2 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Primavera 2026
+Matemático I: Bootstrapping de tasas cero
+Considere tres bonos con valor cara de $100. Todos los bonos pagan cupones semestrales y las
+tasas se expresan con capitalización continua.
+La información disponible es:
+Bono
+Madurez
+Cupón anual
+Precio
+Bono I
+0,5 años
+0 %
+$97,045
+Bono II
+1,0 año
+4 %
+$97,522
+Bono III
+1,5 años
+6 %
+$98,456
+Además, antes de observar estos precios, la empresa publicó un informe financiero que contenía
+información nueva sobre su capacidad de pago. Los precios de los bonos incorporaron esta
+información pública inmediatamente después de su publicación.
+Posteriormente, los inversionistas no pudieron obtener retornos anormales de manera sistemática
+utilizando el informe publicado ni la información histórica de precios y volumen transado. No se
+entrega información sobre el uso de información privada.
+Se pide:
+a) Calcule la tasa cero a 0,5 años, r0.5.
+b) Utilice el Bono II para calcular la tasa cero a un año, r1.0.
+c) Utilice el Bono III para calcular la tasa cero a 1,5 años, r1.5.
+d) Construya la estructura temporal de tasas cero e interprete su pendiente. Explique por qué
+generalmente las tasas cero de largo plazo son mayores que las tasas de corto plazo. Además,
+determine qué forma de eficiencia de mercado es consistente con el comportamiento de los
+precios descrito en el enunciado.
+Página 2 de 3
+
+===== Ayudantias/ayudantia_7_enunciado.pdf · página 3 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Primavera 2026
+Matemático II: Precio y duración de un bono
+Una empresa emite un bono con cupones anuales que paga su valor cara junto con el último
+cupón. El bono presenta las siguientes características:
+Valor cara: UF 8.000.
+Madurez: 5 años.
+Tasa cupón: 5,5 % anual.
+Pagos de cupones: anuales.
+Las tasas cero cupón, expresadas con capitalización continua y base anual, son:
+Madurez
+1 año
+2 años
+3 años
+4 años
+5 años
+Tasa cero
+3,20 %
+3,50 %
+?
+4,00 %
+4,20 %
+Además, la tasa forward continua entre los años 2 y 3 es:
+r2,3 = 4,10 %.
+La yield del bono, expresada con capitalización continua y base anual, es 4,1507 %.
+Se pide:
+a) Calcule la tasa cero cupón a tres años, r0,3.
+b) Calcule la tasa forward continua entre los años 4 y 5, r4,5.
+c) Calcule el precio del bono utilizando las tasas cero correspondientes a cada pago.
+d) Calcule la duración del bono utilizando su yield.
+e) Si la yield aumenta en 40 puntos base, utilice la duración para aproximar el cambio porcentual
+y el nuevo precio del bono.
+Página 3 de 3

@@ -1,0 +1,385 @@
+===== Ayudantias/ayudantia_finanzas_7_pauta.pdf · página 1 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Primavera 2026
+Finanzas I
+Pauta Ayudantía 6
+Profesor: Alejandro Bernales
+Ayudantes: Luisa Rodríguez, Elizabeth Núñez, Ayelen Sandoval,
+Tomás Rojas, Joaquín Arenas, Juan Correa Hevia,
+Lucas Montiel y Carolina Morales
+Primavera 2026
+Comentes
+1) En un bono cupón cero, la yield coincide con la tasa cero correspondiente a su vencimiento.
+Esta igualdad no necesariamente se cumple en un bono que paga cupones.
+Respuesta: Verdadero.
+Un bono cupón cero realiza un único pago al vencimiento. Su precio es:
+B = (Principal)e−rT .
+La yield es la tasa que iguala el valor presente de los pagos con el precio del bono. Como el
+bono cupón cero tiene un único pago, su yield coincide con la tasa cero correspondiente a su
+vencimiento.
+En un bono con cupones existen pagos en distintas fechas. La yield representa una única tasa
+para todos los pagos, mientras que puede existir una tasa cero diferente para cada vencimiento.
+2) Si las tasas cero no se observan directamente en el mercado y todos los bonos disponibles
+pagan cupones, no es posible construir la estructura temporal de tasas de interés.
+Respuesta: Falso.
+Las tasas cero pueden obtenerse mediante el método de bootstrapping.
+Primero se calcula la tasa cero correspondiente al vencimiento más corto. Luego se utiliza esa
+tasa para descontar los primeros pagos de bonos con vencimientos mayores. Finalmente, se
+despeja sucesivamente la tasa cero correspondiente a cada nuevo vencimiento.
+Por lo tanto, es posible construir la estructura temporal de tasas aunque los bonos disponibles
+paguen cupones.
+3) Para una contraparte que recibe tasa fija y paga tasa flotante, el swap tiene valor positivo
+cuando el bono de tasa flotante vale más que el bono de tasa fija.
+Respuesta: Falso.
+Para una contraparte que recibe tasa fija y paga tasa flotante:
+Vswap = Bfix −Bfloat.
+El valor de lo que la contraparte recibe corresponde a Bfix, mientras que el valor de lo que
+debe pagar corresponde a Bfloat.
+Si:
+Página 1 de 9
+
+===== Ayudantias/ayudantia_finanzas_7_pauta.pdf · página 2 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Primavera 2026
+Bfloat > Bfix,
+entonces:
+Vswap < 0.
+Por lo tanto, el swap tiene valor negativo para esa contraparte.
+4) En un mercado eficiente en su forma débil, una estrategia basada exclusivamente en precios
+y volúmenes históricos no debería generar retornos anormales de manera sistemática. Sin
+embargo, esta forma de eficiencia no permite concluir lo mismo respecto de una estrategia
+basada en estados financieros públicos.
+Respuesta: Verdadero.
+La eficiencia débil establece que los precios actuales incorporan toda la información histórica
+de precios y volumen transado. Por lo tanto, el análisis técnico basado únicamente en esa
+información no debería permitir obtener retornos anormales de manera sistemática.
+Sin embargo, la eficiencia débil no establece que toda la información pública esté incorporada
+en los precios. Los estados financieros, las noticias y los informes de analistas pertenecen a un
+conjunto más amplio de información.
+Para concluir que una estrategia basada en estados financieros públicos tampoco puede generar
+retornos anormales sistemáticos, el mercado tendría que ser eficiente en su forma semifuerte.
+5) La posibilidad de que inversionistas con información privada obtengan retornos anormales
+de manera sistemática contradice la eficiencia fuerte, pero no necesariamente contradice la
+eficiencia débil o semifuerte.
+Respuesta: Verdadero.
+La eficiencia fuerte establece que los precios reflejan toda la información disponible, incluyendo
+la información privada.
+Si un inversionista obtiene retornos anormales sistemáticos utilizando información privada,
+esa información no estaba completamente reflejada en los precios. Esto contradice la eficiencia
+fuerte.
+Sin embargo, no contradice necesariamente la eficiencia débil o semifuerte, porque estas formas
+de eficiencia no exigen que la información privada esté incorporada en los precios.
+Página 2 de 9
+
+===== Ayudantias/ayudantia_finanzas_7_pauta.pdf · página 3 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Primavera 2026
+Matemático I: Bootstrapping de tasas cero
+Considere tres bonos con valor cara de $100. Todos los bonos pagan cupones semestrales y las
+tasas se expresan con capitalización continua.
+La información disponible es:
+Bono
+Madurez
+Cupón anual
+Precio
+Bono I
+0,5 años
+0 %
+$97,045
+Bono II
+1,0 año
+4 %
+$97,522
+Bono III
+1,5 años
+6 %
+$98,456
+Además, antes de observar estos precios, la empresa publicó un informe financiero que contenía
+información nueva sobre su capacidad de pago. Los precios de los bonos incorporaron esta
+información pública inmediatamente después de su publicación.
+Posteriormente, los inversionistas no pudieron obtener retornos anormales de manera sistemática
+utilizando el informe publicado ni la información histórica de precios y volumen transado. No se
+entrega información sobre el uso de información privada.
+Se pide:
+a) Calcule la tasa cero a 0,5 años, r0.5.
+Respuesta:
+El Bono I es un bono cupón cero. Su precio es:
+97,045 = 100e−r0.5(0,5).
+Dividiendo por 100:
+97,045
+100
+= e−r0.5(0,5).
+Aplicando logaritmo:
+r0.5 = −ln(97,045/100)
+0,5
+.
+Finalmente:
+r0.5 ≈6,00 %.
+b) Utilice el Bono II para calcular la tasa cero a un año, r1.0.
+Respuesta:
+El Bono II paga un cupón anual de 4 %, distribuido semestralmente. Cada cupón es:
+c = 0,04
+2 (100) = 2.
+El bono paga $2 dentro de 0,5 años y $102 dentro de un año. Por lo tanto:
+Página 3 de 9
+
+===== Ayudantias/ayudantia_finanzas_7_pauta.pdf · página 4 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Primavera 2026
+97,522 = 2e−r0.5(0,5) + 102e−r1.0(1).
+Utilizando r0.5 = 0,06:
+97,522 = 2e−0,06(0,5) + 102e−r1.0.
+Despejando:
+102e−r1.0 = 97,522 −2e−0,06(0,5).
+r1.0 = −ln
+(︄
+97,522 −2e−0,06(0,5)
+102
+)︄
+.
+Finalmente:
+r1.0 ≈6,50 %.
+c) Utilice el Bono III para calcular la tasa cero a 1,5 años, r1.5.
+Respuesta:
+El Bono III paga un cupón anual de 6 %, distribuido semestralmente. Cada cupón es:
+c = 0,06
+2 (100) = 3.
+Los pagos son $3 dentro de 0,5 años, $3 dentro de un año y $103 dentro de 1,5 años. Por lo
+tanto:
+98,456 = 3e−r0.5(0,5) + 3e−r1.0(1) + 103e−r1.5(1,5).
+Reemplazando las tasas calculadas:
+98,456 = 3e−0,06(0,5) + 3e−0,065(1) + 103e−r1.5(1,5).
+Despejando:
+103e−r1.5(1,5) = 98,456 −3e−0,06(0,5) −3e−0,065.
+Por tanto:
+r1.5 = −1
+1,5 ln
+(︄
+98,456 −3e−0,06(0,5) −3e−0,065
+103
+)︄
+.
+Finalmente:
+r1.5 ≈7,00 %.
+Página 4 de 9
+
+===== Ayudantias/ayudantia_finanzas_7_pauta.pdf · página 5 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Primavera 2026
+d) Construya la estructura temporal de tasas cero e interprete su pendiente. Explique por qué
+generalmente las tasas cero de largo plazo son mayores que las tasas de corto plazo. Además,
+determine qué forma de eficiencia de mercado es consistente con el comportamiento de los
+precios descrito en el enunciado.
+Respuesta:
+Las tasas cero obtenidas son:
+Madurez
+0,5
+1,0
+1,5
+Tasa cero
+6,00 %
+6,50 %
+7,00 %
+La estructura temporal tiene pendiente positiva porque:
+r0.5 < r1.0 < r1.5.
+Generalmente, las tasas de largo plazo son mayores porque prestar recursos durante un
+periodo más extenso obliga al inversionista a postergar durante más tiempo el uso de esos
+recursos.
+Además, un vencimiento más lejano aumenta la incertidumbre respecto de las condiciones
+futuras y de la capacidad del emisor para realizar los pagos prometidos. Por ello, los
+inversionistas normalmente exigen una tasa mayor como compensación por el plazo y la
+incertidumbre.
+Las expectativas también influyen. Si los inversionistas esperan tasas de interés más altas o
+condiciones financieras más riesgosas en el futuro, las tasas de largo plazo serán mayores que
+las tasas de corto plazo.
+Sin embargo, una pendiente positiva no es una condición necesaria. La curva puede presentar
+pendiente negativa cuando existe mayor incertidumbre en el corto plazo y los inversionistas
+esperan que esa situación desaparezca posteriormente.
+Respecto de la eficiencia de mercado, los precios incorporaron inmediatamente la información
+contenida en un informe financiero público. Además, los inversionistas no pudieron obtener
+retornos anormales sistemáticos utilizando información pública ni información histórica de
+precios y volumen.
+Por lo tanto, el comportamiento es consistente con la eficiencia semifuerte:
+El mercado es eficiente, al menos, en su forma semifuerte.
+También se cumple la eficiencia débil, pero no es posible concluir que exista eficiencia fuerte
+porque no se entrega información sobre el uso de información privada.
+Página 5 de 9
+
+===== Ayudantias/ayudantia_finanzas_7_pauta.pdf · página 6 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Primavera 2026
+Matemático II: Precio, yield y duración de un bono
+Una empresa emite un bono con cupones anuales que paga su valor cara junto con el último
+cupón. El bono presenta las siguientes características:
+Valor cara: UF 8.000.
+Madurez: 5 años.
+Tasa cupón: 5,5 % anual.
+Pagos de cupones: anuales.
+Las tasas cero cupón, expresadas con capitalización continua y base anual, son:
+Madurez
+1 año
+2 años
+3 años
+4 años
+5 años
+Tasa cero
+3,20 %
+3,50 %
+?
+4,00 %
+4,20 %
+Además, la tasa forward continua entre los años 2 y 3 es:
+r2,3 = 4,10 %.
+Se pide:
+a) Calcule la tasa cero cupón a tres años, r0,3.
+Respuesta:
+La relación entre la tasa cero a tres años, la tasa cero a dos años y la tasa forward es:
+3r0,3 = 2r0,2 + r2,3.
+Reemplazando:
+3r0,3 = 2(0,035) + 0,041.
+3r0,3 = 0,111.
+Finalmente:
+r0,3 = 3,70 %.
+b) Calcule la tasa forward continua entre los años 4 y 5, r4,5.
+Respuesta:
+La relación entre las tasas es:
+5r0,5 = 4r0,4 + r4,5.
+Página 6 de 9
+
+===== Ayudantias/ayudantia_finanzas_7_pauta.pdf · página 7 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Primavera 2026
+Despejando:
+r4,5 = 5r0,5 −4r0,4.
+Reemplazando:
+r4,5 = 5(0,042) −4(0,040).
+Finalmente:
+r4,5 = 5,00 %.
+c) Calcule el precio del bono utilizando las tasas cero correspondientes a cada pago.
+Respuesta:
+El cupón anual es:
+c = 0,055(8.000) = 440.
+El último pago incluye el cupón y el principal:
+c5 = 440 + 8.000 = 8.440.
+El precio del bono es:
+B =
+n
+∑︂
+i=1
+cie−rtiti.
+Reemplazando:
+B = 440e−0,032(1) + 440e−0,035(2) + 440e−0,037(3)
++ 440e−0,040(4) + 8.440e−0,042(5).
+Por lo tanto:
+B = UF 8.446,44.
+d) Calcule la yield del bono, expresada con capitalización continua y base anual. Utilice la yield
+obtenida para calcular la duración del bono.
+Respuesta:
+La yield es la única tasa y que permite descontar todos los pagos del bono y obtener su
+precio:
+B =
+n
+∑︂
+i=1
+cie−yti.
+Por lo tanto, y debe satisfacer:
+Página 7 de 9
+
+===== Ayudantias/ayudantia_finanzas_7_pauta.pdf · página 8 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Primavera 2026
+8.446,44 = 440e−y + 440e−2y + 440e−3y
++ 440e−4y + 8.440e−5y.
+Resolviendo numéricamente esta ecuación:
+y = 0,041507.
+Por lo tanto:
+y = 4,1507 %.
+La duración continua se calcula como:
+D =
+n
+∑︂
+i=1
+ti
+[︄
+cie−yti
+B
+]︄
+.
+Reemplazando y = 0,041507:
+D = 1
+[︄
+440e−0,041507(1)
+8.446,44
+]︄
++ 2
+[︄
+440e−0,041507(2)
+8.446,44
+]︄
++ 3
+[︄
+440e−0,041507(3)
+8.446,44
+]︄
++ 4
+[︄
+440e−0,041507(4)
+8.446,44
+]︄
++ 5
+[︄
+8.440e−0,041507(5)
+8.446,44
+]︄
+.
+Finalmente:
+D = 4,5202 años.
+e) Si la yield aumenta en 40 puntos base, utilice la duración para aproximar el cambio porcentual
+y el nuevo precio del bono.
+Respuesta:
+Un aumento de 40 puntos base corresponde a:
+∆y = 0,40 % = 0,004.
+La aproximación mediante duración es:
+∆B
+B
+= −D∆y.
+Reemplazando:
+∆B
+B
+= −4,5202(0,004) = −0,018081.
+Por lo tanto:
+Página 8 de 9
+
+===== Ayudantias/ayudantia_finanzas_7_pauta.pdf · página 9 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Primavera 2026
+∆B
+B
+≈−1,8081 %.
+El cambio aproximado en el precio es:
+∆B = −BD∆y.
+∆B = −8.446,44(4,5202)(0,004).
+∆B ≈−UF 152,72.
+El nuevo precio aproximado es:
+Bnuevo = 8.446,44 −152,72.
+Finalmente:
+Bnuevo ≈UF 8.293,72.
+Página 9 de 9

@@ -1,0 +1,931 @@
+===== Tarea/Entregable/Informe_Tarea_ENFIN415.pdf · página 1 =====
+ 
+ 
+ 
+ 
+Informe Tarea I​
+ 
+Frontera media-varianza, Línea de Mercado de Capitales y desempeño,​
+y modelos de estructura de tasas (Nelson-Siegel y Svensson) 
+ 
+Finanzas I – ENFIN 415 
+Integrantes  
+Cristobal Bianchi  
+Jorge Macchiavello  
+ 
+Sección 04  
+Profesor Alejandro Bernales 
+ 
+Facultad de Economía y Negocios · Universidad de Chile · 2026​
+​
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Tarea/Entregable/Informe_Tarea_ENFIN415.pdf · página 2 =====
+ 
+1. Datos y metodología 
+●​
+Acciones: 50 del S&P 500 de los 11 sectores: Financiero 6, Salud 6, Industrial 6, Tecnología 6, Energía 5, 
+Utilities 5, Comunicaciones 4, Consumo discrecional 4, Consumo básico 4, Materiales 2, Inmobiliario 2. Todas 
+pertenecieron al índice durante toda la ventana (lista en el Anexo). 
+●​
+Precios: cierre diario ajustado por splits y dividendos, de Yahoo Finance (descargado con el paquete yfinance 
+de Python). Sin ajuste, los splits de NVDA, AMZN, GOOGL o NFLX aparecerían como caídas falsas de 67% 
+a 95%. 
+●​
+Ventana: 5 años (retornos del 2021-08-02 al 2026-07-31, 1.255 observaciones), el máximo permitido: con 50 
+acciones hay que estimar 1.275 varianzas y covarianzas, y con un año la matriz Ω sería muy imprecisa. 
+●​
+Retornos continuos r = ln(P /P ₋₁), como en la clase, anualizados con 252 días: μ×252, Ω×252 y σ×√252. 
+●​
+Tasa libre de riesgo: Treasury constant maturity a 1 año (Fed H.15) al 31-jul-2026, 4,08% en base equivalente 
+a bono, convertida a continua: rf = 2·ln(1 + y/2) = 4,04%. 
+●​
+Software: todos los cálculos se hicieron en Python (el enunciado permite cualquier lenguaje). La frontera sin 
+restricciones usa la fórmula analítica de clase y las fronteras con restricciones, programación cuadrática. 
+2. Pregunta 1A: Frontera media-varianza 
+2.1 (P1A.1) Retornos esperados, volatilidades y covarianzas 
+Los retornos esperados anuales (medias históricas) van de -6,7% (AMT) a 46,9% (NVDA) y las volatilidades de 
+16,6% (KO) a 59,5% (TSLA); el S&P 500 rindió 10,7% con σ = 17,0%. Los valores de cada acción están en el 
+Anexo y la matriz de covarianzas anual (50×50) en Resultados_Pregunta1A.xlsx. La correlación promedio es 0,23 
+(0,45 dentro de un mismo sector) y solo el 3,3% de los pares es negativo. 
+Las medias se estiman con mucho error: su error estándar es σ/√5, por ejemplo ±23% para NVDA. Las varianzas y 
+covarianzas, en cambio, se estiman con más precisión. Esta diferencia explica varios resultados de la Pregunta 1B. 
+2.2 (P1A.2) Frontera media-varianza 
+Como en la clase, para cada retorno objetivo μ̄ se minimiza la varianza con ventas cortas permitidas. La solución 
+del Lagrangiano entrega la frontera en forma cerrada: 
+min_w  w′Ωw   s.a.  w′μ = μ̄ ,  w′1 = 1   ⇒   σ²(μ̄) = (A·μ̄² − 2B·μ̄ + C) / D 
+con A = 1′Ω⁻¹1 = 85,63, B = 1′Ω⁻¹μ = 11,36, C = μ′Ω⁻¹μ = 7,24 y D = AC − B² = 491,39. El portafolio de mínima 
+varianza global (GMV) tiene μ = B/A = 13,3% y σ = 1/√A = 10,8%. 
+1 
+t
+t
+t
+
+===== Tarea/Entregable/Informe_Tarea_ENFIN415.pdf · página 3 =====
+ 
+Figura 1. Frontera media-varianza con 50 acciones. Sobre el GMV (rombo) está la rama eficiente. 
+●​
+La frontera queda a la izquierda de todas las acciones. El GMV tiene menos riesgo que la acción menos 
+volátil (KO, 16,6%) y que el S&P 500. Con el riesgo del índice, la frontera promete 44,7% contra 10,7%: es el 
+beneficio de diversificar, medido con medias ya conocidas (in-sample). 
+●​
+Usa ventas cortas y apalancamiento. El GMV tiene 38% en posiciones cortas, que cubren el riesgo de 
+acciones parecidas. Para μ̄ = 20%, 30% y 50% la exposición bruta es 2,2, 3,0 y 5,4 veces el patrimonio: por eso 
+la rama eficiente no tiene techo. 
+2.3 (P1A.3) Frontera "ingenua" y el rol de las covarianzas 
+La frontera ingenua calcula los pesos con la diagonal de Ω (σᵢ = 0), de modo que cada acción se pondera solo por 
+su retorno y su varianza. Luego se mide la volatilidad real de esos pesos con la Ω completa, y también la 
+volatilidad percibida por quien ignora las covarianzas. 
+2 
+j
+
+===== Tarea/Entregable/Informe_Tarea_ENFIN415.pdf · página 4 =====
+ 
+Figura 2. Frontera completa (azul), frontera ingenua con su volatilidad real (rojo) y con la volatilidad percibida (naranjo). 
+Tabla 1. Volatilidad para un mismo retorno objetivo 
+μ̄ objetivo 
+σ frontera completa 
+σ ingenua real 
+σ ingenua percibida 
+13,3% (GMV) 
+10,8% 
+12,6% 
+3,6% 
+20,0% 
+11,2% 
+14,2% 
+5,2% 
+30,0% 
+12,9% 
+18,4% 
+9,0% 
+50,0% 
+18,8% 
+29,8% 
+17,6% 
+ 
+¿Qué rol juegan las covarianzas en la diversificación? 
+●​
+Fijan cuánto riesgo se puede eliminar. Con σᵢ = 0 el riesgo de un portafolio 1/N tendería a cero (Sesión I), 
+pero como las correlaciones son positivas converge a la covarianza promedio: el 91% de la varianza del 1/N 
+viene de covarianzas. Ignorarlas genera una ilusión de diversificación: el portafolio de mínima varianza de la 
+frontera ingenua presenta una volatilidad percibida de 3,5%, pero una volatilidad real de 12,4%. Estas cifras 
+corresponden al mínimo de la frontera ingenua, distinto del retorno objetivo de 13,3% utilizado en la primera 
+fila de la Tabla 1.  
+●​
+Ignorarlas produce portafolios ineficientes. La curva roja siempre queda a la derecha de la azul: con el 
+mismo retorno, el portafolio ingenuo tiene entre 1,8 y 11,0 puntos más de volatilidad. 
+●​
+Permiten cubrirse. Con acciones muy correlacionadas (COP y EOG, ρ = 0,87) una posición larga y otra corta 
+cancelan el riesgo común. Por eso, en retornos altos (portafolios largo-corto), la curva naranja cruza a la azul: 
+ahí las covarianzas positivas reducen el riesgo y quien las ignora lo sobreestima. 
+2.4 (P1A.4–P1A.6) Fronteras con restricciones 
+Con restricciones no hay fórmula cerrada: para cada retorno objetivo se resolvió el mismo problema por 
+programación cuadrática, agregando −0,10 ≤ wᵢ ≤ 0,10 (P1A.4), wᵢ ≥ 0 (P1A.5) o wᵢ ≥ 0 con al menos 40% en 
+Energy + Industrials (P1A.6). 
+3 
+j
+
+===== Tarea/Entregable/Informe_Tarea_ENFIN415.pdf · página 5 =====
+ 
+Figura 3. Las cuatro fronteras eficientes y la ingenua (zona relevante). 
+Tabla 2. Volatilidad mínima para cada retorno objetivo según la restricción 
+Frontera 
+Retorno máximo 
+factible 
+GMV μ 
+GMV σ 
+σ para μ̄=20% 
+σ para μ̄=30% 
+σ para μ̄=40% 
+Sin restricciones 
+(P1A.2) 
+sin límite 
+13,3% 
+10,8% 
+11,2% 
+12,9% 
+15,5% 
+−10% ≤ wᵢ ≤ 10% 
+45,1% 
+13,2% 
+10,8% 
+11,2% 
+13,3% 
+17,4% 
+Sin venta corta (wᵢ 
+≥ 0) 
+46,9% 
+11,6% 
+11,2% 
+12,3% 
+18,0% 
+30,6% 
+Sin venta corta + 
+Energy/Industrials 
+≥ 40% 
+39,8% 
+11,9% 
+11,4% 
+12,5% 
+18,1% 
+– 
+“–”: retorno no alcanzable con esa restricción. 
+ 
+P1A.4: límite de concentración vs. P1A.2. Cerca del GMV casi no hay diferencia (σ = 10,83% vs. 10,81%): solo 
+DUK, JNJ y XOM superaban el 10% y se reemplazan por acciones parecidas. La brecha crece con el retorno (μ̄ = 
+40%: σ de 15,5% a 17,4%) y la frontera tiene un techo de 45,1% (+10% en las 30 mejores acciones y −10% en las 
+20 peores), porque ya no se pueden tomar las posiciones gigantes que daban los retornos altos. 
+P1A.5: sin venta corta vs. P1A.2. El GMV empeora levemente (σ = 11,18%), pero el costo crece rápido con el 
+retorno (μ̄ = 30%: σ de 12,9% a 18,0%). Sin cortos no hay apalancamiento ni coberturas: el retorno queda entre el 
+de la peor y la mejor acción (-6,7% a 46,9%, 100% NVDA). Los portafolios eficientes son concentrados (entre 2 y 
+25 acciones) y la frontera es una sucesión de tramos que cambian cuando una acción entra o sale. 
+P1A.6: restricción sectorial vs. P1A.5. La restricción es activa en toda la frontera, porque sin ella Energy + 
+Industrials pesaban entre 0% y ~32%. Cuesta poco en la zona media (μ̄ = 20%: σ de 12,32% a 12,45%), porque 
+XOM, CAT y RTX tuvieron buenos retornos y la energía tiene baja correlación con tecnología. Cuesta mucho en 
+los extremos: el retorno máximo cae a 39,8% (60% NVDA + 40% CAT) y el GMV debe usar industriales 
+defensivos (WM, LMT) en vez de consumo básico. 
+En síntesis, cada restricción achica el conjunto factible y genera una "mini-frontera" dentro de la original, con un 
+costo bajo cerca del GMV y alto en retornos altos. Ese costo es in-sample: las restricciones también evitan que el 
+optimizador apueste fuerte a diferencias de medias que son ruido, lo que suele ayudar fuera de muestra. 
+4 
+
+===== Tarea/Entregable/Informe_Tarea_ENFIN415.pdf · página 6 =====
+3. Pregunta 1B: Línea de Mercado de Capitales y desempeño 
+3.1 (P1B.1) LMC y portafolio de tangencia 
+El portafolio de tangencia M maximiza el ratio de Sharpe, es decir, la pendiente de la línea que sale de rf: 
+w_M = Ω⁻¹(μ − rf·1) / [1′Ω⁻¹(μ − rf·1)]        LMC:  E[R ] = 4,04% + 2,54 · σ
+ 
+ 
+Figura 4. Frontera eficiente, LMC y portafolio de tangencia M. 
+M tiene μ = 85,9%, σ = 32,2% y Sharpe = 2,54 (S&P 500: 0,39). Pero es extremo: 560% en posiciones largas y 
+-460% en cortas. Está formado por pares dentro de cada sector (largo KO / corto PEP y PG; largo SO / corto DUK 
+y SRE; largo XOM / corto SLB y COP): como esas acciones están muy correlacionadas, cada par tiene poco riesgo 
+y el optimizador lo apalanca para explotar diferencias de medias históricas (KO 11,6% vs. PEP 0,8%) que no son 
+estadísticamente significativas. El optimizador actúa como un "maximizador de errores de estimación". Sin ventas 
+cortas el Sharpe máximo cae a 1,46. 
+3.2 (P1B.2) Modelo índice y alfa de Jensen 
+r_M,t − rf = α + β · (r_SP500,t − rf) + ε
+ 
+Tabla 3. Modelo índice del portafolio M (MCO, retornos diarios ago-2021 a jul-2026) 
+Coeficiente 
+Estimación 
+Error estándar 
+Estadístico t 
+α (diario) 
+0,00311 
+0,00055 
+5,64 
+α (anual, ×252) 
+78,5% 
+13,9% 
+5,64 
+β 
+0,510 
+0,052 
+9,88 
+T = 1.255 días; R² = 0,072; rf diaria = rf/252. 
+ 
+Test-t de α = 0: t = α̂/ee(α̂) = 5,64 > 1,96, por lo que formalmente se rechaza α = 0 al 5%: M habría ganado 78,5% 
+anual por sobre lo que predice el CAPM para su β = 0,51. El R² de 0,07 muestra que M es un portafolio largo-corto 
+casi neutral al mercado, con riesgo mayoritariamente idiosincrásico. 
+5 
+p
+p
+t
+
+===== Tarea/Entregable/Informe_Tarea_ENFIN415.pdf · página 7 =====
+¿Es consistente con la eficiencia de mercado? Sí: este α no es evidencia de ineficiencia, porque: 
+●​
+Usa información futura. Los pesos de M se calcularon con las medias de 2021–2026, que un inversionista no 
+conocía en 2021. La eficiencia solo dice que no se gana anormalmente con la información disponible en ese 
+momento. 
+●​
+Se usaron los mismos datos para construir y evaluar M. Al maximizar el Sharpe muestral con 50 pesos, el 
+optimizador maximiza también α/σ(ε), así que el α alto y significativo es mecánico y el test-t pierde validez. 
+Como verificación simulamos 1.000 muestras con α verdadero = 0 para todas las acciones: repitiendo el 
+procedimiento, el t(α) promedio fue 7,09, más que el nuestro. 
+●​
+Fuera de muestra el α desaparece. M estimado con datos hasta jul-2025 prometía Sharpe 2,80, pero entre 
+ago-2025 y jul-2026 rindió -21,4%. 
+●​
+Hipótesis conjunta (Fama): un α ≠ 0 también puede indicar que el CAPM, o el S&P 500 como proxy del 
+portafolio de mercado (crítica de Roll), no es el modelo correcto. 
+3.3 (P1B.3) Ratios de Sharpe y de Treynor 
+SR = (E[R ] − rf) / σ          TR = (E[R ] − rf) / β
+ 
+Tabla 4. Sharpe y Treynor (base anual) 
+Portafolio 
+μ anual 
+σ anual 
+β 
+Sharpe 
+Treynor 
+Portafolio de 
+tangencia M 
+85,9% 
+32,2% 
+0,51 
+2,54 
+160,7% 
+S&P 500 
+10,7% 
+17,0% 
+1,00 
+0,39 
+6,7% 
+ 
+M supera al S&P 500 en ambas medidas. Sin embargo, el ranking puede diferir porque Sharpe usa el riesgo total 
+(σ) y Treynor solo el sistemático (β). Como β = ρ ,SP500·σ /σSP500, se cumple SR = TR ·ρ ,SP500/σSP500: 
+un portafolio con mucho riesgo idiosincrásico (R² bajo) se ve bien en Treynor y mal en Sharpe. Ejemplo en 
+nuestros datos: JNJ tiene Sharpe 0,39 (bajo el índice) pero Treynor 40,6% (seis veces el del índice), porque su β es 
+0,17. Sharpe es la medida correcta si el portafolio es toda la inversión riesgosa (el caso de M, por el teorema de 
+separación); Treynor, si es una parte pequeña de un portafolio diversificado. El Treynor de M está inflado por su β 
+bajo (0,51). 
+3.4 (P1B.4) Asignación óptima entre M y rf 
+Maximizando U = E[R_C] − (c/2)σ²_C con R_C = x·R_M + (1 − x)·rf (Sesión I): 
+x* = (E[R_M] − rf) / (c·σ²_M) = (85,9% − 4,04%) / (c · 0,1037) = 7,90 / c 
+Tabla 5. Asignación óptima para c = 2, 5 y 10 
+c 
+x* en M 
+1 − x* en rf 
+Posición en la LMC 
+E[R_C] 
+σ_C 
+2 
+3,95 
+-294,9% 
+Pide prestado 
+(borrowing) 
+327,4% 
+127,2% 
+5 
+1,58 
+-58,0% 
+Pide prestado 
+(borrowing) 
+133,4% 
+50,9% 
+10 
+0,79 
+21,0% 
+Presta (lending) 
+68,7% 
+25,4% 
+ 
+●​
+c = 2 y c = 5 (borrowing): x∗ > 1, piden prestado 295% y 58% del patrimonio a rf para invertir más de 100% 
+en M; se ubican en la LMC a la derecha de M. 
+●​
+c = 10 (lending): x∗ = 0,79, invierte 79% en M y presta 21% a rf; se ubica entre rf y M. 
+●​
+Separación: los tres tienen el mismo portafolio riesgoso M y solo cambia x∗; a mayor aversión, más cerca de 
+rf. Los apalancamientos son extremos porque el μ de M (86%) es irreal; con el S&P 500 serían 1,15, 0,46 y 
+0,23. 
+6 
+p
+p
+p
+p
+p
+p
+p
+p
+p
+p
+p
+p
+
+===== Tarea/Entregable/Informe_Tarea_ENFIN415.pdf · página 8 =====
+4. Pregunta 2: Modelos de estructura de tasas 
+4.1 Datos, modelos y óptimo global 
+Se usaron las 11 series Treasury constant maturities del H.15 de la Fed (1, 3 y 6 meses; 1, 2, 3, 5, 7, 10, 20 y 30 
+años) el último día transado de junio de 2017 a 2026. Con la convención días transados / días transados, el plazo se 
+mide en años (1 mes = 1/12). Los modelos, con la notación de clase: 
+NS:  R(t) = β₀ + β₁·[(1 − e^(−t/α₁))·α₁/t] + β₂·[(1 − e^(−t/α₁))·α₁/t − e^(−t/α₁)] 
+Svensson:  R(t) = NS(t) + β₃·[(1 − e^(−t/α₂))·α₂/t − e^(−t/α₂)] 
+β₀ es el nivel (R(∞) = β₀), β₁ la pendiente (R(0) = β₀ + β₁, así que β₁ = tasa corta − tasa larga y β₁ > 0 indica curva 
+invertida), β₂ la curvatura (joroba si es positiva, valle si es negativa) y α₁ ubica esa joroba. Svensson agrega una 
+segunda joroba (β₃, α₂). 
+Búsqueda del óptimo global. Dado que la función objetivo no es convexa en α y puede presentar mínimos locales, 
+se utilizó el siguiente procedimiento: (i) para cada valor de α, se estimaron los β mediante mínimos cuadrados; (ii) 
+se realizó una búsqueda en una grilla fina de α₁ (y de α₁, α₂ para Svensson), refinando las mejores soluciones; y (iii) 
+se verificaron los resultados con cientos de optimizaciones desde distintos puntos iniciales, sin encontrar errores 
+menores. Solo el 75% de las optimizaciones de NS y el 21% de Svensson convergieron a la mejor solución. 
+Además, se impusieron restricciones económicas (β₀ ≥ 0, β₀ + β₁ ≥ 0 y límites sobre α) para evitar parámetros poco 
+realistas. De esta manera, se obtuvo la mejor solución numérica encontrada dentro de la región admisible. 
+ 
+4.2 Resultados y comparación del ajuste 
+Tabla 6. Parámetros de Nelson-Siegel (columnas 2–5) y Svensson (6–11), y RMSE en puntos base 
+Junio 
+β₀ 
+β₁ 
+β₂ 
+α₁ 
+β₀  
+β₁  
+β₂  
+β₃ 
+α₁  
+α₂ 
+RMSE 
+NS 
+RMSE 
+SV 
+2017 
+3,06 
+-2,14 
+0,00 
+3,73 
+3,05 
+-2,38 
+0,00 
+1,03 
+3,27 
+0,24 
+5,3 
+2,8 
+2018 
+2,95 
+-1,21 
+-0,00 
+0,72 
+3,01 
+-1,33 
+-0,00 
+-0,60 
+0,47 
+1,49 
+3,2 
+1,1 
+2019 
+2,76 
+-0,54 
+-2,61 
+2,61 
+1,25 
+0,92 
+0,95 
+4,45 
+0,37 
+25,72 
+2,4 
+1,4 
+2020 
+1,94 
+-1,77 
+-2,15 
+4,01 
+1,91 
+-1,81 
+-2,13 
+0,31 
+3,82 
+0,33 
+2,0 
+1,3 
+2021 
+2,39 
+-2,33 
+-2,68 
+1,80 
+0,63 
+-0,55 
+-1,39 
+5,11 
+1,21 
+15,11 
+2,8 
+2,0 
+2022 
+3,16 
+-2,09 
+-1,97 
+0,10 
+2,20 
+-1,35 
+3,74 
+3,33 
+0,51 
+12,49 
+10,6 
+8,5 
+2023 
+3,73 
+1,32 
+3,61 
+0,47 
+2,03 
+3,13 
+4,89 
+5,59 
+0,78 
+13,85 
+9,1 
+5,0 
+2024 
+4,72 
+0,88 
+-2,50 
+2,50 
+2,59 
+2,95 
+1,89 
+6,06 
+0,91 
+13,94 
+4,7 
+2,5 
+2025 
+5,19 
+-0,71 
+-3,83 
+2,21 
+2,64 
+1,49 
+2,77 
+7,12 
+0,30 
+15,87 
+7,3 
+2,7 
+2026 
+5,32 
+-1,46 
+0,41 
+10,00 
+1,49 
+2,22 
+2,85 
+10,72 
+1,39 
+15,43 
+8,6 
+4,0 
+β en %, α en años. RMSE = √(promedio de los errores al cuadrado), en puntos base. 
+ 
+7 
+
+===== Tarea/Entregable/Informe_Tarea_ENFIN415.pdf · página 9 =====
+ 
+Figura 5. Curvas observadas (puntos), Nelson-Siegel (azul) y Svensson (rojo). 
+¿En qué fechas y en qué parte de la curva mejora Svensson? 
+●​
+En todas las fechas, porque NS es un caso particular de Svensson (β₃ = 0): el RMSE baja entre 20% (2022) y 
+66% (2018). Las mayores mejoras son en 2018, 2025, 2026, 2017, 2024 y 2023. 
+●​
+En el extremo corto (1 a 6 meses) en 2017, 2018, 2020, 2025 y 2026: una curvatura muy rápida que NS no 
+puede seguir con el mismo α que usa para el tramo medio (en 2025 por recortes esperados y en 2026 por alzas 
+esperadas). 
+●​
+En el tramo de 20 años desde 2021: el bono a 20 años rinde más que el de 30 (3,38% vs. 3,14% en 2022; 
+4,06% vs. 3,85% en 2023) por su menor demanda y liquidez desde su reintroducción en 2020. Esa joroba larga 
+requiere el segundo término. La peor fecha para ambos es 2022 (NS 10,6 pb): la curva subía fuerte hasta 1 año, 
+era plana después y estaba a días de invertirse. 
+8 
+
+===== Tarea/Entregable/Informe_Tarea_ENFIN415.pdf · página 10 =====
+4.3 Evolución de β₀, β₁ y β₂ 
+ 
+Figura 6. Parámetros de Nelson-Siegel y sus contrapartes observadas. 
+●​
+β₀ (nivel): cerca de 3% en 2017–2019, mínimo de 1,94% en 2020 (pandemia y compras de bonos de la Fed) y 
+luego sube hasta 5,32% en 2026. Sigue a la tasa a 30 años y refleja más inflación esperada y una mayor prima 
+por plazo (déficit fiscal, más emisión, rebajas de calificación). 
+●​
+β₁ (pendiente): negativo en casi todos los años, reflejando tasas largas superiores a las cortas en los extremos 
+del modelo. Alcanza su valor más negativo en 2021 (-2,33) y es positivo en 2023 (1,32) y 2024 (0,88), 
+períodos de inversión. Sin embargo, un β₁ negativo no descarta inversiones en tramos específicos, como 
+ocurrió en 2019 y 2025. R(0) = β₀ + β₁ sigue de cerca la tasa de la Fed.  
+●​
+β₂ (curvatura): casi 0 en 2017–2018 (curvas monótonas), negativo en 2019–2022 (valle), muy positivo en 
+2023 (3,61, joroba en 6 meses en el peak de las alzas) y en su mínimo en 2025 (-3,83, curva en forma de 
+"bañera"). 
+9 
+
+===== Tarea/Entregable/Informe_Tarea_ENFIN415.pdf · página 11 =====
+4.4 Evolución de la curva 2017–2026 
+ 
+Figura 7. Arriba: tasas del Tesoro, tasa de fondos federales e inflación. Abajo: pendientes 10A − 3M y 10A − 2A (sombreado rojo: curva 
+invertida; gris: recesión de 2020). 
+El extremo corto de la curva lo fija la política de la Fed y el largo, las expectativas de inflación y crecimiento y la 
+prima por plazo. Entre 2017 y 2026 la curva pasó por cinco etapas: 
+2017–2018: normalización. Con pleno empleo, la Fed subió gradualmente la tasa (hasta 2,25–2,50% en dic-2018) 
+y comenzó a reducir su balance, mientras la reforma tributaria ampliaba el déficit. La inflación bajo 2% y las tasas 
+negativas en Europa y Japón contenían las tasas largas, así que la curva se aplanó: en junio de 2018 el diferencial 
+10A − 2A era de solo 33 pb. En julio de 2018 comenzó la guerra comercial con China. 
+2019: primera inversión. La escalada arancelaria y la desaceleración global hundieron las tasas largas. En junio la 
+curva tenía forma de U (2,18% a 1 mes, 1,71% a 3 años) y 10A − 3M era −12 pb: el mercado esperaba recortes, y 
+la Fed recortó tres veces entre julio y octubre. 
+2020–2021: pandemia y reapertura. Con el COVID-19 la Fed llevó la tasa a 0–0,25% y compró bonos sin límite; 
+hubo una recesión entre febrero y abril de 2020. En junio de 2020 todo el tramo hasta 3 años estaba bajo 0,2%. En 
+2021, las vacunas, el estímulo fiscal y una inflación que superó 5% subieron las tasas largas con las cortas aún en 
+cero: fue la curva más empinada de la muestra (10A − 3M = +140 pb). 
+2022–2024: inflación y la inversión más larga en 40 años. La invasión de Ucrania llevó la inflación a 9,1% y la 
+Fed subió la tasa de 0% a 5,25–5,50% (julio de 2023), con alzas de 75 pb. En junio de 2022 la curva subía fuerte 
+hasta 1 año y era plana después; se invirtió días más tarde. En junio de 2023 la inversión era máxima (10A − 3M = 
+−162 pb), tras la quiebra de Silicon Valley Bank y la disputa por el techo de deuda. En 2024 la inflación bajó y la 
+Fed recortó desde septiembre, pero en junio la curva seguía invertida (−112 pb). 
+2025–2026: aranceles, déficit y shock petrolero. Los aranceles de abril de 2025, la pérdida de la nota AAA de 
+EE.UU. (Moody's) y las expectativas de un mayor déficit fiscal contribuyeron a presionar las tasas largas y la prima 
+por plazo. En junio de 2025 la curva tenía forma de bañera: corto invertido (se esperaban recortes, que llegaron en 
+sep–dic 2025) y largo empinado. En 2026, la guerra entre EE.UU., Israel e Irán (desde el 28 de febrero) disparó el 
+10 
+
+===== Tarea/Entregable/Informe_Tarea_ENFIN415.pdf · página 12 =====
+petróleo y la inflación llegó a 4,2% en mayo; Kevin Warsh asumió la presidencia de la Fed. En junio de 2026 la 
+curva era normal y creciente, con el nivel más alto de la muestra y alzas ya descontadas en el tramo corto. 
+Posteriormente, la Fed subió la tasa el 16 de septiembre y el rendimiento del bono a 10 años superó el 5% por 
+primera vez desde 2007, acontecimientos posteriores a la curva estimada de junio.  
+4.5 Inversiones de la curva: qué anticipaban y si ocurrió 
+Entre las fechas de junio, la curva estaba invertida en 2019 (10A − 3M = −12 pb), 2023 (−162 pb), 2024 (−112 pb) 
+y 2025 (−17 pb, solo en el tramo corto). Una inversión indica que el mercado espera tasas cortas futuras más bajas, 
+típicamente porque la Fed recortará frente a una desaceleración; históricamente precedió a las recesiones de 
+EE.UU. Los episodios en los datos diarios: 
+Tabla 7. Episodios de inversión 2017–2026 y su resultado 
+Episodio (10A − 3M) 
+Mínimo 
+Anticipaba 
+¿Ocurrió? 
+may–oct 2019 
+−52 pb 
+Recortes y recesión por la guerra 
+comercial 
+Recortes sí (75 pb). Recesión sí en 
+2020, pero causada por la 
+pandemia 
+ene–mar 2020 
+−20 pb 
+Huida a la calidad y recortes de 
+emergencia 
+Sí: tasa a cero y recesión 
+oct-2022 a dic-2024 (10A − 2A: 
+jul-2022 a sep-2024) 
+−189 pb 
+Recesión por las alzas y recortes 
+posteriores 
+Recortes sí (175 pb entre 
+sep-2024 y dic-2025). Recesión 
+no, al menos hasta oct-2026 
+feb–sep 2025 
+−27 pb 
+Recortes por el efecto de los 
+aranceles 
+Recortes sí (75 pb). Recesión no 
+ 
+La señal de 2022–2024 falló en anticipar una recesión porque la inversión reflejaba sobre todo la baja esperada de 
+la inflación, la prima por plazo estaba deprimida por años de compras de bonos de la Fed, hogares y empresas 
+habían fijado tasas bajas en 2020–2021 y el déficit fiscal sostuvo el crecimiento. En 2026 la pendiente es positiva 
+por un "empinamiento bajista": suben más las tasas largas, por inflación y riesgo fiscal, y no por una expectativa de 
+recesión. 
+5. Conclusiones 
+●​
+La diversificación de Markowitz reduce mucho el riesgo, y las covarianzas son su núcleo: ignorarlas subestima 
+el riesgo y elimina la posibilidad de cubrirse. 
+●​
+Las restricciones generan mini-fronteras dentro de la original; su costo es bajo cerca del GMV y alto en 
+retornos altos. 
+●​
+El portafolio de tangencia y su alfa de Jensen (78% anual, t = 5,6) reflejan el error de estimación de las medias 
+y el uso de los mismos datos para construir y evaluar M, no ineficiencia del mercado. 
+●​
+Nelson-Siegel describe bien la curva del Tesoro y sus parámetros siguen al nivel, la pendiente y la curvatura; 
+Svensson mejora el extremo corto y el tramo de 20 años. Las inversiones anticiparon bien los recortes de la 
+Fed, pero la de 2022–2024 no fue seguida por una recesión. 
+Referencias 
+Bodie, Z., Kane, A. y Marcus, A. (2017). Investments, 11.ª ed. McGraw-Hill. 
+Bernales, A. (2026). Finanzas I – ENFIN415, Sesión I. Universidad de Chile. 
+Michaud, R. (1989). The Markowitz optimization enigma: is 'optimized' optimal? Financial Analysts Journal, 45(1). 
+Nelson, C. y Siegel, A. (1987). Parsimonious modeling of yield curves. Journal of Business, 60(4). 
+Svensson, L. (1994). Estimating and interpreting forward interest rates: Sweden 1992–1994. NBER WP 4871. 
+Datos: Federal Reserve Board, H.15 Selected Interest Rates; Yahoo Finance; U.S. Bureau of Labor Statistics (IPC). 
+Hechos de 2026: Federal Reserve, comunicado FOMC del 16-sep-2026; BEA, PIB del 2.º trimestre de 2026; CNBC (15-sep-2026 y 
+10-jun-2026) y CNN (22-may-2026). 
+11 
+
+===== Tarea/Entregable/Informe_Tarea_ENFIN415.pdf · página 13 =====
+Anexo. Retorno esperado, volatilidad y beta de cada acción (anual, ago-2021 
+a jul-2026) 
+Tabla 8. Estadísticas anuales de las 50 acciones (la matriz de covarianzas está en Resultados_Pregunta1A.xlsx) 
+Ticker 
+Sector 
+μ 
+σ 
+β 
+Ticker  
+Sector  
+μ  
+σ  
+β  
+GOOGL 
+Comunicacio
+nes 
+19,7% 
+31,9% 
+1,26 
+MRK 
+Salud 
+13,7% 
+24,1% 
+0,28 
+META 
+Comunicacio
+nes 
+9,1% 
+45,1% 
+1,61 
+JNJ 
+Salud 
+10,8% 
+17,4% 
+0,17 
+NFLX 
+Comunicacio
+nes 
+6,5% 
+45,0% 
+1,22 
+UNH 
+Salud 
+1,9% 
+33,0% 
+0,43 
+VZ 
+Comunicacio
+nes 
+2,8% 
+22,2% 
+0,21 
+PFE 
+Salud 
+-5,5% 
+25,5% 
+0,40 
+AMZN 
+Consumo 
+discrecional 
+9,8% 
+36,2% 
+1,52 
+CAT 
+Industrial 
+29,3% 
+31,5% 
+1,06 
+TSLA 
+Consumo 
+discrecional 
+6,2% 
+59,5% 
+2,04 
+RTX 
+Industrial 
+20,4% 
+24,3% 
+0,57 
+MCD 
+Consumo 
+discrecional 
+4,5% 
+17,6% 
+0,37 
+LMT 
+Industrial 
+11,7% 
+23,9% 
+0,22 
+HD 
+Consumo 
+discrecional 
+2,7% 
+24,5% 
+0,84 
+DE 
+Industrial 
+11,2% 
+29,7% 
+0,76 
+WMT 
+Consumo 
+básico 
+18,4% 
+22,0% 
+0,41 
+WM 
+Industrial 
+10,1% 
+19,0% 
+0,32 
+KO 
+Consumo 
+básico 
+11,6% 
+16,6% 
+0,27 
+UNP 
+Industrial 
+8,1% 
+22,9% 
+0,66 
+PG 
+Consumo 
+básico 
+2,9% 
+18,1% 
+0,29 
+NVDA 
+Tecnología 
+46,9% 
+51,5% 
+2,16 
+PEP 
+Consumo 
+básico 
+0,8% 
+18,8% 
+0,29 
+AVGO 
+Tecnología 
+43,7% 
+43,6% 
+1,65 
+XOM 
+Energía 
+23,6% 
+26,7% 
+0,42 
+CSCO 
+Tecnología 
+17,7% 
+25,5% 
+0,85 
+EOG 
+Energía 
+19,1% 
+32,7% 
+0,58 
+AAPL 
+Tecnología 
+15,6% 
+27,9% 
+1,19 
+COP 
+Energía 
+18,8% 
+32,8% 
+0,62 
+MSFT 
+Tecnología 
+10,7% 
+27,9% 
+1,14 
+CVX 
+Energía 
+17,4% 
+25,2% 
+0,49 
+ORCL 
+Tecnología 
+9,4% 
+42,0% 
+1,21 
+SLB 
+Energía 
+13,1% 
+37,7% 
+0,84 
+NEM 
+Materiales 
+10,9% 
+38,5% 
+0,59 
+GS 
+Financiero 
+22,5% 
+28,5% 
+1,16 
+LIN 
+Materiales 
+10,2% 
+20,9% 
+0,70 
+JPM 
+Financiero 
+19,4% 
+24,4% 
+0,89 
+PLD 
+Inmobiliario 
+5,3% 
+27,2% 
+0,93 
+AXP 
+Financiero 
+14,9% 
+29,5% 
+1,18 
+AMT 
+Inmobiliario 
+-6,7% 
+26,8% 
+0,47 
+BRK-B 
+Financiero 
+12,2% 
+17,1% 
+0,60 
+SO 
+Utilities 
+11,6% 
+18,7% 
+0,24 
+BAC 
+Financiero 
+12,1% 
+26,7% 
+0,97 
+AEP 
+Utilities 
+11,1% 
+20,1% 
+0,29 
+V 
+Financiero 
+8,7% 
+22,9% 
+0,81 
+SRE 
+Utilities 
+9,3% 
+23,2% 
+0,54 
+LLY 
+Salud 
+32,1% 
+32,5% 
+0,59 
+DUK 
+Utilities 
+7,4% 
+18,0% 
+0,20 
+ABBV 
+Salud 
+19,1% 
+23,6% 
+0,31 
+NEE 
+Utilities 
+4,8% 
+27,0% 
+0,54 
+ 
+Archivos entregados: carpeta código (scripts de Python 01 a 0 , comentados paso a paso), datos (datos descargados) y resultados 
+(figuras y planillas Excel Resultados_Pregunta1A/1B/2.xlsx). Instrucciones en Instrucciones_y_contenido.txt. 
+12 
+4

@@ -1,0 +1,677 @@
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2021_Solution.pdf · página 1 =====
+FINANCE I 
+                  Facultad de Economía y Negocios 
+                   Universidad de Chile 
+ 
+ 
+ 
+Prof.: Alejandro Bernales 
+ 
+ 
+ 
+ 
+ 
+Solemne 
+ 
+Time Allowed: 1.5 Hours 
+ 
+ 
+Instructions: 
+ 
+The solemne has 3 questions, each of them have the same weight. 
+ 
+PLEASE WRITE YOUR NAME IN ALL THE PAGES. 
+ 
+PLEASE ONLY USE THE SPACE IN EACH QUESTION TO ANSWER ALL 
+SECTIONS (USE ONLY ONE SIDE OF THE PAGE - ONE LANGUAGE) 
+ 
+The space provided is sufficient to give a concise and pertinent answer to each question 
+and/or sub-point of a question. 
+ 
+Extra answer booklets will not be provided – please use the spaces provided only. Answers 
+written outside the spaces or on other booklets will not be marked. 
+ 
+ 
+ 
+Electronic calculators may be used provided that they cannot store text 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2021_Solution.pdf · página 2 =====
+FINANCE I 
+                  Facultad de Economía y Negocios 
+                   Universidad de Chile 
+ 
+ 
+ 
+ 
+Prof.: Alejandro Bernales 
+ 
+ 
+ 
+ 
+ 
+Solemne 
+ 
+Time Allowed: 1.5 Hours 
+ 
+ 
+Instrucciones: 
+ 
+El Control tiene tres preguntas, cada una de ellas tienen la misma ponderación. 
+ 
+POR FAVOR ESCRIBA SU NOMBRE EN TODAS LAS HOJAS. 
+ 
+POR FAVOR UTILICE EL ESPACIO PROVISTO EN CADA PREGUNTA PARA 
+RESPONDER CADA SECCIÓN (USAR UN SOLO LADO DE LA HOJA - UN SOLO 
+LENGUAJE). 
+ 
+El espacio entregado es suficiente para entregar una respuesta concisa y pertinente a 
+cada pregunta y/o sub-pregunta. 
+ 
+No se entregarán hojas adicionales para responder por favor utilice solamente el espacio 
+entregado. Respuestas escritas fuera de este espacio o en otras hojas no serán revisadas. 
+ 
+ 
+ 
+ 
+Calculadoras electrónicas pueden ser utilizadas salvo las que puedan almacenar texto 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2021_Solution.pdf · página 3 =====
+Question I. Limit Order Markets 
+ 
+Suppose we have a limit order market where the following orders are submitted 
+-Limit orders to buy: 100 shares at $3.00, 200 shares at $4.00, 200 shares at $3.50, and 500 
+shares at $2.50. 
+-Limit orders to sell: 500 shares at $5.00, 600 shares at $3.00, and 500 shares at $4.00. 
+-Market orders to buy: a total of 500 shares. 
+-Market orders to sell: a total of 200 shares. 
+ 
+In addition, suppose that the above orders arrive on the market over time, in the order of arrival 
+that is listed above (that is, at time t = 1 the limit order to buy 100 at $3.00 is submitted, at time t 
+= 2 the limit order for 200 at $4.00, and so on, continuing until time t = 9, when the market order 
+to sell 200 arrives). Track the state of the Limit Order Book (show it after each new order has 
+arrived and any transactions are triggered, for t = 0, ..., 9), price and quantity of any transactions 
+that take place. In addition, record the bid-ask spread. 
+Answer 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Time
+Bid-Ask 
+Spread
+Shares
+Price
+Shares
+Price
+Shares
+Price
+1
+100
+3
+2
+200
+4
+100
+3
+3
+200
+4
+200
+3.5
+100
+3
+4
+200
+4
+200
+3.5
+100
+3
+500
+2.5
+5
+200
+4
+500
+5
+1
+200
+3.5
+100
+3
+500
+2.5
+6
+500
+2.5
+100
+3
+0.5
+200
+4
+500
+5
+200
+3.5
+100
+3
+7
+500
+2.5
+100
+3
+0.5
+500
+4
+500
+5
+8
+500
+2.5
+100
+4
+1.5
+100
+3
+500
+5
+400
+4
+9
+300
+2.5
+100
+4
+1.5
+200
+2.5
+500
+5
+Buy Orders 
+(Bid)
+Sell Orders 
+(Ask)
+Transactions
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2021_Solution.pdf · página 4 =====
+Pregunta I. Limit Order Markets 
+ 
+Suponga que tenemos un "limit order market" donde las siguientes órdenes son enviadas: 
+ 
+-"Limit Orders" de compra: 100  acciones a $ 3.00, 200 acciones a $ 4.00, 200 acciones a 3.50, y 
+500 acciones a $ 2.50. 
+-"Limit Orders" de venta: 500 acciones a $ 5.00, 600 acciones a 3.00, y 500 acciones a $ 4.00. 
+ -"Market Orders" para comprar: un total de 500 acciones. 
+-"Market Orders" para vender: un total de 200 acciones. 
+ 
+Además, suponga que las órdenes de arriba llegan al mercado a lo largo del tiempo, en el mismo 
+orden de llegada en que se mencionan arriba (es decir, en el tiempo t = 1 la "Limit Order" para 
+comprar 100 a $ 3.00, en el tiempo t = 2  la "Limit Order" de compra de 200 en $ 4.00, y así 
+sucesivamente, continuando hasta el momento t = 9, cuando llega la "market order" para vender 
+200 acciones). Haga un seguimiento del estado del libro de órdenes a través del tiempo 
+(muéstrelo después de que cada nueva orden ha llegado y las transacciones que se activan, para 
+t = 0, ..., 9), el precio y la cantidad de transacciones que se llevan a cabo. Registre también el bid-
+ask spread. 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2021_Solution.pdf · página 5 =====
+Question II:  
+2a) The Central Bank of Each country provides interest rates; and thus we can price bonds and 
+other financial instruments related to interest rates. Please, explain this sentence. 
+Answer: 
+ 
+It is the opposite. We observe bond prices, and then we obtain implicitly interest rates.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2b) The interest rates for bonds from Central banks are practically constant (over time and with 
+different maturities) since they have the support of the complete government of a country, and 
+thus there are almost risk free. Please, explain this sentence. 
+Answer: 
+ 
+Interest rates change over time due to news related to credit risk (default risk), waiting cost 
+(willingness of postponing consumption), and competition between agents who want to lend. 
+ 
+In addition, interest rates change depending of the maturity, since the elements described above 
+are also different depending the future repayment dates.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2021_Solution.pdf · página 6 =====
+Pregunta II: 
+2a) El Banco central de cada pais provee tasas de interes, con estas se pueden valorar bonos y 
+otros instrumentos financieros relacionados con tasas de interés. Proporcione un comentario 
+para esta frase. 
+ Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2b) Las tasas de interés de los bonos de los Bancos Centrales son prácticamente constantes (a 
+través del tiempo y con distintas madureces) ya que cuentan con el respaldo del gobierno 
+completo de un país, y así son practicamente libre de riesgo. Por favor, explique esta frase. 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2021_Solution.pdf · página 7 =====
+Question III:  
+Suppose that there is a market for one asset, which is organized as a dealer market. The 
+fundamental value of the asset is   . The expectation of the market maker about the fundamental 
+value of the asset is very accurate, so E(  )=    . The market maker knows that a   proportion of 
+the transactions are coming from informed trader. In addition, the market maker knows that on 
+average her potential damage from informed traders is equal to     , per each share traded (it 
+is exactly the same damage for buy orders and sell orders). The market maker calculates the 
+values of   and   based on a long time series of data and their values are stable over time.  
+ 
+3a) The market maker has to decide based on these information the ask price (  ) and bid price 
+(  ). What should be the values of    and   ? Suppose that the market maker does not have 
+inventory costs, fixed costs and costs for waiting. 
+Answer 
+ 
+              
+              
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2021_Solution.pdf · página 8 =====
+Pregunta III: 
+Supongamos que hay un mercado con un activo, que se organiza como un "dealer market". El 
+valor fundamental del activo es   . La expectativa del "market maker" acerca del valor 
+fundamental del activo es muy precisa, por lo que E(  )=   . El "market maker" sabe que una 
+proporción   de las transacciones provienen de inversores informados. Además, el "market 
+maker" sabe que, en promedio, su daño potencial proveniente de inversores informados es igual 
+a     , por cada acción transada (es exactamente el mismo daño para las órdenes de compra y 
+las órdenes de venta). El "market maker" calcula los valores de   y   basados en una larga serie 
+de datos y sus valores son estables en el tiempo. 
+ 
+3a) El "market maker" tiene que decidir sobre la base de esta información el precio "ask" (  ) y 
+el precio "bid" (  ). ¿Cuáles debieran ser los valores de    y   ? Suponga que el "market maker" 
+no enfrenta costos de inventarios, ni costos fijos, y su costo de esperar es nulo. 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2021_Solution.pdf · página 9 =====
+3b) Suppose that an investor buys at time   one share of the asset. Then, the investor sells the 
+share of the asset after one period. This transaction has a return ' ' (in continuous-time). 
+Suppose that the gross return (in continuous-time) of the fundamental value of the asset, ' ', for 
+holding the asset one period is equal to:   ln(       ). Please, reflect the effect on the 'return 
+premium':    , of a change in   and   . What is the intuition of the expression that you obtain? 
+Explain (Hint: Maybe you can use partial derivatives to shows positive or negative 
+relationships). 
+Answer 
+ 
+           
+  
+               
+          
+     
+  
+      
+       
+then  
+ 
+         
+  
+                        
+ 
+ 
+                          
+thus 
+ 
+                          
+ 
+      
+  
+ 
+ 
+       
+ 
+       
+ 
+      
+  
+ 
+ 
+       
+ 
+       
+ 
+ 
+ 
+Hence, the return premium, R − r, should be greater for securities where informed traders are 
+more numerous and have more valuable information. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2021_Solution.pdf · página 10 =====
+3b) Suponga que un inversor compra en el momento   una acción del activo. Luego, el inversor 
+vende la acción del activo después de un período. Esta transacción tiene un retorno ' ' (en 
+tiempo continuo). Supongamos que el retorno bruto (en tiempo continuo) del valor fundamental 
+del activo, ' ', por tener el activo por un período es igual a:   ln(       ). Por favor, refleje el 
+efecto en el 'return premium':    , de un cambio en   y  . ¿Cuál es la intuición de la expresión 
+que se obtiene? Explique (Hint: Tal vez pueda usar derivadas parciales para mostrar relaciones 
+positivas o negativas). 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2021_Solution.pdf · página 11 =====
+3c) Based on the results obtained in the previous questions (3a) and (3b). Please, suggest an 
+improvement in asset pricing factor models such as the APT. 
+Answer 
+ 
+Asymmetric information should affect the performance of asset returns. A potential factor which 
+should be considered to explain returns is a factor related to asymmetric information.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne_Solucion2021_Solution.pdf · página 12 =====
+3c) Sobre la base de los resultados obtenidos en las preguntas anteriores (3a) y (3b). Por favor, 
+sugiera una mejora para los modelos de factores usados para valorar activos como del tipo APT. 
+Respuesta: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

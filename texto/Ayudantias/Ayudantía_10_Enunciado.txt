@@ -1,0 +1,98 @@
+===== Ayudantias/Ayudantía_10_Enunciado.pdf · página 1 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Ayudantía 10
+Profesor: Alejandro Bernales
+Ayudantes: Luisa Rodríguez, Elizabeth Núñez, Ayelen Sandoval, Tomás Rojas, Joaquín Arenas, Juan
+Correa Hevia, Lucas Montiel y Carolina Morales
+Comentes
+1) El Valor en Riesgo al 99 % de confianza a 10 días es, simplemente, diez veces el VaR diario al
+99 %. Comente y defina el término subrayado.
+2) Dos portafolios que exhiben la misma volatilidad tienen necesariamente el mismo VaR.
+3) Al realizar el backtesting de un modelo de VaR al 95 % sobre T = 510 días se observan 40
+excepciones. Según las reglas de Basilea, el modelo es conservador.
+4) Dado que la diversificación reduce el riesgo, el VaR de un portafolio es siempre estrictamente
+menor que la suma de los VaR individuales de los activos que lo componen.
+5) Un alza en la tasa de interés libre de riesgo reduce el valor de una opción call y aumenta el de
+una opción put, en ambos casos sobre una acción que no paga dividendos.
+6) Sobre una acción que no paga dividendos nunca es óptimo ejercer anticipadamente una opción
+americana, de modo que C = c y P = p.
+Matemático I: VaR paramétrico y backtesting
+Usted administra un fondo cuyo patrimonio asciende hoy a P0 = $500 millones. El retorno anual
+del fondo se distribuye normal, con retorno esperado µ = 10 % anual y volatilidad σ = 20 % anual.
+Suponga retornos iid y un año de 250 días hábiles.
+Ayuda: VaR = P0 αc σ
+√
+t; α95 % = 1,645; α99 % = 2,33.
+1) Calcule el VaR diario del fondo a los niveles de confianza de 95 % y 99 %, suponiendo media
+cero.
+2) Calcule el VaR a 10 días al 99 % de confianza. Explique qué supuestos permiten pasar del
+horizonte diario al de 10 días.
+3) Recalcule los VaR anteriores al 99 % incorporando el retorno esperado del fondo. Comente la
+magnitud del ajuste.
+4) Si el modelo es correcto, ¿cuántas excepciones esperaría observar en un año de operación con el
+VaR diario al 99 %? Si observa 9, ¿qué concluiría?
+Página 1 de 3
+
+===== Ayudantias/Ayudantía_10_Enunciado.pdf · página 2 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Economía y Negocios
+5) ¿Por qué en la práctica los bancos tienden a sobrestimar su VaR?
+Matemático II: VaR de un portafolio con dos activos
+Un inversionista mantiene $300 millones en el activo A y $200 millones en el activo B. Las vola-
+tilidades anuales son σA = 25 % y σB = 15 %, y la correlación entre los retornos es ρA,B = 0,3.
+Suponga medias cero, un horizonte de 21 días hábiles (un mes), 250 días hábiles al año y un nivel
+de confianza de 99 %.
+Ayuda: σ2
+p = w2
+Aσ2
+A + w2
+Bσ2
+B + 2wAwBρA,BσAσB; covA,B = ρA,BσAσB.
+1) Determine las ponderaciones del portafolio y su volatilidad anual. Exprese el cálculo también en
+notación matricial.
+2) Calcule el VaR del portafolio al 99 % para el horizonte de un mes.
+3) Calcule el VaR individual de cada posición y cuantifique el beneficio de diversificación.
+4) Repita el cálculo del VaR del portafolio para ρ = 1 y ρ = 0. Interprete.
+Matemático III: opciones americanas, paridad y arbitraje
+Considere una acción que no paga dividendos cuyo precio hoy es S0 = $40. La tasa libre de riesgo es
+r = 6 % anual y la volatilidad del precio de la acción es σ = 30 % anual. Se desea valorar opciones
+con precio de ejercicio K = $42 y vencimiento en T = 6 meses, usando un árbol binomial de dos
+pasos, con cada paso de 3 meses.
+Ayuda: u = eσ
+√
+∆t, d = e−σ
+√
+∆t, p = er∆t −d
+u −d .
+1) Construya el árbol de precios del activo subyacente y obtenga la probabilidad neutral al riesgo.
+2) Calcule el valor de la opción put europea.
+3) Calcule el valor de la opción put americana con los mismos parámetros.
+4) Obtenga el precio de la call europea con el mismo strike y vencimiento. Verifique su respuesta
+valorando la call directamente en el árbol.
+5) Suponga que en el mercado la call europea se transa a $4,20. ¿Existe oportunidad de arbitraje?
+Si existe, diseñe la estrategia e indique la tabla de flujos.
+6) Calcule el ∆de la put europea en t = 0 e interprete su signo y magnitud.
+Página 2 de 3
+
+===== Ayudantias/Ayudantía_10_Enunciado.pdf · página 3 =====
+Finanzas I
+Primavera 2026
+Universidad de Chile
+Facultad de Economía y Negocios
+Matemático IV (propuesto): estrategias con opciones
+Un inversionista compra la acción del Matemático III a S0 = $40 y simultáneamente vende la call
+europea con K = $42 a su precio teórico de $3,06. Esta estrategia se conoce como call cubierta y
+está autorizada para las AFP en Chile desde 2019.
+1) Obtenga el vector de pagos de la estrategia al vencimiento, el punto de equilibrio y las ganancias
+máxima y mínima. Grafique.
+2) Explique el sentido de la estrategia, comparando con cada una de las posiciones básicas que la
+componen.
+Nota: para valoración por Black-Scholes, incluido el ajuste por dividendos, revisar el Matemático II de la
+Ayudantía 9.
+Página 3 de 3

@@ -1,0 +1,57 @@
+===== Algunas pruebas para practicar/Control 2/Pauta Control 2 2025.pdf · página 1 =====
+Pregunta I: 
+Supón que eres un analista financiero senior en un banco de inversión. Un día, recibes una tarea 
+de una clienta. Ella quiere saber el precio de una opción call a seis meses sobre las acciones de 
+Soquimik (Soquimik no paga dividendos). La opción tiene un precio de ejercicio de $180 y es de 
+estilo europeo. El precio actual de la acción de Soquimik es $182, la tasa de interés libre de 
+riesgo es del 6% anual, y la clienta sabe que la volatilidad de la acción es del 50%. 
+a) ¿Cuál es el precio de esta opción call? 
+Respuesta: 
+IMPORTANTE: no es necesario que los alumnos interpolen usando la tabla normal para 
+llegar a valores más exactos. Es suficiente si los alumnos usan los valores más cercanos 
+reportados en la tabla de la normal. 
+ 
+   
+     
+          
+ 
+   
+   
+        
+ 
+                    
+ 
+                            
+ 
+So, the value of the Put options is: 
+                              
+ 
+ 
+b) Supón que la acción pagará un dividendo de $20 en 5 meses. ¿Cuál es el nuevo valor de la 
+opción call? 
+Respuesta 
+ 
+We need to adjust the price of the stock (minus the present value of the dividends) 
+  
+                             
+          
+Now we must re-calculate the new d1 and d2, with the adjuted stock price 
+ 
+   
+     
+ 
+          
+ 
+   
+   
+         
+ 
+                   
+ 
+                            
+ 
+ 
+So, the value of the call options is: 
+     
+                          
+ 

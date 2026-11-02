@@ -1,0 +1,250 @@
+===== Algunas pruebas para practicar/Examen/Examen2024Final_ respuesta.pdf · página 1 =====
+Pregunta 1. Comentes (60 puntos) 
+1a) Cuando aumenta la volatilidad del activo subyacente, el valor de las opciones de compra (i.e., opciones 
+call) sube, mientras que el de las opciones de venta (i.e., opciones put) baja. Comente. (20 puntos) 
+1b) Un banco, después de calcular el VaR (i.e., Value-at-Risk) diario de su portafolio al 5%, observa que, tras 
+1000 días, sus pérdidas nunca excedieron el valor calculado del VaR. Por lo tanto, se puede concluir que el 
+banco realizó un cálculo adecuado del VaR. Comente. (20 puntos) 
+1c) Para calcular el valor de las opciones americanas, se debe usar el modelo de Black-Scholes, mientras que, 
+para calcular el valor de las opciones europeas, es necesario utilizar el método de árboles binomiales. 
+Comente. (20 puntos) 
+ 
+Pregunta 2. Diagrama de estrategias que combinaban opciones y el activo (60 puntos) 
+Dibuje un gráfico para cada una de las estrategias descritas a continuación (son 4 gráficos a dibujar, ya que 
+son 4 estrategias), que muestre en el eje vertical (eje y) la variación de los beneficios netos (ganancia o 
+pérdida) de un inversionista, y en donde el eje horizontal (eje x) es el precio de la acción al tiempo de la 
+madurez (ST). En cada caso, asuma que cada opción tiene un precio de ejercicio igual al precio actual de la 
+acción (i.e., K=S₀). 
+Las estrategias son: 
+ 2a) Comprar 100 acciones de la empresa E, y vender una opción de compra (i.e. opción call), donde cada 
+opción de compra cubre los movimientos de 100 acciones de la empresa E. (15 puntos) 
+2b) Comprar 200 acciones de la empresa E, y vender una opción de compra (i.e. opción call), donde cada 
+opción de compra cubre los movimientos de 100 acciones de la empresa E. (15 puntos) 
+2c) Comprar 100 acciones de la empresa E, y vender dos opciones de compra (i.e. opciones call), donde cada 
+opción de compra cubre los movimientos de 100 acciones de la empresa E. (15 puntos) 
+2d) Comprar 100 acciones de la empresa E, y vender cuatro opciones de compra (i.e. opciones call), donde 
+cada opción de compra cubre los movimientos de 100 acciones de la empresa E. (15 puntos) 
+ 
+Pregunta 3. Arboles Binomiales (60 puntos) 
+Una acción actualmente se transa a $400 en el mercado. Esta acción no paga dividendos. Se espera que la 
+acción suba un 25% o caiga un 20% anualmente. La tasa libre de riesgo es del 7% anual (tasa continua). 
+Usando un árbol binomial de dos periodos (donde cada periodo tiene una duración de un año): 
+3a) Calcule el valor (al día de hoy) de una opción de compra (opción call) europea escrita sobre la acción con 
+precio de ejercicio de $375 que expira luego de 2 años. Dibuje el árbol binomial completo y muestre los pagos 
+asociados tanto a la acción como a la opción en todos los nodos. Sea explícito en mostrar sus cálculos. (30 
+puntos) 
+3b) ¿Cuál es el valor de una opción de venta (opción put) escrita sobre el mismo activo, con la misma 
+madurez y el mismo precio de ejercicio utilizado en la pregunta (3a)? (30 puntos) 
+ 
+ 
+Pregunta 4 . Modelo de Black-Scholes y Oportunidades de Arbitraje  (60 puntos) 
+Al día de hoy se negocian dos opciones europeas escritas sobre una misma acción: una opción de compra (i.e., 
+opción call) y una opción de venta (i.e., opción put). Ambas opciones tienen un vencimiento de 7 meses y un 
+precio de ejercicio de $45. Al día de hoy, el precio de la acción es de $40. La tasa libre de riesgo es del 4,0% 
+anual (tasa continua) y la volatilidad de la acción es del 16% anual. 
+4a) ¿Cuál es el precio al día de hoy de una opción de compra (i.e., opción call) europea según el modelo de 
+Black-Scholes? (30 puntos) 
+4b) Usando la paridad call-put, si la opción de venta (i.e., opción put)  se transa actualmente en el mercado a 
+$3, ¿existe una oportunidad de arbitraje? En caso afirmativo, explique en detalle la estrategia que seguiría y 
+haga un esquema de pagos en t=0 y en t=T. (30 puntos) 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Examen2024Final_ respuesta.pdf · página 2 =====
+Question 1. Provide comments (60 points) 
+1a) When the volatility of the underlying asset increases, the value of call options rises, while the value of put 
+options decreases. Provide a comment. (20 points) 
+1b) A bank, after calculating the daily Value-at-Risk (VaR) of its portfolio at 5%, observes that, after 1000 
+days, its losses never exceeded the calculated VaR value. Therefore, it can be concluded that the bank 
+performed an adequate VaR calculation. Provide a comment. (20 points) 
+1c) To calculate the value of American options, the Black-Scholes model must be used, whereas, to calculate 
+the value of European options, it is necessary to use the binomial trees method. Provide a comment. (20 
+points) 
+ 
+Question 2. Diagram of strategies that combine options and the underlying asset (60 points) 
+Draw a graph for each of the strategies described below (you need to draw 4 graphs, as there are 4 strategies) 
+in which you show on the vertical axis (y-axis) the variation in the net profits (gain or loss) of an investor, and 
+where the horizontal axis (x-axis) is the stock price at the time of maturity (ST). In each case, assume that each 
+option has an exercise price equal to the current stock price (i.e., K=S₀). 
+The strategies are: 
+2a) Buy 100 shares of Company E and sell a call option, where each call option covers the movements of 100 
+shares of Company E. (15 points) 
+2b) Buy 200 shares of Company E and sell a call option, where each call option covers the movements of 100 
+shares of Company E. (15 points) 
+2c) Buy 100 shares of Company E and sell two call options, where each call option covers the movements of 
+100 shares of Company E. (15 points) 
+2d) Buy 100 shares of Company E and sell four call options, where each call option covers the movements of 
+100 shares of Company E. (15 points) 
+ 
+Question 3. Binomial Trees (60 points) 
+A stock is currently trading at $400. This stock does not pay dividends. It is expected that the stock will rise 
+by 25% annually or fall by 20% annually. The risk-free rate is 7% per annum (continuous rate). Using a two-
+period binomial tree, where each period is one year long: 
+3a) Calculate the current value of a European call option written on the stock. The option has a strike price of 
+$375 and expires after 2 years. Draw the complete binomial tree and show the payments associated with both 
+the stock and the option at all nodes. Be explicit in showing your calculations. (30 points) 
+3b) What is the value of a put option written on the same asset with the same maturity and strike price, as 
+described in question (3a) (30 points) 
+ 
+Question 4. Black-Scholes Model and Arbitrage Opportunities (60 points) 
+Currently, two European options are being traded on the same stock: a call option and a put option. Both 
+options have a maturity of 7 months and a strike price of $45. Today, the price of the stock is $40. The risk-
+free rate is 4.0% per annum (continuous rate), and the stock's volatility is 16% per annum. 
+4a) What is the current price of a European call option according to the Black-Scholes model? (30 points) 
+4b) Using put-call parity, if the put option is currently traded in the market at $3, is there an arbitrage 
+opportunity? If so, explain in detail the strategy you would follow and provide a payment scheme at time t=0 
+and time t=T. (30 points) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Examen2024Final_ respuesta.pdf · página 3 =====
+Respuesta 
+Pregunta 1. 
+1a) Falso, en ambos casos, opciones de compra y opciones de venta suben su previo 
+1b) Falso, el banco calculo incorrectamente el VaR. Lo sobre-estimó  erróneamente, ya que  de los 
+1000 días, alrededor de 50 veces sus pérdidas debieron exceder el cálculo del VaR al 5%. Si el VaR 
+se sobreestima demasiado, jamás las perdidas excederían el cálculo del VaR. 
+1c) Falso, es el opuesto 
+ 
+Pregunta 2. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Examen2024Final_ respuesta.pdf · página 4 =====
+ 
+Pregunta 3. 
+3a) 
+S0=$400, u=1.25, d=0.80, r=7%. El precio de ejercicio (X) es $375. 
+ 
+La probabilidad neutral al riesgo viene dada por: 
+           
+               
+Valor en t=1 
+                                       
+                                      
+Valor en t=0  
+                                           
+ 
+ 
+3b) 
+Usando la paridad put-call, se tiene que: 
+                 
+           
+ 
+Nota: los alumnos también la podrían calcular usando un nuevo árbol binomial para la put 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Examen2024Final_ respuesta.pdf · página 5 =====
+Pregunta 4 .  
+a) Para calcular el valor de la call europea se usara el modelo de Black-Scholes y se seguirán 
+los siguientes pasos: 
+Paso 1: Calcular         
+   
+     
+        
+   
+   
+ 
+          
+Al sustituir los valores, 
+   
+     
+               
+ 
+  
+  
+         
+ 
+           
+ 
+Por su parte,  
+                      
+          
+Paso 2: calcular             . 
+Para esto se utiliza la distribución acumulada de la normal estándar: 
+                      
+                      
+Paso 3: Calcular el valor de la opción call (c ): 
+                    
+                      
+          
+         
+ 
+b) Se puede hacer uso de la paridad put-call. Así: 
+             
+Luego;   
+       
+Así,         por lo cual no se verifica la paridad call-put. Es decir, hay una oportunidad de 
+arbitraje. Dado que la put esta más barata en el mercado de lo que se debiera, se compra la put. 
+Además, se compra el stock y se vende la call, y se pide prestado el diferencial.  
+La estrategia es entonces: 
+  
+t=0 
+t=T 
+  
+  
+45<=St 
+45>St 
+Vender Call 
+0.6185 
+No se ejerce 
+Se ejerce la call, 
+ vendo la la accion por: 45 
+Comprar put 
+-3 
+Se ejerce la put, vendo  
+ la accion por: 45 
+No se ejerce 
+comprar la accion 
+-40 Se usa en posición de la put 
+Se usa posición de la call 
+Pedir prestado  
++42.3815 
+repagar deuda+ intereses:  
+-43.3820 
+repagar deuda+ intereses:  
+-43.3820 
+Neto 
+0 45-43.3820=1.6180 
+45-43.3820=1.6180 
+ 

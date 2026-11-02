@@ -1,0 +1,343 @@
+===== Algunas pruebas para practicar/Examen/Examen2025Final_ respuesta.pdf · página 1 =====
+PREGUNTA 1: Comentes (60 puntos) 
+1a) Cuando se espera que la volatilidad del activo subyacente aumente en el futuro, es posible explotar dicho 
+aumento de volatilidad usando una estrategia del tipo “bull spread”. Comente. (20 puntos)  
+1b) Una de las ventajas del método no paramétrico de simulación histórica es que se le da más peso a la información 
+reciente. Comente. (20 puntos) 
+1c) Los “márgenes” en opciones de compra (o de venta) corresponden a una cantidad en efectivo o a valores 
+comercializables depositados tanto por quien compra como por quien vende la opción. Comente. (20 puntos)  
+PREGUNTA 2: Paridad Put–Call y oportunidad de arbitraje (60 puntos) 
+Considere opciones europeas call y put escritas sobre la misma acción, que no paga dividendos. Ambas opciones 
+tienen el mismo vencimiento y el mismo precio de ejercicio: 
+- 
+Precio actual de la acción: S₀ = 50 
+- 
+Precio de ejercicio: K = 52 
+- 
+Tiempo al vencimiento: T = 0,5 años 
+- 
+Tasa libre de riesgo con capitalización continua: r = 8% anual 
+- 
+Precio de la opción call: c = 4 
+- 
+Precio de la opción put observada en el mercado: pᵐᵏᵗ = 7 
+- 
+No hay costos de transacción, ventas cortas son posibles y se puede invertir o pedir prestado a la tasa libre de 
+riesgo. 
+2a) Utilizando la paridad put–call para opciones europeas sin dividendos, calcule el precio teórico sin arbitraje de la 
+opción put, p*. Luego, compare el precio de mercado de la put, pᵐᵏᵗ = 7, con el precio teórico p*. ¿Existe una 
+oportunidad de arbitraje? (10 puntos) 
+2b) En caso de existir arbitraje, describa una estrategia de arbitraje completa que aproveche esta desalineación, 
+especificando todas las posiciones que se toman en t = 0 (qué se compra, qué se vende y si son posiciones largas o 
+cortas). (25 puntos) 
+2c) Calcule el flujo de caja inicial en t = 0 de la estrategia de arbitraje y la ganancia libre de riesgo al vencimiento T, 
+distinguiendo claramente los casos: (i) ST ≥ 52; y  (ii) ST < 52. (25 puntos) 
+PREGUNTA 3: Árboles Binomiales (60 puntos) 
+Considere una acción que no paga dividendos y cuyo precio sigue un proceso binomial de dos períodos, con cada 
+período de duración de 1 año. El precio actual de la acción es S0 = 40. En un año, el precio puede subir o bajar un 
+30%; es decir, puede subir a 52 o bajar a 28. Si hoy el precio sube a 52, en el segundo año puede subir a 67,6 o bajar a 
+36,4. Si hoy el precio baja a 28, en el segundo año puede subir a 36,4 o bajar a 19,6. La tasa de interés libre de riesgo 
+es r = 5% anual, con capitalización continua. No hay costos de transacción ni restricciones para realizar ventas 
+cortas. Considere una opción de venta (put) americana escrita sobre esta acción, con precio de ejercicio K = 40 y 
+vencimiento en 2 años. 
+3a) Calcule las probabilidades neutrales al riesgo asociadas a este árbol binomial. (10 puntos) 
+3b) Calcule el valor de la opción de venta “como si fuera europea” (sin posibilidad de ejercicio anticipado) usando el 
+método del árbol binomial. (20 puntos) 
+3c) Calcule el valor de la opción de venta americana, indicando explícitamente en qué nodo (si corresponde) es 
+óptimo ejercer anticipadamente. Muestre todos los pasos de la valuación hacia atrás. (30 puntos) 
+PREGUNTA 4: Modelo de Black-Scholes (60 puntos) 
+Asuma que usted es un analista financiero senior en un banco de inversión. Un día recibe una consulta de una clienta. 
+Ella quiere saber el precio de una opción de venta a seis meses sobre una acción de la empresa Andina S.A. (la acción 
+no paga dividendos). Estas opciones tienen un precio de ejercicio de $100 y son de tipo europea. El precio actual de 
+la acción de Andina S.A. es de $95, la tasa de interés libre de riesgo es de 4% anual (con capitalización continua) y la 
+volatilidad anual de la acción es igual a 35%. 
+4a) Usando el modelo de Black-Scholes para opciones europeas, calcule el precio de la opción de venta (put) sobre la 
+acción de Andina S.A. (30 puntos) 
+4b) Calcule el precio de una opción de compra (call) con el mismo precio de ejercicio y vencimiento. (30 puntos) 
+IMPORTANTE: no es necesario que los alumnos interpolen usando la tabla de la distribución normal para llegar a 
+valores más exactos. Es suficiente si usan los valores más cercanos reportados en dicha tabla. 
+
+===== Algunas pruebas para practicar/Examen/Examen2025Final_ respuesta.pdf · página 2 =====
+Respuesta 
+PREGUNTA 1: 
+1a) Falso. Cuando se espera que la volatilidad del activo subyacente aumente en el futuro, se puede usar una 
+straddle (o su alternativa más barata, una strangle). 
+1b) Falso. El método no paramétrico de simulación histórica da el mismo peso a la información reciente que a la 
+información pasada. 
+1c) Falso. El margen solo debe ser depositado por quien vende la opción, para reducir el riesgo de incumplimiento 
+en caso de que la opción sea ejercida; por ende, protege a quien compra la opción. 
+ 
+PREGUNTA 2: 
+(2a) Precio teórico sin arbitraje de la put p*. Para opciones europeas sobre una acción sin dividendos, la paridad 
+put–call es: 
+                 
+Se define y despeja el precio teórico de la put, 
+                  
+Primero calculamos el valor presente del precio de ejercicio: 
+                                                  
+Donde                  , reemplazando en lo anterior,  se obtiene 
+                             
+Luego,                    
+Por lo tanto, el precio teórico sin arbitraje de la put es aproximadamente p* ≈ 3,96. 
+Ahora, considerando la información del enunciado, el precio de mercado de la put es pᵐᵏᵗ = 7. Comparando con el 
+valor teórico: 
+                 
+  
+La put está sobrevalorada, evaluamos posibilidad de arbitraje, en términos de portafolios: 
+- 
+Portafolio A: call + bono que paga K al vencimiento 
+- 
+Portafolio B: put + acción 
+Por paridad, con el precio teórico se cumple                  , y dado que           se tiene: 
+                    
+Es decir, el portafolio B (put + acción) está más caro que el portafolio A (call + bono). Esto genera una oportunidad 
+de arbitraje vendiendo el portafolio caro y comprando el barato. 
+(2b) Estrategia de arbitraje en t = 0.  
+Debemos vender el portafolio B (caro) y comprar el portafolio A (barato): 
+1. Vender (corto) 1 put europea → se recibe +7. 
+2. Vender en corto 1 acción → se recibe +50. 
+3. Comprar 1 call europea → se paga −4. 
+4. Se invierte todo el flujo neto positivo a la tasa libre de riesgo. 
+ 
+El flujo de caja inicial es: 
+
+===== Algunas pruebas para practicar/Examen/Examen2025Final_ respuesta.pdf · página 3 =====
+                        
+Este monto se coloca hoy a la tasa libre de riesgo r durante T = 0,5 años. 
+(2c) Ganancia libre de riesgo al vencimiento. El valor de la inversión libre de riesgo al vencimiento es:      
+   
+                                            
+Usando               , se obtiene:    
+                           
+Ahora analizamos los flujos al vencimiento según el nivel del precio de la acción   . 
+ Caso (i): ST ≥ 52 
+ 
+Put corta: está fuera de dinero → no se ejerce, flujo = 0. 
+ 
+Call larga: está in the money → se ejerce, pagando K = 52 desde la cuenta libre de riesgo y recibiendo 1 acción. 
+ 
+Acción corta: desde     estamos cortos en 1 acción; usamos la acción recibida al ejercer la call para cerrar la 
+posición corta → flujo neto = 0 por acción + call. 
+ 
+Cuenta libre de riesgo: antes de ejercer la call tiene ≈ 55,16; al pagar 52 por el ejercicio de la call quedan: 
+55,16 − 52 ≈ 3,16 
+Flujo total en T:    
+            por lo que si     52 la ganancia libre de riesgo es aproximadamente 3,16. 
+Caso (ii): ST < 52 
+ 
+Call larga: está fuera de dinero → expira sin valor, flujo = 0. 
+ 
+Put corta: está in the money → será ejercida contra nosotros; debemos comprar 1 acción a K = 52 (pagamos 52 
+desde la cuenta libre de riesgo) y recibimos 1 acción. 
+ 
+Acción corta: usamos esa acción para cerrar la posición corta → flujo neto = 0 por acción + put. 
+ 
+Cuenta libre de riesgo: antes del ejercicio de la put tiene ≈ 55,16; al pagar 52 por la acción quedan: 
+55,16 − 52 ≈ 3,16 
+Flujo total en T:     
+            por lo que si       la ganancia libre de riesgo vuelve a ser aproximadamente 3,16. 
+ 
+En resumen, al no comprar explícitamente un bono que pague K y, en cambio, invertir todo el flujo inicial de 53 a la 
+tasa libre de riesgo, la estrategia sigue generando una ganancia libre de riesgo de aproximadamente 3,16 unidades 
+monetarias al vencimiento, independiente del nivel de ST. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Examen2025Final_ respuesta.pdf · página 4 =====
+PREGUNTA 3: 
+3a) 
+En la siguiente figura se muestra el árbol binomial de precios de la acción que puede utilizar en los cálculos. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Primero identificamos los factores de alza     y baja (   a partir de los precios del primer período: 
+    
+                         
+        
+Como la tasa libre de riesgo es     , tenemos que con capitalización continua en cada período de 1 año: 
+                         
+La probabilidad neutral al riesgo q viene dada por: 
+          
+   
+ 
+Sustituyendo los valores:                                      
+Por lo tanto,                 
+3b) Valor de la opción de venta europea. 
+En t = 2 (vencimiento), los precios posibles de la acción y los payoffs de la put (europea o americana) son: 
+- 
+Nodo D (up–up): S = 67,6 → payoff = max(40 − 67,6, 0) = 0 
+- 
+Nodo E (up–down o down–up): S = 36,4 → payoff = max(40 − 36,4, 0) = 3,6 
+- 
+Nodo F (down–down): S = 19,6 → payoff = max(40 − 19,6, 0) = 20,4 
+Designemos estos valores como PD, PE y PF respectivamente: 
+- 
+PD = 0 
+- 
+PE = 3,6 
+- 
+PF = 20,4 
+Retrocedemos un período para obtener los valores en t = 1 bajo el supuesto de opción europea (sin ejercicio 
+anticipado).  
+
+===== Algunas pruebas para practicar/Examen/Examen2025Final_ respuesta.pdf · página 5 =====
+Nodo B (t = 1, S = 52):     
+                              
+Sustituyendo valores numéricos: 
+  
+                                                             
+  
+          
+Nodo C (t = 1, S = 28):    
+                              
+  
+                                                            
+  
+           
+Ahora retrocedemos otro periodo, t = 0, obtenemos el valor del nodo de la misma forma: 
+Nodo A:      
+                  
+            
+      
+Sustituyendo: 
+     
+                                                                 
+Por lo tanto, el valor de la opción de venta europea es aproximadamente:   
+           
+3c) Valor de la opción de venta americana y ejercicio anticipado 
+Para la opción americana, en t = 2 el payoff es el mismo que la opción europea. La diferencia aparece en t = 1, donde 
+se permite el ejercicio anticipado. 
+En t = 1, los valores de ejercicio inmediato son: 
+- 
+Nodo B (S = 52): valor de ejercicio inmediato = max(40 − 52, 0) = 0 
+- 
+Nodo C (S = 28): valor de ejercicio inmediato = max(40 − 28, 0) = 12 
+Comparamos los valores de ejercicio inmediato con los valores de continuación (europeos): 
+Nodo B: continuación   
+         vs. ejercicio 0 → es mejor continuar. 
+  
+          
+             
+Nodo C: continuación   
+          vs. ejercicio 12 → es mejor ejercer. 
+  
+          
+            
+Por lo tanto, en el nodo C (t = 1, S = 28) es óptimo ejercer anticipadamente la put americana. Ahora volvemos a t = 0 
+usando estos valores americanos   
+    y   
+   : 
+Nodo A:     
+                   
+             
+     
+Sustituyendo: 
+  
+                                                                
+Por lo tanto, el valor de la opción de venta americana es aproximadamente;   
+            y es estrictamente mayor 
+que el valor de la opción de venta europea (≈ 4,75) debido a la posibilidad de ejercicio anticipado en el nodo C (S = 
+28), donde es óptimo ejercer la opción antes del vencimiento. 
+ 
+
+===== Algunas pruebas para practicar/Examen/Examen2025Final_ respuesta.pdf · página 6 =====
+PREGUNTA 4: 
+Datos del problema: 
+ 
+Precio actual de la acción: S₀ = 95 
+ 
+Precio de ejercicio: K = 100 
+ 
+Tiempo al vencimiento: T = 0,5 años 
+ 
+Tasa libre de riesgo: r = 4% anual (capitalización continua). 
+ 
+Volatilidad anual: σ = 35% 
+4a) Precio de la opción de venta europea (put) con Black–Scholes 
+Para una acción que no paga dividendos, el modelo de Black–Scholes para una opción de venta (put) europea 
+establece que su valor hoy es: 
+                             
+Donde, 
+   
+     
+               
+    
+                        
+Primero obtenemos    
+   
+     
+                         
+         
+       
+                                 
+           
+ 
+                             
+      
+ 
+                        
+      
+               
+      
+        
+       
+ 
+           
+Seguimos con     
+                          
+Ahora obtenemos los valores para      ,                       , utilizando la distribución normal estándar     : 
+                          
+                           
+                                    
+                                    
+En lo que sigue aplicamos la fórmula de la opción de venta (put) europea: 
+
+===== Algunas pruebas para practicar/Examen/Examen2025Final_ respuesta.pdf · página 7 =====
+                                                              
+                                           
+                     
+El precio de la opción de venta europea (put) es aproximadamente:          
+4b) Precio de la opción de compra europea (call) con paridad put–call 
+Se puede usar la paridad put–call para opciones europeas. Para una acción que no paga dividendos, la paridad put–
+call para opciones europeas es: 
+                 
+Despejando el precio de la opción de compra (call): 
+                 
+Ya obtuvimos: 
+- 
+         
+- 
+      
+- 
+                            
+Remplazando en el precio de la opción de compra (call): 
+                                       
+El precio de la opción de compra europea (call) con el mismo strike y vencimiento es aproximadamente 8,07. 

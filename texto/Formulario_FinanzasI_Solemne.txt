@@ -1,0 +1,261 @@
+===== Formulario_FinanzasI_Solemne.pdf · página 1 =====
+FORMULARIO FINANZAS I — Solemne (Prof. Bernales) · CAPM · APT · Bonos · Portafolios · Microestructura
+1. Retornos, tasas y valoración
+Aritmético: R = P1−P0
+P0
+ · Continuo: r = ln P1
+P0
+ · por período
+en h períodos: q = 1
+h ln Pt+h
+Pt
+Capitalización f veces/año: W = (1 + r/f)f·(T−t) · Continua:
+W = er(T−t)
+Conversión: rc = ln(1+rd) · rd = erc − 1
+Gordon: V0 = 
+D1
+q − g , q = rf + premio por riesgo
+Fisher: (1+i) = (1+r)(1+π)
+2. Portafolios (2 activos)
+E(rp) = waE(ra) + wbE(rb), wb = 1 − wa
+σp
+2 = wa
+2σa
+2 + wb
+2σb
+2 + 2wawbCov(a,b)
+Cov(a,b) = ρabσaσb · ρ = Cov/(σaσb) · Var(δX+βY)=δ²Var
+X+β²Var Y+2δβCov
+ρ = −1 y σ iguales → 50/50 da σp = 0
+N activos, w=1/N: no correlac. σp
+2= σ²/N → 0 · cov
+constante: σp
+2 → cov̄ (riesgo sistemático, no diversificable)
+Mínima varianza: wa = 
+σb
+2 − Cov(a,b)
+σa
+2 + σb
+2 − 2Cov(a,b)
+Portafolio óptimo riesgoso / tangente (M): con ei =
+E(ri) − rf:
+wa = 
+eaσb
+2 − ebCov(a,b)
+eaσb
+2 + ebσa
+2 − (ea+eb)Cov(a,b) → luego E(rM), σM
+con fórmulas de arriba
+Línea de transformación/LMC: E(rp) = rf + σp·
+E(rM) − rf
+σM
+ · pendiente = Sharpe de M = “precio del
+riesgo”
+3. Asignación óptima (M + rf)
+U = E[Rp] − c
+2 σp
+2 ⇒ y* = α = E(rM) − rf
+c · σM
+2
+ (formulario: A =
+c) · en rf: 1 − y*
+⚠ U = E − σ² ⇒ c = 2 · U = E − 2σ² ⇒ c = 4 · U = E −
+2,5σ² ⇒ c = 5 (c = 2 × coef.). Usa σM
+2, no σM.
+E(Rp) = y·E(rM) + (1−y)·rf · σp = y·σM · Var = y²σM
+2
+Retorno objetivo E*: y = E* − rf
+E(rM) − rf · y>1 ⇒ pide prestado
+(apalancado, baja aversión, a la derecha de M) · y<1 ⇒
+presta
+N activos: α = 1
+c Ω−1(E[R] − rf·1) · Separación: (A)
+frontera, (B) rf→M, (C) preferencias eligen y*
+4. CAPM
+E(ri) = rf + βi(E(rM) − rf) · PRM = E(rM) − rf
+βi = Cov(ri, rM)
+σM
+2
+ = ρiM
+σi
+σM
+ · βM = 1 · βrf/T-bills = 0
+βp = Σ wiβi (incluye mercado con β=1 y rf con β=0)
+Dos acciones → rf y E(rM): PRM = E(r2) − E(r1)
+β2 − β1
+ ; rf =
+E(r1) − β1·PRM ; E(rM) = rf + PRM (comprobar con la otra)
+Riesgo total: σi
+2 = βi
+2σM
+2 (sistemático) + σε
+2
+(idiosincrático) · R² = β²σM
+2/σi
+2 · Cov(a,b) = βaβbσM
+2
+Modelo índice (regresión): ri−rf = αi + βi(rM−rf) + εi ;
+CAPM ⇒ α = 0
+5. Evaluación de desempeño
+Sharpe: RS = E(rp) − rf
+σp
+ (riesgo TOTAL; comparar con
+RSM)
+Treynor: RT = E(rp) − rf
+βp
+ (riesgo sistemático; RTM = PRM)
+Alfa de Jensen: α = robs − [rf + βp(E(rM) − rf)] = β(RTp −
+RTM)
+α > 0 subvalorado → COMPRO · α < 0 sobrevalorado →
+VENTA CORTA · α=0 normal. Retorno anormal lo mide α,
+NO un β alto. α>0 con Sharpe<RSM ⇒ mucho riesgo
+idiosincrático (bueno dentro de portafolio diversificado).
+6. APT (multifactorial)
+ri,t = E(ri) + Σ bijfj,t + ei,t · E(ri) = rf + βi1λ1 + βi2λ2 (λ0 =
+rf)
+3 portafolios, rf desconocida: 1 ec. por portafolio →
+restar (A−C), (B−C) elimina rf → 2×2 en λ1, λ2 → rf de una
+ec. → comprobar. rf dado: E(r)−rf = β1λ1+β2λ2, bastan 2.
+(# ecuaciones = # incógnitas)
+Cramer 2×2: a1x+b1y=c1, a2x+b2y=c2 ⇒ x = c1b2−c2b1
+a1b2−a2b1
+,
+y = a1c2−a2c1
+a1b2−a2b1
+Factor puro j (βj=1, resto 0): E(rFj) = rf + λj ⇒ λj = E(rFj) −
+rf
+αAPT = robs − E(r)APT · Arbitraje: réplica = β1 en F1 + β2
+en F2 + (1−β1−β2) en rf (mismo riesgo). α>0: compro
+activo y vendo corto réplica; α<0 al revés. Inversión 0,
+riesgo 0, ganancia = |α|·monto ⇒ en equilibrio α=0.
+Fama-French: E(ri)−rf = βM(E(rM)−rf) + βsSMB + βhHML
+(tamaño, book-to-market)
+7. Bonos: precio, yield, duración
+Precio con tasas cero (cada flujo con SU rt):
+Disc.: P = Σ 
+C
+(1+rt)t + 
+VN
+(1+rT)T · Cont.: P = Σ C·e−t·rt +
+VN·e−T·rT
+Cupón cero: P = VN/(1+r)T = VN·e−rT ⇒ r = −1
+T ln P
+VN · su
+yield = tasa cero · D = T
+Bullet: flujos C,…,C, C+VN · C = tasa cupón × VN. Bullet
+con yield: P = C
+y [1 − 
+1
+(1+y)T ] + 
+VN
+(1+y)T
+Yield (TIR): única tasa y tal que P = Σ CFt/(1+y)t (o Σ
+CFte−yt). Cupón > y ⇔ P > VN (sobre la par)
+Duración Macaulay (con y): D = Σ t · CFt/(1+y)t
+P
+ · cont.:
+D = Σ t · CFte−yt
+P
+ · Tabla: t | CF | VP | t·VP ; ΣVP = P ✓
+ΔP%: D* = D
+1+y , ΔP
+P ≈ −D*·Δy (discreta) · ΔP
+P ≈ −D·Δy
+(continua) · Δy en decimal (30pb = 0,003), signo: y↑ ⇒ P↓
+Convexidad: C = Σ t²·CFte−yt
+P
+ · ΔP ≈ −P·D·Δy +
+½·P·C·(Δy)² (mejor aprox.)
+Bono ≈ cupón cero con tasa = y, madurez = D.
+8. Estructura de tasas: spot y forward
+(1+r2)² = (1+r1)(1+f1,2) · (1+r3)³ = (1+r2)²(1+f2,3)
+General: (1+rn)n = (1+rm)m(1+fm,n)n−m ⇒ fm,n = [ (1+rn)n
+(1+rm)m
+]1/(n−m) − 1
+Continua: n·rn = m·rm + (n−m)·fm,n (ej. 3r3 = 2r2 + f2,3; 2r2
+= r1 + f1,2)
+Bootstrapping: r de los cero primero; luego despejar rT del
+bono con cupón usando las r ya conocidas.
+FRA: fija hoy tasa k para prestar/pedir en el futuro; valor =
+VP de la diferencia entre forward y k. Swap (recibo flot.,
+pago fija) = Bflot − Bfija; Bflot = par en cada fecha de cupón.
+9. Tasa cero por REPLICACIÓN (2 bonos, mismo T)
+1) Escribir PI, PII con e−t·rt. 2) k = Calto/Cbajo. 3) Compro k
+bonos de cupón bajo, vendo 1 de cupón alto ⇒ cupones
+intermedios se cancelan.
+Costo hoy = k·Pbajo − Palto · Pago en T = k(VN+Cbajo) −
+(VN+Calto) = VN(k−1)
+Costo = Pago·e−T·rT ⇒ rT = −1
+T ln Costo
+Pago · discreta:
+(Pago/Costo)1/T − 1
+Ej. 2025: 2·90 − 95 = 85 = 100e−7r ⇒ r7 = 2,32% · 2023: 2·80 −
+90 = 70 = 100e−10r ⇒ r10 = 3,57%
+10. Microestructura
+Bid = precio al que pacientes compran (impaciente vende)
+· Ask = pacientes venden (impaciente compra) · Spread =
+a − b = costo de inmediatez · Liquidez: spread,
+profundidad, inmediatez, resiliencia · Tick size.
+Limit Order Book: LO espera en el libro; MO se ejecuta
+ya contra el mejor precio contrario. Prioridad: 1° precio
+(mejor bid más alto / mejor ask más bajo), 2° tiempo
+(FIFO). LO de compra con precio ≥ mejor ask se ejecuta
+(marketable). MO grande “walk up the book”: precio
+promedio = Σq·p/Σq. Anotar libro tras cada orden +
+spread.
+Spread proporcional: at = μtes/2, bt = μte−s/2, R =
+ln(μt+1/μt). Compra MO en t, vende MO en t+h: r =
+ln(bt+h/at) = hR − s ⇒ R = r
+h + s
+h (premio liquidez s/h ↓
+con h: quien mantiene más tiempo tolera activos
+ilíquidos).
+Dealer con informados (prop. π, daño α·μ): at =
+μt(1+πα), bt = μt(1−πα) ⇒ R − r = ln(1+πα) − ln(1−πα); ∂/
+∂π = 
+α
+1+πα +
+α
+1−πα > 0, ∂/∂α = 
+π
+1+πα +
+π
+1−πα > 0 ⇒ más
+informados/mejor info ⇒ mayor premio (factor de info.
+asimétrica en APT).
+11. Media-varianza con creencias heterogéneas
+max Ei[W] − θ
+2 Vari[W], W = (a − p1)xi ⇒ CPO: (āi − p1) −
+θσa
+2xi = 0 ⇒ xi = āi − p1
+θσa
+2 ; āI = ā + h/2, āII = ā − h/2; xI +
+xII = Q
+Sin venta corta (x ≥ 0), K = Qθσa
+2: h > K: xI=Q, xII=0, p =
+ā + h/2 − K · |h| ≤ K: xI = (h+K)/(2θσ²), xII = (K−h)/(2θσ²),
+p = ā − K/2 · h < −K: xI=0, xII=Q, p = ā − h/2 − K.
+Optimista compra todo si valora mucho más.
+12. Claves para comentes
+Eficiencia: débil (precios hist.), semi-fuerte (+ info
+pública), fuerte (+ privada). Mercados ≈ semi-fuertes;
+se logra porque agentes explotan la info (no por el
+regulador) ⇒ datos históricos no predicen.
+Más info: ilegal (insider), capacidad de procesar
+(equipos/computadores), aprendizaje/atención
+(inatentos). Distinta memoria/procesamiento ⇒ distintas
+creencias con igual info.
+Retorno esperado enorme es posible con
+apalancamiento ⇒ riesgo enorme. rf > 0 por costo de
+esperar (postergar consumo). En crisis se gana con
+venta corta.
+Tasas: se infieren de precios de bonos (no las fija el BC);
+cambian por riesgo de default, costo de espera,
+competencia. Curva invertida: incertidumbre/shock de
+liquidez de corto plazo (elecciones, incendio en planta).
+Diversificar: no solo max retorno, también riesgo; sólo el
+riesgo sistemático (β) se paga. Valor de mercado ≠
+contable: incluye proyectos futuros. Restricciones
+(venta corta) ⇒ “mini-frontera” dentro de la original.
+Bono ≠ acción: cupón fijo, riesgo de crédito vs flujos
+variables, riesgo de mercado.

@@ -1,0 +1,439 @@
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2021.pdf · página 1 =====
+FINANCE I 
+                  Facultad de Economía y Negocios 
+                   Universidad de Chile 
+ 
+ 
+ 
+Prof.: Alejandro Bernales 
+ 
+ 
+ 
+ 
+ 
+Exam 
+ 
+Time Allowed: 1.5 Hours 
+ 
+ 
+Instructions: 
+ 
+The solemne has 3 questions, each of them have the same weight. 
+ 
+PLEASE WRITE YOUR NAME IN ALL THE PAGES. 
+ 
+PLEASE ONLY USE THE SPACE IN EACH QUESTION TO ANSWER ALL 
+SECTIONS (USE ONLY ONE SIDE OF THE PAGE - ONE LANGUAGE) 
+ 
+The space provided is sufficient to give a concise and pertinent answer to each question 
+and/or sub-point of a question. 
+ 
+Extra answer booklets will not be provided – please use the spaces provided only. Answers 
+written outside the spaces or on other booklets will not be marked. 
+ 
+ 
+ 
+Electronic calculators may be used provided that they cannot store text 
+ 
+
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2021.pdf · página 2 =====
+FINANCE I 
+                  Facultad de Economía y Negocios 
+                   Universidad de Chile 
+ 
+ 
+ 
+ 
+Prof.: Alejandro Bernales 
+ 
+ 
+ 
+ 
+ 
+Examen 
+ 
+Time Allowed: 1.5 Hours 
+ 
+ 
+Instrucciones: 
+ 
+El Control tiene 3 preguntas, cada una de ellas tienen la misma ponderación. 
+ 
+POR FAVOR ESCRIBA SU NOMBRE EN TODAS LAS HOJAS. 
+ 
+POR FAVOR UTILICE EL ESPACIO PROVISTO EN CADA PREGUNTA PARA 
+RESPONDER CADA SECCIÓN (USAR UN SOLO LADO DE LA HOJA - UN SOLO 
+LENGUAJE). 
+ 
+El espacio entregado es suficiente para entregar una respuesta concisa y pertinente a 
+cada pregunta y/o sub-pregunta. 
+ 
+No se entregarán hojas adicionales para responder por favor utilice solamente el espacio 
+entregado. Respuestas escritas fuera de este espacio o en otras hojas no serán revisadas. 
+ 
+ 
+ 
+ 
+Calculadoras electrónicas pueden ser utilizadas salvo las que puedan almacenar texto 
+ 
+
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2021.pdf · página 3 =====
+Question I 
+Suppose that the risk premium on the market portfolio is 8% with a standard deviation of 22 %. 
+ 
+1a) What is the beta of a portfolio in which there is an allocation of 25% in Coca Cola, 20% in 
+Apple, 25% in the S&P 500 and 30% in T-bills, if Coca Cola and Apple have betas of 1.10 and 
+1.25, respectively?, the portfolio is riskier or safer than the market portfolio (where the market 
+portfolio is reflected in the S&P 500)? 
+Answer: 
+ 
+The portfolio β is: 
+                                                           
+                                         
+Since 0,775 < 1, the portfolio has a lower level of risk than the market portfolio. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1b) The expected return on the portfolio described above is 10 %. Does the portfolio have a 
+normal expected return based on the CAPM? when? 
+Answer: 
+ 
+Using CAPM if  
+                                       
+ 
+If    > 0, the stock is underpriced (hence desirable to invest in). 
+ 
+If   < 0, the stock is overpriced (hence undesirable to invest in). 
+First, we have to calculate the Expected return of the portfolio, we use SML: 
+                          
+ 
+We don’t know rf, so: 
+                            
+ 
+                        
+We must consider the rf. 
+              
+          
+ 
+It will depend on the level of    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2021.pdf · página 4 =====
+Pregunta I 
+Suponga que la prima de riesgo en el portafolio de mercado es del 8% con una desviación 
+estándar del 22%. 
+ 
+1a) ¿Cuál es la beta de un portafolio en el que hay invertido un 25% en Coca Cola, 20% en Apple, 
+25% en el S&P 500 y 30% en T-bills, si Coca Cola y Apple tienen betas de 1.10 y 1.25, 
+respectivamente?, la cartera es más riesgosa o más segura que el portafolio de mercado (donde 
+el portafolio de mercado se refleja en el S&P 500)? 
+Respuesta: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1b) La tasa de retorno esperada del portafolio descrito anteriormente es del 10%, ¿tiene un 
+retorno esperado normal según el CAPM? cuando? 
+Respuesta: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2021.pdf · página 5 =====
+1c) Coca cola has an expected return of 14,8% (and      ). Apple has expected return of 14% 
+(and   =1,25). The  expected return of the market portfolio is 13 %, and rf = 5%. What is the 
+alpha of each stock?  
+Answer: 
+Now in this situation, we know the free rate (     ): 
+                         
+                               
+                             
+And Apples: 
+                             
+ 
+                          
+                        
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1d) The risk free rate is now 8%, you consider to invest in a fund with an asset allocation of  
+45% in Coca cola, 45% in Apple and 10% in T.bills, if Coca cola and Apple have betas of 1,10 and 
+1,25, respectively. What is the required rate o return on the project? (remember that the risk 
+premium on the market portfolio is 8%) 
+Answer: 
+ 
+We must calculate again the portfolio's beta: 
+                                           
+                                  
+                         
+                           
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2021.pdf · página 6 =====
+1c) Coca cola tiene un retorno esperado del 14,8% (y β = 1,1). Apple tiene un retorno esperado 
+del 14% (y β = 1,25). El retorno esperado del portafolio de mercado es del 13% y rf = 5%. ¿Cuál 
+es el alfa de cada acción?  
+ 
+Respuesta: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1d) La tasa libre de riesgo ahora es del 8%, y usted considera invertir en un fondo que está 
+distribuido con 45% en Coca Cola, 45% en Apple y 10% en T.bills, si Coca Cola y Apple tienen 
+beta de 1,10 y 1,25, respectivamente. ¿Cuál es la tasa requerida de retorno del proyecto? 
+(recuerde que la prima de riesgo en la cartera del mercado es del 8%) 
+ 
+Respuesta: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2021.pdf · página 7 =====
+Question II:  
+2a) What are the seven basic characteristics that a good measure of risk must have (as discussed 
+in class)? 
+Answer: 
+ 
+We only discussed 5 characteristics (not seven): 
+-It should consider the width of the return distribution 
+- It should give more weight to recent data 
+- It should consider the asymmetry of the return distribution 
+- It should consider the tails of the return distribution (extreme events) 
+- It should be easy to explain 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2b) The expiration day for options that are traded on the Chicago Board Option Exchange 
+(CBOE) is always the last trading day of the respective expiration month of the option contract.  
+Why? 
+ 
+ 
+Answer 
+ 
+- That is false. As discussed in class, the expiration day is the third Friday of the expiration 
+month. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2021.pdf · página 8 =====
+ 
+Pregunta II: 
+2a) Cuales son las siete caracteristicas basicas que tiene que tener una buena medida de riesgo 
+(segun lo discutido en clases)? 
+ Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2b) El día de vencimiento de las opciones que se negocian en el Chicago Board Option Exchange 
+(CBOE) es siempre el último día de negociación ("the last trading day") del respectivo mes de 
+vencimiento del contrato de opción. Cual es la razón? 
+ 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2021.pdf · página 9 =====
+ 
+Question III:  
+ 
+A stock price is currently $30. During each 2-month period it will increase by 8% or reduce by 
+10% (for the next 4 months). The risk-free interest rate is 5%. Use a two-step tree to calculate 
+the value of a derivative that pays off in 4 months: 
+ 
+                        , 
+ 
+where ST is the stock price in 4 months (i.e. an European-Style derivative). If the derivative is 
+American-style, should it be exercised early? 
+ 
+Answer: 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Exam_Solucion2021.pdf · página 10 =====
+ 
+Pregunta III: 
+ 
+Una acción actualmente vale $30, la cual cada 2 meses subirá un 8% o decrecerá un 10% (lo que 
+ocurrirá por los próximos 4 meses). La tasa libre de riesgo es de un 5% anual. Usando un árbol 
+binomial de dos pasos, calcule el valor (al día de hoy) de un derivado que paga ("payoff") a la 
+madurez en 4 meses: 
+                        , 
+ 
+donde ST es el valor de la acción en 4 meses más (i.e. un derivado del estilo "Europeo"). ¿Si el 
+derivado fuera del tipo de ejercicio "Americano", debiese ser ejercido anticipadamente? 
+ 
+Respuesta 
+ 

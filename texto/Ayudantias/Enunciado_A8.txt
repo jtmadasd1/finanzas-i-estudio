@@ -1,0 +1,60 @@
+===== Ayudantias/Enunciado_A8.pdf · página 1 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Ayudantía 8
+Profesor: Alejandro Bernales.
+Ayudantes: Luisa Rodríguez, Elizabeth Núñez, Ayelen Sandoval, Tomás Rojas,
+Joaquín Arenas, Juan Correa Hevia, Lucas Montiel y Carolina Morales.
+Primavera 2026
+Comentes
+1) Cuando se espera que la volatilidad del activo subyacente aumente en el futuro, es posible
+explotar dicho aumento de volatilidad usando una estrategia del tipo “bull spread”.
+2) Un alza de la tasa libre de riesgo afecta en forma negativa la tenencia de calls.
+3) Una opción call americana y una opción call europea, escritas sobre el mismo activo sub-
+yacente, con el mismo precio de ejercicio y el mismo vencimiento, valen lo mismo.
+4) En un contrato forward justo, el valor inicial del contrato para ambas partes es distinto de
+cero.
+5) Los futuros y los forwards son equivalentes en todo sentido, ya que ambos fijan precios
+futuros y eliminan el riesgo de contraparte.
+Matemático I
+Un contrato a plazo (forward) de un año de duración sobre un activo que no paga dividendos se
+realiza en el instante en el que el precio de mercado de dicho activo es igual a 40 euros y la tasa
+sin riesgo es del 3 % anual.
+a) ¿Cuál es el precio forward justo F0 hoy y el valor f0 para el comprador?
+b) Seis meses más tarde el precio del activo es de 45 euros y la tasa sin riesgo sigue siendo el
+3 % anual. ¿Cuál será en ese momento el precio del contrato a plazo? ¿Y su valor para el
+comprador del contrato?
+Matemático II
+Suponga que Entel tiene dos tipos de acciones, A y B, a un precio de $1.600. La acción tipo A
+es para inversores de largo plazo y no entrega dividendos, al contrario de la acción tipo B, que
+entregará un dividendo de $100 en 6 meses y $150 en 1 año. Considerando una tasa de interés
+libre de riesgo de 5 % anual (composición continua), ¿en cuánto variará el precio forward entre
+los dos tipos de acciones?
+Matemático III
+LIFFE ha introducido un nuevo tipo de contrato de futuros sobre las acciones de Brannigan
+Co., una empresa que no suele pagar dividendos. Cada contrato implica la adquisición de 1.000
+acciones con un año de vencimiento. La tasa de interés sin riesgo británica es del 2 % anual.
+a) Si la acción de Brannigan se vende a 70 dólares por acción, ¿cuál debería ser el precio del
+futuro?
+b) Si el precio de mercado de Brannigan cae un 5 %, ¿cuál sería el cambio en el precio del
+futuro y cuál sería la alteración en la cuenta de efectivo del inversor?
+Página 1 de 2
+
+===== Ayudantias/Enunciado_A8.pdf · página 2 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Matemático IV
+Un analista de inversiones genera la siguiente estrategia con opciones financieras: comprar una
+opción Call con un precio de ejercicio de $45 y una opción Put con un precio de ejercicio de $40,
+ambas escritas sobre el mismo activo subyacente. El costo de la Call fue de $3 y el costo de la
+Put fue de $4. Muestre gráficamente cómo varía la utilidad de esta estrategia como función del
+precio del activo subyacente.
+Matemático V
+Un inversionista cree que el precio de una acción va a subir, pero no quiere pagar mucho por su
+posición. Por eso compra una opción Call con un precio de ejercicio de $50 y vende una opción
+Call con un precio de ejercicio de $60, ambas escritas sobre la misma acción y con el mismo
+vencimiento. El costo de la Call comprada fue de $3 y el precio de la Call vendida fue de $1.
+Identifique la estrategia y muestre gráficamente cómo varía la utilidad de esta estrategia como
+función del precio del activo subyacente.
+Página 2 de 2

@@ -1,0 +1,74 @@
+===== Ayudantias/Ayudantía_6_Enunciado.pdf · página 1 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Primavera 2026
+Finanzas I
+Enunciado Ayudantía 6
+Profesor: Alejandro Bernales
+Ayudantes: Luisa Rodríguez1, Elizabeth Núñez2, Ayelen Sandoval, Tomás Rojas, Joaquín Arenas, Juan
+Correa Hevia, Lucas Montiel, Carolina Morales
+Primavera 2026
+Comentes
+1) Si dos bonos tienen la misma duración, necesariamente tendrán el mismo cambio de precio ante
+una variación importante en la yield.
+2) Una tasa forward puede determinarse a partir de tasas cero.
+3) Una vez firmado un FRA, la tasa pactada en el contrato cambia si cambian las tasas forward de
+mercado.
+4) En un swap de tasas de interés, las partes intercambian el principal y los intereses asociados durante
+la vida del contrato.
+Matemático I
+Una empresa emite un bono con cupones anuales, el cual paga su valor cara al final de su madurez con
+el último cupón (i.e. bono bullet). El bono tiene madurez de 4 años, su tasa cupón es de 4.3% anual y
+el valor de cara es de UF 10,000.
+Además, al día de emisión del bono las tasas spot (i.e.
+tasas cero cupón), en su versión discreta y
+continua, son:
+r1
+r2
+r3
+r4
+Tasa discreta
+4.10%
+3.97%
+3.9533%
+3.86%
+Tasa continua
+4.02%
+3.89%
+3.8767%
+3.79%
+La TIR (yield) de este bono es 3.87% discreta (3.80% continua).
+Se pide:
+a) Calcular el precio del bono utilizando las tasas spot correspondientes a cada flujo.
+b) Calcular la duración del bono.
+c) ¿Cómo cambia el precio del bono (en %) ante una disminución de la TIR en 0.3% (30 puntos base)?
+Utilice la aproximación por duración.
+d) Calcule la convexidad del bono utilizando capitalización continua y estime nuevamente el cambio
+porcentual en el precio ante la misma disminución de 30 puntos base, incorporando duración y con-
+vexidad.
+1lrodrig@fen.uchile.cl
+2enunezn@fen.uchile.cl
+Página 1 de 2
+
+===== Ayudantias/Ayudantía_6_Enunciado.pdf · página 2 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Primavera 2026
+Matemático II
+Una empresa sabe que dentro de 1 año necesitará solicitar un préstamo por UF 20,000 durante un período
+de 1 año.
+Para protegerse frente a un posible aumento en las tasas de interés, la empresa había contratado
+previamente un Forward Rate Agreement (FRA), que fija una tasa continua anual de:
+k1,2 = 4.00%
+Actualmente, las tasas cero continuas son:
+r0,1 = 3.50%
+r0,2 = 4.20%
+Se pide:
+a) Calcule la tasa forward implícita entre el año 1 y el año 2, r1,2.
+b) Compare la tasa forward de mercado con la tasa fijada en el FRA. Indique si el contrato tiene valor
+positivo o negativo para la empresa.
+c) Calcule el valor actual aproximado del FRA para la empresa.
+d) Explique económicamente por qué la empresa se beneficia o perjudica con este contrato.
+Página 2 de 2

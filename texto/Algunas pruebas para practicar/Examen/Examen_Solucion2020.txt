@@ -1,0 +1,610 @@
+===== Algunas pruebas para practicar/Examen/Examen_Solucion2020.pdf · página 1 =====
+FINANCE I 
+                  Facultad de Economía y Negocios 
+                   Universidad de Chile 
+ 
+ 
+ 
+Prof.: Alejandro Bernales 
+ 
+ 
+ 
+ 
+ 
+Exam 
+ 
+Time Allowed: 1.5 Hours 
+ 
+ 
+Instructions: 
+ 
+The solemne has 3 questions, each of them have the same weight. 
+ 
+PLEASE WRITE YOUR NAME IN ALL THE PAGES. 
+ 
+PLEASE ONLY USE THE SPACE IN EACH QUESTION TO ANSWER ALL 
+SECTIONS (USE ONLY ONE SIDE OF THE PAGE - ONE LANGUAGE) 
+ 
+The space provided is sufficient to give a concise and pertinent answer to each question 
+and/or sub-point of a question. 
+ 
+Extra answer booklets will not be provided – please use the spaces provided only. Answers 
+written outside the spaces or on other booklets will not be marked. 
+ 
+ 
+ 
+Electronic calculators may be used provided that they cannot store text 
+ 
+
+===== Algunas pruebas para practicar/Examen/Examen_Solucion2020.pdf · página 2 =====
+FINANCE I 
+                  Facultad de Economía y Negocios 
+                   Universidad de Chile 
+ 
+ 
+ 
+ 
+Prof.: Alejandro Bernales 
+ 
+ 
+ 
+ 
+ 
+Examen 
+ 
+Time Allowed: 1.5 Hours 
+ 
+ 
+Instrucciones: 
+ 
+El Control tiene tres preguntas, cada una de ellas tienen la misma ponderación. 
+ 
+POR FAVOR ESCRIBA SU NOMBRE EN TODAS LAS HOJAS. 
+ 
+POR FAVOR UTILICE EL ESPACIO PROVISTO EN CADA PREGUNTA PARA 
+RESPONDER CADA SECCIÓN (USAR UN SOLO LADO DE LA HOJA - UN SOLO 
+LENGUAJE). 
+ 
+El espacio entregado es suficiente para entregar una respuesta concisa y pertinente a 
+cada pregunta y/o sub-pregunta. 
+ 
+No se entregarán hojas adicionales para responder por favor utilice solamente el espacio 
+entregado. Respuestas escritas fuera de este espacio o en otras hojas no serán revisadas. 
+ 
+ 
+ 
+ 
+Calculadoras electrónicas pueden ser utilizadas salvo las que puedan almacenar texto 
+ 
+
+===== Algunas pruebas para practicar/Examen/Examen_Solucion2020.pdf · página 3 =====
+Question I:  
+Assume that you are a senior financial analyst at an investment bank. One day you get a call from 
+a customer. She wants to know the price of a six-month put option on the stock of Soquimik 
+(Soquimik doesn't paid dividends). The option has a strike price of $ 180 and is European style. 
+The Soquimik's current share price is $182, the risk-free interest rate is 6% per year, and his 
+customer knows that the volatility of the stock is equals to 50%. 
+ 
+1a) What is the price of this put option? 
+(Hint: Maybe the table at the end of the exam can be useful) 
+ 
+ 
+Answer: 
+ 
+ 
+   
+     
+          
+ 
+   
+   
+        
+ 
+                    
+ 
+                            
+                              
+  
+Remember that                
+ 
+So, the value of the Put options is: 
+                                
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Examen_Solucion2020.pdf · página 4 =====
+Pregunta I: 
+Asuma que usted es un analista financiero senior en un Banco de inversiones. Un día recibe una 
+consulta de un cliente. Ella quiere saber el precio de una opción de venta a seis meses sobre una 
+acción de Soquimik (Spquimich no paga dividendos). Estas opciones tienen un precio strike de 
+$180 y es del tipo Europea. El precio actual de la acción de Soquimik es de $182, la tasa de 
+interés libre de riesgo es de 6% anual y además sabe que la volatilidad de la acción es igual a 
+50%. 
+ 
+1a) ¿Cuál es el precio de esta opción de venta? 
+(Hint: Tal vez la tabla al final del examen puede ser útil) 
+ 
+Respuesta: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Examen_Solucion2020.pdf · página 5 =====
+1b) What is the price of the call option with same characteristics?  
+Answer: 
+ 
+ 
+So, the value of the Call options is: 
+                              
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Examen_Solucion2020.pdf · página 6 =====
+1b) ¿cuál es el precio de la opción de compra con las mismas características?  
+ 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Examen_Solucion2020.pdf · página 7 =====
+1c) Suppose that the stock will pay a dividend of $ 20 in 5 months. What are the new values for 
+the call and put options? 
+Answer: 
+ 
+ 
+Now change the price of the stock, so we have to calculate the new price of the stock. 
+ 
+  
+                             
+          
+Now we must re-calculate the new d1 and d2, because St has chances. 
+ 
+   
+     
+ 
+          
+ 
+   
+   
+         
+ 
+                   
+ 
+                            
+ 
+So, the value of the Put options is: 
+                  
+               
+ 
+ and 
+     
+                          
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Examen_Solucion2020.pdf · página 8 =====
+1c) Suponga que la acción pagará un dividendo de $ 20 en 5 meses. ¿Cuáles son los nuevos 
+valores para las opciones de compra y venta ? 
+ 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Examen_Solucion2020.pdf · página 9 =====
+Question II:  
+2a) When the fundamental value of an asset is constant, then the return volatility of trading 
+prices of the asset is zero. Provide a comment about sentence. 
+Answer 
+As explained in classes, this is not true, because agents trade at the bid price and ask prices 
+which are not necessarily equal to the fundamental value of the asset. Bid and ask prices are 
+given by the number of agents who want to wait by submitting limit orders (i.e. they are liquidity 
+providers). They would make profits by the liquidity cost paid by agents who submit market 
+orders, who do not want to wait (i.e. liquidity demanders). Thus, bid and ask prices are not only 
+affected by the fundamental value of the asset, but also by the arrival rate of liquidity providers 
+and liquidity demanders. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2b) In the presentation of the professor "contagio del contagio", he used in a model the credit 
+default swaps (CDS) spreads. How do CDS spreads are related to the interest rates of countries? 
+ 
+Answer: 
+The CDS spreads measure the default risk of countries, as the interest rates coming from bonds 
+issue by governments.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Grey line reflects when we have a transaction 
+(i.e. when a limit order is executed with a 
+market order) 
+Ask prices 
+Fund. Value 
+Bid prices 
+time 
+
+===== Algunas pruebas para practicar/Examen/Examen_Solucion2020.pdf · página 10 =====
+Pregunta II: 
+2a) Cuando el valor fundamental de un activo es constante, entonces la volatilidad de los 
+retornos de los precios transados del activo es cero. Comente sobre esta afirmación. 
+Answer 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2b) En la presentación del profesor "contagio del contagio", él utilizó en un modelo los spreads 
+de credit default swaps (CDS). ¿Cómo se relacionan los spreads de CDS con las tasas de interés 
+de los países? 
+ 
+Respuesta: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Examen_Solucion2020.pdf · página 11 =====
+Question III: 
+Explain or demonstrate why a Swap can also be valued using FRAs. 
+ 
+Answer:  
+ 
+ 
+ 
+A FRA is an agreement that a certain specified interest rate, Rk, will apply to a certain principal, 
+L, for a certain specified future time period.  
+ 
+Suppose that the rate observed in the market for the future time period at the beginning of the 
+time period proves to be Rm.  
+ 
+If the FRA is an agreement that Rk will apply when the principal is invested, the holder of the 
+FRA can borrow the principal at Rm and then invest it at Rk.  
+ 
+ 
+The net cash flow at the end of the period is then an inflow of Rk *L and an outflow  
+of Rm *L.  
+ 
+If the FRA is an agreement that Rk will apply when the principal is borrowed, the holder of the 
+FRA can invest the borrowed principal at Rm.  
+ 
+ 
+The net cash flow at the end of the period is then an inflow of Rm *L and an outflow  
+of Rk *L.  
+ 
+In either case we see that the PRA involves the exchange of a fixed rate of interest, Rk, on the 
+principal of L for the floating rate of interest observed in the market, Rm. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Examen_Solucion2020.pdf · página 12 =====
+Pregunta III: 
+Explique o demuestre por qué un Swap también puede ser valorizado mediante el uso de 
+FRAs. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Examen/Examen_Solucion2020.pdf · página 13 =====
+ 
+
+===== Algunas pruebas para practicar/Examen/Examen_Solucion2020.pdf · página 14 =====
+ 

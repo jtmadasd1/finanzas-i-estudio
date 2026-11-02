@@ -1,0 +1,124 @@
+===== Tarea/Tarea_ENFIN415_2026.pdf · página 1 =====
+Universidad de Chile
+Tarea
+Alejandro Bernales            
+F I N A N Z A S I · E N F I N 4 1 5
+Tarea
+Alejandro Bernales
+Universidad de Chile
+
+===== Tarea/Tarea_ENFIN415_2026.pdf · página 2 =====
+Universidad de Chile
+Tarea
+Alejandro Bernales            
+Pregunta 1A: Frontera Media-Varianza [20 puntos]
+•
+Baje los precios diarios históricos de cierre hasta el 31 de julio de 2026 (elija una ventana de tiempo 
+entre 1 año y 5 años, usted decida) de 50 acciones del índice S&P 500. Debes tener al menos DOS 
+acciones de cada uno de los siguientes sectores:
+–
+Energy, Financials, Health Care, Industrials, Information Technology, Utilities
+–
+Puede bajarlos de la sala bloomberg, www.nasdaq.com, https://stooq.com/, https://www.investing.com/, Yahoo 
+finance (usand R) o algún otro proveedor de precios históricos de cierre.
+1.
+Calcule los retornos esperados y la volatilidad de cada acción, y covaranzas (transfórmalos a una base 
+"anual" ).
+2.
+Utilizando estas 50 acciones, construya la frontera media-varianza (como se explicó en la clase).
+3.
+Construya la frontera media-varianza "ingenua": encuentre los pesos usando solo la diagonal de Ω 
+(suponga σij = 0 para i ≠ j) y calcule la volatilidad "real" de esos portafolios con la Ω completa. Grafique 
+ambas fronteras junto al punto 2). ¿Qué rol juegan las covarianzas en la diversificación?
+4.
+Recalcule la frontera media-varianza, pero ahora con una restricción de concentración: el peso absoluto 
+de cada acción no puede ser mayor que 0.10 (-0.10 ≤ wi ≤ 0.10). Discuta las diferencias con el punto 2).
+5.
+Vuelva a calcular la Frontera Media-Varianza (con 50 acciones), pero esta vez suponga que existen 
+restricciones de venta corta (es decir, w i ≥ 0 en el problema de optimización). Analice las diferencias con 
+la frontera del punto 2).
+6.
+Recalcule la frontera media-varianza, pero ahora con “restricciones de venta corta” Y además: los pesos 
+totales de los sectores: Energy y Industrials, deben representar al menos el 40% de las carteras eficientes 
+(0.4 ≤ Ʃ w Ener+Ind 
+i ). Discuta las diferencias con el punto 5).
+Importante: la discusión de resultados representa el 60% de tu calificación
+
+===== Tarea/Tarea_ENFIN415_2026.pdf · página 3 =====
+Universidad de Chile
+Tarea
+Alejandro Bernales            
+Pregunta 1B: LMC y Desempeño [20 puntos]
+1.
+Utilizando la Frontera Media-Varianza del punto 2 (pregunta 1A), calcule la Línea de Mercado de 
+Capitales con estas 50 acciones, e identifique el portafolio de tangencia M. Suponga como activo libre de 
+riesgo la tasa con vencimiento 1 año, observada el 31 de julio de 2026, obtenida de:
+ https://www.federalreserve.gov/datadownload/Choose.aspx?rel=H15 , y tome la serie: Treasury constant maturities
+2.
+Baje los datos del índice S&P 500 (use la misma ventana de tiempo que usted escogió en la pregunta 1A) 
+y estime el modelo índice para el portafolio de tangencia: rM,t – rf = α + β·(rSP500,t – rf) + εt. Reporte α y β.
+-
+Utilice un test-t para verificar si α = 0 (el alfa de Jensen). ¿Es su resultado consistente con la 
+eficiencia del mercado? ¿Qué rol juega el hecho de usar los mismos datos para construir el 
+portafolio de tangencia y para evaluarlo?
+3.
+Compare el ratio de Sharpe y el ratio de Treynor del portafolio de tangencia M y del índice S&P 500. 
+¿Por qué el ranking entre los dos portafolios puede diferir entre las dos medidas?
+4.
+Utilizando la fórmula de asignación óptima vista en clase, x* = (E[RM] – rf)/(c·σ2
+M), calcule la fracción 
+óptima a invertir entre Rm y Rf para inversionistas con c = 2, 5 y 10, e interprete cada caso en la Línea 
+de Mercado de Capitales (lending vs. borrowing).
+Importante: la discusión de resultados representa el 60% de tu calificación
+Consejo: utilice la metodología explicada en clase.
+
+===== Tarea/Tarea_ENFIN415_2026.pdf · página 4 =====
+Universidad de Chile
+Tarea
+Alejandro Bernales            
+Pregunta 2: Modelos de Estructura de tasas [20pts]
+1.
+Visite el sitio web de la Reserva Federal y baje las series de tasas de interés.
+https://www.federalreserve.gov/datadownload/Choose.aspx?rel=H15 , y tome la serie: Treasury 
+constant maturities
+Supongamos que las tasas tienen una convención: Días transados/Días transados.
+2. Ajuste el modelo de Nelson-Siegel (1987) Y el modelo de Svensson (1994) para determinar la 
+estructura temporal de las tasas de interés. Asegúrese de encontrar los parámetros óptimos 
+globales (como se explicó en clase).
+–
+Ajuste ambos modelos para el último día transado de junio (una curva de tasas por año y por 
+modelo) en los siguientes años: 2017 (mes 6), 2018 (mes 6), 2019 (mes 6), 2020 (mes 6), 
+2021 (mes 6), 2022 (mes 6), 2023 (mes 6), 2024 (mes 6), 2025 (mes 6), 2026 (mes 6).
+• Tendrás 10 fechas y 20 estimaciones de curvas (10 de Nelson-Siegel y 10 de Svensson)
+–
+Compare el ajuste de ambos modelos en cada fecha (por ejemplo, utilizando el RMSE). ¿En 
+qué fechas, y en qué parte de la curva, el término adicional de Svensson mejora el ajuste?
+–
+Grafique la evolución en el tiempo de los parámetros β0, β1 y β2 de Nelson-Siegel, e 
+interprételos como el nivel, la pendiente y la curvatura de la curva de tasas.
+3. Este es el punto más importante (60% de la puntuación en esta pregunta): Analice la 
+evolución en el tiempo de la curva de tasas de los EE. UU. entre 2017 y 2026. Explique esta 
+evolución de acuerdo con las noticias, los eventos económicos, sociales y políticos en los EE. 
+UU. y en la economía global. Además, identifique en qué fechas la curva estuvo invertida, qué 
+anticipaba esa inversión y si lo anticipado finalmente ocurrió.
+
+===== Tarea/Tarea_ENFIN415_2026.pdf · página 5 =====
+Universidad de Chile
+Tarea
+Alejandro Bernales            
+¿Cómo se deben entregar los ejercicios prácticos?
+1)
+En grupos de DOS estudiantes
+2)
+Por favor, proporcione:
+•
+Un informe.
+•
+Archivos electrónicos que se utilizaron para calcular todo (incluidas las explicaciones): R, 
+archivos de Excel o cualquier código en cualquier software o lenguaje que utilice para 
+calcular esta tarea.
+3)
+Recuerde: la clase siguiente a la entrega habrá un control individual (en clases) sobre esta tarea.
+Fecha límite:
+21 de octubre de 2026
+ 

@@ -1,0 +1,434 @@
+===== Algunas pruebas para practicar/Solemne/Solemne2024_ respuesta.pdf · página 1 =====
+Pregunta 1(60 puntos) 
+1a) Explique las características de un inversor que busca obtener un retorno esperado alto (mayor al 
+entregado por el portafolio de mercado) invirtiendo en la línea de mercado de capitales. ¿Qué tendría que 
+hacer dicho inversor para lograr ese elevado retorno esperado? Explique. (20 puntos) 
+1b)  Según el modelo CAPM, un portfolio de inversión tiene un retorno que es anormal, si el beta de dicho 
+portafolio es muy alto. Comente. (20 puntos) 
+1c) Un compañero me dijo que invertir en un bono (en el caso de ser un instrumento financiero de renta fija) 
+es igual que invertir en acciones (que son activos de renta variable). Comente. (20 puntos) 
+ 
+Pregunta 2 (60 puntos) 
+Usted está analizando el desempeño de tres activos. Los datos que ha recolectado indican que la tasa libre de 
+riesgo ofrece una rentabilidad anual de 5.4%. Por otra parte, el portafolio de mercado tiene un retorno 
+esperado del 20% y una desviación estándar del 30% (en base anual). Cada activo está caracterizado por: 
+ 
+Activo I: Retorno esperado de 10% anual  y desviación estándar anual 9.45%,  
+ 
+Activo II: Retorno esperado de 20% anual y desviación estándar anual 30.00%.- 
+ 
+Activo III: Retorno esperado de 30% anual y desviación estándar anual 50.55%.- 
+2a)  Calcule el ratio de Sharpe de cada activo (20 puntos) 
+2b) Calcule el retorno esperado de cada activo a partir del CAPM, asumiendo que: 
+ 
+Activo I: beta 0.78 
+ 
+Activo II: beta 1.0 
+ 
+Activo III: beta 1.32                                (20 puntos) 
+2c) Calcule el CAPM-Alpha de cada activo. Explique los que significan los valores obtenidos. (20 puntos) 
+ 
+Pregunta 3 (60 puntos) 
+Considere una economía donde los retornos de portafolios bien diversificados dependen de dos factores 
+sistémicos. Se tiene información de tres portafolios (   ,    y   ). Los retornos esperados de estos portafolios 
+fueron 18%, 15% y 12%, respectivamente, mientras que la sensibilidad de los portafolios a los dos factores 
+sistémicos se resumen en la tabla siguiente: 
+ 
+   
+   
+   
+   
+1.5 
+0.5 
+0.6 
+   
+0.5 
+1.5 
+0.3 
+3a) ¿Cuál es la tasa libre de riesgo en esta economía? (20 puntos) 
+3b) ¿Cuál es la ecuación de equilibrio (la que caracteriza los retornos esperados de los portafolios como 
+función de los factores sistemáticos) en esta economía? (20 puntos) 
+3c) Suponga ahora que le ofrecen un portafolio con retorno esperado de 16% y cuyas sensibilidades con los 
+factores sistémicos son         y       . ¿Es correcto el retorno esperado de este portafolio? (20 puntos) 
+ 
+Pregunta 4 (60 puntos) 
+Una empresa emite un bono con cupones anuales, el cual paga su valor cara al final de su madures con el 
+ultimo cupon  (i.e. también conocido como bono bullet). El bono tiene madurez de 4 años, su tasa cupón es de 
+4.3% anual y el valor de cara es de $UF 10000. Además, el día de emisión del bono las tasas spot (i.e. tasas 
+cero cupón), en su versión discreta y continua, son: 
+  
+r1 
+r2 
+r3 
+r4 
+Tasa discreta 
+4.10% 
+3.97% 
+? 
+3.86% 
+Tasa continua 
+4.02% 
+3.89% 
+? 
+3.79% 
+Por su parte, la tasa forward entre año 2 y 3 (    ) es de 3.92% versión discreta (o equivalentemente, 3.85% 
+en su versión continua). La TIR (i.e. yield) de este bono es 3.87% versión discreta (o equivalentemente, 3.80% 
+en su versión continua). Las tasas están en base anual. Se pide: 
+4a) Encontrar la tasa spot (tasa cero cupón) faltante, junto con la tasa forward entre el año 1 y 2 (    ).. Puede 
+usar tasas discretas o continuas, según más le acomode. (15 puntos) 
+4b) Calcular el precio del bono. (15 puntos) 
+4c) Calcular la duración del bono. (15 puntos) 
+4d) ¿Cómo cambia el precio del bono (en %) ante una disminución de la TIR (i.e. yield) en 0.3% (30 puntos 
+base)? (15 puntos) 
+
+===== Algunas pruebas para practicar/Solemne/Solemne2024_ respuesta.pdf · página 2 =====
+Question 1(60 points) 
+1a) Explain the characteristics of an investor who seeks to obtain a high expected return (greater than that 
+provided by the market portfolio) by investing in the capital market line. What would this investor have to do 
+to achieve that high expected return? Explain. (20 points) 
+1b) According to the CAPM model, an investment portfolio has an abnormal return if the portfolio's beta is 
+very high. Provide a comment. (20 points) 
+1c) A colleague told me that investing in a bond (in the case of a fixed-income financial instrument) is the 
+same as investing in stocks (which are variable-income assets). Provide a comment. (20 points) 
+ 
+Question 2 (60 points) 
+You are analyzing the performance of three assets. The data you have collected indicates that the risk-free 
+rate offers an annual return of 5.4%. In addition, the market portfolio has an expected return of 20% and a 
+standard deviation of 30% (in annual basis). Each asset is characterized by: 
+ 
+Asset I: Expected annual return of 10% and annual standard deviation of 9.45%. 
+ 
+Asset II: Expected annual return of 20% and annual standard deviation of 30.00%. 
+ 
+Asset III: Expected annual return of 30% and annual standard deviation of 50.55%. 
+2a) Calculate the Sharpe ratio for each asset (20 points). 
+2b) Calculate the expected return of each asset using the CAPM, assuming that: 
+ 
+Asset I: Beta 0.78. 
+ 
+Asset II: Beta 1.0. 
+ 
+Asset III: Beta 1.32.  
+ 
+(20 points) 
+2c) Calculate the CAPM-Alpha for each asset. Explain what the obtained values mean. (20 points) 
+ 
+Question 3 (60 points) 
+Consider an economy where the returns of well-diversified portfolios depend on two systemic factors. 
+Information is available for three portfolios (   ,    and   ). The expected returns of these portfolios were 
+18%, 15%, and 12%, respectively, while the sensitivity of the portfolios to the two systemic factors is 
+summarized in the following table: 
+ 
+   
+   
+   
+   
+1.5 
+0.5 
+0.6 
+   
+0.5 
+1.5 
+0.3 
+3a) What is the risk-free rate in this economy? (20 points) 
+3b) What is the equilibrium equation (the one that characterizes the expected returns of portfolios as a 
+function of systematic factors) in this economy? (20 points) 
+3c) Now suppose you receive an offer of a portfolio with an expected return 16%, and its sensitivities to the 
+systematic factors are         and       . Is the expected return of this portfolio correct? (20 points) 
+ 
+Question 4 (60 points) 
+A company issues a bond with annual coupons, which pays its face value at the end of its maturity with the 
+last coupon (i.e., also known as a bullet bond). The bond has a maturity of 4 years, its coupon rate is 4.3% 
+annually, and the face value is UF $10000. Additionally, on the bond's issuance date, the spot rates (i.e., zero-
+coupon rates), in both their discrete and continuous versions, are: 
+  
+r1 
+r2 
+r3 
+r4 
+Discrete rates 
+4.10% 
+3.97% 
+? 
+3.86% 
+Continuous rates 
+4.02% 
+3.89% 
+? 
+3.79% 
+Additionally, the forward rate between year 2 and 3 (    ) is 3.92% in its discrete version (or equivalently, 
+3.85% in its continuous version). The yield (i.e., TIR in Spanish) of this bond is 3.87% in its discrete version 
+(or equivalently, 3.80% in its continuous version). The rates are on an annual basis. You are asked to: 
+4a) Find the missing spot rate (zero-coupon rate), along with the forward rate between year 1 and 2 (    ). 
+You can use discrete or continuous rates, whichever you prefer. (15 points) 
+4b) Calculate the price of the bond. (15 points) 
+4c) Calculate the duration of the bond. (15 points) 
+4d) How does the price of the bond change (in %) with a 0.3% (30 basis points) decrease in the yield (i.e., TIR 
+in Spanish)? (15 points) 
+
+===== Algunas pruebas para practicar/Solemne/Solemne2024_ respuesta.pdf · página 3 =====
+Respuestas 
+Pregunta 1(60 puntos) 
+1a) (20 puntos) 
+ 
+Este inversor tendría que tener una aversion al riesgo muy baja, es decir, no le importaría tomar un 
+riesgo elevado (mayor al del portafolio de mercado) para obtener un retorno esperado alto. 
+ 
+Este inversor podría asumir un riesgo elevado, pidiendo dinero prestado a la tasa libre de riesgo, lo 
+que le permitiría estar apalancado. 
+ 
+Así, el inversor podría invertir una gran cantidad de dinero en el portafolio de mercado, que es mayo 
+al dinero propio, gracias al dinero solictado como deuda). 
+ 
+1b) (20 puntos) 
+ Falso, el retomo anormal se evalúa en el CAPM con el Alpha.  
+ 
+1c) (20 puntos) 
+ 
+No es lo mismo invertir en un bono que en acciones 
+ 
+Un bono de renta fija recibe cupones fijos, y su riesgo esta principalmente relacionado al riesgo de 
+crédito ya que es un instrumento de duda. 
+ 
+Una acción (que es un activo de renta variable) recibe flujos que son variables (dados por las 
+ganancias de la empresa relacionada a la accion), y su riesgo esta principalmente relacionado a la 
+volatilidad del mercado.  
+ 
+Pregunta 2(60 puntos) 
+2a)  (20 puntos) 
+  
+Activo I 
+Activo  II 
+Activo III 
+Tasa libre de riesgo 
+5.40% 
+5.40% 
+5.40% 
+Ret Esp Port Mercado 
+20.00% 
+20.00% 
+20.00% 
+SDev Port Merc 
+30.00% 
+30.00% 
+30.00% 
+Ret Esp Activo 
+10.00% 
+20.00% 
+30.00% 
+SDev Activo 
+9.45% 
+30.00% 
+50.55% 
+Sharpe 
+0.49 
+0.49 
+0.49 
+ 
+2b) (20 puntos) 
+  
+Activo I 
+Activo  II 
+Activo III 
+Tasa libre de riesgo 
+5.40% 
+5.40% 
+5.40% 
+Ret Esp Port Mercado 
+20.00% 
+20.00% 
+20.00% 
+SDev Port Merc 
+30.00% 
+30.00% 
+30.00% 
+Ret Esp Activo 
+10.00% 
+20.00% 
+30.00% 
+SDev Activo 
+9.45% 
+30.00% 
+50.55% 
+Sharpe 
+0.49 
+0.49 
+0.49 
+Beta 
+0.78 
+1.00 
+1.32 
+Ret Esp (CAPM) 
+16.79% 
+20.00% 
+24.67% 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne2024_ respuesta.pdf · página 4 =====
+2c) (20 puntos) 
+  
+Activo I 
+Activo  II 
+Activo III 
+Tasa libre de riesgo 
+5.40% 
+5.40% 
+5.40% 
+Ret Esp Port Mercado 
+20.00% 
+20.00% 
+20.00% 
+SDev Port Merc 
+30.00% 
+30.00% 
+30.00% 
+Ret Esp Activo 
+10.00% 
+20.00% 
+30.00% 
+SDev Activo 
+9.45% 
+30.00% 
+50.55% 
+Sharpe 
+0.49 
+0.49 
+0.49 
+Beta 
+0.78 
+1.00 
+1.32 
+Ret Esp (CAPM) 
+16.79% 
+20.00% 
+24.67% 
+Alpha 
+-6.79% 
+0.00% 
+5.33% 
+Activo 1: retorno anormal negativo (según el CAPM) 
+Activo 2: retorno normal (según el CAPM) 
+Activo 3: retorno anormal positivo (según el CAPM) 
+ 
+ 
+Pregunta 3(60 puntos) 
+ 
+3a) (20 puntos) 
+El modelo APT implica que se debe cumplir el siguiente sistema de ecuaciones para cada portafolio 
+                    
+                    
+                    
+ 
+Donde    es la tasa libre de riesgo. Resolviendo este sistema de 3 ecuaciones y 3 incógnitas, se tiene que  
+        ,         , and        . Así, la tasa libre de riesgo es 7.5%.   
+ 
+3b) (20 puntos) 
+Dados los resultados de la parte (a), la ecuación de equilibrio viene dada por: 
+                                
+ 
+3c) (20 puntos) 
+En esta economía un portafolio con esas sensibilidades tiene un retorno esperado de 14.1%: 
+                                  . 
+ 
+Así, el valor que le dicen rentará el portafolio (16%) es distinto al valor del mismo de acuerdo a la ecuación de 
+equilibrio.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne2024_ respuesta.pdf · página 5 =====
+ 
+Pregunta 4(60 puntos) 
+ 
+4a) (15puntos) 
+ 
+(Version discreta) 
+ 
+ 
+(Version continua) 
+             entonces,          
+Ademas 
+            entonces            
+ 
+ 
+4b)  (15puntos) 
+ 
+ (Version discreta) 
+ 
+        
+ 
+ 
+(Version continua) 
+                                                            
+        
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne2024_ respuesta.pdf · página 6 =====
+4c) (15puntos) 
+ 
+(Version discreta) 
+ 
+(Version continua) 
+                                                                   
+     
+ 
+ 
+       
+ 
+ 
+ 
+4d) (15puntos) 
+ 
+(Version discreta) 
+  
+    
+         
+    
+          
+    
+          
+      
+          
+        
+Esto implica un crecimineto del precio en 1,1% 
+Los alumnos tambien pueden usar la siguiente formula, y llegar a lo mismo con un 1.1% 
+  
+   
+ 
+          
+ 
+ 
+(Version continua) 
+ 
+                                                         
+        
+Esto implica un crecimineto del precio en 1,1% 
+Los alumnos tambien pueden usar la siguiente formula, y llegar a lo mismo con un 1.1% 
+  
+          
+ 

@@ -1,0 +1,621 @@
+===== Algunas pruebas para practicar/Solemne/MockSolemne2_Solucion.pdf · página 1 =====
+FINANCE I 
+                  Facultad de Economía y Negocios 
+                   Universidad de Chile 
+ 
+ 
+ 
+Prof: Alejandro Bernales 
+ 
+ 
+ 
+ 
+ 
+Simulacro de Solemne B 
+ 
+Time Allowed: 1.5 Hours 
+ 
+ 
+Instructions: 
+ 
+The 'solmene' has 3 questions, each of them have the same weight. 
+ 
+PLEASE WRITE YOU NAME IN ALL THE PAGES. 
+ 
+PLEASE USE THE SPACE PROVIDED ON THE QUESTION PAPER TO ANSWER 
+ALL SECTIONS (USE ONLY ONE SIDE OF THE PAGE - ONE LANGUAGE) 
+ 
+The space provided is sufficient to give a concise and pertinent answer to each question 
+and/or sub-point of a question. 
+ 
+Extra answer booklets will not be provided – please use the spaces provided only. Answers 
+written outside the spaces or on other booklets will not be marked. 
+ 
+ 
+ 
+ 
+Electronic calculators may be used provided that they cannot store text 
+ 
+
+===== Algunas pruebas para practicar/Solemne/MockSolemne2_Solucion.pdf · página 2 =====
+FINANCE I 
+                  Facultad de Economía y Negocios 
+                   Universidad de Chile 
+ 
+ 
+ 
+ 
+Prof: Alejandro Bernales 
+ 
+ 
+ 
+ 
+ 
+Simulacro de Solemne B 
+ 
+Time Allowed: 1.5 Hours 
+ 
+ 
+Instrucciones: 
+ 
+La solemne tiene tres preguntas, cada una de ellas tienen la misma ponderación. 
+ 
+POR FAVOR ESCRIBA SU NOMBRE EN TODAS LAS HOJAS. 
+ 
+POR FAVOR UTILICE EL ESPACIO PROVISTO EN CADA PREGUNTA PARA 
+RESPONDER CADA SECCIÓN (USAR UN SOLO LADO DE LA HOJA - UN SOLO 
+LENGUAJE). 
+ 
+El espacio entregado es suficiente para entregar una respuesta concisa y pertinente a 
+cada pregunta y/o sub-pregunta. 
+ 
+No se entregarán hojas adicionales para responder por favor utilice solamente el espacio 
+entregado. Respuestas escritas fuera de este no serán revisadas. 
+ 
+ 
+ 
+ 
+Calculadoras electrónicas pueden ser utilizadas salvo las que puedan almacenar texto 
+ 
+
+===== Algunas pruebas para practicar/Solemne/MockSolemne2_Solucion.pdf · página 3 =====
+Question I 
+Using the information given in the table below about two mutual funds (A and B) and the risk-
+free asset (rf) 
+ 
+ 
+Expected Return (%) 
+Standard Deviation (%) 
+A 
+10 
+20 
+B 
+30 
+60 
+Rf 
+5 
+0 
+ 
+The correlation coefficient between the funds is of -0.2 
+ 
+1a) Suppose that the assets described above are the only ones in the economy. Please, get the 
+market portfolio (P) consisting of both funds, and its expected return. 
+ 
+Hint: if you have two funds the expected return of the market portfolio is:                
+        , where          and    is:  
+   
+            
+                    
+            
+              
+                              
+Answer 
+ 
+Since there are only two assets, it is possible to find a solution for this portfolio problem. 
+ 
+First, 
+ 
+                                       
+ 
+Then, the amount invested in A is 
+ 
+   
+            
+                    
+            
+              
+                              
+ 
+  
+ 
+   
+                                   
+                                                               
+ 
+ 
+                 
+ 
+Given the result above, the amount invested in B is: 
+ 
+                        
+ 
+ 
+The Expected Return of the Portfolio is: 
+ 
+                        
+ 
+                                          
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/MockSolemne2_Solucion.pdf · página 4 =====
+Pregunta I 
+Usando la información dada en la tabla a continuación sobre dos fondos mutuos (A y B) y el 
+activo libre de riesgo (rf) 
+ 
+Expected Return (%) 
+Standard Deviation (%) 
+A 
+10 
+20 
+B 
+30 
+60 
+Rf 
+5 
+0 
+ 
+El coeficiente de correlación entre los fondos es de -0.2 
+ 
+1a) Suponga que los activos descritos anteriormente son los únicos que existen en la economía. 
+Por favor, obtenga el portafolio de mercado (P) que consta de ambos fondos, y su rendimiento 
+esperado. 
+Hint: Si se tiene solo dos activos en la economía, el retorno del portafolio de mercado es: 
+                       , donde          y     es:  
+ 
+   
+            
+                    
+            
+              
+                              
+Respuesta: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/MockSolemne2_Solucion.pdf · página 5 =====
+ 
+1b) Please, find the standard deviation of portfolio P 
+Answer 
+ 
+ 
+The standard deviation of the portfolio is 
+ 
+       
+   
+      
+   
+                       
+                                                        
+ 
+  
+ 
+          
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1c) If your risk aversion is of A=5, then, ¿how much of your resources do you invest in each of 
+the 3 assets? 
+Answer 
+ 
+ 
+As the optimal portfolio allow to maximize our utility. Then we know that we need to find y*. We 
+know that the formula of y* is: 
+ 
+           
+    
+            
+          
+        
+ 
+Then we distribute the investment of our resources in the following way 
+ 
+                         
+                           
+                     
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/MockSolemne2_Solucion.pdf · página 6 =====
+ 
+1b) Por favor, encuentre la desviación estándar del portafolio P 
+Respuesta: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1c) Si la aversión al riesgo  de usted es de A = 5, entonces, ¿cuánto de sus recursos debería 
+invertir en cada uno de los 3 activos? 
+Respuesta: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/MockSolemne2_Solucion.pdf · página 7 =====
+ 
+Question II:  
+ 
+2a) If we believe in the risk-return relationship, given that the riskless asset has zero risk, then it 
+should have an expected return equal to zero. Please, provide one reason about why the riskless 
+asset gives an expected return higher that zero (i.e. rf >0). 
+Answer: 
+ 
+One reason is that if you invest an amount X in such riskless asset, you postpone the 
+consumption of goods to the future, instead of consuming X today. Since, postponing (i.e. 
+waiting) is costly, then rf >0. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2b) Financial crises are bad for investments since we expect a decrease in stock prices, which 
+cannot be exploited economically. Thus, we have to wait to periods of financial booms, where we 
+have expectations about increases in prices. Please, provide an example. 
+Answer: 
+ 
+This sentence is wrong. When we expect a decrease in stock prices, we can use short sales to 
+exploit economically such price reductions. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/MockSolemne2_Solucion.pdf · página 8 =====
+ 
+Pregunta II: 
+ 
+2a) Si creemos en la relación riesgo-retorno, dado que el activo libre de riesgo tiene un riesgo 
+cero, entonces debería tener un retorno esperado igual a cero. Por favor, proporcione una razón 
+sobre por qué el activo libre de riesgo da un retorno esperado mayor que cero (es decir, rf> 0). 
+Respuesta: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2b) Las crisis financieras son mala para las inversiones, ya que esperamos una disminución en 
+los precios de las acciones, lo cual  no puede explotarse económicamente. Por lo tanto, tenemos 
+que esperar a períodos de auge financiero, donde tenemos expectativas sobre aumentos en los 
+precios. Por favor, de algún ejemplo. 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/MockSolemne2_Solucion.pdf · página 9 =====
+ 
+Question III. Limit Order Markets 
+ 
+Suppose we have a limit order market where the following orders are submitted 
+-Limit orders to buy: 100 shares at $3.00, 200 shares at $4.00, 200 shares at $3.50, and 500 
+shares at $2.50. 
+-Limit orders to sell: 500 shares at $5.00, 600 shares at $3.00, and 500 shares at $4.00. 
+-Market orders to buy: a total of 500 shares. 
+-Market orders to sell: a total of 200 shares. 
+ 
+In addition, suppose that the above orders arrive on the market over time, in the order of arrival 
+that is listed above (that is, at time t = 1 the limit order to buy 100 at $3.00 is submitted, at time t 
+= 2 the limit order for 200 at $4.00, and so on, continuing until time t = 9, when the market order 
+to sell 200 arrives). Track the state of the Limit Order Book (show it after each new order has 
+arrived and any transactions are triggered, for t = 0, ..., 9), price and quantity of any transactions 
+that take place. In addition, record the bid-ask spread. 
+Answer 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Time
+Bid-Ask 
+Spread
+Shares
+Price
+Shares
+Price
+Shares
+Price
+1
+100
+3
+2
+200
+4
+100
+3
+3
+200
+4
+200
+3.5
+100
+3
+4
+200
+4
+200
+3.5
+100
+3
+500
+2.5
+5
+200
+4
+500
+5
+1
+200
+3.5
+100
+3
+500
+2.5
+6
+500
+2.5
+100
+3
+0.5
+200
+4
+500
+5
+200
+3.5
+100
+3
+7
+500
+2.5
+100
+3
+0.5
+500
+4
+500
+5
+8
+500
+2.5
+100
+4
+1.5
+100
+3
+500
+5
+400
+4
+9
+300
+2.5
+100
+4
+1.5
+200
+2.5
+500
+5
+Buy Orders 
+(Bid)
+Sell Orders 
+(Ask)
+Transactions
+
+===== Algunas pruebas para practicar/Solemne/MockSolemne2_Solucion.pdf · página 10 =====
+ 
+Pregunta III. Limit Order Markets 
+ 
+Suponga que tenemos un "limit order market" donde las siguientes órdenes son enviadas: 
+ 
+-"Limit Orders" de compra: 100  acciones a $ 3.00, 200 acciones a $ 4.00, 200 acciones a 3.50, y 
+500 acciones a $ 2.50. 
+-"Limit Orders" de venta: 500 acciones a $ 5.00, 600 acciones a 3.00, y 500 acciones a $ 4.00. 
+ -"Market Orders" para comprar: un total de 500 acciones. 
+-"Market Orders" para vender: un total de 200 acciones. 
+ 
+Además, suponga que las órdenes de arriba llegan al mercado a lo largo del tiempo, en el mismo 
+orden de llegada en que se mencionan arriba (es decir, en el tiempo t = 1 la "Limit Order" para 
+comprar 100 a $ 3.00, en el tiempo t = 2  la "Limit Order" de compra de 200 en $ 4.00, y así 
+sucesivamente, continuando hasta el momento t = 9, cuando llega la "market order" para vender 
+200 acciones). Haga un seguimiento del estado del libro de órdenes a través del tiempo 
+(muéstrelo después de que cada nueva orden ha llegado y las transacciones que se activan, para 
+t = 0, ..., 9), el precio y la cantidad de transacciones que se llevan a cabo. Registre también el bid-
+ask spread. 
+Respuesta 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

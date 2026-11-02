@@ -1,0 +1,1958 @@
+===== Apunte_Finanzas_I.pdf · página 1 =====
+Finanzas I
+Agustín Farías Lobo
+Facultad de Economía y Negocios de la Universidad de Chile
+Semestre Primavera 2022
+
+===== Apunte_Finanzas_I.pdf · página 2 =====
+Este apunte fue realizado a partir de las clases de cátedra del profesor Erwin Hansen durante
+el semestre de primavera 2022 en la Facultad de Economía y Negocios de la Universidad de
+Chile.
+Cualquier error de tipeo o contenido, por favor escribir a afariasl@fen.uchile.cl. Así este
+apunte puede ser constantemente actualizado y así evitar confusiones entre quienes lo lean.
+Muchas gracias.
+Esta edición del apunte corresponde a la actualizada al día 19 de marzo de 2024.
+
+===== Apunte_Finanzas_I.pdf · página 3 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+Índice
+1. Retorno, Riesgo y Utilidad
+3
+1.1. Elección bajo incertidumbre . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3
+1.2. Propiedades de un activo . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5
+1.3. Portafolio con activo libre de riesgo . . . . . . . . . . . . . . . . . . . . . . .
+7
+1.4. Portafolio con activos riesgosos
+. . . . . . . . . . . . . . . . . . . . . . . . .
+10
+1.5. Modelo Índice . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+15
+1.6. CAPM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+17
+1.7. APT . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+19
+1.8. Hipótesis de los Mercados Eficientes . . . . . . . . . . . . . . . . . . . . . . .
+22
+1.9. Evaluación de desempeño
+. . . . . . . . . . . . . . . . . . . . . . . . . . . .
+23
+2. Instrumentos de Renta Fija
+25
+2.1. Valoración de bonos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+25
+2.2. Curva de rendimientos . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+28
+2.3. Riesgo de tasa de interés . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+30
+3. Opciones Financieras
+32
+3.1. Estrategias con opciones . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+36
+3.2. Paridad Put-Call . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+38
+3.3. Valoración de Opciones . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+38
+4. Futuros, Forwards y Swaps
+40
+2
+
+===== Apunte_Finanzas_I.pdf · página 4 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+1.
+Retorno, Riesgo y Utilidad
+1.1.
+Elección bajo incertidumbre
+Los inversionistas al analizar la compra de un activo evalúan no solo el retorno esperado de
+este, sino también su riesgo asociado. En esta línea, generalmente los inversionistas conside-
+ran un mayor retorno como un bien, algo que les genera mayor utilidad, y el riesgo como un
+mal: conlleva una desutilidad para el agente.
+Para modelar las preferencias por retorno y riesgo asociado a un activo, es necesario definir
+ciertos axiomas para sustentar un modelo.
+I. Las preferencias de los agentes frente a dos activos x e y deberán cumplir con
+x ⪰y,
+x ⪯y,
+x ≺y,
+x ≻y,
+o
+x ∼y.
+II. Las preferencias son transitivas: para tres activos x, y y z se cumple que
+si
+x ⪰y
+y
+y ⪰z,
+entonces
+x ⪰z.
+III. Las preferencias cumplen con la condición de independencia fuerte: sea G(x, z; α) un
+juego con resultado x con probabilidad α, y resultado z con probabilidad (1 −α);
+entonces, si x ∼y, se cumple que
+G(x, z; α) ∼G(y, z; α).
+IV. Si x ≺y ≺z, existirá una y solo una probabilidad α que cumpla con
+y ∼G(x, z; α).
+V. Si se tienen dos bienes γ y δ, tales que x ≺γ ≺z y x ≺δ ≺z, entonces es posible
+generar dos juegos G(x, z; α1) y G(x, z; α2), tales que γ ∼G(x, z; α1) y δ ∼G(x, z; α2),
+donde si α1 > α2, entonces γ ≻δ, y si α1 = α2, entonces γ ∼δ.
+Ahora bien, dadas las dificultades de trabajar directamente con preferencias, lo tradicional
+es utilizar una función de utilidad: una función que mapea las preferencias de un agente
+en el conjunto de los números reales.
+Las funciones de utilidad cumplen con dos propiedades clave. La primera es que deben man-
+tener el ranking de bienes del set de preferencias del agente, es decir,
+si
+x ≻y,
+entonces
+U(x) > U(y).
+La segunda es que puede tomar como argumento a juegos G(·), lo que permite rankear
+combinaciones de alternativas riesgosas:
+U(G(x, y; α)) = αU(x) + (1 −α)U(y).
+3
+
+===== Apunte_Finanzas_I.pdf · página 5 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+W
+U(W)
+U0
+W
+U(W)
+U1
+W
+U(W)
+U2
+Figura 1: Funciones de utilidad de agente averso al riesgo (U0), neutro al riesgo (U1) y amante
+al riesgo (U2).
+De forma general para el contexto de bienes de inversión, la utilidad esperada de la riqueza
+corresponderá a
+E [U(W)] =
+∞
+X
+i=0
+Pr(I = i)U(Wi),
+donde el subíndice i indica el estado de la naturaleza y W la riqueza.
+En general, las funciones de utilidad frente a bienes de inversión cumplen con tener un grado
+de aversión al riesgo. Este concepto apunta a la tendencia de los agentes a preferir una al-
+ternativa de inversión segura frente a un juego con un valor esperado igual. Más formalmente,
+una función de utilidad demostrará aversión al riesgo si presenta
+E[U(W)] < U(E[W]).
+Cabe destacar que no todos los agentes son aversos al riesgo, sino que existen personas neu-
+trales frente al riesgo e incluso amantes al riesgo. Un individuo será neutro frente al riesgo
+si E[U(W)] = U(E[W]) y amante al riesgo si E[U(W)] > U(E[W]). Un ejemplo gráfico de
+las funciones de utilidad según su aversión, neutralidad o amor al riesgo se encuentra en la
+figura 1.
+Entre las medidas de aversión al riesgo más utilizadas están los coeficientes de aversión al
+riesgo de Arrow-Pratt. En esta línea, se define la aversión al riesgo absoluta y la aversión al
+riesgo relativa como
+−U ′′(W)
+U ′(W)
+y
+−W U ′′(W)
+U ′(W) ,
+respectivamente.
+Relacionado con la aversión al riesgo, se le llama premio por riesgo a la cantidad máxima
+de riqueza que un individuo estaría dispuesto a entregar por evitar participar en un cierto
+4
+
+===== Apunte_Finanzas_I.pdf · página 6 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+juego: es la diferencia entre la riqueza esperada del juego y el nivel de riqueza que el individuo
+aceptaría con certeza si se elimina el juego (riqueza equivalente cierta o certainty equivalent).
+En esta línea, se define la dominancia estocástica de primer orden de un activo x sobre y,
+cuando el activo x tiene una mayor probabilidad de generar ganacias. De la misma manera,
+se define la dominancia estocástica de segundo orden del activo x sobre y si teniendo los
+mismos retornos, el activo x tiene una menor varianza.
+1.2.
+Propiedades de un activo
+Al enfrentarse a una decisión de inversión, los inversionistas deben seleccionar activos ries-
+gosos. Por ello es necesario tener claro el retorno y riesgo asociados a estos activos.
+En primer lugar, se define la tasa de retorno como la variación porcentual del precio más
+los dividendos corregidos por el valor inicial. Más formalmente,
+r0 = P1 −P0 + D
+P0
+,
+donde P0 es el precio del activo en t = 0, P1 es el precio del mismo activo en t = 1, y D es
+el dividendo pagado en el tiempo transcurrido entre t = 0 y t = 1.
+Ahora bien, en la práctica no existe información perfecta, por lo que se utiliza el retorno
+esperado, el cual es la expectativa del retorno esperado:
+E[r] =
+S
+X
+s=1
+Pr(Estado de la naturaleza = s) · r(s),
+donde Pr(·) es la función de probabilidad de la variable aleatoria “Estado de la naturaleza”,
+la cual toma valores entre 1 y S.
+¿Cómo medir el riesgo de un activo? Tradicionalmente la medida de riesgo es la desviación
+estándar, la cual corresponde a la raíz cuadrada de la varianza. La varianza de un activo será
+σ2 =
+S
+X
+s=1
+Pr(Estado de la naturaleza = s) · (r(s) −E[r])2 .
+Luego, la desviación estándar del activo está dada por
+σ =
+v
+u
+u
+t
+S
+X
+s=1
+Pr(Estado de la naturaleza = s) · (r(s) −E[r])2.
+Una mayor desviación estándar genera mayor probabilidad de generar pérdidas o retornos
+negativos, por lo que se asocia a un mayor riesgo.
+5
+
+===== Apunte_Finanzas_I.pdf · página 7 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+σ
+E[r]
+E[rA]
+A
+σA
+E[rC]
+C
+σC
+E[rD]
+D
+σD
+E[rB]
+B
+σB
+Figura 2: Diferentes activos en un plano σ −E[r].
+La forma tradicional de graficar activos es en un plano σ −E[r], el cual representa al riesgo
+como desviación estándar en el eje de las abscisas y al retorno esperado en el eje de las
+ordenadas, tal como se aprecia en la figura 2.
+Prosiguiendo, se define la tasa libre de riesgo, denotada por rf, como la tasa de retorno
+que se obtiene al invertir en un activo libre de riesgo (σ = 0). En el mundo real no existe un
+activo libre de riesgo, pues nunca será completamente seguro que no exista riesgo de default,
+de tasa de interés o de inflación.
+En la práctica, se asumen ciertos activos como libres de riesgo. En EE.UU se consideran
+los bonos del Tesoro Norteamericano (Treasury Bills), los depósitos bancarios (Certificate
+Deposit) y el papel comercial (Comercial Paper). En Chile se toman los bonos del Banco
+Central como libres de riesgo.
+Para invertir en cualquier activo riesgoso, es necesario que este tenga un retorno mayor al
+activo libre de riesgo, pues, en caso contrario, no será lógico invertir. Esta brecha entre el
+retorno esperado de un activo riesgoso y la tasa libre de riesgo corresponde al premio por
+riesgo, definido previamente. Ahora bien, en el contexto de activos riesgosos, el premio por
+riesgo estará dado por
+E[r] −rf.
+¿Cuán grande debe ser el risk premium de un activo riesgoso para invertir en él? La respuesta
+6
+
+===== Apunte_Finanzas_I.pdf · página 8 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+σ
+E[r]
+U2
+U1
+U0
+Figura 3: Curvas de indiferencia de utilidad tales que U2 > U1 > U0.
+depende de la aversión al riesgo del inversionista.
+Lógicamente, la elección de un portafolio será la que maximice la función de utilidad que
+refleja las preferencias por riesgo y por retorno esperado del agente. Generalmente, se asume
+que las preferencias apuntan a tener una mayor rentabilidad y una menor volatilidad. En lo
+que sigue, se asumirá que la función de utilidad de los agentes será
+U(A, r, σ) = E[r] −1
+2Aσ2,
+la que depende de positivamente del retorno esperado (∂U
+∂r > 0) y negativamente del riesgo
+(∂U
+∂σ = −Aσ < 0) y del coeficiente de aversión al riesgo A (∂U
+∂A = −σ2
+2 < 0).
+Dado que para los agentes aversos al riesgo el retorno esperado es un bien y el riesgo (desvia-
+ción estándar) es un mal, las curvas de indiferencia de utilidad serán convexas en un plano
+σ −E[r], alcanzando mayores niveles de utilidad entre más al noroeste estén.
+1.3.
+Portafolio con activo libre de riesgo
+Una decisión crítica de inversión para un agente es qué fracción de su capital invertir en
+activos riesgosos y qué fracción invertir en activos libres de riesgo. Por ello, a continuación
+se discute ello.
+7
+
+===== Apunte_Finanzas_I.pdf · página 9 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+Se asumirá que se debe generar un portafolio con un activo libre de riesgo y un activo riesgo-
+so. El primero tendrá un retorno determinado, sin incertidumbre, por lo que su varianza será
+igual a cero. El segundo tendrá un retorno ligado al estado de la naturaleza y una desviación
+estándar (riesgo) asociada. La decisión a realizar consiste en seleccionar cuánto invertir en
+cada uno de los activos.
+Es posible invertir todo el presupuesto de inversión en uno de los dos activos, pero también
+es posible invertir una fracción de este presupuesto en ambos activos.
+Dado que es necesario invertir un cien porciento del presupuesto de inversión, se tiene que
+se invertirá una cantidad y en uno de los activos y 1 −y en el otro. Siguiendo esta lógica, el
+retorno de cualquier portafolio combinado estará dado por
+E[rc] = y · E[rp] + (1 −y)rf
+E[rc] = rf + y[E[rp] −rf]
+El nivel de riesgo de este activo está dado por
+σc =
+q
+V ar[y · rp + (1 −y)rf]
+=
+q
+y2V ar[rp]
+= yσp
+Es importante notar que y puede ser mayor a uno, pues es posible endeudarse a una tasa libre
+de riesgo para luego invertir más que el presupuesto de inversión en el activo riesgoso. Esta
+acción se conoce apalancamiento y el porcentaje solicitado en préstamo como porcentaje del
+capital propio corresponde al leverage.
+En esta línea, el conjunto de todos los portafolios combinados posibles dado por las diferentes
+combinaciones del activo libre de riesgo y el portafolio de activos riesgosos, es decir, todos los
+valores posibles de y y los retornos esperados y riesgos asociados a estos portafolios corres-
+ponde al conjunto de oportunidades de inversión o línea de asignación de capitales.
+Gráficamente, la capital allocation line será la recta que pasa por las combinaciones de re-
+torno y riesgo del activo libre de riesgo y del portafolio riesgoso. Esta recta va más allá
+del punto donde el y = 1, dado que es posible realizar apalancamiento. Sin embargo, en
+los casos donde el endeudamiento tiene una tasa de interés mayor (la tasa de captación es
+menor a la tasa de colocación) se tiene que esto no corresponde a una recta, sino que tendrá
+un quiebre en y = 1 y luego tendrá una pendiente menor. Ello se puede apreciar en la figura 4.
+¿Qué determina la decisión de qué porcentaje invertir en cada uno de los activos para formar el
+portafolio combinado C? La respuesta es la función de utilidad del agente, pues este intentará
+maximizar su utilidad, la que reconoce el tradeoff entre riesgo y retorno, sujeto a todos los
+8
+
+===== Apunte_Finanzas_I.pdf · página 10 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+σ
+E[r]
+rf
+P
+CAL
+σ
+E[r]
+rf
+P
+CAL
+Figura 4: Línea de asignación de capital con tasas de captación y colocación iguales y dife-
+rentes.
+portafolios posibles. Más formalmente, el individuo resuelve el problema de optimización
+
+
+
+
+
+
+
+max
+(y)
+U = E[rc] −1
+2Aσ2
+s.a
+E[rc] = yE[rp] + (1 −y)rf
+σc = yσp
+=⇒
+
+max
+(y)
+U = yE[rp] + (1 −y)rf −1
+2Ay2σ2
+p
+Tal problema de optimización se resuelve como sigue:
+∂U
+∂y = E[rp] −rf −1
+2 · 2y · A · σ2
+p = 0
+E[rp] −rf −yAσ2
+p = 0
+E[rp] −rf = yAσ2
+p
+E[rp] −rf
+Aσ2
+p
+= y∗
+Luego, el porcentaje invertido en el portafolio riesgoso depende positivamente del premio por
+riesgo, y negativamente del coeficiente de aversión al riesgo y del riesgo del portafolio.
+Ahora bien, el retorno esperado y el riesgo asociado de tal portafolio será
+E[rc] = rf + (E[rp] −rf)2
+Aσ2
+p
+σc = E[rp] −rf
+Aσp
+Prosiguiendo, la utilidad obtenida de tal decisión de portafolio es
+U(y∗) = rf + (E[rp] −rf)2
+Aσ2
+p
+−A
+2 · (E[rp] −rf)2
+A2σ2
+p
+.
+9
+
+===== Apunte_Finanzas_I.pdf · página 11 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+n
+σ
+Riesgo de mercado
+Riesgo específico
+Figura 5: Riesgo diversificable y riesgo de mercado.
+1.4.
+Portafolio con activos riesgosos
+A pesar de que anteriormente se ha discutido cómo definir qué fracción del presupuesto de
+inversión se debería invertir en un portafolio riesgoso y qué fracción en un activo libre de ries-
+go, no se mencionó cómo se define este portafolio riesgoso. A continuación se abarca tal tópico.
+En primer lugar, es necesario discutir la idea de diversificación, pues ella es crítica en la teoría
+de portafolios. Esta consiste en que generando un portafolio con n > 1 activos, es posible
+generar un portafolio tal que su riesgo asociado sea menor a invertir en un solo activo. Este
+riesgo que se reduce corresponde al riesgo específico a la firma, riesgo diversificable o
+riesgo no sistémico.
+Sin embargo, no todo el riesgo es diversificable: existe un riesgo de mercado, el cual no es
+posible evitar mediante la diversificación de los activos, pues afecta a la economía o a un
+gran número de firmas e instituciones.
+Por tanto, es posible descomponer el riesgo de cualquier portafolio de activos riesgosos en
+el riesgo diversificable y en el riesgo de mercado: mientras que el primero se reduce a tasas
+decrecientes, el otro es constante. Tal propiedad se puede ver en la figura 5.
+En la práctica todos los activos son riesgosos, algunos más y otros menos, por lo que es
+necesario analizar el mejor portafolio posible dados los activos riesgosos disponibles.
+10
+
+===== Apunte_Finanzas_I.pdf · página 12 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+Por convención, se asumirá que existen dos tipos de activos riesgosos. El primero son los
+bonos, que se denotarán como D, que tienen asociados un riesgo σD y un retorno esperado
+E[rD]. El segundo son las acciones, que denotaremos por E, que tienen asociadas un riesgo
+σE y un retorno esperado E[rE]. Se asumirá que estos activos cumplen con que σE > σD y
+que E[rE] > E[rD]. Además, estos tendrán una correlación ρD,E ∈[−1, 1].
+Al formar un portafolio, se deberá seleccionar cuánto invertir en bonos y acciones. Es decir,
+se elegirá el nivel óptimo de wD y wE tal que wE + wD = 1.
+El retorno esperado del portafolio será la esperanza de los retornos, es decir,
+E[rp] = wDE[rD] + wEE[rE].
+La varianza del portafolio será
+σ2
+p = w2
+Dσ2
+D + wEσ2
+E + 2wDwEσD,E = w2
+Dσ2
+D + wEσ2
+E + 2wDwEρD,EσDσE.
+El riesgo del portafolio dependerá principalmente de la correlación entre los retornos de los
+activos del portafolio. Si ρD,E = 1, los dos activos están perfectamente correlacionados, por
+lo que no será posible eliminar riesgo mediante diversificación. En cambio, si ρD,E = −1, los
+dos activos están perfecta y negativamente correlacionados. Para reducir el riesgo lo ideal es
+que la correlación entre dos activos sea igual a -1, pues en tal caso, un activo actúa como
+seguro perfecto frente al otro, eliminando todo el riesgo. Ello se puede ver en la figura 6.
+Ahora bien, en la práctica los portafolios no están formados por dos activos, sino por un
+gran número de activos. Por ello, se analiza el caso de un portafolio de n activos riesgosos a
+continuación.
+Sea r un vector de dimensiones n×1 de los retornos de los n activos que forman el portafolio,
+Σ una matriz de dimensiones n × n de varianzas y covarianzas de los retornos, y w un vec-
+tor de dimensiones n×1 de ponderadores o pesos de cada uno de los activos en este portafolio.
+En esta línea, el retorno esperado de un portafolio será
+E[rp] = w′E[r] =
+h
+w1
+w2
+. . .
+wn
+i
+×
+h
+E[r1]
+E[r2]
+. . .
+E[rn]
+i
+=
+n
+X
+k=1
+wkE[rk].
+La varianza del portafolio será
+V ar(rp) = w′ × Σ × w =
+h
+w1
+w2
+. . .
+wn
+i
+×
+
+
+σ2
+1
+σ1,2
+. . .
+σ1,n
+σ2,1
+σ2
+2
+. . .
+σ2,n
+...
+...
+...
+...
+σn,1
+σn,2
+. . .
+σ2
+n
+
+×
+
+
+w1
+w2
+...
+wn
+
+
+11
+
+===== Apunte_Finanzas_I.pdf · página 13 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+σ
+E[r]
+E
+D
+ρ = 1
+ρ = 0
+ρ = −0, 5
+ρ = −1
+Figura 6: Riesgo de portafolio con diferentes niveles de correlación.
+Luego, el riesgo del portafolio está dado por
+σp =
+q
+V ar(rp) =
+√
+w′ × Σ × w.
+Ahora bien, ¿cuál será el portafolio óptimo? El objetivo de esto es maximizar el ratio de
+Sharpe, la razón entre el premio por riesgo y el riesgo del portafolio, seleccionando un
+portafolio de mercado :
+Sp = E[rp] −rf
+σp
+.
+¿Por qué maximizar el ratio de Sharpe? El ratio de Sharpe corresponde a la pendiente de la
+línea de asignación de capitales en el plano σ −E[r], por lo que una mayor pendiente de este
+entrega portafolios que permiten estar más al noroeste, es decir, que generan mayor utilidad
+en un contexto de que el retorno es un bien y el riesgo un mal.
+En esta línea, se resuelve el siguiente problema de optimización:
+
+
+
+
+
+
+
+
+
+
+
+
+
+max
+{wi}n
+i=1
+Sp = E[rp]−rf
+σp
+s.a
+Pn
+i=1 wi = 1
+E[rp] = w′ × E[r]
+σp =
+√
+w′ × Σ × w.
+La solución será un vector óptimo de ponderadores del portafolio, el cual permitirá calcular
+el ratio de Sharpe máximo, el que determinará la pendiente de la línea de alocación de capi-
+12
+
+===== Apunte_Finanzas_I.pdf · página 14 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+tales (CAL). El portafolio óptimo será el portafolio riesgoso P que se utilizará al momento
+de realizar la decisión de cuánto invertir en un activo libre de riesgo y cuánto en un activo
+riesgoso, es decir, la decisión de y.
+Ahora bien, para el caso de dos activos A y B, se tendrá que el portafolio riesgoso óptimo,
+es decir, que maximiza el ratio de Sharpe, cumplirá con que
+w∗
+A =
+(E[ra] −rf)σ2
+B −(E[rB] −rf)σA,B
+(E[rA] −rf)σ2
+B + (E[rB] −rf)σ2
+A −((E[rA] −rf) + (E[rB] −rf))σA,B
+.
+El modelo de selección de portafolios tradicional corresponde al modelo propuesto por Harry
+Markowitz en la década de 1950.
+Este modelo propone que el primer paso corresponde a la identificación de todas las opor-
+tunidades de inversión eficientes disponibles. En esta línea, existirá un portafolio de mínima
+varianza, el cual corresponderá a la combinación de n activos que minimiza el riesgo del
+portafolio. Este portafolio marca la división entre los portafolios eficientes e ineficientes: los
+portafolios con un retorno más bajo al de mínima varianza tendrán un mayor riesgo asociado,
+por lo que serán automáticamente descartados.
+Dado lo anterior, las oportunidades de inversión eficientes disponibles será la frontera efi-
+ciente: el conjunto de activos por sobre el portafolio de mínima varianza. Un ejemplo se
+puede ver en la figura 7.
+Para el caso de dos activos A y B, el portafolio de mínima varianza cumplirá con
+wmin
+A
+=
+σA,B −σ2
+B
+2σA,B −σ2
+A −σ2
+B
+.
+Tras identificar la frontera eficiente, es necesario reconocer la línea de asignación de capital
+que maximiza el ratio de Sharpe sujeto al set de portafolios eficientes disponibles.
+Finalmente, los inversionistas deciden qué fracción invertir en el activo riesgoso (P) y qué
+fracción en el activo libre de riesgo, mediante la maximización de la utilidad sujeto a la línea
+de asignación de capital. Todo el proceso de selección de activos según el modelo de Marko-
+witz se ve en la figura 8.
+Lo interesante de la propuesta de Markowitz que es postula la propiedad de separación.
+Tal propiedad apunta a que la selección del portafolio se basa en dos tareas independientes:
+la identificación del portafolio riesgoso óptimo, acción que no depende del grado aversión al
+riesgo del agente; y la asignación entre el activo libre de riesgo y el portafolio riesgoso, tarea
+que sí depende de las preferencias del individuo.
+13
+
+===== Apunte_Finanzas_I.pdf · página 15 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+σ
+E[r]
+Frontera eficiente
+D
+E
+Pmv
+Figura 7: Diferentes activos en un plano σ −E[r].
+σ
+E[r]
+D
+E
+Frontera eficiente
+CAL
+P
+U ∗
+C
+Figura 8: Modelo de selección de portafolios de Markowitz.
+14
+
+===== Apunte_Finanzas_I.pdf · página 16 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+1.5.
+Modelo Índice
+Los modelos planteados anteriormente tienen la dificultad de que es necesario estimar una
+gran cantidad de parámetros: para seleccionar un portafolio compuesto por n activos, e re-
+quiere generar n estimadores del retorno esperado, n estimadores de la varianza y
+n(n−1)
+2
+estimadores de covarianzas. A pesar de que los software de programación resuelven bastante
+bien esta dificultad, existen modelos que simplifican la selección de portafolios mediante la
+reducción de parámetros a estimar: uno de ellos es el Modelo Índice.
+El Modelo Índice de un Factor o Simple-index Model es un modelo que propone que
+el retorno de cualquier activo i puede ser modelado ex post como
+ri = E[ri] + βim + ei,
+donde βi es un parámetro que mide la sensibilidad del activo i frente a cambios en un factor
+común al mercado m, y ei es un factor específico a la firma no anticipado.
+En esta línea, el exceso de retorno puede ser modelado como una regresión lineal contra el
+exceso de retorno del mercado:
+ri,t −rf,t = αi,t + βi,t(rm,t −rf,t) + ei,t,
+donde αi es el intercepto del activo i y βi es el cambio marginal en el exceso de retorno del
+activo frente a un cambio en una unidad del exceso de retorno de mercado, y ei es el riesgo
+específico de la firma, el cual que no correlaciona con el retorno del mercado y que cumple
+con que ei ∼N(0, σ2
+ei).
+Definiendo Ri ≡ri −rf, se tiene que la expectativa del exceso de retorno de cualquier activo
+i será
+E(Ri) = αi + βiE[RM].
+¿Cuál será el riesgo de un activo específico? Al tomar la varianza del exceso de retorno de
+un activo i se llega a que
+V ar[Ri] = V ar[αi + βiRm + ei]
+σ2
+i = β2
+i V ar[Rm] + V ar[ei]
+σ2
+i = β2
+i σ2
+m + σ2
+ei,
+donde σ2
+m ≡V ar[rm] y σ2
+i ≡V ar[ri]. Es importante notar que la varianza total de un activo
+está compuesta por la varianza del mercado (el riesgo sistémico) ponderada por el cuadrado
+de su parámetro de sensibilidad βi, y por el riesgo idiosincrásico de la firma.
+15
+
+===== Apunte_Finanzas_I.pdf · página 17 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+La covarianza entre dos activos i y j estará dada por
+Cov(Ri, Rj) = Cov(αi + βiRm + ei, αj + βjRm + ej)
+σi,j = Cov(βiRm, βjRm)
+σi,j = βiβjCov(Rm, Rm)
+σi,j = βiβjσ2
+m,
+donde σi,j ≡Cov(ri, rj).
+Finalmente, la correlación entre dos activos estará dada por
+Corr(Ri, Rj) = σi,j
+σiσj
+ρi,j = βiβjσ2
+m
+σiσj
+ρi,j = βiσ2
+m
+σiσm
+· βjσ2
+m
+σjσm
+ρi,j = σi,mσ2
+m
+σiσ3
+m
+· σj,mσ2
+m
+σjσ3
+m
+ρi,j = σi,m
+σiσm
+· σj,m
+σjσm
+ρi,j = ρi,mρj,m.
+Ahora bien, ¿cuál será la varianza de un portafolio? Esta será igual a
+σ2
+p = β2
+pσ2
+m + σ2
+ep,
+donde σ2
+ep es la varianza del riesgo asociado al portafolio que no correlaciona con el riesgo
+de mercado. Para el caso de n activos y todos ellos con un peso 1
+n en el portafolio, se tie-
+ne que σ2
+ep = Pn
+i=1
+σ2
+ei
+n2 , lo que apunta a que a un mayor n, el riesgo diversificable tiende a cero.
+¿Qué es necesario para la utilización del Modelo Índice? En primer lugar, exige un análisis
+macro para caracterizar activos: es necesario comprender el ambiente del mercado financiero
+y estimar el premio por riesgo y el riesgo del mercado. Segundo, es necesario realizar un
+análisis estadístico de los activos individuales para estimar sus coeficientes βi y sus varianzas
+residuales σ2
+ei.
+El α del modelo índice de cualquier activo entrega información relevante sobre si un activo
+es atractivo para un inversionista. Si αi > 0, ello apunta a que el activo está subvalorado por
+el mercado, pues se espera que genere retornos en exceso incluso si el exceso de retorno del
+16
+
+===== Apunte_Finanzas_I.pdf · página 18 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+mercado es cero. Por ello, este activo i debe tener un mayor peso en el portafolio.
+En caso contrario, cuando αj < 0 se tiene que el activo j está sobrevalorado por el mercado,
+teniendo un exceso de retorno negativo cuando el exceso de retorno del mercado es cero. Por
+ello, lo ideal sería disminuir la ponderación del activo j en el portafolio.
+El modelo índice, a diferencia del modelo de selección de portafolio de Markowitz, requiere
+de un número bastante menor de parámetros para escoger un portafolio: para el caso de n
+activos se requieren n estimaciones de βi, n estimaciones de αi, n estimaciones de las varian-
+zas residuales (σ2
+ei), el premio por riesgo del mercado y la varianza del mercado. Es decir,
+únicamente se requieren 3n + 2 parámetros.
+Ahora bien, ¿cómo será el portafolio óptimo en este modelo? Nuevamente, lo que se buscará
+es maximizar el ratio de Sharpe sujeto a los portafolios disponibles:
+
+
+
+
+
+
+
+
+
+max
+{wi}n
+i=1
+Sp = E[rp]−rf
+σp
+s.a
+E[rp] = Pn
+i=1 wiαi + E[rm] Pn
+i=1 wiβi.
+σp =
+q
+β2
+pσ2
+m + σ2
+ep
+1.6.
+CAPM
+La sigla CAPM hace referencia al Capital Asset Price Model, modelo que permite iden-
+tificar el precio y retorno de equilibrio de mercado de activos basándose en los principios de
+la diversificación y el modelo de portafolios de Markowitz. Este modelo es una de las piezas
+fundamentales de la economía financiera y de la teoría financiera moderna.
+Este modelo asume que los inversionistas individuales son tomadores de precios y con horizon-
+tes de inversión de un solo periodo, por lo tanto hay inversión limitada de activos financieros
+transables, y estos son optimizadores toman en cuenta la media y la varianza para tomar
+decisiones. Además, no hay impuestos ni costos de transacción en la economía, la información
+fluye de manera perfecta y las expectativas son homogéneas.
+La condición de equilibrio del mercado financiero es que todos los inversionistas mantienen
+el mismo portafolio de activos riesgosos: el portafolio de mercado. Este portafolio contendrá
+todos los activos en una proporción igual al valor de mercado de cada activo sobre el valor
+de mercado total.
+El premio por riesgo del mercado dependerá del nivel de averisón al riesgo promedio de todos
+los participantes del mercado, es decir,
+E[rM] −rf = ¯Aσ2
+M;
+17
+
+===== Apunte_Finanzas_I.pdf · página 19 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+y el premio por riesgo de un activo individual es una función de su covarianza con el merca-
+do, o sea, del nivel de riesgo del portafolio de mercado que se explica por tal activo individual.
+En esta línea, la razón entre retorno y riesgo de la inversión para cualquier activo E será
+wE(E[rE] −rf)
+wEσE,M
+= E[rE] −rf
+σE,M
+,
+donde σE,M = Pn
+k=1 wkCov(rk, rE), siendo k el indicador de todos los activos distintos de E
+que componen el portafolio de mercado.
+El portafolio de mercado, por su lado, tendrá una razón de retorno y riesgo dada por
+E[rM] −rf
+σ2
+M
+.
+En equilibrio, todo activo individual deberá tener una razón de retorno y riesgo igual a
+la razón de retorno y riesgo del portafolio de mercado, pues, en caso contrario, tal activo
+individual tendrá un peso menor o mayor al portafolio óptimo que maximiza el ratio de
+Sharpe. Por ello, se tiene que
+E[rE] −rf
+σE,M
+= E[rM] −rf
+σ2
+M
+E[rE] −rf = σE,M
+σ2
+M
+(E[rM] −rf)
+E[rE] −rf = βE (E[rM] −rf)
+E[rE] = rf + βE (E[rM] −rf) .
+La derivación anterior concluye con la igualdad base del CAPM: el retorno de cualquier activo
+individual estará dado por el retorno del activo libre de riesgo más el exceso de retorno del
+mercado ponderado por la sensibilidad del activo individual al retorno de mercado, es decir,
+el β del activo.
+A partir de lo anterior se define la línea de mercado de capitales o security markey line
+como la recta representada en un plano β −E[r] que contiene a todos los activos que poseen
+una razón de retorno y riesgo igual al portafolio de mercado, es decir, que se encuentran en
+su nivel de retorno de equilibrio.
+En caso de que exista un activo fuera de la security market line, se tendrá que este se en-
+cuentra sub o sobrevaluado, pues su retorno no se encuentra en equilibrio. Ello puede ser
+solucionado mediante la incorporación de los α del modelo índice.
+18
+
+===== Apunte_Finanzas_I.pdf · página 20 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+β
+E[r]
+M
+A
+B
+SML
+rf
+E[rM]
+βM
+αB > 0
+αA < 0
+Figura 9: CAPM: Security Market Line y activos con retornos fuera del equilibrio.
+Un posible gráfico de la línea de mercado de capitales y de activos que se encuentran fuera
+de ella está presente en la figura 9.
+¿Qué tan factible es el planteamiento del CAPM? En ningún mercado financiero se observa
+que todos los precios de los activos estén en equilibrio y que, por lo tanto, sus α sean iguales a
+cero. No obsante, es un modelo de valoración de activos sumamente utilizado en la práctica,
+pues continúa siendo una de las mejores alternativas.
+1.7.
+APT
+La Arbitrage Pricing Theory o APT es una ampliación del CAPM. Este modelo postula
+que el retorno de un activo viene de dos fuentes: de factores macroeconómicos y de factores
+específicos a la firma.
+Este modelo tiene varios supuestos importantes. El primero es que los agentes del mercado
+no necesariamente son tomadores de precio, sino que puede existir arbitraje: inversionistas
+pueden construir un portafolio sin costo y con un retorno seguro, por lo que se tomarán
+posiciones grandes con tal de asegurar utilidades de imporante magnitud. El segundo es que
+los mercados de capitales son perfectos. El tercero es que los mercados eficientes eliminan las
+oportunidades de arbitraje rápidamente.
+19
+
+===== Apunte_Finanzas_I.pdf · página 21 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+F
+E[r]
+SML
+rf
+(a) Portafolio bien diversificado.
+F
+E[r]
+SML
+rf
+(b) Portafolio no diversificado.
+Figura 10: APT: SML para portafolios con diferentes niveles de diversificación.
+En el caso más básico, es posible definir un modelo de un factor para un activo i como
+ri = E[ri] + βiF + ei,
+donde ri es el retorno del activo i, F es un factor macroeconómico que no es específico a la
+firma, βi es la sensibilidad del retorno de i ante cambios en F (factor loading), y ei es una
+variable aleatoria que representa eventos específicos a la firma.
+Ahora bien, en un modelo multifactor existirán k factores macroeconómicos que afectarán
+el retorno del activo i. Por ello, una ecuación de un modelo de k factores para explicar el
+retorno de i será
+ri = E[ri] + β1iF1 + β2iF2 + ... + βkiFk + ei,
+donde βji es la sensibilidad del activo i frente a cambios en el factor macroeconómico no
+específico a la firma Fj, con j = 1, 2, ..., k.
+20
+
+===== Apunte_Finanzas_I.pdf · página 22 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+¿Cuál será la security market line en este caso? La respuesta es que será exactamente la
+misma ecuación anterior pero con ei = 0, pues asume que el activo i es un portafolio bien
+diversificado, por lo que su riesgo específico converge a cero. La SML para dos tipos de por-
+tafolio se puede ver en la figura 10.
+¿Cuándo existirán oportunidades de arbitraje? En el caso de que el precio actual del porta-
+folio genere un retorno que difiere del pronóstico del modelo, un inversionista podrá arbitrar.
+Cuando rp < ˆrp, el portafolio está sobrevaluado, por lo que se debería tomar una posición
+corta1 o simplemente vender. En cambio, cuando rp > ˆrp, el portafolio está subvaluado, por
+lo que lo ideal sería comprar títulos o realizar long-selling.
+Es importante reconocer la directa relación del APT y el CAPM. En caso de que se realice
+un modelo de un factor con el exceso de retorno de mercado como la única variable explica-
+tiva, entonces se llega rápidamente a la ecuación base del CAPM. En CAPM el portafolio de
+mercado es el verdadero; no obstante, en APT el portafolio de mercado es simplemente un
+portafolio bien diversificado, como un índice accionario. Por ello, se dice que el APT es un
+modelo menos restrictivo.
+El APT es válido para portafolios bien diversificados, pero no necesariamente para activos
+individuales, pudiendo generar malas predicciones para ello. Tiene la ventaja de ser más ge-
+neral que el modelo Índice y el CAPM, pudiendo entregar una relación entre riesgo y retorno
+explicados por factores macro sin asumir que se conoce el portafolio de mercado. Además, es
+posible extender el análisis a más de un factor.
+En la explicación anterior, se ha omitido la discusión sobre qué factores son los que mejor
+predicen el retorno de un activo. Generalmente los inversionistas tienden a utilizar factores
+que son retornos de portafolios, como el retorno de un índice.
+Posibles factores a utilizar son los propuestos por Chen, Roll y Ross, quienes seleccionaron un
+conjunto de factores macroeconómicos que afectan a la economía en conjunto para explicar el
+retorno de activos: producción industrial (IP), inflación esperada (EI), inflación no esperada
+(UI), spread entre bonos corporativos y gubernamentales (CG) y el term spread entre bonos
+gubernamentales de largo y corto plazo (GB). Por tanto, para un activo i su retorno estará
+dado por
+rit = αi + βi,IPIPt + βi,EIEIt + βi,UIUIt + βi,CGCGt + βi,GBGBt + eit.
+Otro set de factores a utilizar son los propuestos por Fama y French en su modelo de tres
+factores. Estos factores son variables que históricamente han mostrado alta capacidad pre-
+dictiva para capturar premios por riesgo: el exceso de retorno de un índice accionario (Rm),
+1Tomar una posición corta o realizar short-selling corresponde a pedir prestado instrumentos financieros
+en un determinado plazo, venderlos y posteriormente comprar la misma cantidad para devolver los títulos al
+prestamista. Esta operación permite generar utilidades cuando el precio de un activo baja.
+21
+
+===== Apunte_Finanzas_I.pdf · página 23 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+el retorno de un portafolio de pequeñas empresas sobre el retorno de un portafolio de grandes
+empresas según su market capitalization (Small minus Big, SMB); y el retorno de un porta-
+folio de activos con alto ratio book-to-market sobre el retorno de un portafolio con activos
+de bajo book-to-market (High minus Low, HML). Luego, para un activo i su retorno estará
+dado por
+rit = αi + βi,MRM,t + βi,SMBSMBt + βi,HMLHMLt + eit.
+1.8.
+Hipótesis de los Mercados Eficientes
+¿Qué tan rápido los mercados financieros incorporan la nueva información sobre los activos?
+En finanzas, la idea de eficiencia se centra en qué tan rápido y qué nivel de información
+incorporan los agentes del mercado al precio de los activos. La hipótesis de los mercados
+eficientes (HME) recoge esta idea: postula que los precios de las acciones reflejan comple-
+tamente y de manera precisa la información pública disponible, pues los participantes del
+mercado la analizan y agotan rápidamente las posibilidades de arbitraje debido a la compe-
+tencia existente.
+Eugene Fama afirma que es imposible testear si es que los precios reflejan completamente
+la información disponible en un momento del tiempo. Por ello, propone tres versiones de la
+hipótesis de los mercados eficientes y posibles tests para verificarlas: una versión débil, una
+versión semi-fuerte y una fuerte.
+La forma debil de la HME postula que los agentes incorporan toda la información dispo-
+nible sobre los precios y volúmenes de transacción históricos para predecir los precios futuros.
+La forma semifuerte de la HME postula que los agentes incorporan toda información
+pública disponible, incluyendo precios y volúmenes de transacción pasados, y la información
+financiera y económica para predecir los precios.
+Finalmente, la forma fuerte de la HME postula que el mercado incorpora no solo la in-
+formación pública sobre los activos, sino también información privada.
+Para testear la forma débil de la HME existen dos principales estrategias. La estrategia de
+momentum consiste en la comparación del desempeño entre la inversión en acciones con los
+mejores desempeños en el último año, y en acciones de un índice. La estrategia de reversión
+se basa en contrastar la inversión en acciones con bajos o negativos retornos en los últimos
+años con el desempeño de un índice.
+Para testear la forma semi-fuerte de la HME tradicionalmente se utilizan observaciones de
+posibles anomalías. Por ejemplo, si es que existe un efecto en la razón precio-utilidad; un
+efecto de firmas pequeñas; un efecto enero; un efecto book-to-market; o un cambio en la
+tendencia de los precios posterior a los anuncios de utilidades.
+22
+
+===== Apunte_Finanzas_I.pdf · página 24 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+Para testear la forma fuerte de HME se observa si existen diferencias importantes en los
+retornos obtenidos por insiders y de agentes del mercado sin relación.
+Una forma de testear alternativa qué tan eficiente es un mercado es mediante el análisis del
+desempeño de las estrategias activos y pasivas. Las estrategias activas se centran en el aná-
+lisis exahaustivo de los activos y en tener un timing adecuado para saber cuándo comprar y
+cúando vender. Las estrategias pasivas, en cambio, se basan en comprar y mantener activos,
+o en comprar índices accionarios.
+En caso de que las estrategias activas tengan un mejor desempeño, ello se asocia con una
+menor eficiencia de los mercados, pues existen posibilidades de arbitraje latentes. Mientras
+que en caso de que las estrategias pasivas tengan un mejor desempeño, ello apunta a una
+mayor eficiencia, pues las oportunidades de arbitraje se agotarán rápidamente.
+¿Cómo interpretar la evidencia empírica que ronda a la HME? En el mundo académico
+no hay consenso: mientras algunos piensan que las supuestas anomalías son explicadas por
+diferentes niveles de riesgo que presentan las acciones, otros argumentan que ellas son fruto
+de ineficiencias y fricciones en los mercados.
+1.9.
+Evaluación de desempeño
+La evaluación de desempeño consiste en analizar cuál fue el retorno de un activo en un cierto
+periodo de inversión y qué tan alto o bajo fue con respecto al mercado. Este es un tópico
+difícil pues la medida de evaluación depende del tipo de estrategia y del tipo de portafolio.
+Para evaluar el desempeño de un activo es necesario definir un benchmark: un índice o una
+combinación de índices que posean objetivos de inversión y estrategias similares al activo,
+con tal de que sirva de punto de referencia para la comparación. El benchmark es definido al
+momento de la inversión, pudiendo elegir uno nacional o internacional.
+A continuación, se revisan diferentes medidas de evaluación de desempeño.
+La primera medida de evaluación corresponde al índice de Sharpe, el que corresponde a
+rp −¯rf
+σp
+,
+donde rp puede ser el retorno en un periodo o el retorno promedio en varios periodos, y ¯rf
+es la tasa libre de riesgo promedio mientras dure la inversión.
+23
+
+===== Apunte_Finanzas_I.pdf · página 25 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+σ
+E[r]
+P
+B
+P+
+rf
+σB
+rp+
+rB
+M 2
+Figura 11: Evaluación de desempeño: medida M 2.
+Una segunda medida es la medida de Treynor, que se define como
+rp −¯rf
+βp
+,
+siendo βp el promedio ponderado de los betas de los activos que conforman portafolio.
+Una tercera medida es el alpha de Jensen, que está dado por
+αp = rp −(rf + βp(rm −rf)) ,
+donde αp es el alpha del portafolio, rp es el retorno del portafolio, βp el beta promedio del
+portafolio, rf es la tasa libre de riesgo y rm es el retorno promedio del índice de mercado.
+Otra medida es la razón de información, la cual corrige el alpha de Jensen por el riesgo
+idiosincrático del portafolio, es decir,
+αp
+σep
+.
+Una última medida es la medida M 2, la que iguala la volatilidad del portafolio bajo análisis
+con la volatilidad del índice del índice de mercado (benchmark) mediante la construcción de
+un portafolio ficticio formado por activos libre de riesgo y el portafolio de interés, llamado
+rp+. Luego, la medida M 2 será
+rp+ −rm.
+Esta medida se presenta gráficamente en la figura 11.
+24
+
+===== Apunte_Finanzas_I.pdf · página 26 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+2.
+Instrumentos de Renta Fija
+Los activos de deuda o activos de renta fija son derechos sobre un flujo periódico y
+específico de ingresos o flujos de caja. Como su nombre indica, ellos establecen una promesa
+de un flujo de ingreso fijo.
+El bono es el activo de deuda básico en los mercados financieros. Para el emisor de este,
+un bono es un pasivo, pues establece una obligación de pago de deuda; mientras que para el
+tenedor del bono o inversionista, este es un activo.
+Los bonos poseen ciertas características que es importante conocer para su correcta valora-
+ción. El valor nominal o valor par de un bono corresponde al monto de la deuda, siendo
+el precio de este activo al momento de la emisión.
+La madurez del bono establece el plazo en el que se terminarán de pagar los flujos de caja.
+La tasa cupón es la tasa de interés que paga la deuda del bono. El timing del interés que paga
+el bono depende del tipo de bono: en caso de un bono francés, los intereses son pagados
+periodo a periodo sobre el monto de la deuda no amortizada; en un caso de un bono bullet
+o bono americano, los intereses son pagados mes a mes sobre el principal del bono; y en caso
+de un bono cero cupón, los intereses son pagados a la madurez del bono.
+Los bonos son emitidos por diferentes entidades: existen bonos de gobierno, bonos sobera-
+nos, corporativos, municipales, hipotecarios, etc. Entre el comprador y el emisor del bono
+en ciertos casos se genera un indenture: un contrato al que está sujeto el bono, que impo-
+ne ciertas restricciones para el uso del dinero y los respectivos castigos en caso de incumplirse.
+Estos activos también pueden tener provisiones. Existen bonos securitizados, que están res-
+paldado por un pooling de diferentes activos, creando una cartera diversificados de activos
+que sirven de colateral. También existen bonos convertibles en acciones, que permiten al
+tenedor cambiar el bono por un cierto número de acciones. Finalmente, existen bonos que
+poseen opciones put y call asociadas.
+2.1.
+Valoración de bonos
+El precio de un bono está dado por el valor presente de sus flujos de caja, es decir,
+PB =
+T
+X
+t=1
+Ct
+(1 + r)t + Valor nominal
+(1 + r)T
+,
+donde PB es el precio del bono, Ct es el cupón a pagar en el periodo t, T es la madurez del
+bono y r es la tasa de descuento correspondiente.
+25
+
+===== Apunte_Finanzas_I.pdf · página 27 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+La anterior es la forma general de calcular el precio de un bono; sin embargo, dependiendo
+del tipo de bono, existen formas particulares de calcular su precio. En el caso de un bono
+cero cupón, dado que este paga tanto sus intereses como el valor par en su vencimiento, su
+precio está dado por
+PB = Valor nominal
+(1 + r)T
+.
+Para un bono bullet que pagará intereses todos los periodos y todo su valor par a su venci-
+miento, su precio será dado por
+PB = Valor nominal · Tasa Cupón
+r
+ 
+1 −
+1
+(1 + r)T
+!
++ Valor nominal
+(1 + r)T
+.
+Finalmente, para un bono francés, puesto que sus cuotas son iguales en todos sus periodos,
+se tiene que el valor de la cuota está dado por
+C = Valor nominal · tasa Cupón
+ 
+1 −
+1
+(1 + r)T
+!−1
+,
+por lo que el precio del bono será
+P = C
+r
+ 
+1 −
+1
+(1 + r)T
+!
+.
+El precio de un bono y su tasa de retorno requerida o tasa de descuento, la yield de un bono,
+se relacionan inversamente. Cuando la yield es muy alta, el precio del bono será bajo, pues
+existirá alguna inversión con un perfil de riesgo retorno similar que entregue un retorno alto;
+en cambio cuando la yield es baja, el precio del bono será alto. Cuando la yield converge a
+cero, el valor del bono es simplemente la suma de sus flujos. Ello se ve en la figura 12.
+De la misma manera, dado que entre mayor madurez existen más flujos de caja que son
+descontados a una misma tasa, a mayor madurez, mayor es la sensibilidad del precio ante
+cambios en la tasa de interés.
+Ahora bien, se define la yield to maturity (YTM) o tasa interna de retorno (TIR) como
+la tasa de interés que hace que el valor presente de los flujos del bono iguale al precio. Es
+decir, corresponde al valor de r que satisface
+PB =
+T
+X
+t=1
+Ct
+(1 + r)t + Valor nominal
+(1 + r)T
+.
+El retorno de un bono en un periodo estará dado por
+rB = I + P1 −P0
+P0
+,
+26
+
+===== Apunte_Finanzas_I.pdf · página 28 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+r
+PB
+P +
+B
+r−
+P 0
+B
+r0
+P −
+B
+r+
+Figura 12: Relación entre precio de un bono y yield.
+donde I es el interés pagado por el bono entre el periodo 0 y 1 y Pt es el precio en el periodo t.
+Un caso interesante de analizar son los bonos cero cupón, los que tienen un valor crecien-
+te a medida que se acercan a su fecha de madurez. Ello ocurre porque pagan un único cash
+flow en su madurez, llevando a que el descuento al que está afecto ese flujo es cada vez menor.
+Un aspecto que incide directamente en la rentabilidad exigida a un bono es la calidad cre-
+diticia de su emisor, es decir, el riesgo de que el emisor quede en default. Los emisores con
+peor calidad crediticia tienen mayor probabilidad de no pagar los cupones del bono y, por
+ello, se les exige una rentabilidad más alta.
+Saber el riesgo de default de una cierta entidad no es algo fácil, por lo que existen empresas
+especializadas en generar ratings crediticios. Estas compañías entregan una calificación a
+cada emisor, así como un riesgo al país donde este se encuentra establecido, lo que ayuda a
+evitar un problema de información asimétrica.
+Entre los bonos calificados por las agencias de rating, existen tres categorías: los bonos con
+un investment grade, que son bonos con alta calidad; los bonos especulativos, de calidad
+media o baja; y los bonos basura o junk bonds, de calidad baja o muy baja.
+Para generar las calificaciones, las agencias miran algunos indicadores críticos:
+1. Indicadores de cobertura: enfocados en la razón entre cash flows o activos líquidos y
+los intereses por pagar en un periodo dado.
+2. Indicadores de endeudamiento: enfocados en la capacidad y la facilidad de contraer
+27
+
+===== Apunte_Finanzas_I.pdf · página 29 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+deuda por parte del emisor.
+3. Indicadores de liquidez: enfocados en los activos líquidos y los cash flows que podrían
+ser utilizados para el pago de deuda.
+4. Indicadores de rentabilidad: enfocados en los retornos a corto y largo plazo sobre deuda
+y capital aportado.
+¿Cómo los tenedores de bonos se protegen frente al riesgo de default? Existen varias al-
+ternativas, las cuales se basan en la imposición de cláusulas al momento de la emisión del
+instrumento. Entre las opciones comunes está la creación de un sinking fund, que exige que
+el emisor realice provisiones constantes a un fondo destinado a pagar la deuda; la exigencia
+de subordinación de la deuda futura; las restricciones sobre los dividendos del emisor; y la
+definición de un colateral.
+Otra opción que ha sido utilizada desde hace algunas décadas es la adquisición de un credit
+default swap (CDS): un seguro contra el riesgo de default de un bono. Cuando un bono es
+emitido en conjunto con un CDS, este mejora su capacidad crediticia, pues ofrece una prima
+en el caso de default. Generalmente el costo de un CDS se asocia a una medida del riesgo
+de default: cuando el mercado espera mayores probabilidades de no pago, el costo del seguro
+sube.
+2.2.
+Curva de rendimientos
+La curva de rendimientos o yield curve es una representación gráfica de la yield to ma-
+turity de bonos emitidos por una misma entidad pero a diferentes plazos. De ella es posible
+inferir información sobre las expectativas de tasas de interés futuras de corto plazo.
+La yield curva ilustra una característica importante de los bonos: los retornos de estos ins-
+trumentos con diferente madurez, tienden a variar entre sí. Ello se puede ver dado que en
+una yield curve representada en un plano T −r, se tiene que esta puede ser creciente (rising),
+decreciente (inverted), plana (flat) o con forma de joroba (hump-shaped).
+Ante previsión e información perfecta, la yield que retornará un bono a dos periodos será
+(1 + y2)2 = (1 + r1)(1 + r2).
+En la práctica no existe ni previsión ni información perfecta; sin embargo, existe información
+sobre r1, pues se sabe que es igual a la yield a un periodo. Por tanto, se tiene que
+(1 + y2)2 = (1 + y1)(1 + r2)
+(1 + y2)2
+1 + y1
+= 1 + r2,
+28
+
+===== Apunte_Finanzas_I.pdf · página 30 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+es decir, a partir de las yields de bonos de diferente madurez, es posible extraer tasas de
+interés no observables a corto plazo.
+En esta línea, se llamará tasas spot a las tasas observables que retornará de un bono cero
+cupón con madurez en el periodo T; y tasas forward a las tasas futuras no observables
+de corto plazo que se encuentran implícitas en las tasas spot. La relación matemática entre
+ambas tasas es que las tasas spot corresponden al promedio geométrico de las tasas forward:
+(1 + yn) = [(1 + f1)(1 + f2)...(1 + fn)]
+1
+n .
+Por tanto, la tasa forward a un periodo entre el periodo n −1 y n está dada por
+1 + fn =
+(1 + yn)n
+(1 + yn−1)n−1.
+Bajo incertidumbre, las tasas forward no serán necesariamente las tasas de corto plazo fu-
+turas, pues diferentes eventos y sus correspondientes estados de la naturaleza las afectan.
+Por ello, en la práctica se entienden las tasas forward implícitas en las tasas spot como la
+expectativa de la tasa de corto plazo futura.
+En esta línea, los bonos de largo plazo involucran un riesgo: si la tasa corta efectiva cambia,
+ubicándose por debajo o por sobre su expectativa, el inversionista puede verse perjudicado.
+Por ello, los agentes demandan un premio por invertir en bonos de largo plazo, el que com-
+pensa a los inversionistas de largo plazo por la incentidumbre sobre los precios futuros.
+Actualmente existen dos teorías sobre la estructura temporal de tasas de interés. La pri-
+mera es la teoría de las expectativas, que postula que los bonos a diferentes plazos son
+sustitutos perfectos, siendo la tasa de corto plazo el promedio de la tasa corta actual y las
+expectativas de las tasas cortas futuras. Luego, las tasas forward representan un consenso de
+mercado respecto a las expectativas de tasas cortas futuras.
+La segunda es la teoría del premio por liquidez, que afirma que los bonos a diferentes
+plazos son sustitutos impefectos, por lo que los inversionistas demandan un premio por el
+riesgo asociado a mantener bonos de largo plazo, llevando a que la yield curve tenga un sesgo
+al alza. Por tanto, las tasas forward contienen la expectativa de tasa futura y un premio por
+liquidez.
+La curva de rendimientos históricamente ha servido como un buen predictor de recesiones a
+nivel global: académicos afirman que una yield curve invertida, es un indicador de recesión,
+pues apunta a que las tasas serán altas en el presente, pero bajas en el futuro.
+29
+
+===== Apunte_Finanzas_I.pdf · página 31 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+2.3.
+Riesgo de tasa de interés
+Además del riesgo de default, los bonos se enfrentan al riesgo de tasa de interés, el cual se
+relaciona con que los cambios en la tasa de interés del mercado llevan a descontar los flujos
+de los bonos en mayor o menor medida, generando variaciones en el precio y rentabilidad del
+bono.
+Como se discutió anteriormente, existe una relación negativa entre el precio del bono y su
+yield: un aumento en la yield to maturity produce una caída en el precio del bono. Además,
+los precios de los bonos de largo plazo tienden a ser más sensibles que los precios de bonos
+de corto plazo; y a menor yield inicial, existe una mayor sensibilidad del precio ante cambios
+en la tasa de interés.
+La medida tradicional del riesgo de tasa de interés de un bono es la duración, que corres-
+ponde a la madurez ajustada por el timing de los flujos de caja. Ella se calcula como el
+promedio ponderado del tiempo restante hasta que cada pago sea recibido con ponderadores
+proporionales al valor presente del pago. La duración es siempre menor a la madurez, salvo
+en el caso de los bonos cero cupón.
+El cálculo de la duración está dado por
+D =
+T
+X
+t=1
+t ·
+CFt
+(1 + y)t · 1
+PB
+,
+donde D es la duración, CFt es el flujo de caja en el periodo t, y es la tasa yield vigente y PB es
+el precio del bono. Tradicionalmente se habla de ponderador o de peso del flujo para referirse
+al factor
+CFt
+(1+y)t·PB , es decir, al cociente entre el flujo de caja en el periodo t y el precio del bono.
+Existe una relación proporcional entre el cambio en el precio y la duración, dada por
+∆P
+P
+= −D
+"∆(1 + y)
+(1 + y)
+#
+,
+es decir, el cambio porcentual en el precio del bono es igual al inverso de la duración ponde-
+rado por el cambio porcentual en la yield.
+En muchos casos, se utiliza la duración modificada, definida como D∗≡
+D
+1+y, la que posee
+una relación análoga con el cambio en el precio:
+∆P
+P
+= −D∗∆y.
+Existen cinco reglas que se desprenden directamente de la definición de duración:
+1. La duración de un bono cero cupón es igual a su madurez.
+30
+
+===== Apunte_Finanzas_I.pdf · página 32 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+2. Manteniendo la madurez constante, la duración de un bono es mayor cuando la tasa
+cupón es baja.
+3. Manteniendo la tasa cupón constante, la duración de un bono generalmente aumenta
+con la madurez.
+4. Mantienendo todo lo demás constante, la duración de un bono es mayor cuando la yield
+to maturity es baja.
+5. La duración de una perpertuidad está dada por D = 1+y
+y .
+La relación entre el precio de un bono y su yield no es una relación lineal y, por lo tanto,
+la duración no es una buena aproximación para el precio ante grandes cambios en la yield
+de un bono. En esta línea, existe la aproximación por convexidad, la cual le agrega un
+componente no lineal a la duración con tal de predecir el cambio en el precio del bono más
+precisamente. En esta línea, la convexidad está definida como
+Convexidad =
+1
+P(1 + y)2
+T
+X
+t=1
+CFt
+(1 + y)t(t2 + t).
+Ahora bien, la aproximación por convexidad está dada por
+∆P
+P
+= −D∗∆y + Convexidad
+2
+· (∆y)2 .
+31
+
+===== Apunte_Finanzas_I.pdf · página 33 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+3.
+Opciones Financieras
+Para comprender qué son las opciones financieras y su utilidad, es necesario conocer qué son
+los derivados financieros.
+Los derivados financieros son activos cuyo valor depende del precio de otro activo, el cual
+es conocido como activo subyacente. Estos pueden ser utilizados para cobertura de riesgo
+o para especular y se transan en mercados especializados u over the counter (OTC).
+Las opciones financieras corresponden a contratos que entregan el derecho a vender o
+comprar un activo en un determinado plazo y a un determinado precio. Su nombre alude a
+que estos contratos pueden ser ejercidos o no, dependiendo del precio del activo subyacente,
+entregándole una opción al tenedor del contrato.
+Una opción call entrega el derecho a comprar un activo a su tenedor a un precio de ejercio
+o precio strike antes de una fecha de expiración. Esta opción se ejercerá cuando se cumpla
+que el valor de mercado del activo subyacente sea mayor al precio strike.
+Una opción put entrega el derecho a vender un activo a su tenedor a un precio strike antes
+de una fecha de expiración. Esta opción se ejerce en caso de que el valor de mercado del
+activo subyacente sea menor que el precio de ejercicio.
+El precio de compra de una opción se denomina premio o premium y es el ingreso que
+reciben los vendedores o escritores de opciones. Si el tenedor de la opción ejerce esta, quien
+vendió la opción deberá entregar o recibir el respectivo activo subyacente.
+Para simplificar la notación, el precio de mercado de una opción se denotará por ST, el precio
+strike se denotará por X y la fecha de expiración se denotará por T.
+Cuando ejercer la opción generá un beneficio para su tenedor, se habla de una situación in
+the money, lo que ocurre para una call cuando ST > X, y para una put cuando ST < X.
+Cuando ejercer la opción no genera beneficio para su tenedor, se habla de una situación out
+of the money, lo que sucede para una call cuando ST < X, y para una put cuando ST > X.
+En cambio, cuando ST = X, se habla de una situación at the money.
+Existen dos categorías de opciones. Las opciones americanas se caracterizan por poder ser
+ejercidas en cualquier momento antes de la fecha de expiración o madurez. Las opciones
+europeas, en cambio, solo pueden ser ejercidas en la fecha de expiración. Por simplicidad, a
+continuación únicamente se hablará de las opciones europeas.
+El activo subyacente de una opción pueden ser acciones, índices accionarios, futuros, tipo de
+cambio o tasas de interés.
+32
+
+===== Apunte_Finanzas_I.pdf · página 34 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+¿Cuál es el beneficio al expirar de una call? El pago que recibe el tenedor de una call está
+dado por la función
+Payoff =
+(
+ST −X
+si
+ST > X
+0
+si
+ST ≤X.
+Luego, el beneficio del tenedor está dado por
+π =
+(
+ST −X −Premium
+si
+ST > X
+−Premium
+si
+ST ≤X.
+Los pagos y el beneficio del tenedor de la call se encuentra representado en la figura 13.
+Por otro lado, el vendedor de una call tiene pagos de la forma
+Payoff =
+(
+X −ST
+si
+ST > X
+0
+si
+ST ≤X.
+Por tanto, su beneficio estará dado por
+(
+X −ST + Premium
+si
+ST > X
+Premium
+si
+ST ≤X.
+Los pagos y el beneficio del vendedor de la call se encuentra representado en la figura 14.
+¿Cuál es el beneficio al expirar de una put? El pago que recibe el tenedor de una put está
+dado por la función
+Payoff =
+(
+0
+si
+ST ≥X
+X −ST
+si
+ST < X.
+Luego, el beneficio del tener está dado por
+π =
+(
+−Premium
+si
+ST ≥X
+X −ST −Premium
+si
+ST < X.
+Los pagos y el beneficio del tener está representado en la figura 15.
+Por otro lado, el vendedor de la put tiene pagos dados por
+Payoff =
+(
+0
+si
+ST ≥X
+ST −X
+si
+ST < X.
+Por ello, su beneficio estará dado por
+π =
+(
+Premium
+si
+ST ≥X
+ST −X + Premium
+si
+ST < X.
+33
+
+===== Apunte_Finanzas_I.pdf · página 35 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+ST
+$
+Payoff
+X
+π
+Premium
+Figura 13: Pagos y beneficios para un tenedor de una call.
+ST
+$
+Payoff
+X
+π
+Premium
+Figura 14: Pagos y beneficios para un vendedor de una call.
+34
+
+===== Apunte_Finanzas_I.pdf · página 36 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+ST
+$
+Payoff
+X
+π
+Premium
+Figura 15: Pagos y beneficios para un tenedor de una put.
+ST
+$
+Payoff
+X
+π
+Premium
+Figura 16: Pagos y beneficios para un vendedor de una put.
+35
+
+===== Apunte_Finanzas_I.pdf · página 37 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+3.1.
+Estrategias con opciones
+Como se mencionó previamente, las opciones y los derivados financieros en general pueden
+ser utilizados como cobertura de riesgo o como activos especulativos. En esta subsección se
+analizan cinco estrategias de inversión que involucran opciones.
+Put Protectora
+La estrategia de put protectora o protective put consiste en la compra de un portafolio
+y una put que tenga como activos subyacentes a los activos que componen el portafolio. Tal
+estrategia permite reducir el riesgo del portafolio, ya que entrega la posibilidad de vender el
+portafolio a un precio mínimo (el precio strike de la put) ante caídas en su precio de mercado,
+generando un límite a las pérdidas para el inversionista.
+En otras palabras, en esta estrategia, se utiliza una put como un seguro contra caídas en el
+precio del portafolio, siendo el costo del seguro el premium de la put.
+Los pagos asociados a esta estrategia están dados por la suma de la función de pagos de una
+put tradicional y de los pagos por la inversión en un portafolio:
+Payoff =
+(
+ST + (X −ST)
+=
+X
+si
+ST ≤X
+ST + 0
+=
+ST
+si
+ST > X.
+Luego, los beneficios asociados a esta estrategia están dados por
+π =
+(
+ST + (X −ST) −P
+=
+X −P
+si
+ST ≤X
+ST + 0 −P
+=
+ST −P
+si
+ST > X.
+Covered Call
+La estrategia call cubierta o covered call consiste en comprar un portafolio y vender una
+call sobre los activos que componen este último. Ello implica renunciar a una potencial ga-
+nancia por un alza en el precio del portafolio por sobre X a cambio de un premium inicial.
+En otras palabras, tal estrategia obliga al inversionista a vender el portafolio si su precio
+sobrepasa el valor X, imponiendo autodisciplina.
+Los pagos asociados a esta estrategia están dados por la suma de la función de pagos de una
+call tradicional y de los pagos por la inversión en un portafolio:
+Payoff =
+(
+ST + 0
+=
+ST
+si
+ST ≤X
+ST + X −ST
+=
+X
+si
+ST > X.
+36
+
+===== Apunte_Finanzas_I.pdf · página 38 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+Los beneficios asociados a esta estrategia están dados por la función de payoff más el premium
+de la call y menos el precio inicial del portafolio S0:
+π =
+(
+ST + 0 + C −S0
+=
+ST −S0 + C
+si
+ST ≤X
+ST + X −ST + C −S0
+=
+X −S0 + C
+si
+ST > X.
+Straddle
+La estrategia de straddle consiste en comprar una call y una put con el mismo precio de
+ejercicio y madurez para el mismo activo subyacente. Esta inversión es una apuesta sobre
+la volatilidad del activo subyacente, pues se requiere que el cambio en el precio del activo,
+independiente de su dirección, sea importante en términos de magnitud.
+Los pagos asociados a esta estrategia están dados por la suma de la función de pagos de una
+call y una put:
+Payoff =
+(
+0 + X −ST
+=
+X −ST
+si
+ST ≤X
+ST −X + 0
+=
+ST −X
+si
+ST > X.
+El beneficio de esta inversión está dado por la suma de la función payoff menos el costo de
+las opciones:
+π =
+(
+0 + X −ST −C −P
+=
+X −ST −C −P
+si
+ST ≤X
+ST −X + 0 −C −P
+=
+ST −X −C −P
+si
+ST > X.
+Spreads
+La estrategia de spread es una combinación de dos o más calls o puts sobre el mismo activo
+subyacente con diferentes precios strike o tiempo de expiración, donde algunas se compran y
+otras se venden. Un bullish spread es una forma de generar rentabilidad cuando el precio de
+una acción sube, mientras que un bear spread permite generar rentabilidad cuando el precio
+baja.
+Los pagos asociados a un bull spread con calls está dado por
+Payoff =
+
+
+
+
+
+0 + 0
+=
+0
+si
+ST ≤X1
+ST −X1 + 0
+=
+ST −X1
+si
+X1 < ST ≤X2
+ST −X1 −ST + X2
+=
+X2 −X1
+si
+ST > X2
+Luego, los beneficios de esta estrategia será
+π =
+
+
+
+
+
+0 + 0 −C1 + C2
+=
+C2 −C1
+si
+ST ≤X1
+ST −X1 + 0 + C2 −C1
+=
+ST −X1 + C2 −C1
+si
+X1 < ST ≤X2
+ST −X1 −ST + X2 + C2 −C1
+=
+X2 −X1 + C2 −C1
+si
+ST > X2
+37
+
+===== Apunte_Finanzas_I.pdf · página 39 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+Collars
+Una estrategia collar consiste en comprar una put protectora para limitar el riesgo de caída
+de una posición, y financiar la compra de esta put escribiendo una covered call. Esta inversión
+apuesta por que el valor de un portafolio se mantendrá entre dos límites.
+3.2.
+Paridad Put-Call
+La paridad put-call establece que en equilibrio, se debe cumplir que un portafolio formado
+por una call y un bono cueste lo mismo que un portafolio con una acción y una put. Más
+formalmente, se debe cumplir que
+C +
+X
+(1 + rf)T = S0 + P.
+Esta condición apunta a que no existan oportunidades de arbitraje: en caso de que alguno
+de los dos lados sea mayor que el otro, existirá la posibilidad de que un inversionista pueda
+generar flujos sin costo alguno.
+Cuando C +
+X
+(1+rf)T > S0 + P, entonces se debe llevar a cabo una estrategia de la forma
+1. Vender (escribir) una call.
+2. Endeudarse (vender un bono) en un monto Xe−rT.
+3. Comprar una put.
+4. Comprar la acción.
+En cambio, cuando C +
+X
+(1+rf)T < S0 + P, se debe llevar a cabo una estrategia de la forma
+1. Vender (escribir) una put.
+2. Vender en corto la acción (futuro).
+3. Comprar una call.
+4. Depositar en el banco un monto Xe−rT.
+3.3.
+Valoración de Opciones
+De la discusión anterior es posible afirmar que el precio de una call tiene diferentes determi-
+nantes. Por un lado, existirá una relación positiva del precio de la call con el precio del activo
+subyacente, con la volatilidad, con el tiempo de expiración y con la tasa libre de riesgo. Por
+otro, existirá una relación negativa entre el precio de la call con el precio de ejercicio y con
+38
+
+===== Apunte_Finanzas_I.pdf · página 40 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+los dividendos que pague el activo subyacente.
+Lo anterior se puede entender utilizando que los beneficios que genera una call estarán dados
+por
+S0 −
+X
+(1 + rf)T ≈ST −X
+(1 + rf)T .
+El modelo de valoración de opciones más utilizado para determinar el precio de una call es
+el Modelo Black-Scholes. Este implica que dado su precio de ejercicio y su madurez, el
+precio de una call viene dado por
+C0
+=
+S0N(d1) −Xe−rTN(d2)
+donde
+d1
+=
+ln(
+S0
+X )+
+
+r+ σ2
+2
+
+T
+σT
+1
+2
+,
+d2
+=
+d1 −σT
+1
+2,
+y N(·) es la función de probabilidad cumulativa de una normal estándar.
+Para el caso de una put, su precio vendrá dado por
+P = Xe−rT(1 −N(d2)) −S0(1 −N(d1)).
+El modelo Black-Scholes que el precio actual del activo subyacente (S0) está ajustado por
+dividendos. Sin embargo, en caso de tener que el precio del activo no está ajustado, es
+necesario corregir el precio del activo por el valor presente de sus dividendos, esto es,
+˜S0 = S0 −V P(d).
+Utilizando el modelo Black-Scholes y el precio de mercado de la opción es posible calcular
+la volatilidad de una acción o un índice. En esta línea, se dice que se puede llegar a la
+volatilidad implícita de una acción mediante el modelo Black-Scholes. Un índice conocido
+que utiliza este método es el VIX: un índice que calcula la volatilidad en base al precio de
+puts sobre el S&P500 y el precio de un portafolio representativo del índice.
+39
+
+===== Apunte_Finanzas_I.pdf · página 41 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+4.
+Futuros, Forwards y Swaps
+Otra clase de derivados financieros diferentes a las opciones corresponden a los forward, fu-
+turos y swaps.
+Un forward es un acuerdo de entrega futura de un activo a un precio acordado hoy y un
+futuro es un contrato formal que establece la obligación de entregar o enviar en el futuro un
+activo a un precio acordado hoy.
+Los forwards y los futuros son similares pero presentan ciertas diferencias: los futuros pueden
+transarse con mayor facilidad en el mercado secundario y, por lo tanto, son más líquidos;
+los futuros tienen un precio de mercado, pues son transados en mercados especializados; los
+futuros tienen unidades estandarizadas en los contratos; y los futuros generalmente tienen
+un intermediario (cleringhouse) que garantiza el pago.
+El precio futuro es el precio del activo subyacente que es establecido hoy, pero con un in-
+tercambio que se producirá en una fecha futura, por lo que no existe intercambio de efectivo
+en el presente. El contrato futuro especifica la cantidad y calidad del activo subyacente, así
+como las condiciones de entrega.
+Se habla de posición larga para referirse a un acuerdo de compra que establece el compro-
+miso de comprar el activo subyacente en la fecha de envío. Los beneficios de una posición
+larga corresponden a PT −F0, por lo que son crecientes en el precio spot a la madurez.
+Como contraparte, se habla de posición corta para referirse a un acuerdo de venta que es-
+tablece el compromiso de vender el activo en la fecha de envío. Los beneficios de una posición
+corta son F0 −PT, por lo que son decrecientes en el precio spot a la madurez.
+Los contratos futuros se transan sobre muchos activos, que van desde commodites mineros y
+agrícolas hasta tipos de cambio, tasas de interés y equities.
+Generalmente se hace la distinción entre dos estrategias de trading con contratos futuros.
+Por un lado está la especulación, la cual apunta a apostar que el precio subirá (long) o que
+el precio caerá (short). Por otro lado, se encuentra la cobertura o hedging, que consiste en
+reducir el riesgo de un activo mediante un contrato futuro: se habla de short hedge cuando se
+protege de una caída en el precio del activo y de long hedge cuando se protege de un aumento
+del precio.
+La relación entre precios spot y precios futuros se resume en el teorema de paridad de
+precios spot-futuro, el cual establece que comprar un activo hoy y mantenerlo debe ser
+equivalente en términos de costo a tomar una posición larga en futuros de un mismo activo.
+40
+
+===== Apunte_Finanzas_I.pdf · página 42 =====
+Agustín Farías Lobo
+Universidad de Chile
+Finanzas I
+Primavera 2022
+Más formalmente, el teorema establece que
+F0 + D −S0
+S0
+= rf =⇒F0 = S0(1 + rf −d),
+donde D son los dividendos del activo y D
+S0 ≡d.
+Cuando la paridad de precios spot-futuro no se cumple, existen alternativas de arbitraje:
+cuando el precio futuro es muy alto, es conveniente vender un futuro y comprar el activo
+subyacente con un préstamo a la tasa libre de riesgo; en cambio, cuando el precio futuro es
+bajo, conviene comprar el futuro, realizar una venta corta del activo y reinvertir el dinero de
+la venta a la tasa libre de riesgo.
+Los precios futuros también cumple con la paridad de spreads: si T1 < T2, entonces el
+precio futuro con madurez T2 será una función del precio futuro con madurez T1 de la forma
+F(T2) = F(T1)(1 + rf −d)T2−T1 = S0(1 + rf −d)T1(1 + rf −d)T2−T1.
+Los precios futuros del tipo de cambio cumplen con el teorema de paridad de tasas de
+interés o de paridad cubierta de tasas de interés, que exige que el precio futuro del
+tipo de cambio deberá ser igual al tipo de cambio spot ponderado con el diferencial entre las
+tasas de interés locales y extranjeras:
+F0 = E0
+ 1 + r
+1 + r∗
+
+⇐⇒(1 + r∗)F0
+E0
+= 1 + r.
+Los swaps corresponden a contratos forward multiperiodos, es decir, a acuerdos de inter-
+cambio en varias fechas futuras con un precio fijo para cada una de estas. Los swaps más
+comunes son los swaps de tasas de interés, de tipo de cambio y de riesgo de crédito (credit
+default).
+El pago de un swap es fijo; ello lo diferencia en la práctica a comprar varios futuros en
+diferentes tiempos. En esta línea, el precio del swap se relaciona con el precio de un futuro
+según la siguiente igualdad:
+F1
+1 + y1
++
+F2
+(1 + y2)2 =
+F
+1 + y1
++
+F
+(1 + y2)2.
+41

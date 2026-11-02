@@ -1,0 +1,296 @@
+===== Algunas pruebas para practicar/Solemne/Solemne2025_Respuesta.pdf · página 1 =====
+Pregunta 1: Comentes (60 puntos) 
+1a) Un gerente de portafolio defiende su estrategia, y argumenta que su fondo siempre busca sólo los activos 
+con mayor retorno esperado para maximizar las ganancias. Comente. (20 puntos) 
+1b)  Considere la estructura de tasas cero cupón de una empresa: en general, las tasas de corto plazo son 
+menores que las de largo plazo. Sin embargo, no siempre es así. Entregue un ejemplo de una situación en la 
+que las tasas cero cupón de corto plazo de una empresa sean mayores que las de largo plazo. (20 puntos) 
+1c)  Como sabemos los mercados son eficientes, al menos en su forma semi-fuerte, por lo que los precios 
+actuales de los activos financieros reflejan toda la información pública disponible (presente y pasada). Este 
+tipo de eficiencia de mercado se lograría porque el regulador del mercado financiero interviene 
+constantemente, ajustando precios para generar eficiencia y estabilidad. Por lo tanto, no sería posible utilizar 
+modelos econométricos basados en datos históricos de precios para predecir los movimientos futuros de los 
+activos. Comente. (20 puntos) 
+ 
+Pregunta 2: CAPM (60 puntos) 
+Se pide analizar el desempeño histórico de dos fondos de inversión, el Fondo Águila y el Fondo León, en 
+comparación con el CAPM. La tasa libre de riesgo es 3% (base anual). La siguiente tabla resume el desempeño 
+histórico de estos dos fondos:  
+Activo 
+Retorno 
+Promedio 
+Histórico (base anual) 
+Desv. Estándar Histórica 
+(base anual) 
+Covarianza 
+de 
+los 
+retornos de los fondos 
+con 
+el 
+portafolio 
+mercado: Cov(  ,   ) 
+Fondo Águila 
+11% 
+18% 
+0.01728 
+Fondo León 
+9.0% 
+10% 
+0.00864 
+Portafolio de Mercado 
+10.0% 
+12% 
+ 
+2a) Determine los betas de ambos fondos, y explique qué indica cada beta con respecto de su exposición al 
+riesgo sistemático del portafolio de mercado. (30 puntos) 
+2b) Calcule el alfa de Jensen de cada fondo. Explique qué mide el alfa y qué implicancias tiene para la gestión 
+del Fondo Águila y del Fondo León. (30 puntos) 
+ 
+ 
+Pregunta 3: APT (60 puntos) 
+Suponga un modelo APT de dos factores. La tasa libre de riesgo es       (base anual). Las primas por  
+riesgo de los factores son       y      . Considere un activo con las siguientes características: 
+ 
+     
+    
+Activo 
+0.6 
+0.4 
+3a) Calcule el retorno esperado teórico del activo según el APT. (30 puntos) 
+3b) Suponga que el retorno promedio histórico observado del activo es 5% anual. Calcule el alfa del activo 
+bajo el modelo APT de dos factores. Explique qué mide el alfa obtenido y qué haría usted en términos de 
+inversión. (30 puntos) 
+ 
+ 
+Pregunta 4: Bonos (60 puntos) 
+Considere dos bonos con cupón. El primero (Bono I) tiene un valor nominal (su valor cara) de $100 y paga 
+cupones anuales de 6% del nominal (de su valor cara) durante 7 años; actualmente se transa a $95. El 
+segundo (Bono II) también tiene un valor nominal (su valor cara) de $100, paga cupones anuales de 3% del 
+nominal (de su valor cara) durante 7 años y actualmente se transa a $90. Con esta información, calcule la tasa 
+cero cupón a 7 años. Exprese la tasa cero cupón a 7 años como una tasa con capitalización continua (base 
+anual). 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne2025_Respuesta.pdf · página 2 =====
+Respuestas 
+Pregunta 1 (60 puntos) 
+1a) (20 puntos) 
+En inversiones no solo es importante considerar aumentar retornos, sino que tambien es igual de importante 
+reducir riesgos. En el caso de este gerente, la falta de diversificación lo expone a un riesgo que podría ser fatal 
+para el portafolio. La verdadera habilidad de un gestor de portafolios no radica en apostar por el activo con el 
+mayor retorno, sino en construir un portafolio eficiente que gestione el riesgo de manera inteligente y que 
+maximice los retornos para el nivel correcto de riesgo asumido. 
+ 
+1b) (20 puntos) 
+Cuando hay un shock de liquidez en el corto plazo. Por ejemplo, una firma puede ser solvente en el largo 
+plazo, pero ilíquida en el corto plazo tras un shock que implica gastos inmediatos (p. ej., un incendio en una 
+planta, de modo que gran parte de su liquidez se destina a la reconstrucción). 
+ 
+Aunque la empresa sea solvente en el largo plazo porque posee activos suficientes (tales como terrenos, 
+maquinaria) e indemnizaciones futuras del seguro (por incendio u otro evento similar), hoy su liquidez es 
+muy baja y podría enfrentar pagos de deuda cercanos (vencimientos de corto plazo). Esto eleva el riesgo de 
+default (incumplimiento) a corto plazo, mientras que el riesgo de largo plazo puede ser bajo si se espera 
+reposición de liquidez (pago de seguros, recuperación operativa, nuevas líneas de crédito o aportes de 
+capital). El resultado típico es una curva cero cupón corporativa invertida: tasas de corto plazo > tasas de 
+largo. 
+ 
+1c) (20 puntos) 
+Esta afirmación es falsa. 
+ 
+La eficiencia de los mercados, en su forma semi-fuerte, NO se logra debido a que el regulador del mercado 
+financiero constantemente interviene el mercado ajustando precios para generar eficiencia de mercado y 
+así generar estabilidad financiera. 
+ 
+La eficiencia de los mercados, en su forma semi-fuerte, se logra porque, si "existiera" información útil en 
+datos históricos de precios para predecir futuros precios, los agentes rápidamente la usarían para ganar 
+dinero. Por lo tanto, cuando los agentes transan el activo (para explotar esa oportunidad de 
+predictibilidad), dicha información se reflejaría en el precio transado (y así, nuevamente se alcanzaría 
+dicha eficiencia de mercado). 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne2025_Respuesta.pdf · página 3 =====
+ 
+Pregunta 2(60 puntos) 
+ 
+2a) 
+El beta es una medida del riesgo sistemático de un activo en relación con el mercado. Se calcula como la 
+covarianza del activo con el mercado dividida por la varianza del mercado: 
+ 
+             
+   
+ 
+La varianza del mercado es   
+  = (12%)² = 0.12² = 0.0144. 
+ 
+ 
+Fondo Águila: 
+       = 0.01728 / 0.0144 = 1.2. 
+Interpretación: un beta de 1.2 indica que el Fondo Águila tiene un riesgo sistemático mayor que el 
+portafolio de mercado.  
+ 
+ 
+Fondo León: 
+      = 0.00864 / 0.0144 = 0.6. 
+Interpretación: un beta de 0.6 indica que el Fondo León tiene un riesgo sistemático menor que el 
+portafolio de mercado.  
+ 
+2b) 
+El Alpha de Jensen mide la diferencia entre el retorno observado de un portafolio y el retorno esperado según 
+el CAPM: 
+                         
+ 
+ 
+Fondo Águila: 
+ 
+                                        
+ 
+ 
+Fondo León: 
+ 
+                                    
+ 
+ 
+Implicaciones para los Gestores:  
+ 
+- 
+Para el gestor del Fondo Águila, se obtuvo un alfa negativo, lo que indica que su retorno esperado es 
+inferior al que debería tener para el nivel de riesgo asumido. Para el inversor, es una señal de que el 
+fondo está destruyendo valor, o que rinde por debajo del CAPM. 
+ 
+- 
+El gestor del Fondo León demostró habilidad para generar valor (alfa positivo), superando el retorno 
+esperado para el nivel de riesgo asumido. Este fondo tiene un retorno anormal. Este resultado sugiere 
+que su estrategia de gestión es efectiva y que el fondo es una excelente opción de inversión. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne2025_Respuesta.pdf · página 4 =====
+ 
+Pregunta 3 (60 puntos) 
+ 
+3a) 
+                       
+ 
+Entonces 
+ 
+ 
+                                  
+ 
+ 
+ 
+3b) 
+ 
+ 
+                          
+ 
+ 
+Entonces 
+ 
+ 
+                                    
+ 
+ 
+El activo tiene un alfa positivo, superando el retorno esperado para el nivel de riesgo asumido (basados en el 
+modelo APT de 2 factores). Este activo tiene un retorno anormal. Este resultado sugiere que es una excelente 
+opción de inversión. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Solemne/Solemne2025_Respuesta.pdf · página 5 =====
+ 
+Pregunta 4 (60 puntos) 
+ 
+Bono I 
+                                               
+ 
+ 
+Bono II 
+                                               
+ 
+ 
+Construya un portafolio: comprar un Bono I y vender dos bonos II. En esa cartera la compra del Bono I 
+genera: 
+ 
+                                                   
+ 
+La compra de dos Bonos II, genera: 
+ 
+                                                
+ 
+En esa cartera, dado que se suman (3) y (4),  el lado izquierdo (donde están los cupones) se elimina varios de 
+ellos, quedando:  
+ 
+            
+ 
+ 
+Entonces : 
+ 
+     
+      
+     
+ 
+Por lo tanto : 
+ 
+             
+ 
+Asi,  
+          
+ 
+ 
+ 
+ 
+ 
+ 

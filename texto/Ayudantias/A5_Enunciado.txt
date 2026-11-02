@@ -1,0 +1,93 @@
+===== Ayudantias/A5_Enunciado.pdf · página 1 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Primavera 2026
+Ayudantía 5
+Profesor: Alejandro Bernales
+Ayudantes: Ayelen Sandoval, Tomás Rojas, Joaquín Arenas, Juan Correa Hevia, Luisa
+Rodríguez, Lucas Montiel1, Elizabeth Núñez y Carolina Morales.
+Comentes
+a) Un bono cero cupón no paga cupones. Por lo tanto, quien lo compra y lo mantiene
+hasta el vencimiento no obtiene rentabilidad alguna.
+b) Un depósito que ofrece 9,00 % anual con composición anual es mejor que uno que ofrece
+8,85 % anual con composición continua, ya que 9,00 % > 8,85 %.
+c) Una curva de tasas cero con pendiente positiva, obtenida de precios transados de bonos
+de gobierno, implica necesariamente que el mercado espera un aumento de las tasas
+cortas futuras.
+d) En general, las tasas cero de corto plazo de una empresa son menores que las de largo
+plazo. Sin embargo, no siempre es así. Entregue un ejemplo de una situación en la que
+las tasas cero de corto plazo de una empresa sean mayores que las de largo plazo.
+1
+2
+3
+4
+5
+4
+5
+6
+7
+Plazo al vencimiento (años)
+Tasa cero ( %)
+Curva normal
+Curva invertida
+e) La tasa cupón de un bono corresponde a la rentabilidad que obtiene quien lo compra.
+f) Un compañero me dijo que invertir en un bono (instrumento de renta fija) es igual que
+invertir en acciones (activos de renta variable).
+1lmontiel@fen.uchile.cl
+Página 1 de 3
+
+===== Ayudantias/A5_Enunciado.pdf · página 2 =====
+Finanzas I
+Ayudantía 5
+Universidad de Chile
+Facultad de Economía y Negocios
+Matemático I: Tasas de interés y convenciones
+En una economía, las tasas cero cupón, en sus versiones discreta y continua, son:
+r1
+r2
+r3
+r4
+Tasa discreta
+4,50 %
+?
+5,20 %
+?
+Tasa continua
+?
+4,80 %
+?
+5,35 %
+Las tasas están en base anual. Se pide:
+a) Complete la tabla, encontrando las cuatro tasas faltantes.
+b) Un banco le ofrece un depósito a 2 años con una tasa de 5,00 % anual y composición
+trimestral. ¿Le conviene frente a invertir a la tasa cero de 2 años?
+c) ¿Cuánto más acumula, en pesos, un inversionista que deposita $1.000.000 por 2 años
+en el banco en lugar de invertir a la tasa cero? Verifique el resultado usando las dos
+convenciones.
+Página 2 de 3
+
+===== Ayudantias/A5_Enunciado.pdf · página 3 =====
+Finanzas I
+Ayudantía 5
+Universidad de Chile
+Facultad de Economía y Negocios
+Matemático II: Tasa cero y valoración de un bono
+En el mercado se transan los siguientes bonos cero cupón, todos con valor cara de $100:
+Madurez (años)
+1
+2
+3
+4
+Precio
+$95,70
+$90,85
+$85,89
+$80,73
+a) Encuentre la tasa cero cupón de cada plazo. Exprésela como tasa con capitalización
+continua, base anual.
+b) Usando esas tasas, calcule el precio de un bono con cupones anuales de 5 % del valor
+cara, valor cara de $100 y madurez de 4 años.
+c) Compare el precio obtenido en b) con el del bono cero cupón a 4 años. ¿A qué corres-
+ponde la diferencia entre ambos?
+Página 3 de 3

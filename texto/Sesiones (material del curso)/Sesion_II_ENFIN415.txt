@@ -1,0 +1,3205 @@
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 1 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+F I N A N Z A S I — E N F I N 4 1 5
+Sesión II
+Alejandro Bernales
+Universidad de Chile
+C O N T E N I D O S D E L A S E S I Ó N
+I
+Mercados de Derivados
+Texto guía: J. Hull, Opciones, futuros y otros derivados.
+II
+Manejo de Riesgo
+Valor en Riesgo (VaR)
+Texto guía: P. Jorion, Valor en Riesgo: el nuevo referente para la 
+gestión del riesgo financiero.
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 2 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+F I N A N Z A S I — E N F I N 4 1 5
+Sesión II
+Alejandro Bernales
+Universidad de Chile
+M E R C A D O S D E D E R I VA D O S
+01
+Mecanismos de los mercados de opciones
+02
+Propiedades de las opciones sobre acciones
+03
+Estrategias de trading que involucran 
+opciones
+04
+Árboles binomiales
+05
+El modelo Black-Scholes-Merton
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 3 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+¿Qué es un derivado?
+•
+Un instrumento derivado es un contrato cuyo valor es derivado del valor de 
+otra cosa (con valor aleatorio), lo cual se llama el “subyacente”. 
+•
+El subyacente suele ser el precio de un activo financiero, el precio de una 
+materia prima, una tasa o un índice de mercado, pero no tiene que serlo (por 
+ejemplo, derivados meteorológicos).
+•
+Un instrumento derivado es un contrato entre dos partes que especifica 
+condiciones (por ejemplo: fechas, subyacente, etc.) bajo las cuales se realizan 
+pagos, o payoffs, entre las partes.
+Ejemplo 1:
+•
+Un seguro de viaje es un contrato entre usted y una compañía de seguros, el cual 
+especifica que la compañía cubrirá ciertos eventos (por ejemplo: accidentes, 
+problemas de viaje, etc.) por un período determinado, durante un viaje.
+– Subyacente: Gastos de viaje en caso de accidente.
+¡Los derivados están en todas partes!
+3
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 4 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Forward
+•
+Es un contrato para comprar (o vender) un activo en un momento futuro determinado 
+por un cierto precio F0 
+4
+Ganancia
+Precio del subyacente 
+en la madurez, ST
+F0
+Ganancia de una
+posición corta
+Ganancia de una
+posición larga
+F0
+En t=0:
+-El “valor del contrato” es: 
+CERO.
+- Es necesario fijar F0, lo que 
+se 
+conoce 
+como 
+“precio 
+forward”
+- El “precio forward F0” NO 
+es lo mismo que el “valor del 
+contrato”
+-¿Cuál es la magnitud de F0?
+En t=T
+En t=T
+Ganancia
+Precio del subyacente 
+en la madurez, ST
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 5 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Forward
+•
+¿Cuál es el precio de un forward F0?
+–
+Podemos usar el concepto de oportunidades de no arbitraje.
+•
+Arbitraje: Una estrategia de trading que aprovecha que dos o más valores están mal 
+valorados en relación entre sí.
+•
+¿Podemos ganar dinero mediante arbitraje? 
+–
+En caso de una respuesta positiva, todos podrían ser ricos.
+• Las oportunidades de arbitraje desaparecen rápido por la competencia de trades
+–
+Por lo tanto, se asume que las oportunidades de arbitraje no existen.
+5
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 6 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Forward
+•
+¿Cuál es el precio de un contrato forward F0?
+–
+Podemos usar el concepto de oportunidades de no arbitraje.
+•
+Considera los siguientes portafolios:
+• t = 0
+» Pedir prestado en S0 a la tasa libre de riesgo (rf): el valor es + S0
+» Comprar el activo a precio S0: el valor es  − S0
+» Entrar en un contrato forward corto para venderlo a F0 en el tiempo t =T: 
+el valor es 0.
+» Entonces, el portafolio tiene valor = 0
+• t = T
+» Vender el activo a precio F0
+» Reembolsar el préstamo: S0er·T
+» Entonces, el portafolio tiene valor = F0 − S0er·T
+» PERO, el valor del portafolio debería ser 0, ¡ya que no se puede 
+ganar dinero gratis!
+•
+Entonces: F0 − S0er·T = 0
+F0 = S0er·T
+6
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 7 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Contratos futuros
+•
+Similar al contrato forward.
+•
+Mientras que un contrato forward se negocia OTC, un contrato de futuros se 
+negocia en una bolsa.
+7
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 8 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Opciones
+•
+Una opción de compra (call) es una opción para comprar un activo determinado 
+en una fecha determinada y a un precio determinado (el precio de ejercicio).
+•
+Una opción de venta (put) es una opción para vender un determinado activo en 
+una fecha determinada por un precio determinado (el precio de ejercicio).
+•
+LOS CONTRATOS OTORGAN AL TENEDOR (EL QUE COMPRA LA 
+OPCION) EL DERECHO, PERO NO LA OBLIGACIÓN.
+–
+El que vende la opción sí tiene la obligación!!!
+•
+Terminología: 
+–
+La parte que ha acordado comprar tiene lo que se denomina una posición larga.
+–
+La parte que ha acordado vender tiene lo que se denomina una posición corta.
+•
+Por lo tanto, las posiciones en opciones son: 
+–
+Compra de call (Long call).
+–
+Compra de put (Long put).
+–
+Venta de call (Short call).
+–
+Venta de put (Short put).
+8
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 9 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+•
+Ganancia por comprar una opción call europea: precio de la opción = $5, precio de 
+ejercicio = $100, vida de la opción (madurez) = 2 meses.
+•
+Si se ejerce la opción call, compraré una acción a $100 (posibles ganancias).
+30
+20
+10
+0
+-5
+70
+80
+90
+100
+110
+120
+130
+Ganancia ($)
+Precio terminal de la 
+acción en 2 meses ($)
+9
+Call larga
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 10 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+-30
+-20
+-10
+0
+5
+70
+80
+90
+100
+110
+120
+130
+10
+Ganancia ($)
+Precio terminal de la 
+acción en 2 meses ($)
+•
+Beneficio por escribir (vender) una opción call europea: precio de la opción = $5, 
+precio de ejercicio = $100, vida útil de la opción (vencimiento o madurez) = 2 meses.
+•
+Se ejerce la opción de compra, venderé una acción a $100 (posibles pérdidas).
+Call corta
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 11 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+•
+Ganancia por comprar una opción put europea: precio de la opción = $7, precio de 
+ejercicio = $70, vida de la opción (madurez) = 2 meses.
+•
+Si la opción put es ejercida, venderé una acción a $70 (ganancias posibles).
+30
+20
+10
+0
+-7
+70
+60
+50
+40
+80
+90
+100
+Ganancia ($)
+Precio terminal 
+de la acción ($)
+11
+Put larga
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 12 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+•
+Ganancia por escribir (es decir, vender) una opción put europea: precio de la opción 
+= $7, precio de ejercicio = $70, vida de la opción (madurez) = 2 meses.
+•
+Si la opción put es ejercida, compraré una acción a $70 (pérdidas posibles).
+-30
+-20
+-10
+7
+0
+70
+60
+50
+40
+80
+90
+100
+Ganancia ($)
+Precio terminal de 
+la acción ($)
+12
+Put corta
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 13 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Especificación de Opciones Transadas en Bolsa
+•
+Activo subyacente.
+•
+Fecha de expiración.
+•
+Precio de ejercicio.
+•
+Europea o Americana.
+•
+Call o Put (clase de opción).
+13
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 14 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Opción Americana vs Opción Europea
+•
+Una opción americana puede ser ejercida en cualquier momento durante su vida.
+•
+Una opción europea puede ser ejercida solo al vencimiento.
+•
+Acciones.
+•
+Moneda extranjera.
+•
+Índices bursátiles.
+•
+Commodities (por ejemplo: oro, petróleo, cobre).
+•
+etc...
+•
+En general, las opciones involucran 100 activos (por ejemplo, una opción call está 
+escrita sobre 100 acciones de DELL).
+Activo subyacente (underlying asset)
+14
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 15 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Precios de las opciones de Intel 
+(12 de septiembre de 2006;  precio de la acción de Intel ese día = 19.56)
+Precio del 
+ejercicio
+Oct Call
+Ene Call
+Abr Call
+Oct Put
+Ene Put
+Abr Put
+15.00
+4.650
+4.950
+5.150
+0.025
+0.150
+0.275
+17.50
+2.300
+2.775
+3.150
+0.125
+0.475
+0.725
+20.00
+0.575
+1.175
+1.650
+0.875
+1.375
+1.700
+22.50
+0.075
+0.375
+0.725
+2.950
+3.100
+3.300
+25.00
+0.025
+0.125
+0.275
+5.450
+5.450
+5.450
+15
+Fuente: Chicago Board Options Exchange (CBOE)
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 16 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Terminología
+Moneyness (Relación del precio del activo subyacente con el precio de ejercicio, S/K):
+–
+At-the-money option.
+–
+In-the-money option.
+–
+Out-of-the-money option.
+Call larga: beneficio por comprar una opción call europea, precio de la opción = $5, 
+precio de ejercicio = $100, vida de la opción (vencimiento) = 2 meses.
+20
+10
+0
+-5
+70
+80
+90
+100
+110
+120
+130
+Ganancia ($)
+Precio terminal de la acción ($)
+At-the-money
+(al dinero)
+Out-of-the-money
+(fuera del dinero)
+In-the-money
+(en el dinero)
+16
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 17 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Dividendos y División de Acciones
+•
+Supón que posees N opciones con un precio de ejercicio de K:
+–
+Cuando hay una división de acciones de n-por-m,
+• el precio de ejercicio se reduce a mK/n
+• el número de opciones se incrementa a nN/m
+–
+Los dividendos en acciones: se manejan de manera similar a los desdoblamientos de 
+acciones.
+•
+Ejemplo: Considera una opción call para comprar 100 acciones por $20/acción. 
+¿Cómo deben ajustarse los términos?:
+–
+¿Para una división de acciones de 2-por-1?
+• El tenedor tiene el derecho a comprar 200 acciones por $10/acción.
+–
+¿Para un dividendo en acciones del 25%?
+• Esto es equivalente a un desdoblamiento de acciones de 5-por-4. El tenedor tiene el 
+derecho a comprar 125 acciones por $16/acción ( = 20 × 4 / 5 ).
+17
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 18 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Márgenes
+•
+Un margen es efectivo o valores comercializables depositados por un inversionista 
+con su corredor (bróker):
+–
+Lo tienen que hacer los que venden las opciones (call o put), ya que ellos sí tienen una 
+obligación.
+–
+Es para reducir el riesgo de incumplimiento (default).
+•
+El saldo en la cuenta de margen se ajusta en relación al precio de liquidación 
+(generalmente es el precio de cierre).
+•
+Los márgenes minimizan la posibilidad de una pérdida a través de un 
+incumplimiento en un contrato.
+18
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 19 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+•
+Los márgenes son requeridos cuando se venden opciones.
+•
+Cuando se escribe una opción desnuda, el margen es el mayor de:
+1 Un total del 100% de los ingresos de la venta más el 20% del precio de la acción 
+subyacente, menos el monto (si lo hay) por el cual la opción está fuera del dinero.
+2 Un total del 100% de los ingresos de la venta más el 10% del precio de la acción 
+subyacente.
+•
+Para otras estrategias de trading hay reglas especiales.
+19
+Márgenes
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 20 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+F I N A N Z A S I — E N F I N 4 1 5
+Sesión II
+Alejandro Bernales
+Universidad de Chile
+M E R C A D O S D E D E R I VA D O S
+01
+Mecanismos de los mercados de opciones
+02
+Propiedades de las opciones sobre 
+acciones
+03
+Estrategias de trading que involucran 
+opciones
+04
+Árboles binomiales
+05
+El modelo Black-Scholes-Merton
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 21 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Notación
+•
+ c : Precio de la opción call Europea.
+•
+ p : Precio de la opción put Europea.
+•
+ S0 : Precio de las acciones hoy.
+•
+ K : Precio del ejercicio.
+•
+ T : Vida de la opción.
+•
+ σ: 
+Volatilidad de las acciones.
+•
+ C : Precio de la opción call Americana.
+•
+ P : Precio de la opción put Americana.
+•
+ ST : Precio de las acciones al vencimiento de la acción.
+•
+ D : Valor actual de los dividendos durante la vida de la opción.
+•
+ r : 
+Tasa libre de riesgo para el venc. T con composición continua.
+21
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 22 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Opciones Americanas vs Europeas
+•
+Una opción americana vale al menos tanto como la opción europea correspondiente:
+ 
+ 
+ 
+C ≥ c
+  
+ 
+P ≥ p 
+22
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 23 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Tipos de traders
+• Arbitrajistas.
+• Coberturistas (hedgers).
+• Especuladores.
+23
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 24 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+•
+Arbitraje: Una estrategia comercial que aprovecha el hecho de que dos o más valores 
+tienen precios incorrectos (que no concuerdan entre sí).
+•
+¿Podemos ganar dinero a través del arbitraje?
+–
+En caso de una respuesta positiva, todos podrían ser ricos.
+• Las oportunidades de arbitraje desaparecen rápido por la competencia de trades
+–
+Por lo tanto, se asume que las oportunidades de arbitraje no existen.
+Oportunidades de arbitraje
+24
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 25 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+•
+Considera los siguientes dos portafolios:
+• Portfolio A: una opción call europea (c) más una cantidad de dinero igual a Ke –rT
+» El dinero, si se invierte a la tasa libre de riesgo, crecerá hasta K en T
+» La opción call en T valdrá: máx(ST − K , 0)
+» Por lo tanto, el portafolio A vale: máx(ST , K)
+• Portfolio B: una acción al precio actual S0
+» Por lo tanto, el portafolio B vale ST
+•
+Claramente, Portafolio A ≥ Portfolio B
+» Esto significa que c + Ke –rT ≥ S0
+» Por lo tanto: máx(S0 – Ke –rT , 0) ≤ c 
+•
+Una opción call europea le da al tenedor el derecho a comprar una acción de una 
+empresa por un cierto precio.
+» Por lo tanto, la opción nunca puede valer más que la acción.
+» En consecuencia: c ≤ S0
+Límite Inferior para el Precio de una Opción Call Europea: Sin Dividendos
+25
+Límite Superior para el Precio de una Opción Call Europea: Sin Dividendo
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 26 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Calls: ¿Una oportunidad de arbitraje?
+•
+Supongamos que: 
+ 
+c = 3  
+S0 = 20 
+ 
+ K = 18
+ 
+T = 1  
+r = 10%  
+ D = 0 
+•
+¿Existe una oportunidad de arbitraje?
+ 
+máx(20 −18e – 0.1, 0) ≤ c ≤  20
+ 
+máx(3.71 , 0) ≤ c ≤  20   claramente hay una oportunidad de arbitraje
+•
+Un arbitrajista puede vender en corto la acción y comprar la call para generar ingresos 
+en efectivo $20 − $3 = $17 
+–
+Este efectivo se invierte por un año a r: 17e0.1 = $18.79
+–
+En el tiempo T = 1, si el precio de la acción es mayor que $18, el arbitrajista ejercerá la 
+opción por $18, cerrará la posición corta, y obtendrá una ganancia de $18.79 − $18 = $0.79.
+–
+En el tiempo T = 1, si el precio de la acción es menor a $18, se compra la acción en el 
+mercado y se cierra la posición corta. El arbitrajista vuelve a obtener una ganancia. Por 
+ejemplo, si el precio es $17, la ganancia del arbitrajista es: $18.79 − $17 = $1.79
+máx(S0 –Ke –rT, 0) ≤ c ≤  S0
+No!!!
+Venta corta: Una transacción en la cual un inversionista toma prestado un 
+título, lo vende, y luego lo retorna en una fecha posterior al prestamista.
+26
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 27 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+•
+En el caso de la opción put, los límites son (los cuales se obtienen usando argumentos 
+similares a los usados para derivar los límites inferior y superior de la opción call):
+» máx(Ke –rT–S0, 0)  ≤  p ≤  Ke –rT
+•
+Supongamos que: 
+ 
+•
+¿Existe una oportunidad de arbitraje?
+ 
+máx(40e -0.05x0.5 – 37 , 0)  ≤  p ≤  40e -0.05x0.5
+ 
+máx(2.01 , 0)  ≤  p ≤  39.01 claramente hay una oportunidad de arbitraje
+•
+Un arbitrajista puede pedir prestado por 6 meses $38 para comprar una put ($1) y la 
+acción ($37):
+–
+Después de 6 meses, ella pagará: 38e 0.05x0.5 = $38.96
+–
+En el tiempo T = 0.5, si el precio de la acción es menor que $40, el arbitrajista ejercerá la 
+opción por $40, pagará el préstamo y obtendrá una ganancia de $40 – $38.96 = $1.04
+–
+En el tiempo T = 0.5, si el precio de la acción es mayor que $40, el arbitrajista vende la acción y 
+paga el préstamo, obteniendo una ganancia aún mayor. Por ejemplo, si el precio de la acción es 
+$42, la ganancia del arbitrajista es: $42 – $38.96 = $3.04
+Límite inferior y superior para precios de opciones Put europeas: S/dividendos
+27
+p = 1 
+S0 = 37 
+T = 0.5 (6 months) 
+r =5% 
+K = 40 
+D  = 0
+No!!!
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 28 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Paridad Put-Call: Sin dividendos
+•
+Considera los siguientes dos portafolios:
+• Portfolio A: una opción call europea (c) más una cantidad de dinero igual a Ke –rT
+» El dinero, si se invierte a la tasa libre de riesgo, crecerá a K en T.
+» La opción call en T valdrá: máx(ST – K , 0)
+» Por lo tanto, el portafolio A vale : máx (ST , K)
+• Portfolio B: opción put europea sobre la acción + la acción
+» La opción put en T valdrá : máx (K- ST,0)
+» Por lo tanto, el portafolio B vale: máx (ST , K)
+•
+Ambos valen máx(ST , K ) en la madurez de las opciones.
+•
+Por lo tanto, deben valer lo mismo hoy (Recuerda: ¡¡¡No hay oportunidades de 
+arbitraje!!!) Esto significa que :
+ 
+ 
+ 
+c + Ke -rT = p + S0 
+28
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 29 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+•
+Supón que: 
+     
+ 
+c = 3                      S0= 31 
+ 
+T = 0.25                  r = 10% 
+ 
+K = 30 
+            D = 0
+•
+¿Cuáles son las posibilidades de arbitraje cuando p = 2.25 ?
+ 
+c + Ke -rT = p + S0 
+ 
+3 + 30e -0.1·0.25 = p + 31 → 32.26 = p + 31 → 1.26 = p 
+Claramente hay una oportunidad de arbitraje
+•
+La estrategia del arbitrajista: 
+–
+Comprar una call por $3 + Vender una put por $2.25 + Vender en corto la acción por $31:            
+− 3 + 2.25 + 31 = $30.25
+–
+Invertir los $30,25 a la tasa libre de riesgo por 3 meses: 30.25e 0.1·0.25 = $31.02
+–
+Si el precio de la acción es mayor que $30 después de 3 meses, se ejerce una call.
+–
+Si el precio de la acción es menor que $30 después de 3 meses, se ejerce una put.
+–
+En ambos casos, el arbitrajista termina comprando la acción por $30, lo que se usa para cerrar 
+la posición corta.
+–
+La ganancia es: $31.02 − $30 = $1.02
+c + Ke -rT = p + S0 
+29
+Paridad Put-Call: Sin dividendos
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 30 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+F I N A N Z A S I — E N F I N 4 1 5
+Sesión II
+Alejandro Bernales
+Universidad de Chile
+M E R C A D O S D E D E R I VA D O S
+01
+Mecanismos de los mercados de opciones
+02
+Propiedades de las opciones sobre acciones
+03
+Estrategias de trading que involucran 
+opciones
+04
+Árboles binomiales
+05
+El modelo Black-Scholes-Merton
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 31 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Tipos de Estrategias de Trading con Opciones
+•
+Tomar una posición en la opción y en el subyacente.
+•
+Tomar una posición en 2 o más opciones del mismo tipo (un spread).
+•
+Combinación: Tomar una posición en una mezcla de calls y puts (una 
+combinación).
+31
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 32 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Tipos de traders
+• Arbitrajistas.
+• Coberturistas (hedgers).
+• Especuladores.
+32
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 33 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Posiciones en una Opción y en el Subyacente
+•
+Supón que estás trabajando en el departamento financiero de Kennecott Copper Mine 
+(que es uno de los principales productores de cobre en EE.UU.), y estás preocupado por 
+el precio del cobre en los próximos meses.
+•
+Estás preocupado porque leíste en las noticias que CODELCO (en Chile), el principal 
+productor de cobre del mundo anunció que aumentará la producción de cobre el próximo 
+año, lo que afectará el precio del cobre en todos los mercados.
+–
+Es decir: alta oferta → bajo precio. 
+•
+¿Quieres un seguro?
+• ¿Qué tal comprar una put?
+Profit
+ST
+K
+Posición larga en el subyacente (cobre)
+Put larga con el precio del cobre como subyacente
+¡¡¡Tienes tu seguro!!!
+33
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 34 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Ganancia
+ST
+K
+Ganancia
+ST
+K
+Ganancia
+ST
+K
+Ganancia
+ST
+K
+(a)
+(b)
+(c)
+(d)
+Subyacente largo
+Subyacente corto
+Subyacente corto
+Subyacente largo
+Call corta
+Put larga
+Put corta
+Call larga
+34
+Posiciones en una Opción y en el Subyacente
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 35 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Tipos de traders
+• Arbitrajistas.
+• Coberturistas (hedgers).
+• Especuladores.
+35
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 36 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Bull Spread Usando Calls
+K1
+Ganancia
+ST
+•
+Supón que crees que una acción se va a apreciar.
+•
+Podrías comprar una call (opción de compra), pero tienes que pagar a1.
+•
+¿Qué pasa si quieres pagar menos que eso? ¡Pero entonces tendrías que reducir tu 
+ganancia posible!
+a1
+Call larga
+36
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 37 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+K1
+K2
+Ganancia
+ST
+•
+¿Qué tal un bull spread usando una call?
+•
+Un bull spread implica comprar una opción call con un cierto precio de ejercicio (K1) y 
+vender una opción call escrita sobre la misma acción pero con un precio de ejercicio más 
+alto (K2) .
+•
+El costo de esta estrategia es a3 <  a1 pero tu ganancia potencial también es menor.
+a1
+a2
+a3
+Call larga
+Call corta
+37
+Bull Spread Usando Calls
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 38 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+K1
+K2
+Profit
+ST
+Put larga
+Put corta
+38
+Bull Spread Usando Puts
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 39 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+K1
+K2
+Ganancia
+ST
+•
+¿Qué pasa si crees que el precio de una acción bajará y no quieres pagar mucho?
+•
+Entonces, invierta en un Bear Spread utilizando opciones de venta:
+Put larga
+Put corta
+39
+Bear Spread Usando Puts
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 40 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+K1
+K2
+Ganancia
+ST
+Call larga
+Call corta
+40
+Bear Spread Usando Calls
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 41 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Una Combinación Straddle
+Ganancia
+ST
+K
+•
+¿Qué tal si crees que la volatilidad será alta?
+•
+Entonces, una combinación straddle podría ser útil (con opciones at-the-money).
+Call larga
+Put larga
+41
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 42 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+K1
+K2
+Ganancia
+ST
+•
+¿Qué pasa si usted cree que la volatilidad será alta, pero desea pagar menos por una 
+posición utilizando opciones?
+•
+Una combinación de strangle utiliza opciones fuera de dinero (call y put) que son más 
+baratas. Sin embargo, las posibles ganancias serán menores si tiene razón sobre el alto 
+valor futuro de la volatilidad.
+Call larga
+Put larga
+42
+Una Combinación Strangle
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 43 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Combinación de Straddle invertida (written Straddle)
+Ganancia
+ST
+K
+•
+¿Qué pasa si crees que la volatilidad será pequeña?
+•
+En este caso, una combinación straddle invertida podría ser útil.
+Put corta
+Call corta
+43
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 44 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Butterfly Spread Usando Calls
+K1
+K3
+Ganancia
+ST
+K2
+•
+Con una estrategia de straddle invertida podrías incurrir en grandes pérdidas si la 
+volatilidad es alta en lugar de baja.
+•
+Podrías protegerte contra esto usando un Butterfly Spread, pero perderás parte de las 
+posibles ganancias si tienes razón sobre el futuro valor bajo de la volatilidad.
+Call larga
+Call larga
+Call corta
+44
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 45 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Butterfly Spread Usando Puts
+K1
+K3
+Ganancia
+ST
+K2
+Put larga
+Put larga
+Put corta
+45
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 46 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+F I N A N Z A S I — E N F I N 4 1 5
+Sesión II
+Alejandro Bernales
+Universidad de Chile
+M E R C A D O S D E D E R I VA D O S
+01
+Mecanismos de los mercados de opciones
+02
+Propiedades de las opciones sobre acciones
+03
+Estrategias de trading que involucran 
+opciones
+04
+Árboles binomiales
+05
+El modelo Black-Scholes-Merton
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 47 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+•
+El precio de la acción actualmente es $20, pero en 3 meses será $22 o $18, rf  = 12%.
+•
+Una opción call a 3 meses sobre la acción tiene un precio de ejercicio de 21.               
+¿Cuál es el precio de la opción call?
+•
+Solución: ¡Generar un portafolio sin riesgo! (valoración neutral al riesgo)
+•
+Considera el portafolio: corto en ∆ acciones y posición largas en 1 opción de compra 
+Stock Price = $18
+Option Price = $0
+Stock Price = $22
+Option Price = $1
+Stock price = $20
+Call Option Price =?
+Una opción de compra (call)
+22∆ – 1
+18∆
+•  En 3 meses (vencimiento) el portafolio es libre de riesgo cuando:
+∏ = ∆·S-c  ⇒ 22·∆– 1 = 18∆     
+•  Entonces: ∆ = 0.25
+•  El portafolio libre de riesgo: venta de 0.25 acciones y compra de 1 opción 
+de compra.
+•  El valor en 3 meses es: 22·0.25 - 1= 4.5
+•  Ya que es un portafolio libre de riesgo, el valor hoy es:: 
+∏ = 4.5e – 0.12×0.25 = 4.367
+•  El valor de la acción hoy es: ∏ = 0.25·20 – c = 4.367
+•  ¡El valor de la opción es: 5.0 - 4.367 = 0.633!
+47
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 48 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Escogiendo u y d
+•
+Una forma de igualar la volatilidad es establecer
+ 
+ 
+ 
+Donde σ es la volatibilidad y ∆t es la longitud del intervalo de tiempo. Esta es la 
+aproximación utilizada por Cox, Ross y Rubinstein (1979, JFE).
+t
+t
+e
+u
+d
+e
+u
+∆
+σ
+−
+∆
+σ
+=
+=
+=
+1
+48
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 49 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+La probabilidad de un movimiento al alza
+contract
+ 
+futures
+ a
+for 
+ 1
+rate
+ 
+free
+-
+risk
+  
+foreign
+ 
+ the
+is
+ 
+ 
+here
+currency w
+ a
+for 
+ 
+index
+ 
+on the
+ 
+yield
+  
+dividend
+ 
+ the
+is
+ 
+ e
+index wher
+stock 
+ a
+for 
+ 
+stock
+ 
+paying
+ d
+nondividen
+ a
+for 
+ 
+)
+(
+)
+(
+=
+•
+=
+•
+=
+•
+=
+•
+−
+−
+=
+∆
+−
+∆
+−
+∆
+a
+r
+e
+a
+q
+e
+a
+e
+a
+d
+u
+d
+a
+p
+f
+t
+r
+r
+t
+q
+r
+t
+r
+f
+49
+para una acción que no paga dividendos
+para un índice bursátil donde q es el rendimiento de dividendos del índice
+para una divisa donde rf es la tasa libre de riesgo extranjera
+para un contrato de futuros
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 50 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Generalización
+•
+Un derivado ( f ) con vencimiento T depende de una acción (S)
+•
+Considere la cartera que tiene posiciones corta en ∆ acciones y larga en 1 derivado: 
+•
+Sustituyendo Δ, obtenemos: ƒ = [pƒu + (1 – p)ƒd]e–rT    donde   
+S0u
+ ƒu
+S0d
+ ƒd
+S0
+ƒ0
+S0u∆ – ƒu
+S0d∆ – ƒd
+•  La cartera está libre de riesgo cuando S0u∆ – ƒu = S0d∆ – ƒd  o:
+•  El valor de la cartera sin riesgo en el momento T es: S0u∆ – ƒu
+•  El valor de la cartera hoy es:
+ 
+ 
+  (S0u∆ – ƒu)·e–rT
+•  Otra expresión para el valor de la cartera hoy es: S0∆ – f
+•  Por lo tanto: ƒ = S0∆ – (S0u∆ – ƒu )·e–rT 
+d
+S
+u
+S
+fd
+u
+0
+0
+ƒ
+−
+−
+=
+∆
+d
+u
+d
+e
+p
+rT
+−
+−
+=
+50
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 51 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Valoración Neutral al Riesgo
+•
+Sustituyendo Δ, obtenemos: ƒ = [pƒu + (1 – p)ƒd]e–rT    donde   
+•
+Esta ecuación fue obtenida a través de argumentos de no arbitraje.
+•
+Esta ecuación es equivalente a realizar una Valoración Neutral al Riesgo
+–
+En un mundo neutral al riesgo el riesgo se elimina.
+–
+Consecuentemente, en un mundo neutral al riesgo el retorno esperado es la tasa de 
+interés libre de riesgo.
+•
+Por ejemplo, en un mundo neutral al riesgo, supongamos que la probabilidad de 
+que una acción suba es p* 
+•
+En un mundo neutral al riesgo el retorno esperado de la acción debe ser:
+ 
+ 
+ 
+ 
+ p*S0u + (1 – p* ) S0d= S0erT 
+•
+o: 
+S0u
+S0·d 
+S0
+p*
+1- p* 
+d
+u
+d
+e
+p
+rT
+−
+−
+=
+*
+Por lo tanto, p* = p y por consiguiente, la valoración binomial 
+también se basa en probabilidades neutrales al riesgo.
+51
+d
+u
+d
+e
+p
+rT
+−
+−
+=
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 52 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+p: probabilidad neutral al riesgo
+•
+Es natural interpretar p y 1- p como probabilidades de movimientos ascendentes y 
+descendentes. 
+•
+El valor de un derivado es entonces su pago esperado en un mundo neutral al riesgo 
+descontado a la tasa libre de riesgo.
+S0u
+ ƒu
+S0d
+ ƒd
+S0
+ƒ
+p
+(1 – p )
+52
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 53 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Ejemplo Original Re-revisado
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+•
+Dado que p es la probabilidad que da un rendimiento igual a la tasa libre de riesgo, 
+podemos obtenerla a partir de:  20e0.12 ×0.25 = 22p + 18(1 – p ), lo que da como 
+resultado p = 0.6523
+•
+Alternativamente, podemos usar la fórmula:
+•
+Por lo tanto, el valor de la opción es: 
+ 
+ 
+ 
+e – 0.12×0.25 (0.6523×1 + 0.3477×0) 
+     
+= 0.633
+6523
+.0
+9.0
+1.1
+9.0
+0.25
+0.12
+=
+−
+−
+=
+−
+−
+=
+×
+e
+d
+u
+d
+e
+p
+rT
+S0u = 22
+ ƒu = 1
+S0d = 18
+ ƒd = 0
+S0
+ ƒ
+p
+(1 – p )
+ƒ = [ pƒu + (1 – p)ƒd ]e–rT     Donde 
+53
+d
+u
+d
+e
+p
+rT
+−
+−
+=
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 54 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Irrelevancia del Retorno Esperado de la Acción
+•
+Cuando estamos valorando una opción en términos del precio del activo 
+subyacente, las probabilidades de movimientos hacia arriba o hacia abajo en el 
+mundo real son irrelevantes.
+•
+Este es un ejemplo de un resultado más general que afirma que el retorno 
+esperado del activo subyacente en el mundo real es irrelevante.
+–
+Así podemos usar el mundo neutral al riesgo para valorizar cualquier activo de la 
+economía.
+ 
+54
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 55 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Valoración de una opción de compra: un ejemplo de dos pasos
+•
+Opción de compra: Vencimiento 6 meses,
+•
+K = 21
+•
+r = 12%
+¿Cuál es el precio de la call?
+Cada paso de tiempo es de 3 meses
+20
+22
+18
+24.2
+19.8
+16.2
+55
+ƒ = [ pƒu + (1 – p)ƒd ]e–rT     Donde 
+d
+u
+d
+e
+p
+rT
+−
+−
+=
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 56 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Valoración de una opción de compra: un ejemplo de dos pasos
+•
+Opción de compra: Vencimiento 6 meses,
+•
+K = 21
+•
+r = 12%
+¿Cuál es el precio de la call?
+Cada paso de tiempo es de 3 meses
+•
+El valor en el nodo B es: e –0.12×0.25(0.6523×3.2 + 0.3477×0) = 2.0257
+•
+El valor en el nodo A es: e –0.12×0.25(0.6523×2.0257 + 0.3477×0) = 1.2823
+22
+18
+56
+ƒ = [ pƒu + (1 – p)ƒd ]e–rT     Donde 
+d
+u
+d
+e
+p
+rT
+−
+−
+=
+6523
+.
+0
+9
+.
+0
+1
+.
+1
+9
+.
+0
+0.25
+0.12
+=
+−
+−
+=
+−
+−
+=
+×
+e
+d
+u
+d
+e
+p
+rT
+20
+1.2823
+2.0257
+0.0
+24.2
+3.2
+19.8
+0.0
+16.2
+0.0
+A
+B
+C
+D
+E
+F
+Este es solo un ejemplo con fines educativos ya que árboles binomiales SOLO se usan para 
+opciones complejas, como las opciones americanas. No para las opciones europeas que se pueden 
+calcular en forma exacta usando Black-Scholes Model (explicado en las siguientes slides).
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 57 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Un ejemplo de opción de venta (Put)
+•
+Opción de venta (Europea): Vencimiento 2 años,
+•
+K = 52
+•
+r = 5%
+¿Cuál es el precio de la put?
+Cada paso de tiempo es de 1 año
+•
+El valor en el nodo B es :  e –0.05×1(0.6282 × 0 + 0.3718 × 4) = 1.4147
+•
+El valor en el nodo C es : e –0.05 × 1 (0.6282 × 4 + 0.3718 × 20) = 9.4636
+•
+El valor en el nodo A es: e –0.05×1(0.6282 × 1.4147 + 0.3718  × 9.4636) = 4.1923
+60
+40
+57
+ƒ = [ pƒu + (1 – p)ƒd ]e–rT → 
+d
+u
+d
+e
+p
+rT
+−
+−
+=
+50
+4.1923
+1.4147
+9.4636
+72
+0
+48
+4
+32
+20
+A
+B
+C
+D
+E
+F
+Este es solo un ejemplo con fines educativos ya que árboles binomiales SOLO se usan para 
+opciones complejas, como las opciones americanas. No para las opciones europeas que se pueden 
+calcular en forma exacta usando Black-Scholes Model (explicado en las siguientes slides).
+6282
+.
+0
+8
+.
+0
+2
+.
+1
+8
+.
+0
+1
+0.05
+=
+−
+−
+=
+−
+−
+=
+×
+e
+d
+u
+d
+e
+p
+rT
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 58 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Qué sucede cuando una opción es Americana: un ejemplo de opción put
+•
+Opción de venta (Americana): Vencimiento 2 años,
+•
+K = 52
+•
+r = 5%
+¿Cuál es el precio de la put?
+Cada paso de tiempo es de 1 año
+•
+El valor en el nodo B es :  e –0.05×1(0.6282 × 0 + 0.3718 × 4) = 1.4147
+•
+El valor en el nodo C es : e –0.05 × 1 (0.6282 × 4 + 0.3718 × 20) = 9.4636.                       
+Pero este valor es menor que los $12 que se pueden obtener ejerciendo la opción de 
+venta (es decir, ejercicio anticipado).
+•
+El valor en el nodo A es: e –0.05×1(0.6282 × 1.4147 + 0.3718  × 12) = 5.0894
+60
+40
+58
+ƒ = [ pƒu + (1 – p)ƒd ]e–rT → 
+d
+u
+d
+e
+p
+rT
+−
+−
+=
+50
+5.0894
+1.4147
+9.4636 < 12
+Entonces el valor del 
+nodo es 12
+72
+0
+48
+4
+32
+20
+A
+B
+C
+D
+E
+F
+6282
+.
+0
+8
+.
+0
+2
+.
+1
+8
+.
+0
+1
+0.05
+=
+−
+−
+=
+−
+−
+=
+×
+e
+d
+u
+d
+e
+p
+rT
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 59 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+F I N A N Z A S I — E N F I N 4 1 5
+Sesión II
+Alejandro Bernales
+Universidad de Chile
+M E R C A D O S D E D E R I VA D O S
+01
+Mecanismos de los mercados de opciones
+02
+Propiedades de las opciones sobre acciones
+03
+Estrategias de trading que involucran 
+opciones
+04
+Árboles binomiales
+05
+El modelo Black-Scholes-Merton
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 60 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Los conceptos subyacentes de Black-Scholes
+•
+El precio de la opción,  f (S,t), depende del precio de la acción S y del tiempo t.
+•
+Pero el Lema de Itô nos dice lo siguiente:
+•
+Podemos formar un portafolio que consiste en la acción y la opción, el cual elimina 
+esta fuente de incertidumbre: dz
+•
+El portafolio es instantáneamente libre de riesgo y debe ganar instantáneamente la 
+tasa libre de riesgo.
+•
+Por lo tanto, debemos eliminar: 
+dz
+S
+S
+f
+ 
+σ
+∂
+∂
+dz
+S
+S
+f
+dt
+S
+S
+f
+t
+f
+S
+S
+f
+df
+t
+S
+t
+S
+f
+z
+d
+S
+dt
+S
+S
+d
+ 
+½
+        
+:
+  
+and
+  
+on  
+ 
+depending
+  
+)
+,
+(
+security 
+option 
+an 
+for 
+ 
+Lemma
+ s
+Ito'
+    
+ 
+ 
+          
+:
+is
+  
+process
+ 
+price
+stock 
+ 
+ the
+prices,
+ 
+of
+ 
+case
+ 
+In the
+   
+2
+2
+2
+2
+σ
+∂
+∂
+σ
+∂
+∂
+∂
+∂
+µ
+∂
+∂
+σ
+µ
++
+
+
+
+
+
+
++
++
+=
+•
++
+=
+•
+60
+En el caso de precios, el proceso del precio de la acción es:
+El Lema de Itô para una opción financiera f (S,t) que depende de S y t:
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 61 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+•
+Podemos crear una cartera que tenga posiciones largas en una opción y cortas en una 
+cantidad de acciones:
+•
+Por tanto, el valor de esta cartera viene dado por: 
+•
+Así, el cambio instantáneo de la cartera viene dado por: 
+S
+f
+∂
+∂
+S 
+S
+ƒ
+ƒ
+∂
+∂
++
+−
+=
+Π
+(
+)
+dt
+S
+S
+f
+t
+f
+z
+d
+S
+dt
+S
+S
+ƒ
+dz
+S
+S
+f
+dt
+S
+S
+f
+t
+f
+S
+S
+f
+dS 
+S
+ƒ
+dƒ
+d
+
+
+
+
+
+
+−
+−
+=
++
++
+−
+
+
+
+
+
+
++
++
+−
+=
++
+−
+=
+Π
+2
+2
+2
+2
+2
+2
+2
+2
+½
+ 
+ 
+ 
+½
+σ
+∂
+∂
+∂
+∂
+σ
+µ
+∂
+∂
+σ
+∂
+∂
+σ
+∂
+∂
+∂
+∂
+µ
+∂
+∂
+∂
+∂
+Por lo tanto, esta cartera no tiene riesgo durante
+el periodo dt y, en consecuencia: 
+dt
+r
+d
+Π
+=
+Π
+61
+Los conceptos subyacentes de Black-Scholes
+dz
+S
+S
+f
+dt
+S
+S
+f
+t
+f
+S
+S
+f
+df
+t
+S
+t
+S
+f
+z
+d
+S
+dt
+S
+S
+d
+ 
+½
+        
+:
+  
+and
+  
+on  
+ 
+depending
+  
+)
+,
+(
+security 
+option 
+an 
+for 
+ 
+Lemma
+ s
+Ito'
+    
+ 
+ 
+          
+:
+is
+  
+process
+ 
+price
+stock 
+ 
+ the
+prices,
+ 
+of
+ 
+case
+ 
+In the
+   
+2
+2
+2
+2
+σ
+∂
+∂
+σ
+∂
+∂
+∂
+∂
+µ
+∂
+∂
+σ
+µ
++
+
+
+
+
+
+
++
++
+=
+•
++
+=
+• En el caso de precios, el proceso del precio de la acción es:
+El Lema de Itô para una opción financiera f (S,t) que depende de S y t:
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 62 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+•
+Por lo tanto, dado que: 
+•
+Tenemos:
+ 
+        ¡la cual es la ecuación diferencial de Black-Scholes!
+•
+En el caso de las opciones call europeas, la condición límite es:
+f = max(S-K,0) cuando t=T
+•
+En el caso de las opciones put europeas, la condición límite es:
+f  = max(K-S,0) cuando t=T
+dt
+r
+d
+Π
+=
+Π
+rf
+S
+S
+f
+S
+ƒ
+rS
+t
+f
+dt
+S 
+S
+ƒ
+ƒ
+r
+dt
+S
+S
+f
+t
+f
+=
++
++
+
+
+
+
+
+
++
+−
+=
+
+
+
+
+
+
+−
+−
+2
+2
+2
+2
+2
+2
+2
+2
+½
+Then,
+½
+σ
+∂
+∂
+∂
+∂
+∂
+∂
+∂
+∂
+σ
+∂
+∂
+∂
+∂
+62
+Los conceptos subyacentes de Black-Scholes
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 63 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+•
+Resolver esta ecuación diferencial proporciona una solución de forma cerrada para 
+las opciones de compra y venta europeas:
+•
+N(x) es la probabilidad de que una variable sea menor que x, donde la variable es 
+distribuida normalmente con una media cero y una desviación estándar de 1 
+(distribución normal estándar).
+La fórmula Black-Scholes
+T
+d
+T
+T
+r
+K
+S
+d
+T
+T
+r
+K
+S
+d
+d
+N
+S
+d
+N
+e
+K
+p
+d
+N
+e
+K
+d
+N
+S
+c
+rT
+rT
+σ
+σ
+σ
+σ
+σ
+−
+=
+−
++
+=
++
++
+=
+−
+−
+−
+=
+−
+=
+−
+−
+1
+0
+2
+0
+1
+1
+0
+2
+2
+1
+0
+)
+2
+/
+2
+(
+)
+/
+ln(
+          
+)
+2
+/
+2
+(
+)
+/
+ln(
+   
+where
+      
+)
+(
+ 
+)
+(
+ 
+ 
+     
+          
+)
+(
+ 
+)
+(
+ 
+63
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 64 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+•
+A medida que S0 se vuelve muy grande, c tienda a S0 – Ke-rT y p tiende a cero.
+•
+A medida que S0 se vuelve muy pequeño, c tiende a cero y p tiende a Ke-rT – S0 
+T
+d
+T
+T
+r
+K
+S
+d
+T
+T
+r
+K
+S
+d
+d
+N
+S
+d
+N
+e
+K
+p
+d
+N
+e
+K
+d
+N
+S
+c
+rT
+rT
+σ
+σ
+σ
+σ
+σ
+−
+=
+−
++
+=
++
++
+=
+−
+−
+−
+=
+−
+=
+−
+−
+1
+0
+2
+0
+1
+1
+0
+2
+2
+1
+0
+)
+2
+/
+2
+(
+)
+/
+ln(
+          
+)
+2
+/
+2
+(
+)
+/
+ln(
+   
+where
+      
+)
+(
+ 
+)
+(
+ 
+ 
+     
+          
+)
+(
+ 
+)
+(
+ 
+64
+Propiedades de la fórmula de Black-Scholes
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 65 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Dividendos
+•
+Dos formas de resolver el problema:
+1.
+Las opciones europeas sobre acciones que pagan dividendos se valoran sustituyendo el 
+precio de la acción menos el valor presente de los dividendos dentro de la fórmula de 
+Black-Scholes.
+• Solo deben incluirse los dividendos con fechas ex-dividendo dentro del período de 
+vida de la opción.
+• El “dividendo” debe ser su valor esperado durante la madurez de la opción. 
+2.
+Calcular un rendimiento por dividendos (q) y utilizarlo en el modelo.
+65
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 66 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+F I N A N Z A S I — E N F I N 4 1 5
+Sesión II
+Alejandro Bernales
+Universidad de Chile
+PA R T E S D E L C U R S O
+I
+Mercados de Derivados
+II
+Manejo de Riesgo
+Valor en Riesgo (VaR)
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 67 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+¿Qué es gestión de riesgos?
+•
+¡¡¡¡Estar preparado!!!!
+67
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 68 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Objetivos
+1. Panorama general de la gestión de riesgos.
+2. Definición de Valor en Riesgo (VaR).
+3. Chequeo histórico (backtesting).
+68
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 69 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Estructura de gestión de riesgos
+Datos de mercado
+Posición actual
+Valoración
+Medida de riesgo: Valor en riesgo
+Informes y gestión de riesgos
+Mapeo de riesgos
+69
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 70 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Factores de riesgo
+•
+Hay muchos tipos diferentes de bonos, acciones y divisas.
+•
+La idea es elegir un pequeño conjunto de factores económicos relevantes y 
+mapear todo en estos factores:
+–
+Tipos de cambio.
+–
+Tasas de interés (para cada vencimiento e indexación).
+–
+Spreads.
+–
+Índices bursátiles.
+–
+Volatilidad.
+–
+Correlación.
+70
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 71 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+•
+Por ejemplo, los tipos de cambio dólar-peso:
+-5,000%
+-4,000%
+-3,000%
+-2,000%
+-1,000%
+0,000%
+1,000%
+2,000%
+3,000%
+4,000%
+5,000%
+Ene-00
+Jul-00
+Ene-01
+Jul-01
+Ene-02
+Jul-02
+Ene-03
+Jul-03
+Ene-04
+Jul-04
+Ene-05
+Jul-05
+Ene-06
+Jul-06
+Ene-07
+Jul-07
+Ene-08
+Jul-08
+Ene-09
+Jul-09
+Ene-10
+Jul-10
+Ene-11
+Jul-11
+Ene-12
+71
+Factores de riesgo
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 72 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+•
+Histograma de la evolución del tipo de cambio:
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+-2.80%
+-2.40%
+-2.00%
+-1.60%
+-1.20%
+-0.80%
+-0.40%
+0.00%
+0.40%
+0.80%
+1.20%
+1.60%
+2.00%
+2.40%
+2.80%
+72
+Factores de riesgo
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 73 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Medición del riesgo: Valor en Riesgo (VaR)
+•
+El VaR cuantifica el riesgo de una pérdida en una inversión dentro de un intervalo 
+de tiempo y para un nivel de confianza dado. 
+•
+Sea wt+∆t,t la variación en el valor de una inversión resultante de la variación del 
+precio en el intervalo de tiempo ∆t, y f(wt+∆t,t) la función de densidad de 
+probabilidad de tales variaciones. 
+•
+El VaR de un activo (o cartera de activos) es la cantidad de dinero que se podría 
+perder debido a eventos negativos que podrían ocurrir con una probabilidad α. Por 
+lo tanto, el VaR se puede calcular como:
+•
+O bien:
+•
+donde Ft es el conjunto de información hasta el día t. 
+α
+=
+≤
+∆
++
+∆
++
+)
+|
+(
+,
+,
+t
+t
+t
+t
+t
+t
+t
+VaR
+w
+P
+F
+∫
+∆
++
+∞
+−
+∆
++
+=
+t
+t
+t
+VaR
+t
+t
+t
+t
+dw
+|
+w
+f
+,
+)
+(
+,
+α
+F
+73
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 74 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+•
+Por ejemplo, si VaR se calcula con un nivel de confianza del 5%, existe una 
+probabilidad del 5% de que una pérdida real exceda el valor entregado por el VaR. 
+–
+Un VaR5%= −300,000 dólares en una inversión equivale a decir que una pérdida de 
+300.000 dólares (o más) puede esperarse en cinco días de cada cien días.
+α
+=
+≤
+∆
++
+∆
++
+)
+|
+(
+,
+,
+t
+t
+t
+t
+t
+t
+t
+VaR
+w
+P
+F
+∫
+∆
++
+∞
+−
+∆
++
+=
+t
+t
+t
+VaR
+t
+t
+t
+t
+dw
+|
+w
+f
+,
+)
+(
+,
+α
+F
+-4
+-3
+-2
+-1
+0
+1
+2
+3
+4
+El área a la izquierda α = 5%
+Dinero
+VAR
+74
+Medición del riesgo: Valor en Riesgo (VaR)
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 75 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+¿Cómo podemos calcular el VaR?
+•
+El VaR es una medida intuitiva:
+–
+Capta un aspecto importante del riesgo en un solo número.
+–
+Es fácil de entender.
+–
+La pregunta es sencilla: “¿Hasta dónde pueden llegar “mal” las cosas?”
+•
+Hay 2 grupos principales de métodos para calcular el VaR:
+–
+Primero, los métodos VaR paramétricos (suponen una distribución conocida para los 
+retornos de los activos).
+–
+Segundo, VaR no paramétricos.
+75
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 76 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Métodos Paramétricos
+El método VaR de varianza-covarianza:
+•
+El método VaR de varianza-covarianza supone una distribución normal 
+multivariada de los retornos logarítmicos, donde la matriz de varianza-covarianza 
+se calcula usando los retornos históricos. 
+•
+En el caso de un solo activo, el VaR con un nivel de confianza α se define como:
+•
+Donde u y σ2 son la media y la varianza de los retornos logarítmicos, ψ es la 
+inversa de una N (0,1) con probabilidad α (por ejemplo, ψ = -1.64 para α = 5% o 
+ψ = -2.33 para α = 1%), y M es el monto invertido.
+•
+Tenemos que seleccionar una estimación del período de ventana (por ejemplo, 
+252 días).
+M
+e
+VaR
+u
+t
+t
+
+
+
+
+
+
+
+
+−
+=
++
+−
++
+1
+)
+2
+(
+1
+,
+2
+σψ
+σ
+76
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 77 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Métodos Paramétricos
+El método VaR de varianza-covarianza:
+•
+La ecuación para el método VaR de varianza-covarianza:
+También se utiliza para el VaR de una cartera, pero la varianza de la cartera se 
+obtiene utilizando la matriz de varianza-covarianza (es decir σ2=ω’Θω, donde ω 
+es el vector de pesos para los diferentes activos de la cartera, y Θ es la matriz de 
+varianza-covarianza).
+77
+M
+e
+VaR
+u
+t
+t
+
+
+
+
+
+
+
+
+−
+=
++
+−
++
+1
+)
+2
+(
+1
+,
+2
+σψ
+σ
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 78 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Métodos Paramétricos
+El VaR Método GARCH (1,1):
+•
+Siguiendo a Bollerslev (1986), asumimos que los retornos siguen un GARCH (1,1):
+donde zt son innovaciones i.i.d. con media cero y varianza unitaria.
+•
+Una vez que hemos estimado el modelo GARCH (1,1), obtenemos estimaciones para 
+σt . El VaR para un solo activo se calcula utilizando la ecuación:
+•
+Tenemos que seleccionar una ventana de tiempo histórica (por ejemplo, 252 días).
+–
+¿Cómo podemos estimar el GARCH(1,1)?
+• Método de máxima verosimilitud.
+• No te preocupes, están programados en softwares tales como: R, Python, MatLab, etc.
+78
+t
+t
+t
+i
+z
+u
+r
+⋅
++
+=
+σ
+,
+t
+t
+t
+z
+⋅
+= σ
+ε
+2
+1
+2
+2
+1
+1
+0
+2
+−
+−
+⋅
++
+⋅
++
+=
+t
+t
+t
+σ
+η
+ε
+η
+η
+σ
+M
+e
+VaR
+u
+t
+t
+
+
+
+
+
+
+
+
+−
+=
++
+−
++
+1
+)
+2
+(
+1
+,
+2
+σψ
+σ
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 79 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Métodos Paramétricos
+El VaR Método GARCH (1,1):
+•
+El VaR para la cartera completa se calcula utilizando el modelo GARCH (1,1) para los 
+rendimientos diarios de la cartera: “de la cartera completa”:
+•
+De esta forma se estima un GARCH para la cartera completa.
+•
+Luego usamos:
+•
+Pero ahora σ es la volatilidad de la cartera completa.
+•
+Este procedimiento se utiliza en lugar de un modelo GARCH multivariado donde se 
+deben estimar muchos parámetros.
+•
+La suposición de que la cartera puede considerarse como un activo único, se debe al 
+hecho de que muchos activos de la economía son en sí mismos carteras.
+Ventaja principal: 1) Se asume que la volatilidad puede cambiar con el tiempo.
+2) ¡Los datos más recientes tienen mayor peso que los más antiguos!
+• Este no es el caso del método de varianza-covarianza.
+79
+∑
+=
+⋅
+=
+c
+i
+t
+i
+i
+t
+portf
+r
+r
+1
+,
+,
+ω
+M
+e
+VaR
+u
+t
+t
+
+
+
+
+
+
+
+
+−
+=
++
+−
++
+1
+)
+2
+(
+1
+,
+2
+σψ
+σ
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 80 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Métodos Paramétricos
+El VaR Método GARCH (1,1):
+Principales ventajas:
+1. ¡Los datos más recientes tienen mayor peso que los más antiguos!
+• Este no es el caso del método de varianza-covarianza.
+2. ¡Tienes un modelo econométrico con parámetros que caracterizan tu base de datos 
+específica!
+• Esto no ocurre con el método de decaimiento exponencial (como en la versión de 
+RiskMetricsTM).
+•
+PERO, estás asumiendo que la distribución de los errores es normal.
+80
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 81 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Métodos NO Paramétricos
+Método de simulación histórica del VaR:
+•
+El enfoque no paramétrico más popular es el método de simulación histórica.
+•
+Este método se basa en el histograma de los rendimientos históricos, donde el 
+percentil α multiplicado por el monto invertido refleja el VaR con un nivel de 
+confianza α.
+•
+De la misma manera que los métodos anteriores, el VaR del portafolio se estima con 
+los rendimientos calculados como un solo activo, usando la siguiente ecuación.
+•
+También debemos seleccionar un periodo de estimación de Ventana (por ejemplo, 
+252 días).
+81
+∑
+=
+⋅
+=
+c
+i
+t
+i
+i
+t
+portf
+r
+r
+1
+,
+,
+ω
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 82 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Métodos NO Paramétricos
+Método de simulación histórica del VaR:
+•
+No se utiliza ninguna distribución, lo que proporciona mucha más flexibilidad.
+•
+Mucho más simple.
+•
+Problema:
+–
+Se le da el mismo peso a los datos antiguos y a los nuevos.
+82
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 83 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+Prueba retrospectiva: prueba de Kupiec
+•
+Sería útil probar si tu método VaR proporciona predicciones “buenas o razonables”.
+•
+Si tenemos un VaR al 5%, es natural comprobar si “efectivamente” el 5% de las 
+veces se cruza el valor previsto por el Var.
+ 
+83
+α
+=
+≤
+∆
++
+∆
++
+)
+|
+(
+,
+,
+t
+t
+t
+t
+t
+t
+t
+VaR
+w
+P
+F
+∫
+∆
++
+∞
+−
+∆
++
+=
+t
+t
+t
+VaR
+t
+t
+t
+t
+dw
+|
+w
+f
+,
+)
+(
+,
+α
+F
+-4
+-3
+-2
+-1
+0
+1
+2
+3
+4
+El área a la izquierda α = 5%
+Dinero
+VAR
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 84 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+•
+Podemos asumir que el número de veces, Y , en el que obtenemos pérdidas de 
+magnitud superior al VaR previsto es una variable aleatoria.
+–
+De hecho, esta variable puede caracterizarse mediante una distribución Binomial: 
+ 
+donde Nm es el número de comparaciones en la prueba (es decir, el tamaño de la muestra 
+de prueba), y p es el valor esperado de pérdidas mayores en magnitud que el VaR (por lo 
+tanto, p = α).
+–
+Así, Kupiec (1995) diseñó una estadística de prueba como una razón de verosimilitud de 
+distribuciones binomiales:
+ 
+Esta estadística, K, se distribuye asintóticamente como un Chi-Cuadrado con un grado de 
+libertad.
+84
+Prueba retrospectiva: prueba de Kupiec
+
+===== Sesiones (material del curso)/Sesion_II_ENFIN415.pdf · página 85 =====
+Universidad de Chile
+Sesión II
+Alejandro Bernales            
+–
+Así, Kupiec (1995) diseñó una estadística de prueba como una razón de verosimilitud 
+de distribuciones binomiales:
+–
+Podemos asumir como HIPÓTESIS NULA H0 que: la relación Y/Nm  de pérdidas que 
+son mayores en magnitud que el VaR es IGUAL a p o α (ya que p = α ).
+– Con el significado de que “su medida VaR es correcta”
+–
+Por lo tanto, podemos rechazar H0 por ejemplo, con un 5% de significancia (este 5% 
+es la significancia de la prueba y no está relacionado con el α del VaR ) si K > 3,84.
+• El número 3,84 se obtiene de una distribución Chi-Cuadrado con un grado de 
+libertad al 5% de probabilidad.
+85
+Prueba retrospectiva: prueba de Kupiec

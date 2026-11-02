@@ -1,0 +1,98 @@
+===== Algunas pruebas para practicar/Control 1/Pauta Control 1 2025.pdf · página 1 =====
+Control Finanzas 1 – CAPM  
+Uso del CAPM en decisiones de portafolio aplicadas 
+Usted sabe que dos acciones, Coca‑Cola Company y Tesla Inc., han estado entregando los 
+siguientes retornos esperados (i.e., retornos promedios medidos sobre un período largo de 
+tiempo): 
+ 
+Coca‑Cola Company 
+ 
+10.0 % 
+ 
+Tesla Inc.  
+ 
+ 
+22.0 % 
+Se sabe que Coca‑Cola tiene un beta de 0.9 y Tesla tiene un beta de 2.1. 
+i) Encuentre el valor esperado del retorno de mercado y la tasa libre de riesgo, E(  ) y   , 
+que hace que el modelo CAPM sea consistente con estas estimaciones históricas de retornos 
+y los betas de las dos acciones. [2 pts] 
+Respuesta 
+ 
+Sabemos por el CAPM que: 
+ E(  ) =    +    [ E(  ) −   ] 
+Aplicando a las dos acciones obtenemos el sistema: 
+ 0.10 =    + 0.9· [ E(  ) −   ] 
+ 0.22 =     + 2.1·[ E(  ) −   ] 
+Sistema de dos ecuaciones y dos incógnitas 
+E(  )=0.11=11.0%  
+Reemplazando en la primera ecuación: 
+  = 0.01 = 1.0 % 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== Algunas pruebas para practicar/Control 1/Pauta Control 1 2025.pdf · página 2 =====
+ii) Basándose en su respuesta de la parte i), ¿Qué proporción debería invertir un 
+inversionista en  una cartera p compuesta por el portafolio de mercado y en un depósito 
+bancario libre de riesgo, si el inversionista tiene preferencias de media‑varianza descritas 
+por la ecuación (1)? 
+U(E[  ],    ) = E[  ] – 2.5                (1)  
+Asuma que la desviación estándar del portafolio de mercado  es:    = 18 %, de modo que 
+  
+ = (0.18)² = 0.0324. [2 pts] 
+Hint: Recuerde que un inversionista con preferencias 
+U(E[  ],    ) = E[  ] – 
+ 
+     
+invertirá una proporción de su riqueza,  , en el activo riesgoso que tiene retorno esperado y 
+varianza E[  ] y    , respectivamente, donde   es:  
+   = (prima por riesgo)/(  ·    ) 
+Respuesta 
+ 
+En nuestro caso,           , entonces        , por lo que: 
+ α = 0.10 / (5.0 · 0.0324) = 0.617 
+Es decir, el inversor asigna 61.7 % de su riqueza al portafolio de mercado y 38.3 % al activo 
+libre de riesgo. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+iii) ¿Cuál es el retorno esperado y la varianza de la cartera   descrita en la pregunta Iii)? 
+[2 pts] 
+Respuesta 
+ 
+El retorno esperado de p es: 
+ E[  ] = α·E[  ] + (1 − α)·    
+   = 0.617*0.11 + 0.383*0.01 = 0.071 = 7.1 % 
+La varianza de p es: 
+ Var(  ) = α²·  
+  = 0.617² · 0.0324 = 0.01234 
+ 

@@ -1,0 +1,219 @@
+===== Ayudantias/Pauta_A8.pdf · página 1 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Finanzas I
+Ayudantía 8
+Profesor: Alejandro Bernales.
+Ayudantes: Luisa Rodríguez, Elizabeth Núñez, Ayelen Sandoval, Tomás Rojas,
+Joaquín Arenas, Juan Correa Hevia, Lucas Montiel y Carolina Morales.
+Primavera 2026
+Comentes
+1) Cuando se espera que la volatilidad del activo subyacente aumente en el futuro, es posible
+explotar dicho aumento de volatilidad usando una estrategia del tipo “bull spread”.
+Respuesta
+FALSO. Un bull spread (por ejemplo, comprar una call con precio de ejercicio K1 y vender una call
+con precio de ejercicio K2 > K1) es una apuesta direccional: gana cuando el precio del subyacente
+sube y tiene ganancias y pérdidas acotadas. Si la volatilidad aumenta y el precio cae fuertemente,
+la estrategia pierde; y si el precio sube mucho, la ganancia queda limitada por la call vendida.
+Para explotar un aumento esperado de la volatilidad, sin apostar por una dirección del precio,
+se debe usar un straddle largo: comprar una call y una put con el mismo precio de ejercicio y
+vencimiento. Esta estrategia gana cuando el precio del subyacente se mueve mucho, ya sea al alza
+o a la baja.
+2) Un alza de la tasa libre de riesgo afecta en forma negativa la tenencia de calls.
+Respuesta
+FALSO. Si la tasa de interés aumenta, el valor presente del precio de ejercicio disminuye y, por
+lo tanto, es más probable que se ejerza la opción. Otra explicación es que, si la tasa de interés
+aumenta, esto significa que la economía se está activando, por lo que las empresas en general lo
+están haciendo bien. Si el mercado va bien, se espera que el precio de las acciones aumente (y, por
+tanto, la probabilidad de ejercer la opción también).
+3) Una opción call americana y una opción call europea, escritas sobre el mismo activo sub-
+yacente, con el mismo precio de ejercicio y el mismo vencimiento, valen lo mismo.
+Respuesta
+FALSO. La call europea sólo puede ejercerse en la fecha de vencimiento, mientras que la call
+americana puede ejercerse en cualquier momento hasta el vencimiento. La americana entrega todos
+los derechos de la europea más la flexibilidad de ejercer anticipadamente, por lo que nunca puede
+valer menos:
+Camericana ≥Ceuropea.
+Cuando el ejercicio anticipado tiene valor (por ejemplo, si el subyacente paga dividendos antes del
+vencimiento), la call americana vale estrictamente más que la europea.
+Observación: si el subyacente no paga dividendos, nunca es óptimo ejercer anticipadamente una
+call americana, y en ese caso particular ambas opciones sí valen lo mismo.
+4) En un contrato forward justo, el valor inicial del contrato para ambas partes es distinto de
+cero.
+Respuesta
+FALSO. Por definición de precio justo de no arbitraje, el valor del contrato forward al momento de
+su firma es cero para ambas partes, ya que el precio de entrega (F0) se fija de forma que no exista
+Página 1 de 5
+
+===== Ayudantias/Pauta_A8.pdf · página 2 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+ganancia ni pérdida inicial.
+5) Los futuros y los forwards son equivalentes en todo sentido, ya que ambos fijan precios
+futuros y eliminan el riesgo de contraparte.
+Respuesta
+FALSO. Aunque ambos fijan un precio futuro, los futuros se negocian en bolsa y cuentan con una
+cámara de compensación que mitiga el riesgo de contraparte mediante ajustes diarios (mark-to-
+market). Los forwards son contratos OTC, personalizados y con mayor exposición a riesgo crediticio.
+Matemático I
+Un contrato a plazo (forward) de un año de duración sobre un activo que no paga dividendos se
+realiza en el instante en el que el precio de mercado de dicho activo es igual a 40 euros y la tasa
+sin riesgo es del 3 % anual.
+a) ¿Cuál es el precio forward justo F0 hoy y el valor f0 para el comprador?
+Respuesta
+Precio forward justo (no arbitraje):
+F0 = S0(1 + r)T = 40(1 + 0,03) = 41,2.
+Valor del contrato al inicio:
+f0 = 0.
+En un forward “justo”, el precio de entrega F0 se fija por no arbitraje y el valor del contrato al inicio
+es cero para ambas partes.
+b) Seis meses más tarde el precio del activo es de 45 euros y la tasa sin riesgo sigue siendo el
+3 % anual. ¿Cuál será en ese momento el precio del contrato a plazo? ¿Y su valor para el
+comprador del contrato?
+Respuesta
+Nuevo precio forward de mercado para el mismo vencimiento:
+Ft = St(1 + r)T −t = 45(1,03)0,5 ≈45,67.
+Valor del contrato original (posición larga) en t:
+ft = St −
+F0
+(1 + r)T −t = 45 −
+41,2
+(1,03)0,5 ≈4,404.
+Equivalente:
+ft =
+Ft −F0
+(1 + r)T −t = 45,67 −41,2
+(1,03)0,5
+≈4,404.
+Matemático II
+Suponga que Entel tiene dos tipos de acciones, A y B, a un precio de $1.600. La acción tipo A
+es para inversores de largo plazo y no entrega dividendos, al contrario de la acción tipo B, que
+entregará un dividendo de $100 en 6 meses y $150 en 1 año. Considerando una tasa de interés
+Página 2 de 5
+
+===== Ayudantias/Pauta_A8.pdf · página 3 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+libre de riesgo de 5 % anual (composición continua), ¿en cuánto variará el precio forward entre
+los dos tipos de acciones?
+Respuesta
+Contexto. El precio forward justo con capitalización continua es
+F0 = (S0 −I0) erT ,
+donde I0 es el valor presente de los flujos conocidos (dividendos) que el activo pagará antes del vencimiento
+T. Intuición: si el activo paga dividendos, el tenedor del cash-and-carry los recibe y por eso el forward que
+evita arbitraje es más bajo.
+Acción A (sin dividendos).
+F (A)
+0
+= S0erT = 1.600 e0,05 ≈$1.682,03 .
+Acción B (dividendos conocidos).
+I0 = 100 e−0,05·0,5
+|
+{z
+}
+≈97,53
++ 150 e−0,05·1
+|
+{z
+}
+≈142,68
+= $240,21 .
+Entonces,
+F (B)
+0
+= (S0 −I0) erT = (1.600 −240,21) e0,05 ≈$1.429,50 .
+Variación entre forwards:
+∆F0 = F (A)
+0
+−F (B)
+0
+≈1.682,03 −1.429,50 = $252,53 .
+El forward de la acción con dividendos es menor porque esos pagos intermedios reducen el costo neto de
+carry del portafolio de cobertura (cash-and-carry).
+Matemático III
+LIFFE ha introducido un nuevo tipo de contrato de futuros sobre las acciones de Brannigan
+Co., una empresa que no suele pagar dividendos. Cada contrato implica la adquisición de 1.000
+acciones con un año de vencimiento. La tasa de interés sin riesgo británica es del 2 % anual.
+a) Si la acción de Brannigan se vende a 70 dólares por acción, ¿cuál debería ser el precio del
+futuro?
+Respuesta
+Precio del futuro justo (no arbitraje):
+F0 = S0(1 + r)T = 70(1 + 0,02) = $71,40 por acción.
+El precio se fija por no arbitraje (cash-and-carry) y no depende de expectativas; sólo de S0 y r si
+no hay dividendos ni costos.
+b) Si el precio de mercado de Brannigan cae un 5 %, ¿cuál sería el cambio en el precio del
+futuro y cuál sería la alteración en la cuenta de efectivo del inversor?
+Respuesta
+Supuesto a t corto: el spot cae 5 %:
+St = 70(1 −0,05) = $66,50.
+Página 3 de 5
+
+===== Ayudantias/Pauta_A8.pdf · página 4 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Nuevo precio del futuro para el mismo vencimiento:
+Ft = St(1 + r)T −t ≈66,50(1 + 0,02) = $67,83.
+Cambio en el precio del futuro:
+∆F = Ft −F0 = 67,83 −71,40 = −$3,57 por acción ≈−5 %.
+Alteración en la cuenta de efectivo (mark-to-market): si el contrato es por Q = 1.000 acciones,
+∆Cuenta = Q · ∆F = 1.000 × (−$3,57) = −$3.570.
+Matemático IV
+Un analista de inversiones genera la siguiente estrategia con opciones financieras: comprar una
+opción Call con un precio de ejercicio de $45 y una opción Put con un precio de ejercicio de $40,
+ambas escritas sobre el mismo activo subyacente. El costo de la Call fue de $3 y el costo de la
+Put fue de $4. Muestre gráficamente cómo varía la utilidad de esta estrategia como función del
+precio del activo subyacente.
+Respuesta
+La estrategia (un strangle largo) tiene un costo total de 3 + 4 = $7. Genera rentabilidad si el precio del
+activo subyacente es inferior a 40 −7 = 33 dólares o superior a 45 + 7 = 52 dólares. El gráfico de la
+estrategia es el siguiente:
+30
+40
+50
+60
+−10
+−5
+5
+10
+15
+Precio del activo
+Utilidad
+Put
+Call
+Total
+Figura 1: Gráfico de payoff de la estrategia.
+Matemático V
+Un inversionista cree que el precio de una acción va a subir, pero no quiere pagar mucho por su
+posición. Por eso compra una opción Call con un precio de ejercicio de $50 y vende una opción
+Call con un precio de ejercicio de $60, ambas escritas sobre la misma acción y con el mismo
+vencimiento. El costo de la Call comprada fue de $3 y el precio de la Call vendida fue de $1.
+Identifique la estrategia y muestre gráficamente cómo varía la utilidad de esta estrategia como
+función del precio del activo subyacente.
+Página 4 de 5
+
+===== Ayudantias/Pauta_A8.pdf · página 5 =====
+Universidad de Chile
+Facultad de Economía y Negocios
+Respuesta
+La estrategia es un bull spread con calls. Su costo neto es 3 −1 = $2.
+Si ST ≤50, ninguna call se ejerce y la pérdida es el costo: −$2 (pérdida máxima).
+Si 50 < ST < 60, sólo se ejerce la call comprada y la utilidad es ST −52.
+Si ST ≥60, se ejercen ambas calls y la utilidad es 60 −50 −2 = $8 (utilidad máxima).
+La estrategia genera rentabilidad si el precio del activo subyacente es superior a 50 + 2 = 52 dólares. El
+gráfico de la estrategia es el siguiente:
+40
+50
+60
+70
+−10
+−5
+5
+10
+15
+Precio del activo
+Utilidad
+Call larga
+Call corta
+Total
+Figura 2: Gráfico de payoff del bull spread.
+Página 5 de 5
