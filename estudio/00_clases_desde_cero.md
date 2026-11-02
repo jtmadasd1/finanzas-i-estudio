@@ -2,7 +2,9 @@
 
 Lo que vimos en el chat de estudio, en orden. Cada bloque tiene la idea, la fórmula, un ejemplo resuelto y un ejercicio con la respuesta escondida.
 
-**Ruta:** ① Forwards y futuros → ② Opciones: pagos y paridad put-call → ③ Árbol binomial → ④ Black-Scholes → ⑤ VaR y backtesting → ⑥ Tarea → ⑦ Simulacro.
+**Ruta:** ① Forwards y futuros → ② Opciones: pagos y paridad put-call → ③ Árbol binomial → ④ Black-Scholes → ⑤ Tarea → ⑥ Simulacro.
+
+**VaR no entra en el Control 2** (lo dijo el profesor), así que no está en la ruta.
 
 **Avance:** el bloque ① está visto completo; el ejercicio final (forward corto y dólar) está pendiente. Sigue el bloque ②.
 

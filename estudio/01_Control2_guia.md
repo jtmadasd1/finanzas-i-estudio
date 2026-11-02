@@ -14,6 +14,8 @@ Finanzas I (ENFIN415), Prof. Alejandro Bernales · Control 2: lunes 2 de noviemb
 
 # Parte 1 · Control 2
 
+> **Actualización (lunes 2): el profesor dijo que VaR NO entra en el Control 2.** Salta la sección 4.6, las trampas 14 a 16, los comentes 6.4, los ejercicios 34 y 35 y el bloque de VaR del plan.
+
 ## 1. Resumen
 
 - **Qué entra:** lo de las ayudantías 8, 9 y 10 y la segunda parte de la Sesión II: forwards y futuros, opciones (pagos, estrategias, cotas y paridad put-call), árboles binomiales, Black-Scholes con dividendos y VaR (paramétrico, de portafolio y backtesting). Son las unidades 4 y 5 del [Programa]. Es una estimación mía: el aviso no dice la materia.
@@ -67,7 +69,7 @@ Además, hay derivados en todos los exámenes pasados: [Ex 2020] P1 (put Soquimi
 
 Tabla por tramos de ST (un corte en cada K), suma de pagos menos el costo neto, y gráfico. Identifica el costo neto, la pérdida y la ganancia máximas y los puntos de equilibrio. Han salido: bull spread [A8] Mat V, strangle [A8] Mat IV, straddle (volatilidad alta) [Sesión II L 41], butterfly [Ex Oto26] Ej 3, call cubierta [A10] Mat IV y collar [Ex 2022] P3. Si hablan de contratos, cada uno es por 100 acciones [Sesión II L 14].
 
-### 4.6 VaR
+### 4.6 VaR (no entra en el Control 2)
 
 (1) Lleva la volatilidad al horizonte: σ·√(días/250), o la base que diga el enunciado [A10]. (2) VaR = P0·α·σ·√t, con α95% = 1,645 y α99% = 2,33; con media: VaR = P0·(α·σ·√t − μ·t). (3) Dos activos: σp² = wA²σA² + wB²σB² + 2·wA·wB·ρ·σA·σB; beneficio de diversificación = VaRA + VaRB − VaRp, que es cero solo con ρ = 1 [A10] Mat II. (4) Backtesting: excepciones esperadas = T·(1 − c); muchas más significa que el modelo subestima el riesgo y muy pocas, que lo sobrestima [A10] Mat I 4). (5) La lámina usa VaR = (e^((u − σ²/2) + σψ) − 1)·M con ψ = −1,64 o −2,33, y da un número negativo (la pérdida) [Sesión II L 76].
 
@@ -308,7 +310,7 @@ Son todos los comentes de derivados y VaR de las ayudantías, controles, exámen
 
 </details>
 
-### 6.4 VaR (8)
+### 6.4 VaR (8) · no entra en el Control 2
 
 1. El VaR al 99% a 10 días es simplemente diez veces el VaR diario al 99%. Comente y defina VaR. [A10 c1]
 
@@ -453,7 +455,7 @@ Cada bloque: teoría → resuelto → ejercicio sin mirar la pauta → comentes 
 | Dom 1, bloque 1 (1,5 h) | Black-Scholes (lo más probable) | Teoría ([Sesión II L 60–65], 4.1) → resuelto 2 → practicar 1 sin mirar la pauta (con y sin dividendo) y 4 → 6.3 |
 | Dom 1, bloque 2 (1,5 h) | Árboles y paridad | Teoría ([Sesión II L 21–29 y 47–58], 4.2 y 4.3) → resueltos 8 y 9 → practicar 10 y 17 → 6.2 (1 a 8) |
 | Dom 1, bloque 3 (1 h) | Forwards y estrategias | Resueltos 20, 21 y 28 → practicar 24 y 30 → 6.1 y 6.2 (9 a 14) |
-| Lun 2, mañana (1,5 h) | VaR | Teoría ([Sesión II L 73–85], 4.6) → resueltos 34 y 35 → 6.4 |
+| Lun 2, mañana (1,5 h) | ~~VaR~~ (no entra: úsalo para opciones y Black-Scholes) | Teoría ([Sesión II L 73–85], 4.6) → resueltos 34 y 35 → 6.4 |
 | Lun 2, tarde (1 h) | Simulacro | Ejercicios 13, 6 y 19 ([Ex Oto26] Ej 2 completo) en 40 minutos con tabla y calculadora → corregir → releer la sección 5 |
 | Lun 2, antes de salir (45 min) | Control de la tarea | Parte 2: cifras clave (sección 11), preguntas marcadas "muy probable", ejercicios E1 a E8 y comentes C1 a C10 |
 

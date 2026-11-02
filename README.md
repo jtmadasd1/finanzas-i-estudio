@@ -2,6 +2,8 @@
 
 Material para el **Control 2** y el **control de la tarea** (lunes 2 de noviembre de 2026, 18:30).
 
+> **VaR no entra en el Control 2** (lo dijo el profesor). Las partes de VaR que siguen en las guías están marcadas.
+
 ## Qué hay aquí
 
 | Carpeta | Contenido | Para qué |
@@ -18,7 +20,7 @@ Material para el **Control 2** y el **control de la tarea** (lunes 2 de noviembr
 
 ### Fuentes de teoría en `texto/`
 
-- `texto/Sesiones (material del curso)/Sesion_II_ENFIN415.txt`: láminas de derivados y VaR (Control 2).
+- `texto/Sesiones (material del curso)/Sesion_II_ENFIN415.txt`: láminas de derivados (Control 2). Las de VaR, al final, no entran.
 - `texto/Sesiones (material del curso)/Sesion 1.txt`: láminas de portafolios, CAPM y tasas (tarea).
 - `texto/Formulas_FinanzasI_FinanzasII.txt` y `texto/Formulario_FinanzasI_Solemne.txt`: formularios.
 - `texto/Apunte_Finanzas_I.txt` y `texto/Repositorio_Finanzas_I.txt`: apunte y repositorio de preguntas.
@@ -31,7 +33,7 @@ Conecta este repositorio al chat (en claude.ai: botón **+** → **GitHub** → 
 ```text
 Actúa como mi tutor de Finanzas I (ENFIN415, U. de Chile). Hoy lunes a las 18:30 tengo el Control 2 y el control de la tarea. Voy en el transporte público, leyendo en el celular, así que quiero SOLO TEORÍA: conceptos, intuición y fórmulas, sin ejercicios largos de calculadora.
 
-Usa como fuente los archivos del repositorio conectado: estudio/00_clases_desde_cero.md (lo que ya vi), estudio/01_Control2_guia.md, estudio/02_Control_tarea_guia.md y las láminas en texto/ (Sesion_II para derivados y VaR; Sesion 1 para la tarea). Cita el archivo o lámina cuando expliques algo. Si algo no está en el material, avísame.
+Usa como fuente los archivos del repositorio conectado: estudio/00_clases_desde_cero.md (lo que ya vi), estudio/01_Control2_guia.md, estudio/02_Control_tarea_guia.md y las láminas en texto/ (Sesion_II para derivados; Sesion 1 para la tarea). El profesor dijo que VaR NO entra en el Control 2: no me lo expliques y salta los comentes de VaR. Cita el archivo o lámina cuando expliques algo. Si algo no está en el material, avísame.
 
 Cómo explicarme:
 1. Desde cero, un concepto por mensaje, en mensajes cortos que se lean en una pantalla de celular (máximo unas 15 líneas).
@@ -43,8 +45,7 @@ Orden: ya vi forwards y futuros (bloque ① en 00_clases_desde_cero.md). Sigue c
 ② Opciones: qué son, call/put, largo/corto, pagos, americanas vs europeas, estrategias (spreads, straddle, strangle, cobertura), cotas y paridad put-call.
 ③ Árbol binomial: probabilidad neutral al riesgo, valoración hacia atrás, ejercicio anticipado.
 ④ Black-Scholes: qué supone, qué significan N(d1) y N(d2), cómo entran los dividendos, sensibilidades.
-⑤ VaR: qué mide, VaR paramétrico, escalar con √t, simulación histórica, backtesting (excepciones esperadas, zonas de Basilea, Kupiec).
-⑥ Teoría de la tarea: frontera media-varianza, GMV, cartera tangente y LMC, alfa de Jensen y su test t, Sharpe vs Treynor, asignación óptima, Nelson-Siegel/Svensson y curva invertida.
+⑤ Teoría de la tarea: frontera media-varianza, GMV, cartera tangente y LMC, alfa de Jensen y su test t, Sharpe vs Treynor, asignación óptima, Nelson-Siegel/Svensson y curva invertida.
 
 Parte con ②.
 ```
