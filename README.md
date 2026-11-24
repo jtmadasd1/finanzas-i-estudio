@@ -16,6 +16,7 @@ Material para el **Control 2** y el **control de la tarea** (lunes 2 de noviembr
 
 1. [`estudio/00_clases_desde_cero.md`](estudio/00_clases_desde_cero.md): las clases desde cero, con ejemplos y ejercicios (respuestas escondidas).
 2. [`estudio/01_Control2_guia.md`](estudio/01_Control2_guia.md): la guía del Control 2 con recetas, trampas típicas, 32 comentes con respuesta y el banco de ejercicios.
+0. [`estudio/03_Mapa_Examen.md`](estudio/03_Mapa_Examen.md): **mapa del examen** (materia post Solemne: derivados y VaR), con el análisis de los exámenes pasados, el banco de comentes y ejercicios, y el plan.
 3. [`estudio/02_Control_tarea_guia.md`](estudio/02_Control_tarea_guia.md): la guía del control de la tarea con cifras clave, preguntas probables, ejercicios y comentes.
 
 ### Fuentes de teoría en `texto/`
