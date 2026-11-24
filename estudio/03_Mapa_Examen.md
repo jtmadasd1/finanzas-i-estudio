@@ -1,33 +1,32 @@
 # Mapa Examen Finanzas I
 
-Finanzas I (ENFIN415), Prof. Alejandro Bernales · Examen: materia posterior a la Solemne (derivados y VaR) · esta semana (fecha y hora por confirmar)
+Finanzas I (ENFIN415), Prof. Alejandro Bernales · Examen: materia posterior a la Solemne (derivados y VaR) · jueves 26 de noviembre de 2026, 8:30
 
 *Versión del 24-11-2026. Todo sale de tu carpeta Finanzas; cada afirmación lleva entre corchetes el archivo del que sale. Si algo no está en el material, lo digo.*
 
-**Abreviaturas:** [Sesión II L n] = Sesiones (material del curso)/Sesion\_II\_ENFIN415.pdf, lámina n; [A8], [A9] y [A10] = Ayudantías 8, 9 y 10 (enunciado y pauta); [A11] = Ayudantía 11 (no está en la carpeta); [C2 2024] y [C2 2025] = Pauta Control 2 de esos años; [Ex 2020] … [Ex 2025] = pautas de exámenes; [Repo] = Repositorio\_Finanzas\_I.pdf (material de otoño 2026), con [Ay8 Oto26], [Ay9 Oto26], [Ay10 Oto26], [C3 Oto26] = Control 3 y [Ex Oto26] = Examen; [Fórmulas] = Formulas\_FinanzasI\_FinanzasII.pdf; [Programa] = Programa/ENFIN415\_2026.pdf; c = comente, Mat = matemático.
+**Abreviaturas:** [Sesión II L n] = Sesiones (material del curso)/Sesion\_II\_ENFIN415.pdf, lámina n; [A8], [A9], [A10] y [A11] = Ayudantías 8, 9, 10 y 11 (enunciado y pauta); [C2 2024] y [C2 2025] = Pauta Control 2 de esos años; [Ex 2020] … [Ex 2025] = pautas de exámenes; [Repo] = Repositorio\_Finanzas\_I.pdf (material de otoño 2026), con [Ay8 Oto26], [Ay9 Oto26], [Ay10 Oto26], [C3 Oto26] = Control 3 y [Ex Oto26] = Examen; [Fórmulas] = Formulas\_FinanzasI\_FinanzasII.pdf; [Programa] = Programa/ENFIN415\_2026.pdf; c = comente, Mat = matemático.
 
 ## 1. Resumen
 
-- **Qué entra:** lo visto después de la Solemne: la Sesión II completa, es decir, derivados [Sesión II L 3–65] y VaR [Sesión II L 67–85], más las ayudantías 8, 9, 10 y 11 (esto último según tú). El VaR, que no entró en el Control 2, **sí entra** aquí.
+- **Qué entra:** lo visto después de la Solemne: la Sesión II completa, es decir, derivados [Sesión II L 3–65] y VaR [Sesión II L 67–85], más las ayudantías 8, 9, 10 y 11. El VaR, que no entró en el Control 2, **sí entra** aquí.
 - **Qué no entra:** la materia de la Solemne: portafolios, CAPM, modelo índice, APT, eficiencia, desempeño y renta fija, incluidos los swaps [Sesión I], [A3]–[A7], [Solemne 2024] y [Solemne 2025]. Los exámenes de 2020 a 2023 traen algunas preguntas de esa materia; están marcadas en la sección 3 y no se usan.
 - **Cuánto vale:** 30% de la nota final, igual que la Solemne. Ojo: los controles y la tarea solo cuentan si el promedio entre Solemne y Examen es 3,95 o más [Programa].
 - **Formato esperado:** los exámenes de 2024 y 2025 tuvieron la misma estructura, 4 preguntas de 60 puntos: P1 tres comentes de 20 puntos (siempre uno de VaR), P2 estrategias (2024) o paridad y arbitraje (2025), P3 árbol binomial y P4 Black-Scholes [Ex 2024], [Ex 2025]. Sección 3.
 - **Lo que más se repite:** el árbol binomial salió en 6 de 7 exámenes y Black-Scholes en 4 de 7. Hay preguntas recicladas de un año a otro (sección 4.8).
+- **La Ayudantía 11 recicla exámenes:** de sus 4 comentes, 3 son de exámenes pasados: b) es [Ex 2024] 1b, c) es [Ex 2025] 1b y d) es [Ex 2025] 1c reescrito. Su Mat II es la estructura de [Ex 2022] P3 con otros números. El profesor repite, así que la A11 es la mejor pista de lo que viene.
+- **Lo nuevo de la A11:** el comente a) sobre GARCH y el Mat I, una cobertura cambiaria que compara un forward con una put. Este último tema no estaba en otras ayudantías.
 - **Para el día:** calculadora (el celular está prohibido) [Programa]; practica e^x, ln y raíz en ella. La tabla normal se lee con 2 decimales, sin interpolar [C2 2024].
-- **Falta material:** la Ayudantía 11 no está en la carpeta (sección 2).
 
 ## 2. Mapa de archivos por tema
 
 | **Tema** | **Teoría** | **Resueltos paso a paso** | **Para practicar** |
 | --- | --- | --- | --- |
-| Forwards y futuros | [Sesión II L 3–7]; [Fórmulas] pág. 2 (acción, divisas, dividendos, valor del contrato) | [A8] Mat I, II y III; [Ay8 Oto26] Mat 1 | [C3 Oto26] P1; [Ay9 Oto26] Mat 3; [Ay8 Oto26] Mat 2 y 3; [Ex Oto26] Ej 1 |
-| Opciones: pagos y estrategias | [Sesión II L 8–19 y 31–45] | [A8] Mat IV y V; [A10] Mat IV (call cubierta) | [Ex 2024] P2; [Ex 2022] P3; [Ex 2023] P2; [Ex Oto26] Ej 3; [Ay10 Oto26] Mat 1–3 |
+| Forwards y futuros | [Sesión II L 3–7]; [Fórmulas] pág. 2 (acción, divisas, dividendos, valor del contrato) | [A8] Mat I, II y III; [Ay8 Oto26] Mat 1; [A11] Mat I (cobertura con forward y con put) | [C3 Oto26] P1; [Ay9 Oto26] Mat 3; [Ay8 Oto26] Mat 2 y 3; [Ex Oto26] Ej 1 |
+| Opciones: pagos y estrategias | [Sesión II L 8–19 y 31–45] | [A8] Mat IV y V; [A10] Mat IV (call cubierta); [A11] Mat II (collar) | [Ex 2024] P2; [Ex 2022] P3; [Ex 2023] P2; [Ex Oto26] Ej 3; [Ay10 Oto26] Mat 1–3 |
 | Cotas, paridad y arbitraje | [Sesión II L 21–29]; [Fórmulas] pág. 3 (paridad con dividendos y casos) | [A9] Mat I c); [A10] Mat III 5) | [Ex 2025] P2; [Ex 2024] P4b; [Ex Oto26] Ej 2c |
 | Árboles binomiales | [Sesión II L 47–58] | [A9] Mat I; [A10] Mat III (europea, americana y Δ) | [Ex 2025] P3; [Ex 2024] P3; [Ex 2021–2023] P3; [Ex Oto26] Ej 2a |
 | Black-Scholes | [Sesión II L 60–65] | [A9] Mat II (con dividendo); [C2 2024] | [C2 2025]; [Ex 2020] P1; [Ex 2025] P4; [Ex 2024] P4a; [Ex Oto26] Ej 2b |
-| VaR | [Sesión II L 67–85] (paramétrico L 76–77, GARCH L 78–80, simulación histórica L 81–82, Kupiec L 83–85) | [A10] Mat I y II | Comentes [A10] 1–4; [Ex 2024] 1b; [Ex 2025] 1b |
-
-Falta la **Ayudantía 11**: no está en la carpeta Finanzas, y el A11\_Pauta.pdf de Descargas es de Economía Aplicada (Primavera 2025). Cuando la agregues a Finanzas/Ayudantias, la sumo al mapa.
+| VaR | [Sesión II L 67–85] (paramétrico L 76–77, GARCH L 78–80, simulación histórica L 81–82, Kupiec L 83–85) | [A10] Mat I y II; [A11] comentes a)–c) | Comentes [A10] 1–4; [Ex 2024] 1b; [Ex 2025] 1b |
 
 ## 3. Qué preguntaron los exámenes pasados (solo derivados y VaR)
 
@@ -72,11 +71,11 @@ Método: separé en cada examen las preguntas de derivados y VaR de las de mater
 
 ### 4.4 Forwards y futuros
 
-(1) Sin ingresos: F0 = S0·e^(rT); con dividendos: F0 = (S0 − I)·e^(rT), con I = VP de los dividendos [A8] Mat II. (2) El contrato vale cero al inicio; en t, para el largo: f = (Ft − F0)·e^(−r(T − t)) [Sesión II L 4], [Fórmulas]. (3) Divisas: F = S·e^((r − r\*)·T), o con tasas simples F = S·(1 + rCLP·t) / (1 + rUSD·t) si el enunciado lo dice [C3 Oto26]. (4) Futuros: ajuste diario (mark-to-market); cambio en la cuenta = n° de unidades × ΔF [A8] Mat III. (5) Arbitraje: si el forward de mercado está sobre el teórico, pedir prestado, comprar el activo y vender el forward; si está bajo, lo contrario [Ex Oto26] Ej 1c.
+(1) Sin ingresos: F0 = S0·e^(rT); con dividendos: F0 = (S0 − I)·e^(rT), con I = VP de los dividendos [A8] Mat II. (2) El contrato vale cero al inicio; en t, para el largo: f = (Ft − F0)·e^(−r(T − t)) [Sesión II L 4], [Fórmulas]. (3) Divisas: F = S·e^((r − r\*)·T), o con tasas simples F = S·(1 + rCLP·t) / (1 + rUSD·t) si el enunciado lo dice [C3 Oto26]. (4) Futuros: ajuste diario (mark-to-market); cambio en la cuenta = n° de unidades × ΔF [A8] Mat III. (5) Arbitraje: si el forward de mercado está sobre el teórico, pedir prestado, comprar el activo y vender el forward; si está bajo, lo contrario [Ex Oto26] Ej 1c. (6) Cobertura de un exportador que recibirá dólares: vender dólares forward fija lo que recibe (no cuesta nada hoy, pero renuncia al alza); comprar una put pone un piso, deja ganar si el dólar sube y cuesta la prima. La put supera al forward solo si ST − prima &gt; F [A11] Mat I.
 
 ### 4.5 Estrategias con opciones
 
-Tabla por tramos de ST (un corte en cada K), suma de pagos menos el costo neto, y gráfico. Identifica el costo neto, la pérdida y la ganancia máximas y los puntos de equilibrio. Han salido: bull spread [A8] Mat V, strangle [A8] Mat IV, straddle (volatilidad alta) [Sesión II L 41], butterfly [Ex Oto26] Ej 3, call cubierta [A10] Mat IV y collar [Ex 2022] P3. Si hablan de contratos, cada uno es por 100 acciones [Sesión II L 14].
+Tabla por tramos de ST (un corte en cada K), suma de pagos menos el costo neto, y gráfico. Identifica el costo neto, la pérdida y la ganancia máximas y los puntos de equilibrio. Han salido: bull spread [A8] Mat V, strangle [A8] Mat IV, straddle (volatilidad alta) [Sesión II L 41], butterfly [Ex Oto26] Ej 3, call cubierta [A10] Mat IV y collar [Ex 2022] P3 y [A11] Mat II. Si hablan de contratos, cada uno es por 100 acciones [Sesión II L 14].
 
 ### 4.6 VaR
 
@@ -94,6 +93,8 @@ En los exámenes son de 20 puntos cada uno: di si es verdadero, falso o incierto
 - [Ex 2024] 1b = [Ay9 Oto26] comente A (VaR que nunca se excede).
 - [A9] Mat II y [Ex Oto26] Ej 2 usan S0 = 60 y K = 58; [A10] Mat III y [Ex Oto26] Ej 2a tienen los mismos u, d y p (σ = 30%, r = 6%, Δt = 0,25).
 - [C3 Oto26] P1 y [Ay9 Oto26] Mat 3: misma estructura (forward de divisas, valor a los 6 meses, arbitraje a los 7).
+- [A11] b) = [Ex 2024] 1b (VaR nunca excedido); [A11] c) = [Ex 2025] 1b (simulación histórica); [A11] d) = [Ex 2025] 1c reescrito (márgenes).
+- [A11] Mat II = [Ex 2022] P3 con otros números (collar con 1 y luego 2 contratos); se parece a [Ex 2024] P2 (100 acciones y varias calls vendidas).
 
 ## 5. Trampas típicas
 
@@ -115,9 +116,12 @@ En los exámenes son de 20 puntos cada uno: di si es verdadero, falso o incierto
 16. **Signo del VaR:** con la fórmula de la lámina (ψ negativo) sale negativo; con la de la ayudantía, positivo. Ambos son una pérdida [Sesión II L 74–76], [A10].
 17. **Backtesting:** cero excepciones no es buen modelo: está sobrestimando el riesgo [Ex 2024] 1b. Kupiec rechaza si K &gt; 3,84 [Sesión II L 85].
 18. **Simulación histórica:** da el mismo peso a datos antiguos y nuevos; el que pondera más lo reciente es GARCH [Sesión II L 80–82], [Ex 2025] 1b.
-19. **Márgenes:** los deposita quien vende (escribe) la opción, no quien la compra [Sesión II L 18–19], [Ex 2025] 1c.
+19. **Márgenes:** los deposita quien vende (escribe) la opción, no quien la compra [Sesión II L 18–19], [Ex 2025] 1c, [A11] d).
+20. **GARCH también supone normalidad:** sus ventajas son que la volatilidad cambia en el tiempo y que pesa más lo reciente; el único método que no supone una distribución es la simulación histórica [Sesión II L 80–82], [A11] a).
+21. **Más contratos que acciones:** con 100 acciones y 2 contratos (200 opciones), las pendientes ya no se cancelan fuera del rango entre los strikes y el gráfico queda en zigzag [A11] Mat II b).
+22. **Cobertura con put:** el piso es K menos la prima (950 − 15 = 935), no K [A11] Mat I.
 
-## 6. Banco de comentes (32)
+## 6. Banco de comentes (33)
 
 Todos los comentes de derivados y VaR de las ayudantías, controles, exámenes y el Repositorio, sin respuesta y con su fuente. Contesta como en el examen: verdadero, falso o incierto, con una justificación corta, y te corrijo en el chat. Si los necesitas, las respuestas están en Estudio Controles/Guia Finanzas I - Control 2 y Control Tarea.pdf, sección 6.
 
@@ -155,7 +159,7 @@ Todos los comentes de derivados y VaR de las ayudantías, controles, exámenes y
 
 8. Sobre una acción que no paga dividendos nunca es óptimo ejercer anticipadamente una opción americana, de modo que C = c y P = p. [A10 c6]
 
-9. Los márgenes en opciones de compra (o de venta) son efectivo o valores depositados tanto por quien compra como por quien vende la opción. [Ex 2025 1c]
+9. Los márgenes en opciones de compra (o de venta) son efectivo o valores depositados tanto por quien compra como por quien vende la opción. [Ex 2025 1c]; reescrito en [A11 d]
 
 10. El pago que genera tanto una put como una call es una función no lineal del precio del subyacente en la madurez. [Ex 2023 Ic]
 
@@ -175,7 +179,7 @@ Todos los comentes de derivados y VaR de las ayudantías, controles, exámenes y
 
 3. Las opciones se valoran con valoración neutral al riesgo, como si los agentes tuvieran aversión nula al riesgo. Explique los posibles problemas de ese supuesto. [Ex 2022 2a]
 
-### 6.4 VaR (8)
+### 6.4 VaR (9)
 
 1. El VaR al 99% a 10 días es simplemente diez veces el VaR diario al 99%. Comente y defina VaR. [A10 c1]
 
@@ -185,15 +189,17 @@ Todos los comentes de derivados y VaR de las ayudantías, controles, exámenes y
 
 4. Como la diversificación reduce el riesgo, el VaR de un portafolio es siempre estrictamente menor que la suma de los VaR individuales. [A10 c4]
 
-5. Un banco calcula su VaR diario al 5% y, tras 1.000 días, sus pérdidas nunca excedieron el VaR. Por lo tanto, el cálculo fue adecuado. [Ex 2024 1b], [Ay9 Oto26 cA]
+5. Un banco calcula su VaR diario al 5% y, tras 1.000 días, sus pérdidas nunca excedieron el VaR. Por lo tanto, el cálculo fue adecuado. [Ex 2024 1b], [Ay9 Oto26 cA], [A11 b]
 
-6. Una ventaja del método no paramétrico de simulación histórica es que da más peso a la información reciente. [Ex 2025 1b]
+6. Una ventaja del método no paramétrico de simulación histórica es que da más peso a la información reciente. [Ex 2025 1b], [A11 c]
 
 7. ¿Qué características básicas debe tener una buena medida de riesgo (según lo discutido en clases)? [Ex 2021 2a]
 
 8. ¿Por qué en la práctica los bancos tienden a sobrestimar su VaR? [A10 Mat I 5)]
 
-## 7. Banco de ejercicios (35)
+9. Una ventaja del método GARCH(1,1) frente al método de varianza-covarianza es que no necesita suponer que los retornos siguen una distribución normal. [A11 a]
+
+## 7. Banco de ejercicios (37)
 
 | **\#** | **Ejercicio** | **Pauta** | **Qué practica** |
 | --- | --- | --- | --- |
@@ -228,6 +234,7 @@ Todos los comentes de derivados y VaR de las ayudantías, controles, exámenes y
 | 25 | [Ay9 Oto26] Mat 3 (US$10.000) | Sí | Igual que el 24 |
 | 26 | [Ay8 Oto26] Mat 2 y 3; [Ay9 Oto26] Mat 2 | Sí | Paridad cubierta de tasas y cobertura con futuros |
 | 27 | [Ex Oto26] Ej 1: forward sobre un bono | Sí | Forward con cupones (nivel examen) |
+| 36 | [A11] Mat I (exportador, US$1 millón, forward a $960 o put K = 950 con prima $15) | Sí | Cobertura con forward vs. put: tabla de pesos recibidos y cuándo conviene cada una |
 |  | **Estrategias** |  |  |
 | 28 | [A8] Mat IV (strangle) y Mat V (bull spread) | Sí | Gráficos y puntos de equilibrio |
 | 29 | [A10] Mat IV: call cubierta | Sí | Equilibrio, ganancia y pérdida máximas |
@@ -235,6 +242,7 @@ Todos los comentes de derivados y VaR de las ayudantías, controles, exámenes y
 | 31 | [Ex 2022] P3: collar con contratos | Sí (en inglés) | Contratos de 100 |
 | 32 | [Ex 2023] P2: vender acción y put, comprar call | Sí (en inglés) | Tabla de pagos y gráfico |
 | 33 | [Ex Oto26] Ej 3 (butterfly); [Ay10 Oto26] Mat 1–3 | Sí | Butterfly, short straddle, iron condor |
+| 37 | [A11] Mat II (collar Andes: put K = 44 a $0,66, call K = 56 a $0,95) | Sí (b sin números; ver sección 8) | Collar con 1 contrato y zigzag con 2 |
 |  | **VaR** |  |  |
 | 34 | [A10] Mat I (P0 = $500 millones) | Sí | VaR diario, a 10 días, con media y backtesting |
 | 35 | [A10] Mat II (dos activos) | Sí | VaR de portafolio y diversificación |
@@ -251,6 +259,7 @@ Todos los comentes de derivados y VaR de las ayudantías, controles, exámenes y
 8. [Repo] Control 3 otoño 2026 b): da −75.074 porque redondea F6 − F0 a −3,81; sin redondear es ≈ −74.967.
 9. [Ex 2021], [Ex 2022] y [Ex 2023]: varias respuestas (el árbol de la P3, las estrategias) están solo en la parte en inglés, como imagen; la parte en castellano quedó en blanco. El derivado de la P3 vale $5,39 (lo verifiqué). En [Ex 2021] además preguntan si convendría ejercerlo antes si fuera americano: no, porque en el nodo bajo (S = 27) ejercer da 9 y continuar 13,24.
 10. [Ex 2021] 2a pregunta por "siete" características de una buena medida de riesgo, pero la pauta dice que en clases solo se vieron cinco (sección 9).
+11. [A11] Mat II b): la pauta describe el gráfico pero no da los números. Los calculé: costo −4.942; si ST &lt; 44, ganancia 3.858 − 100·ST (−542 en ST = 44); entre 44 y 56, 100·ST − 4.942 (cero en 49,42 y +658 en 56); si ST &gt; 56, 6.258 − 100·ST (cero en 62,58).
 
 ## 9. Teoría que entra y no está en las láminas
 
@@ -262,20 +271,22 @@ Todos los comentes de derivados y VaR de las ayudantías, controles, exámenes y
 - **VaR no subaditivo:** con colas gruesas u opciones puede pasar que VaRp &gt; VaRA + VaRB [A10] c4.
 - **Por qué los bancos sobrestiman su VaR:** incentivo regulatorio de Basilea, costo reputacional y prudencia frente al riesgo de modelo [A10] Mat I 5).
 - **Call cubierta en las AFP:** autorizada en Chile desde 2019 [A10] Mat IV.
+- **Cobertura con forward vs. con opción** [A11] Mat I: el forward fija el precio sin costo inicial; la opción es un seguro, con piso y prima. Las láminas solo nombran a los coberturistas (hedgers) [Sesión II L 23].
 
-## 10. Plan de estudio (examen esta semana)
+## 10. Plan de estudio (martes 24 al jueves 26 a las 8:30)
 
-Supuesto: 3 días de estudio antes del examen. Cuando me digas el día y las horas que tienes, lo ajusto. Cada tema sigue el método de la Fase 2: teoría desde cero → ejercicio resuelto paso a paso → ejercicio para ti (te corrijo sin darte la solución) → 3 a 5 comentes. Avanzamos con "siguiente". Los números son los de la sección 7.
+Cada tema sigue el método de la Fase 2: teoría desde cero, ejercicio resuelto paso a paso, ejercicio para ti (te corrijo sin darte la solución) y 3 a 5 comentes. Avanzamos con "siguiente". Los números son los de la sección 7. Si me dices cuántas horas tienes, ajusto los bloques.
 
-| **Día** | **Tema** | **Qué hacer** |
+| **Cuándo** | **Tema** | **Qué hacer** |
 | --- | --- | --- |
-| Día 1 | 1. Opciones desde cero | Qué son, call y put, largo y corto, pagos al vencimiento [Sesión II L 8–19] → [A8] Mat IV → comentes 6.2 |
-| Día 1 | 2. Black-Scholes (P4) | Teoría [Sesión II L 60–65] → resuelto 2 → práctica 4 y 5 → comentes 6.3 |
-| Día 2 | 3. Árbol binomial (P3) | Teoría [Sesión II L 47–58] → resueltos 8 y 9 → práctica 10 y 11 (y 12 si sobra tiempo) |
-| Día 2 | 4. Cotas, paridad y arbitraje (P2 o P4b) | Teoría [Sesión II L 21–29] → resuelto 15 → práctica 17 y 18 |
-| Día 3 | 5. Estrategias y gráficos (P2) | Teoría [Sesión II L 31–45] → resueltos 28 y 29 → práctica 30 y 31 |
-| Día 3 | 6. VaR y backtesting (P1) | Teoría [Sesión II L 67–85] → resueltos 34 y 35 → comentes 6.4 |
-| Víspera | 7. Forwards y futuros | Teoría [Sesión II L 3–19] → resueltos 20 y 21 → comentes 6.1 |
-| Víspera | Simulacro (Fase 3) | Un examen completo con el formato de 2024 y 2025 (4 preguntas de 60), corregido con puntaje |
+| Martes 24 | 1. Opciones desde cero | Qué son, call y put, largo y corto, pagos al vencimiento, márgenes [Sesión II L 8–19] → [A8] Mat IV → comentes 6.2 |
+| Martes 24 | 2. Black-Scholes (P4) | Teoría [Sesión II L 60–65] → resuelto 2 → práctica 4 y 5 → comentes 6.3 |
+| Miércoles 25, mañana | 3. Árbol binomial (P3) | Teoría [Sesión II L 47–58] → resueltos 8 y 9 → práctica 10 y 11 |
+| Miércoles 25, mañana | 4. Cotas, paridad y arbitraje (P2 o P4b) | Teoría [Sesión II L 21–29] → resuelto 15 → práctica 17 y 18 |
+| Miércoles 25, tarde | 5. Estrategias y gráficos (P2) | Teoría [Sesión II L 31–45] → resueltos 28 y 37 ([A11] Mat II) → práctica 30 y 31 |
+| Miércoles 25, tarde | 6. VaR y backtesting (P1) | Teoría [Sesión II L 67–85] → resueltos 34 y 35 → comentes 6.4, con los 4 de la [A11] |
+| Miércoles 25, tarde | 7. Forwards, futuros y cobertura | Teoría [Sesión II L 3–7 y 23] → resueltos 20 y 36 ([A11] Mat I) → comentes 6.1 |
+| Miércoles 25, noche | Simulacro (Fase 3) | Un examen completo con el formato de 2024 y 2025 (4 preguntas de 60), corregido con puntaje |
+| Jueves 26, antes de las 8:30 | Repaso | Trampas (sección 5) y los comentes de la [A11]; nada nuevo |
 
-Si el examen es antes de lo que supuse, prioriza en este orden: Black-Scholes, árbol, paridad y arbitraje, comentes de VaR y estrategias. Forwards es lo que menos ha salido.
+Si se acaba el tiempo, prioriza en este orden: Black-Scholes, árbol, comentes de la A11 y de VaR, paridad y arbitraje, estrategias. Forwards es lo que menos ha salido en exámenes, pero la A11 trae un ejercicio de cobertura.
